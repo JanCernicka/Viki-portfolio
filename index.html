@@ -41,9 +41,25 @@
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ================= HERO =================
+     Wide screens use the original artwork, which has the headline painted
+     into it; the copy below is kept for assistive tech and search engines.
+     Narrow screens show that copy as real text with the illustration
+     underneath, so the hero stays legible on a phone. -->
 <section class="hero">
-  <img class="hero-img" src="assets/images/hero.jpg" alt="Dizajn, ktorý rozpráva váš príbeh. Som grafická dizajnérka a marketérka s vášňou pre vizuálne príbehy, značky a kreatívne riešenia, ktoré zanechávajú dojem.">
+  <div class="hero-copy">
+    <h1 class="hero-title">
+      <span class="hl1">Dizajn, ktorý</span>
+      <span class="hl2">rozpráva váš <em>príbeh</em></span>
+    </h1>
+    <p class="hero-sub">Som grafická dizajnérka a marketérka s vášňou pre vizuálne príbehy, značky a kreatívne riešenia, ktoré zanechávajú dojem</p>
+  </div>
+
+  <picture class="hero-pic">
+    <source media="(max-width: 860px)" srcset="assets/images/hero-illustration.jpg">
+    <img class="hero-img" src="assets/images/hero.jpg" alt="Ilustrácia — Viktória kreslí na grafickom tablete pri stole s knihami a rastlinami">
+  </picture>
+
   <a class="hero-btn" href="#portfolio">POZRIEŤ PORTFOLIO</a>
 </section>
 
