@@ -17,13 +17,25 @@
     <a class="logo" href="#domov" aria-label="Viktória Mikušková">
       <img src="assets/images/logo.png" alt="Logo VM">
     </a>
+    <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <nav class="main-nav">
       <a href="#domov">DOMOV</a>
       <a href="#o-mne">O MNE</a>
       <a href="#sluzby">SLUŽBY</a>
-      <a href="#portfolio" class="has-caret">PORTFOLIO
-        <svg viewBox="0 0 448 512" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
-      </a>
+      <div class="nav-dropdown">
+        <a href="#portfolio" class="has-caret">PORTFOLIO
+          <svg viewBox="0 0 448 512" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="branding.html">Branding</a>
+          <a href="ilustracie.html">Ilustrácie</a>
+          <a href="uiux.html">UI/UX dizajn</a>
+          <a href="tlaciviny.html">Tlačoviny</a>
+          <a href="marketing.html">Marketing</a>
+        </div>
+      </div>
       <a href="#kontakt">KONTAKT</a>
     </nav>
   </div>
@@ -83,7 +95,40 @@
   <div class="container">
     <div class="section-head">
       <h2 class="projects-title">VYBRANÉ PROJEKTY</h2>
-      <a class="projects-link" href="#portfolio">CELÉ PORTFÓLIO&nbsp;→</a>
+      <a class="projects-link" href="branding.html">CELÉ PORTFÓLIO&nbsp;→</a>
+    </div>
+
+    <div class="category-grid">
+      <a class="category-tile" href="branding.html">
+        <img src="assets/images/icon-branding.png" alt="Branding">
+        <h3>Branding</h3>
+        <p>Logá a vizuálne identity s jasným charakterom.</p>
+        <span class="tile-link">Zobraziť →</span>
+      </a>
+      <a class="category-tile" href="ilustracie.html">
+        <img src="assets/images/icon-ilustracie.png" alt="Ilustrácie">
+        <h3>Ilustrácie</h3>
+        <p>Digitálne ilustrácie, ktoré dávajú značke osobnosť.</p>
+        <span class="tile-link">Zobraziť →</span>
+      </a>
+      <a class="category-tile" href="uiux.html">
+        <img src="assets/images/icon-uiux.png" alt="UI/UX dizajn">
+        <h3>UI/UX dizajn</h3>
+        <p>Weby a rozhrania — pekné, prehľadné, responzívne.</p>
+        <span class="tile-link">Zobraziť →</span>
+      </a>
+      <a class="category-tile" href="tlaciviny.html">
+        <img src="assets/images/icon-tlaciviny.png" alt="Tlačoviny">
+        <h3>Tlačoviny</h3>
+        <p>Plagáty, brožúry a knihy s citom pre typografiu.</p>
+        <span class="tile-link">Zobraziť →</span>
+      </a>
+      <a class="category-tile" href="marketing.html">
+        <img src="assets/images/icon-marketing.png" alt="Marketing">
+        <h3>Marketing</h3>
+        <p>Vizuály a stratégia pre sociálne siete.</p>
+        <span class="tile-link">Zobraziť →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -175,5 +220,6 @@
   </div>
 </footer>
 
+<script src="script.js" defer></script>
 </body>
 </html>
