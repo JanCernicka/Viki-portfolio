@@ -31,6 +31,7 @@ CATEGORIES = {
             ("obalky", "Obálky kníh", "Obálky"),
             ("sadzba", "Sadzba a dvojstrany", "Sadzba"),
             ("knizna-ilustracia", "Knižná ilustrácia", "Ilustrácia"),
+            ("znacka", "Značka a knižné produkty", "Značka"),
             ("propagacia", "Plagáty a propagácia", "Propagácia"),
         ],
     },
@@ -52,7 +53,7 @@ STATUS = {
     "skolsky":    ("Školský projekt", "st-school"),
     "komercny":   ("Komerčná práca", "st-commercial"),
     "publikovany": ("Publikované", "st-published"),
-    "koncept":    ("Koncepčný redizajn", "st-concept"),
+    "koncept":    ("Koncepčný projekt", "st-concept"),
 }
 
 ASPECT = {"portrait": "is-portrait", "landscape": "is-landscape", "square": "is-square"}
