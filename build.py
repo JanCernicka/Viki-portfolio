@@ -287,8 +287,8 @@ def build_index(projects, about_html):
       <li class="service">
         <img class="service-icon" src="assets/images/icon-tlaciviny.png" alt="">
         <div class="service-text">
-          <span class="service-title">KNIŽNÝ DIZAJN</span>
-          <span class="service-sub">obálky, sadzba, propagácia</span>
+          <span class="service-title">TLAČOVINY</span>
+          <span class="service-sub">knihy, plagáty, sadzba</span>
         </div>
       </li>
       <li class="service">
