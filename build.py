@@ -157,8 +157,8 @@ def thumb(p, depth=0):
         inner = f'<img src="{up}{esc(p["cover"])}" alt="{esc(p["title"])}" loading="lazy">'
         return f'<div class="p-thumb {cls}">{inner}</div>'
     # zástupná plocha so správnym pomerom strán, kým nepríde obrázok
-    return (f'<div class="p-thumb {cls} is-empty" role="img" aria-label="Obrázok sa doplní">'
-            f'<span>čaká na obrázok</span></div>')
+    return (f'<div class="p-thumb {cls} is-empty" role="img" aria-label="Obrázok pripravujem">'
+            f'<span>pripravujem</span></div>')
 
 
 def status_badge(p):
@@ -342,7 +342,7 @@ def field(label, value):
 def prose(label, value):
     if not value:
         return (f'<div class="cs-block is-todo"><h2>{esc(label)}</h2>'
-                f'<p class="todo">Text sa doplní.</p></div>')
+                f'<p class="todo">Popis projektu pripravujem.</p></div>')
     return f'<div class="cs-block"><h2>{esc(label)}</h2><p>{esc(value)}</p></div>'
 
 
@@ -413,8 +413,8 @@ def build_project(p, projects):
                 inner = f'<img src="../{esc(im["src"])}" alt="{esc(im.get("caption") or p["title"])}" loading="lazy">'
                 body = f'<div class="p-thumb {cls}">{inner}</div>'
             else:
-                body = (f'<div class="p-thumb {cls} is-empty" role="img" aria-label="Obrázok sa doplní">'
-                        f'<span>čaká na obrázok</span></div>')
+                body = (f'<div class="p-thumb {cls} is-empty" role="img" aria-label="Obrázok pripravujem">'
+                        f'<span>pripravujem</span></div>')
             cap = f'<figcaption>{esc(im.get("caption"))}</figcaption>' if im.get("caption") else ""
             html += f'        <figure class="g-item">{body}{cap}</figure>\n'
         html += '''      </div>
