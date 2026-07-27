@@ -1,7 +1,29 @@
-# Bod 4 — Slovenské vydavateľstvá, kontakty a ľudia
+# Bod 4 — Kde hľadať prácu grafika okolo kníh
 
-*Zisťované 27. júla 2026. Všetko nižšie je odpísané z webov firiem, nie z pamäti.
-Kde sa mi niečo overiť nepodarilo, je to napísané.*
+*Zisťované 27. júla 2026. Všetko nižšie je odpísané z webov firiem a z pracovných
+portálov, nie z pamäti. Kde sa mi niečo overiť nepodarilo, je to napísané.*
+
+---
+
+## Čo je v tejto verzii navyše
+
+Prvá verzia hľadala len vydavateľstvá. To bolo príliš úzke. Kniha sa nerobí
+v jednej firme — prejde cez vydavateľstvo, cez **tlačiareň**, cez **distribúciu
+a kníhkupectvo**, a okolo toho stoja **inštitúcie**, ktoré o knihách robia
+výstavy, katalógy a propagáciu. Grafik je potrebný v každom z tých článkov.
+
+Preto je zoznam rozšírený o štyri nové skupiny:
+
+| Skupina | Aká práca sa tam robí | Kde je v texte |
+|---|---|---|
+| Vydavateľstvá | obálky, sadzba, propagácia | časti A–C |
+| **Tlačiarne** | **reprodukčný grafik, DTP, príprava do tlače** | **časť D** |
+| **Kníhkupectvá a e-shopy** | vizuály kampaní, e-shop, predajne | **časť E** |
+| **Inštitúcie okolo kníh** | katalógy, výstavy, plagáty | **časť F** |
+
+Tlačiareň je pri tebe zvlášť dôležitá. **Polygrafická priemyslovka je presne
+to vzdelanie, ktoré tam žiadajú** — a na rozdiel od vydavateľstiev tam miesta
+naozaj inzerujú.
 
 ---
 
@@ -31,6 +53,38 @@ bod 5.
 Druhá vec, ktorá z toho plynie: **externá spolupráca je vstupná brána.**
 Vydavateľstvo, ktoré nemá miesto na plný úväzok, ti pokojne dá jednu obálku.
 A ten, kto raz urobil obálku, je prvý na rade, keď sa miesto uvoľní.
+
+---
+
+---
+
+## Živé ponuky k 27. júlu 2026
+
+Toto sú inzeráty, ktoré v deň hľadania **naozaj viseli** na Profesii. Nie sú to
+miesta vo vydavateľstve, ale všetky sú grafika a tri z nich sú priamo
+polygrafia. Overuj si ich, inzeráty rýchlo miznú.
+
+| Pozícia | Firma | Miesto | Mzda | Pridané | Prečo to sedí |
+|---|---|---|---|---|---|
+| **Grafik s DTP zručnosťami** | FaxCopy a.s. | **Bratislava** | 1 300 – 1 500 € | pred týždňom | DTP a príprava do tlače, presne tvoja priemyslovka. Dochádzanie z Trnavy reálne. |
+| **Creative Document Specialist** | Freshfields | **Bratislava** | 1 600 € | pred 2 týždňami | Sadzba dlhých dokumentov v InDesigne. Iný obsah, rovnaké remeslo. Najlepšie platené z tejto skupiny. |
+| **Reprodukčný grafik/grafička** | **TBB, a.s.** | Banská Bystrica | od 7,04 €/hod | pred 4 dňami | TBB je **kníhtlačiareň**. Obsahovo ideálne, geograficky mimo. |
+| Grafik s DTP zručnosťami | FaxCopy a.s. | Nové Mesto n. Váhom | 1 070 – 1 250 € | pred týždňom | to isté, bližšie k Trnave než BA, ale horšie platené |
+| Grafik DTP, DTP operátor | MaxPress s.r.o. | Nové Zámky | 1 100 – 2 200 € | pred 6 dňami | tlačiareň, široké rozpätie mzdy |
+| Grafik/grafička | FixDistribution s.r.o. | Bratislava | 1 500 – 1 800 € | pred 2 dňami | bežná grafika, dobrá mzda |
+| WANTED: Grafik | i-Step | Bratislava | 1 600 € | pred 2 týždňami | bežná grafika |
+| Graphic Designer | Kempelenov inštitút | Bratislava | 1 800 € | pred 2 týždňami | výskumný inštitút, publikácie a vizuály |
+| 2D3D Graphic Designer | Markíza | Bratislava | 2 000 € | pred 2 dňami | televízia, iná disciplína, ale ukazuje strop mzdy |
+
+> **Na čo sa pozerať:** dve najlepšie stopy sú **FaxCopy Bratislava** a
+> **Freshfields**. Prvá je čistá polygrafia, druhá je sadzba dlhých dokumentov
+> za najvyššiu mzdu v tomto zozname. Ani jedna nie je knižný dizajn, ale obe sú
+> práca s textom, typografiou a tlačovými podkladmi. To je remeslo, ktoré ti
+> vydavateľstvo raz uzná.
+
+Čo z tohto zoznamu vidno aj bez čítania jednotlivých inzerátov: **grafik
+v Bratislave zarába 1 300 až 1 800 €.** To je tvoje mzdové pásmo a je dobré ísť
+doň s číslom, nie s otázkou.
 
 ---
 
@@ -328,6 +382,199 @@ vzdialenosť jedno.
 
 ---
 
+---
+
+# D. Tlačiarne — najviac prehliadaná cesta ku knihám
+
+Toto je časť, ktorá v prvej verzii chýbala, a je to chyba, lebo **pre teba je
+to pravdepodobne najkratšia cesta k platenej práci.**
+
+Prečo: vydavateľstvo hľadá grafika raz za tri roky. Tlačiareň hľadá
+**reprodukčného grafika alebo DTP operátora** priebežne, lebo je to výrobná
+pozícia a ľudia sa striedajú. A žiada presne to, čo si sa učila štyri roky na
+priemyslovke: spadávky, pasovanie, výťažky, gramáže, väzby V1/V2, príprava
+podkladov.
+
+Čo tam robíš: berieš podklady od zákazníka (často od vydavateľstva) a dostávaš
+ich do stavu, v ktorom sa dajú vytlačiť. Nie je to autorský dizajn. **Ale je to
+knižná výroba zvnútra** a po dvoch rokoch vieš o knihe ako fyzickom predmete
+viac než väčšina grafikov vo vydavateľstvách. To je pri neskoršom prestupe
+argument, ktorý nikto iný nemá.
+
+## 16. Slovenská Grafia, a.s. — Bratislava ⭐
+
+Jedna z najväčších tlačiarní v strednej Európe, súčasť Grafobal Group. Hárkový
+aj rotačný ofset, šitá väzba V1 a lepená V2, čiže **robia knihy a časopisy**.
+Majú vlastný prepress, teda oddelenie prípravy tlače, kde sedia grafici.
+
+- **Adresa:** Pekná cesta 6, 834 03 Bratislava
+- **Web:** [grafia.sk](https://www.grafia.sk/) · ústredňa +421 2 49 49 31 11
+- **Personálne oddelenie:** **kariera@grafia.sk · 02/4949 3853**
+- Všeobecný kontakt: grafia@grafia.sk
+- Na webe majú sekciu *Kariéra* aj *Podmienky zadávania podkladov* — tú si
+  prečítaj, aj keď sa tam nehlásiš. Je to zadarmo doučovanie tlačovej prípravy
+  a pri pohovore je poznať, kto to čítal.
+
+> **Komu písať:** `kariera@grafia.sk`. Toto je jedno z mála miest v zozname,
+> kde personálne oddelenie **naozaj existuje** a má vlastnú adresu.
+
+## 17. NEOGRAFIA, a.s. — Martin
+
+Najväčšia kníhtlačiareň na Slovensku. Geograficky je Martin mimo dochádzania,
+ale uvádzam ju, lebo má **zverejnené celé personálne oddelenie** — a to je
+vzácne. Ak by si niekedy zvažovala presun alebo sezónnu prácu, je to najlepšie
+zdokumentovaná adresa v celom tomto súbore.
+
+- **Adresa:** Sučianska 39A, 038 61 Martin-Priekopa
+- **Web:** [neografia.sk](https://www.neografia.sk/) · info@neografia.sk · +421 43 420 12 41
+
+| Meno | Funkcia | Kontakt |
+|---|---|---|
+| **Jozef Kolesár** | **trvalý pracovný pomer** | jozef.kolesar@neografia.sk · +421 918 450 434 |
+| Monika Koniarová | brigády a študentská práca | praca@neografia.sk · +421 907 826 340 |
+| Anton Lipka | duálne vzdelávanie | anton.lipka@neografia.sk · +421 918 450 489 |
+| Ing. Dušan Jaško | knihárske spracovanie | dusan.jasko@neografia.sk · +421 918 450 531 |
+| Rastislav Chmúrny | ofsetová tlač | rastislav.chmurny@neografia.sk · +421 908 997 265 |
+| Bc. Lucia Sanigová | vedúca sekretariátu | lucia.sanigova@neografia.sk · +421 917 386 102 |
+
+Obchodné oddelenie má ďalších osem ľudí s menami a priamymi číslami — sú na
+ich stránke *Kontakt*, ak by si niekedy potrebovala.
+
+## 18. TBB, a.s. — Banská Bystrica
+
+Kníhtlačiareň. **Práve inzeruje reprodukčného grafika** (od 7,04 €/hod). Pre
+teba je to ďaleko, ale je to doklad, že tieto miesta existujú a obsadzujú sa
+cez inzerát — na rozdiel od vydavateľstiev.
+
+- **Web:** [tbb.sk](https://www.tbb.sk/) *(stránka mi neodpovedala, over si ju sama)*
+- Inzerát nájdeš na Profesii pod TBB, a.s.
+
+## 19. FaxCopy a.s. — Bratislava a Nové Mesto nad Váhom ⭐
+
+Sieť tlačových a kopírovacích prevádzok. **Momentálne inzeruje grafika s DTP
+zručnosťami na oboch miestach.** Nie sú to knihy, ale je to denná práca
+s tlačovými podkladmi a je to reálne voľné miesto blízko teba.
+
+- Bratislava: 1 300 – 1 500 € · Nové Mesto n. Váhom: 1 070 – 1 250 €
+- Hlásiť sa cez Profesiu, firma [faxcopy.sk](https://www.faxcopy.sk/)
+
+## 20. Menšie tlačiarne v dosahu
+
+Neoveroval som ich jednotlivo a nemajú zverejnené mená, ale ako smer na
+oslovenie sú v hre. Väčšina malých tlačiarní grafika nikdy neinzeruje a berie
+ho, keď sa ozve.
+
+| Tlačiareň | Kde | Web |
+|---|---|---|
+| REMPrint | Na Pántoch 18, Bratislava | [remprint.sk](https://www.remprint.sk/) · office@remprint.sk · +421 2 3217 9510 |
+| PMP tlačiareň | Bratislava | [pmp.sk](https://www.pmp.sk/) — robia knihy a zložitejšie zušľachťovanie |
+| SmartPrint | Bratislava, Senec, **Trnava** | [smart-print.sk](https://www.smart-print.sk/) |
+| MaxPress | Nové Zámky | inzeruje DTP operátora |
+
+> **Ako ich osloviť:** malú tlačiareň nemá zmysel prosiť o miesto. Napíš, že
+> vieš pripraviť podklady do tlače a že hľadáš prácu na DTP. Priloženú maj
+> **grafickú verziu portfólia**, nie knižnú — tlačiareň zaujíma, či vieš
+> pracovať, nie či máš vkus.
+
+---
+
+# E. Kníhkupectvá a knižné e-shopy
+
+Kníhkupecké siete majú marketingové oddelenia, ktoré robia kampane, plagáty do
+predajní, vizuály na sociálne siete a grafiku e-shopu. **Je to práca s knihami
+každý deň, len z druhej strany pultu.**
+
+## 21. Martinus, s.r.o. — Martin a Bratislava
+
+Najväčší knižný e-shop na Slovensku, vyše 300 000 titulov. Má silné vlastné
+marketingové a dizajnové oddelenie a robí aj vlastné edície a merch.
+
+- **Web:** [martinus.sk](https://www.martinus.sk/) · kariéra cez
+  [Profesiu](https://www.profesia.sk/praca/martinus/C32423)
+- **Stav k 27. 7. 2026:** sedem otvorených pozícií, **ani jedna grafická** —
+  kníhkupci, barista, účtovníčka, e-commerce špecialista, automatizácia.
+  Grafické miesta tu bývajú, ale práve teraz nie sú.
+
+> **Čo s tým:** na Profesii si zapni sledovanie firmy Martinus. Keď grafické
+> miesto naskočí, budeš o ňom vedieť v deň zverejnenia. Toto je firma, kde sa
+> na inzerát oplatí čakať, lebo záujem býva veľký a rozhoduje rýchlosť.
+
+## 22. Panta Rhei, s.r.o. — Bratislava
+
+Najväčšia sieť kamenných kníhkupectiev, 61 predajní a 16 kaviarní. Centrála
+priebežne obsadzuje pozície.
+
+- **Web:** [pantarhei.sk](https://www.pantarhei.sk/) · [kariéra](https://www.pantarhei.sk/kariera)
+- **Stav k 27. 7. 2026:** otvorené pozície sú predajné (1 031 – 1 302 €),
+  grafické momentálne nie.
+
+## 23. Artforum — Bratislava
+
+Menšie, ale kurátorské kníhkupectvo s vlastným vydavateľstvom a silnou
+vizuálnou identitou.
+
+- **Web:** [artforum.sk](https://www.artforum.sk/) · e-shop istore@artforum.sk
+  · +421 948 161 216
+- Pozor: uvedený kontakt je internetové kníhkupectvo, nie redakcia.
+
+---
+
+# F. Inštitúcie okolo kníh
+
+Tieto nie sú firmy, ale robia knižnú grafiku: katalógy, výstavné panely,
+plagáty, publikácie. Platia menej, ale sú to **referencie s menom** a otvárajú
+dvere do celej brandže.
+
+## 24. BIBIANA — medzinárodný dom umenia pre deti, Bratislava ⭐
+
+Toto je pre teba mimoriadne relevantné a v prvej verzii to chýbalo. BIBIANA
+organizuje **Bienále ilustrácií Bratislava (BIB)** — najprestížnejšiu prehliadku
+knižnej ilustrácie na svete, ktorá sa koná práve tu. Robia výstavy, katalógy
+a publikácie o detskej knihe.
+
+- **Adresa:** Panská 41, 815 39 Bratislava
+- **Web:** [bibiana.sk](https://www.bibiana.sk/) · bibiana@bibiana.sk · +421 2 20 467 111
+- Ďalšie oddelenia: realizacia@bibiana.sk (výstavy), kniznica@bibiana.sk
+- Mená zamestnancov nezverejňujú.
+
+> **Prečo sem:** máš kreslené charaktery z Turecka a dva realistické portréty.
+> BIBIANA je miesto, kde sa knižná ilustrácia na Slovensku sústreďuje. Aj keby
+> tam nebolo miesto, je to **najlepšie miesto na spoznanie ľudí z brandže** —
+> a na BIB chodia ilustrátori a vydavatelia z celého sveta.
+
+## 25. Literárne informačné centrum — Bratislava
+
+Štátna organizácia, ktorá propaguje slovenskú literatúru doma aj v zahraničí,
+vydáva publikácie a robí stánky na knižných veľtrhoch.
+
+- **Web:** [litcentrum.sk](https://www.litcentrum.sk/) ·
+  [kontakt](https://www.litcentrum.sk/institucia/slovenske-literarne-centrum/kontakt)
+- Kontaktnú stránku sa mi nepodarilo strojovo prečítať, otvor si ju v prehliadači.
+
+## 26. Univerzitné vydavateľstvá
+
+Vydávajú skriptá, monografie a zborníky. Sadzba odborného textu s poznámkovým
+aparátom je nudná, ale je to platená prax v knižnej sadzbe a často berú aj
+externistov.
+
+| Vydavateľstvo | Kde | Kontakt |
+|---|---|---|
+| **Typi Universitatis Tyrnaviensis** (Trnavská univerzita) | redakcia v Bratislave | Mgr. Peter Kolník, šéfredaktor · peter.kolnik@truni.sk · 0908 721 331 |
+| **Vydavateľstvo UCM** (Univerzita sv. Cyrila a Metoda) | **Trnava** | info@ucm.sk · 033 5565 111 |
+| VEDA, vydavateľstvo SAV | Bratislava | [veda.sav.sk](https://veda.sav.sk/) |
+
+> **UCM v Trnave** je zaujímavé: je to priamo v meste, má fakultu masmediálnej
+> komunikácie a vlastné vydavateľstvo. Presne tvoj odbor aj tvoje mesto.
+
+## 27. Knižnice
+
+Slovenská národná knižnica v Martine a veľké mestské a univerzitné knižnice
+majú propagačné oddelenia. Ich web mi neodpovedal, ale ako smer to v hre je,
+najmä **Knižnica Juraja Fándlyho v Trnave** — mestská knižnica robí plagáty,
+programy a výstavy celý rok.
+
+---
+
 ## Čo sa mi nepodarilo overiť
 
 Buď úprimná voči sebe pri používaní tohto zoznamu: štyri weby mi zablokovala
@@ -337,6 +584,9 @@ ochrana proti robotom (Cloudflare) a ich kontakty som teda **neoveril**:
 - **Matica slovenská** — vydavatel.sk/kontakt
 - **Absynt** — absynt.sk/kontakt
 - **Vydavateľstvo Spolku slovenských spisovateľov** — vsss.sk
+- **TBB** — tbb.sk *(server neodpovedal)*
+- **Slovenská národná knižnica** — snk.sk *(server neodpovedal)*
+- **Literárne informačné centrum** — kontaktnú stránku sa nepodarilo prečítať
 
 Otvor si ich v prehliadači, tam sa načítajú normálne. Nič som si k nim
 nedomyslel.
@@ -418,9 +668,30 @@ zoznam nestačil, hľadaj tam.
 
 ---
 
-## Zhrnutie: sedem adries, ktoré stoja za prvé kolo
+## Zhrnutie — dve rôzne veci, nemiešaj ich
 
-Podľa pomeru *šanca na odpoveď × relevantnosť pre knižný dizajn × dochádzanie*:
+Máš pred sebou dva súbežné postupy. Jeden je rýchly a prináša výplatu, druhý je
+pomalý a prináša to, čo naozaj chceš. Robia sa naraz.
+
+### Kanál 1 — inzeráty. Hláste sa hneď, výsledok do mesiaca.
+
+Bežné prihlášky cez Profesiu, životopis a **grafická** verzia portfólia.
+
+| # | Pozícia | Firma | Mzda |
+|---|---|---|---|
+| 1 | Grafik s DTP zručnosťami | FaxCopy, Bratislava | 1 300 – 1 500 € |
+| 2 | Creative Document Specialist | Freshfields, Bratislava | 1 600 € |
+| 3 | Grafik/grafička | FixDistribution, Bratislava | 1 500 – 1 800 € |
+| 4 | Graphic Designer | Kempelenov inštitút, Bratislava | 1 800 € |
+| — | + čokoľvek nové, čo pribudne | | |
+
+K tomu jeden e-mail navyše: **kariera@grafia.sk** (Slovenská Grafia,
+Bratislava). Inzerát nemajú, ale majú personálne oddelenie s vlastnou adresou
+a robia knihy.
+
+### Kanál 2 — priame oslovenie. Bez inzerátu, výsledok do pol roka.
+
+Toto je bod 5. Tu ide **knižná** verzia portfólia.
 
 | # | Kam | Komu | Adresa |
 |---|---|---|---|
@@ -431,18 +702,43 @@ Podľa pomeru *šanca na odpoveď × relevantnosť pre knižný dizajn × dochá
 | 5 | **Dobrá kniha**, Trnava | redakcia | redakcia@dobrakniha.sk |
 | 6 | **Buvik** | Mária Števková, šéfredaktorka | buvik@buvik.sk |
 | 7 | **IKAR** | redakcia | redakcia@ikar.sk |
+| 8 | **BIBIANA** | výstavy a katalógy | realizacia@bibiana.sk |
 
-**Neposielaj to naraz.** Kniha o networkingu je v tomto jednoznačná a bod 5 to
-rozpíše: posielajú sa po dvoch, tromi týždňami odstupu, s follow-upom. Sedem
-e-mailov v jeden večer znamená sedem rovnakých e-mailov, a to je počuť.
+**Neposielaj kanál 2 naraz.** Kniha o networkingu je v tomto jednoznačná a bod 5
+to rozpíše: posielajú sa po dvoch, tromi týždňami odstupu, s follow-upom. Osem
+e-mailov v jeden večer znamená osem rovnakých e-mailov, a to je počuť.
+
+Kanál 1 naopak posielaj naraz a hneď. Na inzerát sa hlásia desiatky ľudí
+a poradie rozhoduje.
+
+---
+
+## Čo si zapnúť, aby ti to chodilo samo
+
+Na **Profesii** si vytvor sledovanie a nechaj si posielať e-maily. Tri
+sledovania stačia:
+
+1. **Kľúčové slová:** `grafik`, kraj Bratislavský + Trnavský
+2. **Kľúčové slová:** `DTP` alebo `polygrafia`, celé Slovensko
+3. **Firmy:** Martinus, Panta Rhei, Slovenská Grafia, Vydavateľstvo SLOVART
+
+Raz týždenne pozri navyše:
+- [profesia.sk — žurnalistika, polygrafia, médiá](https://www.profesia.sk/praca/zurnalistika-polygrafia-media/)
+- weby Slovartu a Orbis Pictus, kde inzeráty dávajú do *Aktualít*, nie na portál
+
+Toto je pätnásť minút týždenne a ušetrí ti to hľadanie od nuly.
 
 ---
 
 ## A jedna vec, ktorá musí byť hotová skôr než prvý e-mail
 
-Všetkých sedem adries vedie k tomu, že si niekto otvorí tvoje portfólio.
-**Dnes je na ňom desať prázdnych rámčekov.** Kým tam nebudú obrázky, každý
-odoslaný e-mail je spálený kontakt — druhýkrát tým istým ľuďom napísať nemôžeš.
+Všetky tie adresy vedú k tomu, že si niekto otvorí tvoje portfólio. **Dnes je
+na ňom desať prázdnych rámčekov.** Kým tam nebudú obrázky, každý odoslaný
+e-mail je spálený kontakt — druhýkrát tým istým ľuďom napísať nemôžeš.
+
+Pri kanáli 1 to platí o niečo miernejšie: na inzerát sa dá odpovedať aj so
+životopisom a s dvoma-tromi ukážkami v prílohe. Ale aj tam platí, že prázdny
+web uškodí viac, než keby si žiadny nemala.
 
 Obrázky projektov sú posledná vec, ktorá delí bod 5 od odoslania.
 
