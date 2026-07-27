@@ -116,7 +116,7 @@
     {
       "slug": "mojesidlo",
       "title": "MOJESIDLO",
-      "subtitle": "Vizuály a marketingová komunikácia",
+      "subtitle": "Príspevky pre Instagram",
       "category": "dalsia-tvorba",
       "subcategory": "branding",
       "featured": false,
@@ -130,9 +130,20 @@
       "brief": null,
       "solution": null,
       "why": null,
-      "orientation": "landscape",
+      "orientation": "square",
       "cover": null,
-      "images": []
+      "images": [
+        {
+          "src": null,
+          "caption": "Vybraný príspevok",
+          "orientation": "square"
+        },
+        {
+          "src": null,
+          "caption": "Príspevky v profile značky",
+          "orientation": "portrait"
+        }
+      ]
     },
     {
       "slug": "shapelesai",
@@ -152,6 +163,27 @@
       "solution": null,
       "why": null,
       "orientation": "square",
+      "cover": null,
+      "images": []
+    },
+    {
+      "slug": "packaging",
+      "title": "Obaly a packaging",
+      "subtitle": "Školské projekty",
+      "category": "dalsia-tvorba",
+      "subcategory": "produktovy-dizajn",
+      "featured": false,
+      "order": 6.5,
+      "year": null,
+      "client": null,
+      "status": "skolsky",
+      "role": null,
+      "format": null,
+      "software": [],
+      "brief": null,
+      "solution": null,
+      "why": null,
+      "orientation": "landscape",
       "cover": null,
       "images": []
     },
