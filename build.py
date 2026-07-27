@@ -211,8 +211,19 @@ def card(p, depth=0):
 
 # ---------------------------------------------------------------- homepage
 def build_index(projects, about_html):
-    featured = [p for p in projects if p.get("featured")][:3]
-    cards = "".join(card(p) for p in featured)
+    # Domovská stránka má dvoje dvere. Hore knižný dizajn, lebo tam je prevaha
+    # a tam mieri väčšina oslovení; hneď pod ním ďalšia tvorba, aby človek
+    # z agentúry nemusel hľadať v menu, či robíš aj niečo iné.
+    def in_cat(key):
+        return sorted([p for p in projects if p.get("category") == key],
+                      key=lambda p: p.get("order") or 999)
+
+    lead = [p for p in in_cat("knizny-dizajn") if p.get("featured")][:3] \
+        or in_cat("knizny-dizajn")[:3]
+    more = in_cat("dalsia-tvorba")[:4]
+
+    cards = "".join(card(p) for p in lead)
+    more_cards = "".join(card(p) for p in more)
 
     html = head(f"{SITE_NAME} — {TAGLINE}",
                 "Mgr. Viktória Mikušková — grafická dizajnérka z Bratislavy so zameraním na knižný dizajn: obálky, sadzba a propagácia kníh.")
@@ -225,7 +236,7 @@ def build_index(projects, about_html):
       <span class="hl1">Dizajn, ktorý</span>
       <span class="hl2">rozpráva váš <em>príbeh</em></span>
     </h1>
-    <p class="hero-sub">Grafická dizajnérka so zameraním na knižný dizajn — obálky, sadzba a propagácia kníh.</p>
+    <p class="hero-sub">Grafická dizajnérka a ilustrátorka so zameraním na knižný dizajn. Okrem kníh robím vizuálne identity, ilustráciu a obsah pre značky.</p>
   </div>
 
   <picture class="hero-pic">
@@ -236,17 +247,34 @@ def build_index(projects, about_html):
   <a class="hero-btn" href="knizny-dizajn.html">POZRIEŤ PORTFÓLIO</a>
 </section>
 
-<!-- ================= VYBRANÉ PROJEKTY ================= -->
+<!-- ================= KNIŽNÝ DIZAJN ================= -->
 <section class="projects" id="portfolio">
   <div class="container">
     <div class="section-head">
-      <h2 class="projects-title">VYBRANÉ PROJEKTY</h2>
-      <a class="projects-link" href="knizny-dizajn.html">CELÉ PORTFÓLIO&nbsp;→</a>
+      <h2 class="projects-title">KNIŽNÝ DIZAJN</h2>
+      <a class="projects-link" href="knizny-dizajn.html">VŠETKY KNIŽNÉ PRÁCE&nbsp;→</a>
     </div>
+    <p class="section-lead">Obálky, sadzba, knižná ilustrácia a propagácia. Toto je práca, ku ktorej mám najbližšie a v ktorej mám polygrafické vzdelanie.</p>
 
     <div class="p-grid p-grid-featured">
 '''
     html += cards
+    html += '''    </div>
+  </div>
+</section>
+
+<!-- ================= ĎALŠIA TVORBA ================= -->
+<section class="projects projects-alt" id="dalsia-tvorba">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="projects-title">ĎALŠIA TVORBA</h2>
+      <a class="projects-link" href="dalsia-tvorba.html">VŠETKY OSTATNÉ PRÁCE&nbsp;→</a>
+    </div>
+    <p class="section-lead">Vizuálna identita, obaly, ilustrácia, informačný dizajn a obsah pre sociálne siete.</p>
+
+    <div class="p-grid p-grid-more">
+'''
+    html += more_cards
     html += '''    </div>
   </div>
 </section>

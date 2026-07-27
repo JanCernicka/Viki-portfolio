@@ -17,12 +17,17 @@ styles.css          # design system: palette, type, layout, responsive rules
 assets/
   images/           # hero, portrait, logo, service icons, software row
   fonts/            # woff2 (latin + latin-ext) + fonts.css
-_headers            # Cloudflare Pages long-cache rules for /assets/*
+_headers            # Cloudflare Pages cache rules for /assets/*
 ```
 
 ## Sections
 
-Header/nav · Hero · Služby (services) · Vybrané projekty · O mne · Kde čarujem · Moja kreatívna cesta · Footer/Kontakt.
+Header/nav · Hero · Knižný dizajn · Ďalšia tvorba · Čomu sa venujem · O mne ·
+Kde čarujem · Moja kreatívna cesta · Footer/Kontakt.
+
+The homepage leads with book design and puts the other disciplines directly
+below it, so the same site serves a publisher and a studio without either
+having to hunt through the menu.
 
 ## Palette
 
@@ -67,6 +72,11 @@ Images should be at least 2000 px on the long edge.
 Everything that gets emailed or printed is generated from the same data and the
 same brand tokens as the site.
 
+The sendable portfolio comes in two variants, defined by `VARIANTS` in
+`build_docs.py`. They are not two portfolios — they are one body of work entered
+from two doors. Each leads with the discipline its reader asked about, in full
+pages, and closes with the other as a one-page contact sheet.
+
 ```bash
 python3 build_docs.py   # regenerates the HTML pages
 node make_pdf.js        # renders them to PDF
@@ -75,7 +85,8 @@ node make_pdf.js        # renders them to PDF
 | Page | PDF | What it's for |
 |---|---|---|
 | `cv.html` | `assets/cv/Viktoria-Mikuskova-CV.pdf` | One-page A4 CV |
-| `portfolio-pdf.html` | `assets/dokumenty/…-portfolio.pdf` | Portfolio to attach to an email — built from `content/projects.json` |
+| `portfolio-knihy.html` | `assets/dokumenty/…-portfolio-knizny-dizajn.pdf` | Portfolio for publishers: book work in full, everything else as a closing contact sheet |
+| `portfolio-grafika.html` | `assets/dokumenty/…-portfolio-grafika.pdf` | Same work for studios and agencies, the other way round |
 | `hlavickovy-papier.html` | `assets/dokumenty/…-hlavickovy-papier.pdf` | Letterhead; the body is `contenteditable`, so the letter can be typed in the browser and printed to PDF |
 | `promo.html` | `assets/dokumenty/…-zalozky.pdf` | Promo piece — 4 bookmarks (45 × 180 mm) per A4, front and back |
 | `podpis.html` | — | Email signature plus paste instructions for Gmail and Outlook |
@@ -85,9 +96,12 @@ The site address is defined **once**, as `SITE_URL` in `build_docs.py`. Change i
 there and rerun both commands and it updates in the CV, the letterhead, the
 bookmarks, the QR code and the email signature.
 
-`/assets/cv/*` and `/assets/dokumenty/*` are served with a short cache
-(`_headers`) so an updated PDF is picked up straight away; the rest of
-`/assets/*` stays immutable for a year.
+`/assets/cv/*` and `/assets/dokumenty/*` are served with a 5-minute cache and
+the rest of `/assets/*` with a day, both revalidating (`_headers`). Nothing is
+`immutable`: images get replaced while the portfolio is being built, and a
+year-long cache strands anyone who already loaded the page. Cloudflare Pages
+concatenates every matching rule into one header instead of letting the
+narrowest win, so the specific rules are listed **first**.
 
 ## Local preview
 

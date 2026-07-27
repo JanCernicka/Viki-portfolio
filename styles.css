@@ -236,8 +236,20 @@ a{color:inherit;text-decoration:none;}
   letter-spacing:.01em;
 }
 
-/* ======================= VYBRANÉ PROJEKTY ======================= */
+/* ======================= PROJEKTY NA DOMOVSKEJ ======================= */
 .projects{padding:var(--sp-sect) 0 var(--sp-gap);}
+/* Druhý blok má jemne inú plochu, aby sa dve zamerania nezliali do jedného. */
+.projects-alt{
+  background:rgba(172,183,131,.11);
+  padding-bottom:var(--sp-sect);
+}
+.section-lead{
+  max-width:56ch;
+  margin:14px 0 0;
+  font-size:var(--fs-body);
+  line-height:1.75;
+  color:var(--muted);
+}
 .section-head{
   display:flex;
   align-items:baseline;
@@ -782,6 +794,8 @@ a{color:inherit;text-decoration:none;}
   margin-top:var(--sp-gap);
 }
 .p-grid-featured{grid-template-columns:repeat(3,1fr);}
+/* Ďalšia tvorba je pod knižnou — menšie dlaždice, aby neprebíjala hlavné zameranie. */
+.p-grid-more{grid-template-columns:repeat(4,1fr);}
 
 /* ---- karta ---- */
 .p-card{
@@ -979,9 +993,16 @@ a{color:inherit;text-decoration:none;}
 /* ---- responzívne ---- */
 @media (max-width:1100px){
   .p-grid,.p-grid-featured{grid-template-columns:repeat(2,1fr);}
+  .p-grid-more{grid-template-columns:repeat(3,1fr);}
+}
+@media (max-width:820px){
+  .p-grid-more{grid-template-columns:repeat(2,1fr);}
 }
 @media (max-width:620px){
   .p-grid,.p-grid-featured{grid-template-columns:1fr;gap:30px;}
+  .p-grid-more{grid-template-columns:repeat(2,1fr);gap:22px;}
+  /* Nadpis sekcie a odkaz sa na úzkom displeji nepomestia vedľa seba. */
+  .section-head{flex-direction:column;align-items:flex-start;gap:10px;}
   .cs-hero .p-thumb.is-portrait{max-width:78vw;}
   .cs-nav-inner{flex-direction:column;gap:22px;}
   .cs-prev,.cs-next{max-width:100%;text-align:left;align-items:flex-start;}
@@ -990,6 +1011,10 @@ a{color:inherit;text-decoration:none;}
 /* Vybrané projekty na homepage: jednotný pomer strán, aby riadok čítal ako celok.
    Skutočné proporcie práce sa ukážu na stránke projektu. */
 .p-grid-featured .p-thumb{aspect-ratio:4/5;}
+/* V druhej mriežke musia byť všetky náhľady rovnaké, inak sa nadpisy rozídu
+   do rôznych výšok. Preto tu pomer strán prebíja orientáciu projektu. */
+.p-grid-more .p-thumb{aspect-ratio:1/1;}
+.p-grid-more h3{font-size:var(--fs-body);}
 
 /* kotvy sekcií — aby nadpis neskončil tesne pod okrajom okna */
 .cat-projects[id]{scroll-margin-top:24px;}

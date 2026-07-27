@@ -190,6 +190,59 @@ img{display:block;max-width:100%;}
   color:var(--muted);
 }
 
+/* ---- prehľad druhej disciplíny: kontaktný hárok, nie plné strany ---- */
+.pf-more{padding:20mm 18mm 16mm;}
+.pf-more-head{flex:0 0 auto;padding-bottom:5mm;border-bottom:1px solid var(--rule);}
+.pf-more-head h2{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:22pt;
+  color:var(--dark);
+}
+.pf-more-head p{
+  margin:3mm 0 0;
+  max-width:130mm;
+  font-size:9.4pt;
+  line-height:1.6;
+  color:var(--muted);
+}
+.pf-mini-grid{
+  flex:1;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8mm 6mm;
+  align-content:start;
+  margin-top:8mm;
+  min-height:0;
+}
+.pf-mini{margin:0;display:flex;flex-direction:column;gap:2.4mm;}
+.pf-mini img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  border-radius:1.5mm;
+}
+.pf-mini-empty{
+  width:100%;
+  aspect-ratio:4/3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px dashed var(--rule);
+  border-radius:1.5mm;
+  background:rgba(172,183,131,.10);
+  font-size:7.4pt;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--olive);
+}
+.pf-mini figcaption{
+  font-size:8pt;
+  line-height:1.4;
+  color:var(--dark);
+}
+
 /* ---- záverečná strana ---- */
 .pf-end{
   padding:24mm 20mm 16mm;

@@ -6,7 +6,8 @@ Generátor tlačených a posielateľných dokumentov.
     python3 build_docs.py
 
 Vytvorí:
-    portfolio-pdf.html      posielateľné portfólio (z content/projects.json)
+    portfolio-knihy.html    posielateľné portfólio — knižný dizajn
+    portfolio-grafika.html  posielateľné portfólio — grafický dizajn
     hlavickovy-papier.html  hlavičkový papier na sprievodné listy
     promo.html              záložky do knihy — promo kus, 4 na A4
     podpis.html             e-mailový podpis + návod na vloženie
@@ -161,34 +162,93 @@ def portfolio_page(p, n, total):
 '''
 
 
-def build_portfolio_pdf(projects):
-    # Do posielaného portfólia patrí len hotová práca v poradí od najsilnejšej.
-    shown = projects
-    total = len(shown)
-    pages = "".join(portfolio_page(p, i + 1, total) for i, p in enumerate(shown))
+# Dve verzie posielateľného portfólia z tých istých dát. Nie sú to dve rôzne
+# portfóliá — je to to isté telo práce vpustené dvoma vchodmi. Každá verzia
+# vedie tým, na čo sa príjemca pýta, a druhú disciplínu ukáže na záver ako
+# doklad rozsahu. Kniha o portfóliu varuje pred zmiešaným portfóliom, kde je
+# od každého trochu; toto je opak — v každej verzii je jedno zameranie hlboko.
+VARIANTS = {
+    "knihy": {
+        "file": "portfolio-knihy.html",
+        "pdf": "Viktoria-Mikuskova-portfolio-knizny-dizajn.pdf",
+        "lead": "knizny-dizajn",
+        "title": "Knižný dizajn",
+        "focus": "obálky · sadzba · knižná ilustrácia · propagácia kníh",
+        "closing": (
+            "Najbližšie mám ku knihám, k obálkam, sadzbe a k typografii, ktorá "
+            "text nesie a neprekrýva. Hľadám miesto vo vydavateľstve, kde sa dá "
+            "na knihe pracovať od rukopisu po tlačový hárok. Rada ukážem viac, "
+            "aj rozpracované veci."),
+        "more_title": "Aj mimo kníh",
+        "more_lead": ("Vizuálna identita, obaly, ilustrácia a informačný dizajn. "
+                      "Celé projekty sú na webe."),
+    },
+    "grafika": {
+        "file": "portfolio-grafika.html",
+        "pdf": "Viktoria-Mikuskova-portfolio-grafika.pdf",
+        "lead": "dalsia-tvorba",
+        "title": "Grafický dizajn",
+        "focus": "vizuálna identita · obaly · ilustrácia · informačný dizajn",
+        "closing": (
+            "Robím vizuálne identity, obaly, ilustráciu a obsah pre značky. "
+            "Za tým všetkým je polygrafická priemyslovka, takže viem, čo sa "
+            "s návrhom stane v tlačiarni. Hľadám miesto, kde sa dá robiť "
+            "grafika od návrhu po hotový výstup."),
+        "more_title": "Knižný dizajn",
+        "more_lead": ("Obálky, sadzba a knižná ilustrácia. Toto je zameranie, "
+                      "v ktorom mám odborné vzdelanie."),
+    },
+}
 
-    html = doc_head("Portfólio — " + NAME, "dokumenty.css") + f'''
+
+def more_page(items, title, lead):
+    """Záverečný prehľad druhej disciplíny — kontaktný hárok, nie plné strany."""
+    cells = ""
+    for p in items:
+        img = p.get("cover") or next(
+            (i["src"] for i in (p.get("images") or []) if i.get("src")), None)
+        vis = (f'<img src="{esc(img)}" alt="">' if img
+               else '<div class="pf-mini-empty"><span>obrázok</span></div>')
+        cells += (f'<figure class="pf-mini">{vis}'
+                  f'<figcaption>{esc(p.get("title"))}</figcaption></figure>')
+    return f'''
+  <section class="page pf-more">
+    <div class="pf-more-head">
+      <h2>{esc(title)}</h2>
+      <p>{esc(lead)}</p>
+    </div>
+    <div class="pf-mini-grid">{cells}</div>
+  </section>
+'''
+
+
+def build_portfolio_pdf(projects, key):
+    v = VARIANTS[key]
+    lead = [p for p in projects if p.get("category") == v["lead"]]
+    other = [p for p in projects if p.get("category") != v["lead"]]
+
+    total = len(lead)
+    pages = "".join(portfolio_page(p, i + 1, total) for i, p in enumerate(lead))
+    tail = more_page(other, v["more_title"], v["more_lead"]) if other else ""
+
+    html = doc_head(f'Portfólio — {v["title"]} — {NAME}', "dokumenty.css") + f'''
   <section class="page pf-cover">
     <img class="pf-cover-logo" src="assets/images/logo.png" alt="">
     <div class="pf-cover-mid">
       <h1>{esc(NAME)}</h1>
-      <p class="pf-cover-role">{esc(ROLE)}</p>
-      <p class="pf-cover-focus">{FOCUS}</p>
+      <p class="pf-cover-role">{esc(v["title"])}</p>
+      <p class="pf-cover-focus">{v["focus"]}</p>
     </div>
     <div class="pf-cover-foot">
       <span>Výber z prác</span>
       <span>{esc(SITE_URL)}</span>
     </div>
   </section>
-{pages}
+{pages}{tail}
   <section class="page pf-end">
     <div class="pf-end-mid">
       <h2>Ďakujem za pozornosť</h2>
-      <p class="pf-end-text">
-        Najbližšie mám ku knihám — k obálkam, sadzbe a k typografii, ktorá text
-        nesie a neprekrýva. Hľadám miesto vo vydavateľstve, kde sa dá na knihe
-        pracovať od rukopisu po tlačový hárok. Rada ukážem viac, aj rozpracované veci.
-      </p>
+      <p class="pf-end-text">{esc(v["closing"])}</p>
       <ul class="pf-end-contact">
         <li>{esc(PHONE)}</li>
         <li>{esc(EMAIL)}</li>
@@ -201,12 +261,14 @@ def build_portfolio_pdf(projects):
 </body>
 </html>
 '''
-    with open(os.path.join(ROOT, "portfolio-pdf.html"), "w", encoding="utf-8") as f:
+    with open(os.path.join(ROOT, v["file"]), "w", encoding="utf-8") as f:
         f.write(html)
-    missing = sum(1 for p in shown if not p.get("cover")
+
+    missing = sum(1 for p in lead if not p.get("cover")
                   and not [i for i in (p.get("images") or []) if i.get("src")])
-    print(f"  portfolio-pdf.html — {total + 2} strán, "
-          f"{missing} projektov bez obrázka")
+    n_pages = 1 + total + (1 if tail else 0) + 1
+    print(f'  {v["file"]} — {n_pages} strán, {total} projektov naplno, '
+          f'{len(other)} v prehľade, {missing} bez obrázka')
     return missing
 
 
@@ -465,9 +527,15 @@ def build_hub(missing):
            <a href="assets/cv/Viktoria-Mikuskova-CV.pdf" download>Stiahnuť PDF</a></p>
       </li>
       <li>
-        <h2><a href="portfolio-pdf.html">Posielateľné portfólio</a></h2>
-        <p>PDF do prílohy e-mailu — obálka, projekty, kontakt.
-           <a href="assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf" download>Stiahnuť PDF</a></p>
+        <h2><a href="portfolio-knihy.html">Portfólio — knižný dizajn</a></h2>
+        <p>Do vydavateľstiev. Knižné práce naplno, ostatná tvorba v prehľade na konci.
+           <a href="assets/dokumenty/Viktoria-Mikuskova-portfolio-knizny-dizajn.pdf" download>Stiahnuť PDF</a></p>
+      </li>
+      <li>
+        <h2><a href="portfolio-grafika.html">Portfólio — grafický dizajn</a></h2>
+        <p>Do štúdií a agentúr. Rovnaké práce, opačné poradie: grafika naplno,
+           knižný dizajn na konci ako odlíšenie.
+           <a href="assets/dokumenty/Viktoria-Mikuskova-portfolio-grafika.pdf" download>Stiahnuť PDF</a></p>
       </li>
       <li>
         <h2><a href="hlavickovy-papier.html">Hlavičkový papier</a></h2>
@@ -523,7 +591,7 @@ def main():
     print(f"Dokumenty ({len(projects)} projektov, web: {SITE_URL})")
     build_qr()
     sync_cv_url()
-    missing = build_portfolio_pdf(projects)
+    missing = max(build_portfolio_pdf(projects, k) for k in VARIANTS)
     build_letterhead()
     build_promo()
     build_signature()
