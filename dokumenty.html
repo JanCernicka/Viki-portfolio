@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dokumenty — Viktória Mikušková</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="assets/images/logo.png">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="dokumenty.css">
+</head>
+<body>
+
+  <div class="tool">
+    <h1>Dokumenty</h1>
+    <p class="tool-lead">
+      Všetko, čo sa posiela alebo tlačí. Táto strana nie je v menu webu a
+      vyhľadávače ju neindexujú — je pracovná.
+    </p>
+    <p class="hub-warn">Pozor: 10 projektov v posielateľnom portfóliu zatiaľ nemá obrázok. Kým tam nebudú, PDF neposielaj — doplň obrázky do <code>content/projects.json</code> a spusti <code>python3 build_docs.py</code> a <code>node make_pdf.js</code>.</p>
+
+    <ul class="hub">
+      <li>
+        <h2><a href="cv.html">Životopis</a></h2>
+        <p>Jedna strana A4 v tvojej identite.
+           <a href="assets/cv/Viktoria-Mikuskova-CV.pdf" download>Stiahnuť PDF</a></p>
+      </li>
+      <li>
+        <h2><a href="portfolio-pdf.html">Posielateľné portfólio</a></h2>
+        <p>PDF do prílohy e-mailu — obálka, projekty, kontakt.
+           <a href="assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf" download>Stiahnuť PDF</a></p>
+      </li>
+      <li>
+        <h2><a href="hlavickovy-papier.html">Hlavičkový papier</a></h2>
+        <p>Na sprievodné listy a žiadosti. Text sa dá prepísať priamo v prehliadači.
+           <a href="assets/dokumenty/Viktoria-Mikuskova-hlavickovy-papier.pdf" download>Stiahnuť PDF</a></p>
+      </li>
+      <li>
+        <h2><a href="promo.html">Promo kus — záložky</a></h2>
+        <p>Štyri záložky do knihy na jednom A4. Necháš ich po pohovore alebo
+           priložíš k zásielke.
+           <a href="assets/dokumenty/Viktoria-Mikuskova-zalozky.pdf" download>Stiahnuť PDF</a></p>
+      </li>
+      <li>
+        <h2><a href="podpis.html">E-mailový podpis</a></h2>
+        <p>Aj s návodom, ako ho vložiť do Gmailu a Outlooku.</p>
+      </li>
+    </ul>
+
+    <h2 class="hub-h">Keď sa niečo zmení</h2>
+    <p class="tool-lead">
+      Adresa webu je na jednom mieste — <code>SITE_URL</code> v súbore
+      <code>build_docs.py</code>. Po zmene spusti:
+    </p>
+    <pre class="tool-code">python3 build.py
+python3 build_docs.py
+node make_pdf.js</pre>
+  </div>
+</body>
+</html>

@@ -993,3 +993,9 @@ a{color:inherit;text-decoration:none;}
 
 /* kotvy sekcií — aby nadpis neskončil tesne pod okrajom okna */
 .cat-projects[id]{scroll-margin-top:24px;}
+
+/* odkaz na životopis v sekcii O mne */
+.cv-download{margin:0;font-size:var(--fs-body);}
+.cv-download a{color:var(--terra);font-weight:600;transition:opacity .2s ease;}
+.cv-download a:hover{opacity:.72;}
+.cv-download .sep{margin:0 12px;color:rgba(120,105,90,.5);}

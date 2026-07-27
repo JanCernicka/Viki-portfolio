@@ -1,2 +1,9 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Dokumenty na stiahnutie sa menia — nesmú ostať rok v cache prehliadača.
+# Neskoršie pravidlo prepíše Cache-Control z pravidla vyššie.
+/assets/cv/*
+  Cache-Control: public, max-age=300, must-revalidate
+/assets/dokumenty/*
+  Cache-Control: public, max-age=300, must-revalidate

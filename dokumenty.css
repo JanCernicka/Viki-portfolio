@@ -1,0 +1,559 @@
+/* =========================================================
+   Tlačené a posielateľné dokumenty — Viktória Mikušková
+   Portfólio v PDF · hlavičkový papier · záložky · nástroje.
+   Rovnaká identita ako web a životopis.
+   ========================================================= */
+:root{
+  --cream:#FBEFE3;
+  --terra:#C6673D;
+  --olive:#676340;
+  --sage:#ACB783;
+  --peach:#F1CBAC;
+  --dark:#011126;
+  --muted:#5a5348;
+  --rule:rgba(120,105,90,.30);
+  --serif:"Playfair Display", Georgia, serif;
+  --sans:"Montserrat", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:#e7ddd2;
+  font-family:var(--sans);
+  color:#1c1c1c;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;}
+
+/* ---------- list A4 ---------- */
+.page{
+  position:relative;
+  width:210mm;
+  height:297mm;
+  margin:24px auto;
+  background:var(--cream);
+  box-shadow:0 18px 50px rgba(60,42,26,.22);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+/* =========================================================
+   POSIELATEĽNÉ PORTFÓLIO
+   ========================================================= */
+
+/* ---- obálka ---- */
+.pf-cover{
+  padding:22mm 20mm 16mm;
+  align-items:center;
+  text-align:center;
+  background:var(--cream);
+}
+.pf-cover-logo{width:30mm;margin:0 auto;}
+.pf-cover-mid{margin:auto 0;}
+.pf-cover h1{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:44pt;
+  line-height:1.05;
+  color:var(--dark);
+}
+.pf-cover-role{
+  margin:6mm 0 0;
+  font-size:13pt;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--terra);
+}
+.pf-cover-focus{
+  margin:3mm 0 0;
+  font-size:9.5pt;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--olive);
+}
+.pf-cover-mid::after{
+  content:"";
+  display:block;
+  width:34mm;
+  height:2px;
+  margin:9mm auto 0;
+  background:var(--terra);
+}
+.pf-cover-foot{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  font-size:8pt;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* ---- strana projektu ---- */
+.pf-project{padding:18mm 18mm 14mm;}
+.pf-visual{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:5mm;
+  min-height:0;
+}
+.pf-img{
+  flex:1;
+  width:100%;
+  min-height:0;
+  object-fit:contain;
+  object-position:center;
+}
+.pf-empty{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2mm;
+  border:1px dashed var(--rule);
+  background:rgba(172,183,131,.10);
+  color:var(--olive);
+  font-size:9pt;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.pf-empty-note{
+  font-size:7.4pt;
+  letter-spacing:.06em;
+  text-transform:none;
+  color:var(--terra);
+}
+.pf-strip{
+  display:flex;
+  gap:4mm;
+  height:26mm;
+  flex:0 0 auto;
+}
+.pf-strip img{
+  flex:1;
+  height:100%;
+  object-fit:cover;
+  min-width:0;
+}
+.pf-text{
+  flex:0 0 auto;
+  margin-top:8mm;
+  padding-top:5mm;
+  border-top:1px solid var(--rule);
+}
+.pf-text h2{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:20pt;
+  line-height:1.15;
+  color:var(--dark);
+}
+.pf-meta{
+  margin:2mm 0 0;
+  font-size:8pt;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--terra);
+}
+.pf-body{
+  margin:4mm 0 0;
+  font-size:9.4pt;
+  line-height:1.62;
+  color:#232323;
+  max-width:150mm;
+}
+.pf-facts{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:1.2mm 5mm;
+  margin:4mm 0 0;
+  font-size:8.4pt;
+}
+.pf-facts dt{
+  color:var(--olive);
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.pf-facts dd{margin:0;color:#232323;}
+.pf-num{
+  position:absolute;
+  right:18mm;
+  bottom:8mm;
+  font-size:7.6pt;
+  letter-spacing:.12em;
+  color:var(--muted);
+}
+
+/* ---- záverečná strana ---- */
+.pf-end{
+  padding:24mm 20mm 16mm;
+  align-items:center;
+  text-align:center;
+}
+.pf-end-mid{margin:auto 0;max-width:135mm;}
+.pf-end h2{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:28pt;
+  color:var(--dark);
+}
+.pf-end-text{
+  margin:6mm 0 0;
+  font-size:10pt;
+  line-height:1.7;
+  color:#232323;
+}
+.pf-end-contact{
+  list-style:none;
+  margin:9mm 0 0;
+  padding:6mm 0 0;
+  border-top:1px solid var(--rule);
+  font-size:10pt;
+  line-height:1.9;
+  color:var(--dark);
+}
+.pf-end-qr{width:26mm;height:26mm;}
+
+/* =========================================================
+   HLAVIČKOVÝ PAPIER
+   ========================================================= */
+.lh{padding:16mm 20mm 12mm;}
+.lh-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10mm;
+  padding-bottom:5mm;
+  border-bottom:2px solid var(--terra);
+}
+.lh-name{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:20pt;
+  line-height:1.1;
+  color:var(--dark);
+}
+.lh-role{
+  margin:1.5mm 0 0;
+  font-size:8.4pt;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+  color:var(--terra);
+}
+.lh-logo{width:20mm;}
+.lh-body{
+  flex:1;
+  margin-top:14mm;
+  font-size:10pt;
+  line-height:1.75;
+  color:#1c1c1c;
+  outline:none;
+}
+.lh-body p{margin:0 0 5mm;}
+.lh-place{color:var(--muted);font-size:9pt;}
+.lh-to{margin-bottom:10mm !important;line-height:1.6;}
+.lh-subject{font-weight:600;color:var(--dark);}
+.lh-sign{margin-top:12mm !important;}
+.lh-sign span{
+  display:inline-block;
+  margin-top:9mm;
+  font-family:var(--serif);
+  font-size:12pt;
+  color:var(--dark);
+}
+.lh-foot{
+  flex:0 0 auto;
+  display:flex;
+  justify-content:space-between;
+  gap:6mm;
+  padding-top:4mm;
+  border-top:1px solid var(--rule);
+  font-size:7.6pt;
+  letter-spacing:.08em;
+  color:var(--muted);
+}
+
+/* =========================================================
+   PROMO — ZÁLOŽKY DO KNIHY (4 × 45 × 180 mm na A4)
+   ========================================================= */
+.promo{
+  padding:12mm 6mm;
+  align-items:center;
+  justify-content:center;
+}
+.bm-row{
+  display:flex;
+  gap:6mm;
+  justify-content:center;
+}
+.bm{
+  position:relative;
+  width:45mm;
+  height:180mm;
+  flex:0 0 auto;
+  background:var(--cream);
+  border:.4pt solid var(--rule);   /* rez — pri tlači slúži ako orezová linka */
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+/* ---- predná strana ---- */
+.bm-front{background:var(--cream);}
+.bm-art{
+  width:100%;
+  height:118mm;
+  object-fit:cover;
+  object-position:52% 40%;
+  flex:0 0 auto;
+}
+.bm-front-text{
+  padding:7mm 4mm 0;
+  text-align:center;
+}
+.bm-name{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:13pt;
+  line-height:1.15;
+  color:var(--dark);
+}
+.bm-role{
+  margin:2.5mm 0 0;
+  font-size:6.2pt;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  color:var(--terra);
+}
+.bm-focus{
+  margin:auto 0 8mm;
+  text-align:center;
+  font-size:6.2pt;
+  line-height:2.0;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  color:var(--olive);
+}
+.bm-front-text::after{
+  content:"";
+  display:block;
+  width:14mm;
+  height:1.5px;
+  margin:5mm auto 0;
+  background:var(--terra);
+}
+
+/* ---- zadná strana ---- */
+.bm-back{
+  padding:10mm 6mm 9mm;
+  align-items:center;
+  text-align:center;
+}
+.bm-logo{width:16mm;margin:0 auto;}
+.bm-quote{
+  margin:auto 0;
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:10.5pt;
+  line-height:1.55;
+  color:var(--dark);
+  text-wrap:balance;
+}
+.bm-qr{
+  width:22mm;
+  height:22mm;
+  margin:0 auto 5mm;
+}
+.bm-contact{
+  list-style:none;
+  margin:0;
+  padding:4mm 0 0;
+  border-top:1px solid var(--rule);
+  width:100%;
+  font-size:6.2pt;
+  line-height:1.9;
+  letter-spacing:.02em;
+  color:var(--muted);
+}
+/* Adresa webu musí ostať na jednom riadku — zalomená v strede slova sa nedá prečítať. */
+.bm-contact li{white-space:nowrap;}
+.bm-contact li:first-child{color:var(--terra);font-weight:600;}
+.promo-note{
+  flex:0 0 auto;
+  margin:8mm 0 0;
+  font-size:7.4pt;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-align:center;
+}
+
+/* =========================================================
+   NÁSTROJOVÉ STRANY (podpis, rozcestník) — len na obrazovku
+   ========================================================= */
+.tool{
+  max-width:760px;
+  margin:0 auto;
+  padding:48px 24px 96px;
+}
+.tool h1{
+  margin:0 0 10px;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:clamp(30px,5vw,42px);
+  color:var(--dark);
+}
+.tool h2{
+  margin:44px 0 12px;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+  color:var(--olive);
+  padding-bottom:8px;
+  border-bottom:1px solid var(--rule);
+}
+.tool-lead{
+  margin:0 0 18px;
+  font-size:15px;
+  line-height:1.75;
+  color:#2b2b2b;
+}
+.tool-steps{
+  margin:0;
+  padding-left:20px;
+  font-size:15px;
+  line-height:1.9;
+  color:#2b2b2b;
+}
+.tool-steps li::marker{color:var(--terra);}
+.tool-steps em{color:var(--terra);font-style:normal;font-weight:600;}
+kbd{
+  font-family:inherit;
+  font-size:12px;
+  padding:1px 6px;
+  border:1px solid var(--rule);
+  border-bottom-width:2px;
+  border-radius:4px;
+  background:var(--cream);
+}
+.sig-preview{
+  padding:24px;
+  background:#fff;
+  border:1px solid var(--rule);
+}
+.tool-btn{
+  font-family:var(--sans);
+  font-size:13px;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:var(--cream);
+  background:#666240;
+  border:0;
+  border-radius:999px;
+  padding:14px 30px;
+  cursor:pointer;
+}
+.tool-btn:hover{background:var(--olive);}
+.tool-ok{
+  margin-left:12px;
+  font-size:12px;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:var(--terra);
+}
+.tool-code{
+  margin:0;
+  padding:18px;
+  background:#fff;
+  border:1px solid var(--rule);
+  font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size:11.5px;
+  line-height:1.7;
+  color:#2b2b2b;
+  white-space:pre-wrap;
+  word-break:break-word;
+  overflow-x:auto;
+}
+.hub{list-style:none;margin:26px 0 0;padding:0;}
+.hub li{
+  padding:22px 0;
+  border-bottom:1px solid var(--rule);
+}
+.hub li h2{
+  margin:0 0 6px;
+  padding:0;
+  border:0;
+  font-family:var(--serif);
+  font-size:22px;
+  font-weight:500;
+  letter-spacing:0;
+  text-transform:none;
+  color:var(--dark);
+}
+.hub li h2 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--terra);}
+.hub li h2 a:hover{color:var(--terra);}
+.hub li p{margin:0;font-size:14px;line-height:1.7;color:var(--muted);}
+.hub li p a{color:var(--terra);}
+.hub-h{margin-top:52px;}
+.hub-warn{
+  margin:0 0 20px;
+  padding:16px 18px;
+  border-left:3px solid var(--terra);
+  background:rgba(198,103,61,.09);
+  font-size:14px;
+  line-height:1.7;
+  color:#2b2b2b;
+}
+.hub-warn code, .tool-lead code{
+  font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size:12.5px;
+  background:var(--cream);
+  padding:1px 5px;
+  border-radius:3px;
+}
+
+/* =========================================================
+   TLAČ / EXPORT DO PDF
+   ========================================================= */
+@page{size:A4;margin:0;}
+@media print{
+  body{background:#fff;}
+  .page{
+    margin:0;
+    box-shadow:none;
+    break-after:page;
+    page-break-after:always;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+  .page:last-of-type{break-after:auto;page-break-after:auto;}
+  .tool{display:none;}
+  .lh-body{outline:none;}
+}
+
+/* =========================================================
+   MALÉ OBRAZOVKY — nech sa list nerozbije
+   ========================================================= */
+@media screen and (max-width:840px){
+  .page{
+    width:auto;
+    height:auto;
+    min-height:0;
+    margin:0 0 18px;
+    box-shadow:none;
+  }
+  .bm-row{flex-wrap:wrap;}
+  .promo{padding:14px;}
+}

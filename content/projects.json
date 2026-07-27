@@ -1,6 +1,6 @@
 {
   "_comment": "Jediný zdroj pravdy pre projekty. Po doplnení obrázkov a textov spusti: python3 build.py",
-  "_status_values": "skolsky | komercny | publikovany | koncept",
+  "_status_values": "skolsky | komercny | publikovany | realizovany | koncept",
   "_orientation_values": "portrait | landscape | square",
   "projects": [
     {
@@ -211,14 +211,14 @@
     {
       "slug": "mapa-skoly",
       "title": "Návrh mapy školy",
-      "subtitle": "Informačný dizajn a orientačný systém",
+      "subtitle": "Orientačný systém — realizovaný a vystavený v areáli PEVŠ",
       "category": "dalsia-tvorba",
       "subcategory": "informacny-dizajn",
       "featured": false,
       "order": 8,
       "year": null,
       "client": null,
-      "status": "skolsky",
+      "status": "realizovany",
       "role": null,
       "format": null,
       "software": [],

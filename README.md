@@ -62,6 +62,33 @@ To add or finish a project, edit its entry in `content/projects.json`:
 
 Images should be at least 2000 px on the long edge.
 
+## Documents (CV, sendable portfolio, letterhead, promo, signature)
+
+Everything that gets emailed or printed is generated from the same data and the
+same brand tokens as the site.
+
+```bash
+python3 build_docs.py   # regenerates the HTML pages
+node make_pdf.js        # renders them to PDF
+```
+
+| Page | PDF | What it's for |
+|---|---|---|
+| `cv.html` | `assets/cv/Viktoria-Mikuskova-CV.pdf` | One-page A4 CV |
+| `portfolio-pdf.html` | `assets/dokumenty/…-portfolio.pdf` | Portfolio to attach to an email — built from `content/projects.json` |
+| `hlavickovy-papier.html` | `assets/dokumenty/…-hlavickovy-papier.pdf` | Letterhead; the body is `contenteditable`, so the letter can be typed in the browser and printed to PDF |
+| `promo.html` | `assets/dokumenty/…-zalozky.pdf` | Promo piece — 4 bookmarks (45 × 180 mm) per A4, front and back |
+| `podpis.html` | — | Email signature plus paste instructions for Gmail and Outlook |
+| `dokumenty.html` | — | Index of all of the above. Not in the nav, `noindex`. |
+
+The site address is defined **once**, as `SITE_URL` in `build_docs.py`. Change it
+there and rerun both commands and it updates in the CV, the letterhead, the
+bookmarks, the QR code and the email signature.
+
+`/assets/cv/*` and `/assets/dokumenty/*` are served with a short cache
+(`_headers`) so an updated PDF is picked up straight away; the rest of
+`/assets/*` stays immutable for a year.
+
 ## Local preview
 
 ```bash

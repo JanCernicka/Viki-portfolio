@@ -53,6 +53,7 @@ STATUS = {
     "skolsky":    ("Školský projekt", "st-school"),
     "komercny":   ("Komerčná práca", "st-commercial"),
     "publikovany": ("Publikované", "st-published"),
+    "realizovany": ("Realizované", "st-published"),
     "koncept":    ("Koncepčný projekt", "st-concept"),
 }
 

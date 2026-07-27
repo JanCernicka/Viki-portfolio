@@ -1,0 +1,187 @@
+/* =========================================================
+   Životopis — Viktória Mikušková
+   Rovnaká identita ako portfólio: krémová, terakota, olivová,
+   Playfair Display + Montserrat. Sadzba na jednu stranu A4.
+   ========================================================= */
+:root{
+  --cream:#FBEFE3;
+  --terra:#C6673D;
+  --olive:#676340;
+  --sage:#ACB783;
+  --dark:#011126;
+  --muted:#5a5348;
+  --rule:rgba(120,105,90,.30);
+  --serif:"Playfair Display", Georgia, serif;
+  --sans:"Montserrat", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:#e7ddd2;
+  font-family:var(--sans);
+  color:#1c1c1c;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ---- list A4 ---- */
+.sheet{
+  width:210mm;
+  min-height:297mm;
+  margin:24px auto;
+  padding:15mm 14mm 12mm;
+  background:var(--cream);
+  box-shadow:0 18px 50px rgba(60,42,26,.22);
+  display:flex;
+  flex-direction:column;
+}
+
+/* ---- hlavička ---- */
+.cv-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  padding-bottom:7mm;
+  border-bottom:2px solid var(--terra);
+}
+.cv-head h1{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:31pt;
+  line-height:1.02;
+  color:var(--dark);
+  letter-spacing:.002em;
+}
+.cv-role{
+  margin:3px 0 0;
+  font-size:11pt;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--terra);
+}
+.cv-focus{
+  margin:5px 0 0;
+  font-size:8.6pt;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:var(--olive);
+}
+.cv-logo{width:24mm;height:auto;flex:0 0 auto;margin-top:1mm;}
+
+/* ---- profil ---- */
+.cv-profile{
+  margin:6mm 0 0;
+  font-size:9.4pt;
+  line-height:1.62;
+  color:#000;
+  max-width:165mm;
+}
+
+/* ---- dva stĺpce ---- */
+.cv-cols{
+  display:grid;
+  grid-template-columns:52mm 1fr;
+  gap:10mm;
+  margin-top:7mm;
+  flex:1;
+}
+
+/* ---- nadpisy sekcií ---- */
+h2{
+  margin:0 0 3.4mm;
+  font-size:8.4pt;
+  font-weight:600;
+  letter-spacing:.19em;
+  text-transform:uppercase;
+  color:var(--olive);
+  padding-bottom:1.6mm;
+  border-bottom:1px solid var(--rule);
+}
+.cv-side section{margin-bottom:7mm;}
+.cv-main section{margin-bottom:7mm;}
+
+/* ---- ľavý stĺpec ---- */
+ul.plain{list-style:none;margin:0;padding:0;}
+ul.plain li{
+  font-size:8.6pt;
+  line-height:1.55;
+  color:#232323;
+  margin-bottom:2.2mm;
+}
+ul.plain li strong{font-weight:600;color:#000;}
+ul.plain li.link{color:var(--terra);word-break:break-all;}
+
+/* ---- záznamy praxe a vzdelania ---- */
+.entry{margin-bottom:5.2mm;}
+.entry.compact{margin-bottom:3.6mm;}
+.entry-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:8px;
+}
+.entry h3{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:11pt;
+  color:var(--dark);
+  line-height:1.2;
+}
+.when{
+  font-size:7.8pt;
+  letter-spacing:.06em;
+  color:var(--muted);
+  white-space:nowrap;
+}
+.what{
+  margin:.8mm 0 1.6mm;
+  font-size:8.8pt;
+  font-style:italic;
+  color:var(--terra);
+}
+.entry ul{margin:0;padding-left:4.2mm;}
+.entry ul li{
+  font-size:8.8pt;
+  line-height:1.55;
+  color:#1c1c1c;
+  margin-bottom:1mm;
+}
+.entry ul li::marker{color:var(--sage);}
+
+/* ---- pätička ---- */
+.cv-foot{
+  margin-top:auto;
+  padding-top:4mm;
+  border-top:1px solid var(--rule);
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  font-size:7.4pt;
+  letter-spacing:.05em;
+  color:var(--muted);
+}
+
+/* ---- tlač / export do PDF ---- */
+@page{size:A4;margin:0;}
+@media print{
+  body{background:#fff;}
+  .sheet{
+    width:210mm;
+    min-height:297mm;
+    margin:0;
+    box-shadow:none;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+}
+
+/* ---- na malých obrazovkách nech sa list nerozbije ---- */
+@media screen and (max-width:820px){
+  .sheet{width:auto;min-height:0;margin:0;padding:22px 18px;box-shadow:none;}
+  .cv-cols{grid-template-columns:1fr;gap:0;}
+  .cv-head h1{font-size:26pt;}
+  .cv-logo{width:18mm;}
+}
