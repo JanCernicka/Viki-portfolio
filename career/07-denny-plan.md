@@ -6,6 +6,20 @@ a spraviť dnes.*
 
 ---
 
+## Ako čítať tento súbor
+
+Tri veci, ktoré treba vedieť skôr, než sa začneš pýtať, čo znamená čo:
+
+1. **Písmená A až L sú hotové e-maily.** Sú v súbore `06-plan-oslovenia.md`.
+   Keď tu píše *„pusti správu A"*, znamená to: otvor bod 5, nájdi časť **A**,
+   skopíruj text, vyplň hranaté zátvorky, odošli.
+2. **Týždeň 0 je príprava a neposielaš v ňom nikomu nič.** Prvý e-mail odchádza
+   až v pondelok týždňa 1.
+3. **Týždne nemusia začať budúci pondelok.** Začni týždeň 0 vtedy, keď sa
+   dostaneš k domácemu počítaču. Kým nemáš obrázky, plán nebeží.
+
+---
+
 ## Režim, na ktorom to celé stojí
 
 Kniha ponúka dva režimy a odporúča ten prvý, lebo v ňom sa nezasekneš:
@@ -40,15 +54,81 @@ predstavenia niekomu, koho obdivuješ, a potom zistiť, že máš medzi zubami
 špenát."*
 
 ### Pondelok — obrázky (90 min)
-Sadni si k domácemu počítaču a vyexportuj práce. Dlhšia strana aspoň 2000 px,
-JPG. Pomenuj podľa projektu. Toto je jediná úloha, ktorá blokuje všetko
-ostatné.
 
-Poradie podľa dôležitosti: **päť obálok Alice** → bakalárka (kníhkupectvo)
-→ charaktery z Turecka → plagáty k filmom → packaging → MOJESIDLO →
-SHAPELESAI → portréty psov → mapa školy → kaviareň.
+**Čo je cieľom dňa:** mať v jednom priečinku obrázky svojich prác vo formáte
+JPG, dosť veľké na to, aby sa dali dať na web aj do PDF, a pomenované tak, aby
+sa dali priradiť k projektom. Nič viac.
 
-Pošli mi ich. Nahodím ich na web a do oboch PDF portfólií.
+**Čo na to potrebuješ:** domáci počítač, kde máš zdrojové súbory (InDesign,
+Illustrator, Photoshop, alebo len hotové obrázky).
+
+---
+
+#### 1. Založ si priečinok
+
+Na ploche si sprav priečinok `portfolio-obrazky`. Do neho ide všetko.
+
+#### 2. Z každého projektu urob JPG
+
+Ak už máš hotové JPG alebo PNG a sú veľké, **preskoč tento krok** a len ich
+skopíruj do priečinka. Nemusíš nič exportovať nanovo.
+
+Ak máš len zdrojové súbory, exportuj takto:
+
+| Program | Kde to je | Čo nastaviť |
+|---|---|---|
+| **InDesign** | Súbor → Exportovať → formát **JPEG** | Rozsah *Všetko*, Kvalita **Maximum**, Rozlíšenie **300** |
+| **Illustrator** | Súbor → Exportovať → Exportovať ako → **JPEG** | Rozlíšenie **High (300 dpi)** |
+| **Photoshop** | Súbor → Uložiť kópiu → **JPEG** | Kvalita **10 – 12** |
+
+**Prečo 300:** pri tomto nastavení vyjde obálka veľkosti A5 asi 1750 × 2480
+bodov. To je dosť na web aj na tlač. Menšie neposielaj — zväčšiť sa to už nedá.
+
+**Ako si overíš, že je obrázok dosť veľký:** klikni naň pravým tlačidlom →
+*Vlastnosti* (Windows) alebo *Informácie* (Mac). Hľadáš rozmery v bodoch.
+**Dlhšie z tých dvoch čísel má byť aspoň 2000.**
+
+#### 3. Pomenuj súbory
+
+Toto je dôležité, lebo podľa mien ich priradím k projektom na webe. Použi
+presne tieto názvy, len číslo meň:
+
+| Projekt | Názvy súborov | Koľko obrázkov |
+|---|---|---|
+| Alica v krajine zázrakov | `alica-1.jpg` … `alica-5.jpg` | 5 — jedna za každý žáner |
+| Značka pre kníhkupectvo (bakalárka) | `knihkupectvo-1.jpg` … | 3 – 6 |
+| Návrh charakterov (Turecko) | `charaktery-1.jpg` … | 3 – 6 |
+| Plagáty k školským filmom | `plagaty-1.jpg` … | 2 – 4 |
+| Obaly a packaging | `packaging-1.jpg` … | 2 – 4 |
+| MOJESIDLO | `mojesidlo-1.jpg` … | 2 — vybraný príspevok + screenshot profilu |
+| SHAPELESAI | `shapelesai-1.jpg` … | 2 – 4 |
+| Portréty psov | `psy-1.jpg`, `psy-2.jpg` | 2 |
+| Mapa školy | `mapa-1.jpg` … | 1 – 3 |
+| Kaviareň v Turecku | `kaviaren-1.jpg` … | 2 – 4 |
+
+**Číslo 1 je vždy ten najlepší obrázok z projektu**, lebo z neho bude náhľad
+na webe a veľká strana v PDF. Ostatné idú pod neho.
+
+#### 4. Ak máš mockupy, pošli oboje
+
+Ak máš obálku aj ako plochý návrh, aj ako mockup (obálka nasadená na knihe),
+pošli obe. Mockup daj ako číslo 1, plochý návrh ako číslo 2. Kniha na fotke
+vyzerá ako hotová vec, plochý návrh ako súbor.
+
+#### 5. Pošli mi to
+
+Označ celý priečinok → pravé tlačidlo → *Komprimovať* / *Odoslať do →
+Komprimovaný priečinok*. Vznikne jeden `.zip` a ten mi pošli sem do chatu.
+Ak by bol priveľký, nahraj ho na Google Disk a pošli mi odkaz.
+
+---
+
+> **Nemusíš to mať celé v pondelok.** Ak stihneš len **päť obálok Alice**,
+> pošli ich a máme hotovú najdôležitejšiu tretinu — je to tvoja diplomovka
+> a v knižnej verzii portfólia stojí na prvej strane. Zvyšok doplň cez týždeň.
+>
+> Čokoľvek mi pošleš, doplním na web aj do oboch PDF portfólií a poviem ti,
+> čo ešte chýba.
 
 ### Utorok — LinkedIn, deň 1 (40 min)
 Kniha má na zakladanie profilu trojdňový postup. Nerob to celé naraz, druhý
@@ -134,6 +214,22 @@ zátvorky. **Neposielaj ich.** Nechaj ich v konceptoch.
 ---
 
 # TÝŽDEŇ 1 — Re-RO. Ľudia, ktorí ťa poznajú.
+
+**Pondelok krok po kroku**, nech je jasné, čo tých desať minút znamená:
+
+1. Otvor `06-plan-oslovenia.md`, časť **A** — *Re-RO, učiteľ zo SOŠ
+   polygrafickej*.
+2. Skopíruj text do nového e-mailu.
+3. Vyplň hranaté zátvorky: meno učiteľa a **tú konkrétnu vec**, ktorú ťa
+   naučil.
+4. E-mail učiteľa nájdeš na stránke školy v sekcii *Kontakty* alebo
+   *Zamestnanci*.
+5. Prečítaj si to nahlas. Ak by si to nevedela nadiktovať do odkazovača, je to
+   pridlhé.
+6. **Adresáta doplň až úplne nakoniec**, keď je e-mail hotový. Inak raz
+   odošleš polovicu.
+7. Odošli medzi 9:30 a 10:30.
+8. Zapíš riadok do tabuľky.
 
 | Deň | Čo urobíš | Min |
 |---|---|---|
