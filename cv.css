@@ -29,7 +29,7 @@ body{
   width:210mm;
   min-height:297mm;
   margin:24px auto;
-  padding:15mm 14mm 12mm;
+  padding:15mm 14mm 10mm;
   background:var(--cream);
   box-shadow:0 18px 50px rgba(60,42,26,.22);
   display:flex;
@@ -42,7 +42,7 @@ body{
   align-items:flex-start;
   justify-content:space-between;
   gap:16px;
-  padding-bottom:7mm;
+  padding-bottom:6mm;
   border-bottom:2px solid var(--terra);
 }
 .cv-head h1{
@@ -68,11 +68,20 @@ body{
   text-transform:uppercase;
   color:var(--olive);
 }
-.cv-logo{width:24mm;height:auto;flex:0 0 auto;margin-top:1mm;}
+/* Fotka. Na Slovensku ju zamestnávatelia očakávajú — a táto je už v identite
+   webu (akvarelová podmaľba), takže robí dve veci naraz. */
+.cv-photo{
+  width:27mm;
+  height:34mm;
+  flex:0 0 auto;
+  margin-top:1mm;
+  object-fit:cover;
+  border-radius:2mm;
+}
 
 /* ---- profil ---- */
 .cv-profile{
-  margin:6mm 0 0;
+  margin:5mm 0 0;
   font-size:9.4pt;
   line-height:1.62;
   color:#000;
@@ -84,7 +93,7 @@ body{
   display:grid;
   grid-template-columns:52mm 1fr;
   gap:10mm;
-  margin-top:7mm;
+  margin-top:6mm;
   flex:1;
 }
 
@@ -99,19 +108,22 @@ h2{
   padding-bottom:1.6mm;
   border-bottom:1px solid var(--rule);
 }
-.cv-side section{margin-bottom:7mm;}
+.cv-side section{margin-bottom:5.4mm;}
 .cv-main section{margin-bottom:7mm;}
 
 /* ---- ľavý stĺpec ---- */
 ul.plain{list-style:none;margin:0;padding:0;}
 ul.plain li{
   font-size:8.6pt;
-  line-height:1.55;
+  line-height:1.5;
   color:#232323;
-  margin-bottom:2.2mm;
+  margin-bottom:1.7mm;
 }
 ul.plain li strong{font-weight:600;color:#000;}
-ul.plain li.link{color:var(--terra);word-break:break-all;}
+ul.plain li.link{word-break:break-all;}
+/* Kontakty sú v PDF klikateľné, ale nesmú vyzerať ako odkazy na webe. */
+ul.plain li a{color:inherit;text-decoration:none;}
+ul.plain li.link a{color:var(--terra);}
 
 /* ---- záznamy praxe a vzdelania ---- */
 .entry{margin-bottom:5.2mm;}
@@ -150,6 +162,11 @@ ul.plain li.link{color:var(--terra);word-break:break-all;}
   margin-bottom:1mm;
 }
 .entry ul li::marker{color:var(--sage);}
+/* Realizované práce sa odlíšia kurzívou a olivovou — tučné čierne kričalo. */
+.entry ul li em.note{
+  font-style:italic;
+  color:var(--olive);
+}
 
 /* ---- pätička ---- */
 .cv-foot{
@@ -157,12 +174,14 @@ ul.plain li.link{color:var(--terra);word-break:break-all;}
   padding-top:4mm;
   border-top:1px solid var(--rule);
   display:flex;
+  align-items:center;
   justify-content:space-between;
   gap:10px;
   font-size:7.4pt;
   letter-spacing:.05em;
   color:var(--muted);
 }
+.cv-mark{width:9mm;height:auto;flex:0 0 auto;}
 
 /* ---- tlač / export do PDF ---- */
 @page{size:A4;margin:0;}
@@ -183,5 +202,5 @@ ul.plain li.link{color:var(--terra);word-break:break-all;}
   .sheet{width:auto;min-height:0;margin:0;padding:22px 18px;box-shadow:none;}
   .cv-cols{grid-template-columns:1fr;gap:0;}
   .cv-head h1{font-size:26pt;}
-  .cv-logo{width:18mm;}
+  .cv-photo{width:22mm;height:28mm;}
 }

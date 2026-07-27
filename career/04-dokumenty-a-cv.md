@@ -28,6 +28,43 @@ ho neindexujú, je pracovný.
 
 ## 1. Životopis
 
+### Fotka v CV — mala si pravdu, ja som sa mýlil
+
+Pýtala si sa, či dať do CV fotku, a chcela si, aby som sa riadil knihou.
+Tak to spravme poriadne.
+
+Fig Taylorová fotku v CV **neodporúča**. Lenže tá kniha je písaná pre britský
+trh a dôvod je právny, nie estetický: vo Veľkej Británii a v USA fotka
+v životopise otvára otázku diskriminácie pri výbere, takže ju firmy nechcú
+dostávať a časť CV s fotkou rovno vyradí.
+
+**Na Slovensku to platí presne naopak.** Tu — rovnako ako v Česku, Rakúsku
+a Nemecku — je fotka v CV bežná a jej absencia skôr zaráža. A tá istá kniha má
+nad všetkými radami jedno hlavné pravidlo: *prispôsob sa trhu, do ktorého sa
+hlásiš.* Ak ho aplikujem správne, vychádza z neho fotka. Ty ideš do slovenského
+vydavateľstva, nie do londýnskej agentúry.
+
+Takže: **fotku dnu, a tvoj inštinkt bol lepší než moja prvá odpoveď.**
+
+Použil som tvoj portrét z webu — ten s akvarelovou podmaľbou. Robí dve veci
+naraz: je to skutočná fotka tváre (čo personalista chce) a zároveň nesie tvoju
+vizuálnu identitu, takže CV a web vyzerajú ako jedna vec. Orezal som ju na tvár
+a ramená a skomprimoval — pôvodný súbor mal 1,2 MB a nafúkol PDF na 1,8 MB, čo
+je na prílohu do e-mailu priveľa. Teraz má fotka 69 kB a celé CV 358 kB.
+
+### AI nástroje — pridal som ich, ale zmenil som rámovanie
+
+Máš pravdu, že to firmy dnes chcú, a je to tvoje rozhodnutie. Sú v sekcii
+Zručnosti: *„Práca s AI nástrojmi — Midjourney, Firefly, ChatGPT."*
+
+Jedna vec k formulácii, nie k obsahu: napísal som **„práca s AI nástrojmi"**,
+nie holý zoznam programov. Rozdiel je v tom, čo si z toho prečíta redaktor
+vo vydavateľstve, kde platia ilustrátorov a riešia autorské práva. „Midjourney,
+Firefly" samo o sebe znie ako *namiesto kreslenia*; „práca s AI nástrojmi" znie
+ako *okrem kreslenia*. Preto som zároveň o riadok vyššie pridal **„Ilustrácia
+a kresba postáv"** — nech je jasné, že vieš aj kresliť rukou. Keby si to chcela
+inak, je to jeden riadok.
+
 ### Čo som zmenil oproti tvojmu doterajšiemu CV a prečo
 
 **Vyhodil som ukazovatele zručností (tie pruhy s percentami).**
@@ -74,15 +111,29 @@ schvaľovanie až do výroby. Preto je v CV tučným.
 Toto je pri grafickom dizajnérovi citlivé. Kto sadzí knihy, nesmie posielať CV
 s preklepom — je to prvá ukážka tvojej práce s textom, ktorú človek uvidí.
 
-### Čo mi musíš potvrdiť
+### Ďalšie úpravy podľa tvojich pripomienok
 
-> **Bc. alebo Mgr.?**
->
-> V tvojom CV je **Bc. Viktória Mikušková**. Na webe v sekcii O MNE máš
-> „úspešne ukončené magisterské štúdium". Magisterské štúdium máš v CV uvedené
-> ako **2024 — 2026** a dnes je júl 2026, takže Mgr. dáva zmysel — a tak som to
-> aj napísal. **Ale potvrď mi to.** Ak titul ešte nemáš, treba to zmeniť na webe
-> aj v CV, lebo nesedieť si v tomto je horšie než nemať titul vôbec.
+**Titul Mgr.** — potvrdený, je v hlavičke aj na hlavičkovom papieri a
+v e-mailovom podpise. Na obálke portfólia a na záložke zámerne nie je: portfólio
+nie je úradný dokument a titul tam pôsobí ťažkopádne.
+
+**Mapa školy už nekričí.** Bola tučná čierna, teraz je kurzívou v olivovej —
+v tej istej farbe ako nadpisy sekcií. Oko ju nájde, ale neprebíja meno
+zamestnávateľa nad ňou.
+
+**Kontakty sú klikateľné.** Telefón otvára vytáčanie (`tel:`), e-mail otvára
+novú správu (`mailto:`), web otvára portfólio. Overil som, že odkazy v PDF
+naozaj sú — nie je to len farebný text.
+
+**Hlavička je širšia.** Teraz je tam *Grafická dizajnérka a ilustrátorka*
+a pod tým *knižný dizajn · sadzba · ilustrácia · vizuálna identita*. To isté
+je aj na hlavičkovom papieri a v e-mailovom podpise, aby sa dalo hlásiť aj
+na pozície grafika a ilustrátora, nielen na knižný dizajn.
+
+**Celé to ostalo na jednej strane A4.** Po pridaní fotky a dvoch riadkov
+zručností to pretieklo na druhú stranu o 0,9 mm; stiahol som riadkovanie
+v ľavom stĺpci a okraje. Zmeral som to — 297,1 mm obsahu na 297 mm papiera,
+jedna strana.
 
 ### Čo v CV ešte chýba a musíš doplniť ty
 
@@ -153,8 +204,12 @@ kníhkupectvo. Takže to nie je náhodný nápad — nadväzuje to na to, čo u�
 kriedka. Predná strana ilustrácia + meno + zameranie, zadná citát, QR kód na web
 a kontakt. Rámček okolo každej záložky je orezová linka.
 
-Vytlačiť si to vieš aj v bežnej tlačiarni; ak chceš, aby to vyzeralo, spýtaj sa
-v tlačiarni na 300 g matnú kriedku a orežú ti to.
+> **Tento dizajn ide preč.** Povedala si, že záložky zatiaľ netreba a že keď raz
+> budú, chceš iný dizajn. V poriadku — čo ostáva, je **mechanika**: formát,
+> rozloženie štyroch kusov na A4, orezové linky, obojstranná tlač a QR kód. To
+> je tá otravná časť a je hotová. Nový dizajn sa doň vloží a PDF vypadne samo.
+>
+> Má to zmysel robiť až po novom logu — inak by sa to robilo dvakrát.
 
 ---
 
@@ -174,33 +229,53 @@ aj s tlačidlom, ktoré podpis skopíruje aj s formátovaním.
 
 ## Dve veci, ktoré musíš urobiť ty
 
-### A) Prepnúť viktoriamikuskova.com na nový web — **toto je priorita**
+### A) Prepnúť viktoriamikuskova.com na nový web — **toto je teraz blokujúce**
 
-Overil som to dnes: **`viktoriamikuskova.com` stále ukazuje na starý web.**
-Nové portfólio beží len na `viktoria-mikuskova.pages.dev`.
+Chcela si v CV `.com`, tak tam `.com` je — v CV, na hlavičkovom papieri,
+v e-mailovom podpise aj v QR kóde. **Ale musí sa prepnúť skôr, než niečo z toho
+odošleš.**
 
-To znamená, že tvoja vlastná doména dnes vedie na stránku, ktorá podľa auditu
-z bodu 3 dostala 4 z 29 bodov — je to ponuka služieb, nie portfólio. Ak dáš
-`viktoriamikuskova.com` na CV a niekto to otvorí, uvidí presne tú verziu, ktorú
-sme sa rozhodli nahradiť.
+Čo som overil priamo cez Cloudflare API, nie od oka:
 
-Preto som **do všetkých dokumentov dal zatiaľ `viktoria-mikuskova.pages.dev`.**
-Nie je to pekná adresa, ale vedie na správny web. Vlastná doména, ktorá vedie na
-zlý web, je horšia než škaredá adresa, ktorá vedie na dobrý.
+- Pages projekt `viktoria-mikuskova` **nemá priradenú žiadnu vlastnú doménu**.
+- Doména `viktoriamikuskova.com` **nie je v tomto Cloudflare účte** ako zóna.
 
-**Čo s tým:** v Cloudflare treba doménu `viktoriamikuskova.com` priradiť
-k tomuto Pages projektu (*Workers & Pages → projekt → Custom domains → Set up
-a custom domain*). Ak chceš, prejdem to s tebou krok po kroku — potrebujem od
-teba len povedať, že to máme spraviť.
+Z toho vyplýva, že DNS domény sedí ešte u pôvodného poskytovateľa (u toho, kde
+beží starý web) a **ja to prepnúť nemôžem** — nemám k tomu prístup a je to
+zásah do tvojej živej domény, ktorý by som ti aj tak najprv predložil.
 
-Keď sa to prepne, ja zmením **jeden riadok** (`SITE_URL` v `build_docs.py`)
-a adresa sa sama opraví v CV, na hlavičkovom papieri, na záložkách, v QR kóde
-aj v e-mailovom podpise. Otestoval som to oboma smermi.
+Dnes teda `viktoriamikuskova.com` vedie na stránku, ktorá podľa auditu z bodu 3
+dostala 4 z 29 bodov. Kým sa to nezmení, CV posiela človeka na starý web.
+
+**Ako to prepnúť:**
+
+1. V Cloudflare: *Workers & Pages → viktoria-mikuskova → Custom domains →
+   Set up a custom domain* → zadaj `viktoriamikuskova.com`.
+2. Cloudflare ti ukáže, aký DNS záznam treba nastaviť. Keďže doména nie je
+   v tomto účte, budeš ho musieť pridať tam, kde ti dnes doména beží —
+   `CNAME` na `viktoria-mikuskova.pages.dev`.
+3. Ak chceš, celý web presuň pod Cloudflare (*Add a domain*) — potom sa to
+   nastaví samo a odpadne ti starý hosting.
+
+Pozor na jednu vec: **po prepnutí starý web zmizne.** To je zámer, ale ak zaň
+ešte platíš, vieš potom zrušiť predplatné.
+
+Napíš mi, keď to bude prepnuté — overím, že doména naozaj servíruje nový web,
+a preexportujem PDF-ká.
 
 ### B) Poslať mi obrázky projektov
 
 Bez nich je posielateľné portfólio prázdne a web má rámčeky namiesto práce.
-Toto je jediná vec, ktorá dnes blokuje všetko ostatné.
+
+### C) Nové logo
+
+Keď ho pošleš, prepíšem ním `assets/images/logo.png` — a to je celé. Nové logo
+sa objaví naraz na webe, v pätičke CV, na hlavičkovom papieri, na záložkách
+a aj ako ikona v záložkách prehliadača. Je to jeden súbor na jednom mieste,
+schválne.
+
+Ideálne vo formáte PNG s priehľadným pozadím, aspoň 1000 px na dlhšej strane.
+Ak máš aj vektor (SVG alebo AI), pošli oboje — vektor sa zíde do tlače.
 
 ---
 

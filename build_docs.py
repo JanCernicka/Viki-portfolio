@@ -27,12 +27,16 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 # nové portfólio, prepíš SITE_URL, spusti build_docs.py a node make_pdf.js —
 # adresa sa zmení v CV, na hlavičkovom papieri, v podpise aj na záložkách.
 # ---------------------------------------------------------------------------
-SITE_URL = "viktoria-mikuskova.pages.dev"
+SITE_URL = "viktoriamikuskova.com"
 SITE_HREF = "https://" + SITE_URL
 
 NAME = "Viktória Mikušková"
-ROLE = "Grafická dizajnérka"
-FOCUS = "knižný dizajn · sadzba · vizuálna identita"
+# Na úradný list a do podpisu patrí titul; na obálku portfólia a na záložku nie.
+NAME_FORMAL = "Mgr. Viktória Mikušková"
+ROLE = "Grafická dizajnérka a ilustrátorka"
+# Na záložku sa dlhý titulok nezmestí — 45 mm šírky neuživí dva riadky verzálok.
+ROLE_SHORT = "Grafická dizajnérka"
+FOCUS = "knižný dizajn · sadzba · ilustrácia · vizuálna identita"
 PHONE = "0917 749 871"
 PHONE_TEL = "0917749871"
 EMAIL = "viki.mikuskova@gmail.com"
@@ -214,7 +218,7 @@ def build_letterhead():
   <section class="page lh">
     <header class="lh-head">
       <div>
-        <p class="lh-name">{esc(NAME)}</p>
+        <p class="lh-name">{esc(NAME_FORMAL)}</p>
         <p class="lh-role">{esc(ROLE)}</p>
       </div>
       <img class="lh-logo" src="assets/images/logo.png" alt="">
@@ -238,7 +242,7 @@ def build_letterhead():
         text je editovateľný. Keď je hotový, dај Ctrl+P → Uložiť ako PDF.]
       </p>
 
-      <p class="lh-sign">S pozdravom<br><span>{esc(NAME)}</span></p>
+      <p class="lh-sign">S pozdravom<br><span>{esc(NAME_FORMAL)}</span></p>
     </div>
 
     <footer class="lh-foot">
@@ -266,9 +270,9 @@ def bookmark_front():
         <img class="bm-art" src="assets/images/hero-illustration.jpg" alt="">
         <div class="bm-front-text">
           <p class="bm-name">{esc(NAME)}</p>
-          <p class="bm-role">{esc(ROLE)}</p>
+          <p class="bm-role">{esc(ROLE_SHORT)}</p>
         </div>
-        <p class="bm-focus">knižný dizajn<br>sadzba<br>vizuálna identita</p>
+        <p class="bm-focus">knižný dizajn<br>ilustrácia<br>vizuálna identita</p>
       </div>'''
 
 
@@ -317,7 +321,7 @@ def signature_markup():
     return f'''<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">
 <tr>
 <td style="border-left:3px solid #C6673D;padding:2px 0 2px 12px;">
-<div style="font-size:15px;font-weight:bold;color:#011126;line-height:1.3;">{NAME}</div>
+<div style="font-size:15px;font-weight:bold;color:#011126;line-height:1.3;">{NAME_FORMAL}</div>
 <div style="font-size:12px;color:#C6673D;letter-spacing:.06em;padding-top:2px;">{ROLE.upper()}</div>
 <div style="font-size:11px;color:#676340;padding-top:1px;">knižný dizajn &middot; sadzba &middot; vizuálna identita</div>
 <div style="font-size:12px;color:#333333;padding-top:8px;line-height:1.6;">
@@ -471,15 +475,30 @@ def build_hub(missing):
            <a href="assets/dokumenty/Viktoria-Mikuskova-hlavickovy-papier.pdf" download>Stiahnuť PDF</a></p>
       </li>
       <li>
-        <h2><a href="promo.html">Promo kus — záložky</a></h2>
-        <p>Štyri záložky do knihy na jednom A4. Necháš ich po pohovore alebo
-           priložíš k zásielke.
+        <h2><a href="promo.html">Promo kus — záložky</a> <span class="tag">na prepracovanie</span></h2>
+        <p>Štyri záložky do knihy na jednom A4. Formát a mechanika sedia, ale
+           dizajn ide preč a urobí sa nanovo — zatiaľ ich netlač.
            <a href="assets/dokumenty/Viktoria-Mikuskova-zalozky.pdf" download>Stiahnuť PDF</a></p>
       </li>
       <li>
         <h2><a href="podpis.html">E-mailový podpis</a></h2>
         <p>Aj s návodom, ako ho vložiť do Gmailu a Outlooku.</p>
       </li>
+    </ul>
+
+    <h2 class="hub-h">Čaká sa na</h2>
+    <ul class="hub-todo">
+      <li><strong>Nové logo.</strong> Všetko ho ťahá z jedného súboru —
+          <code>assets/images/logo.png</code>. Keď ho prepíšeš novým a spustíš
+          príkazy nižšie, vymení sa naraz na webe, v CV, na hlavičkovom papieri,
+          na záložkách aj vo favicone.</li>
+      <li><strong>Nový dizajn záložiek.</strong> Formát 45 × 180 mm a tlačová
+          príprava sú hotové, mení sa len obsah rámčeka.</li>
+      <li><strong>Prepnutie domény.</strong> Dokumenty už uvádzajú
+          <code>viktoriamikuskova.com</code> — kým doména vedie na starý web,
+          neposielaj ich.</li>
+      <li><strong>Obrázky projektov.</strong> Bez nich je posielateľné portfólio
+          prázdne.</li>
     </ul>
 
     <h2 class="hub-h">Keď sa niečo zmení</h2>
