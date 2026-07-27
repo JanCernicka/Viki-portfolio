@@ -28,20 +28,20 @@ CATEGORIES = {
         "title": "Knižný dizajn",
         "lead": "Obálky, sadzba a propagácia kníh — od žánrovej analýzy po hotovú tlačovú predlohu.",
         "groups": [
-            ("obalky", "Obálky kníh"),
-            ("sadzba", "Sadzba a dvojstrany"),
-            ("propagacia", "Plagáty a propagácia"),
+            ("obalky", "Obálky kníh", "Obálky"),
+            ("sadzba", "Sadzba a dvojstrany", "Sadzba"),
+            ("propagacia", "Plagáty a propagácia", "Propagácia"),
         ],
     },
     "dalsia-tvorba": {
         "title": "Ďalšia tvorba",
         "lead": "Branding, ilustrácia, informačný dizajn a marketingové vizuály.",
         "groups": [
-            ("branding", "Branding a vizuálna identita"),
-            ("informacny-dizajn", "Informačný dizajn"),
-            ("ilustracia", "Ilustrácia"),
-            ("uiux", "UI/UX dizajn"),
-            ("marketing", "Marketing a sociálne siete"),
+            ("branding", "Branding a vizuálna identita", "Branding"),
+            ("informacny-dizajn", "Informačný dizajn", "Informačný dizajn"),
+            ("ilustracia", "Ilustrácia", "Ilustrácie"),
+            ("uiux", "UI/UX dizajn", "UI/UX dizajn"),
+            ("marketing", "Marketing a sociálne siete", "Marketing"),
         ],
     },
 }
@@ -83,10 +83,30 @@ def head(title, description, depth=0):
 '''
 
 
-def header(active, depth=0):
+def header(active, depth=0, projects=None):
     up = "../" * depth
     def cls(name):
         return ' class="active"' if name == active else ""
+
+    # Rozbaľovacie menu pre Ďalšiu tvorbu — len disciplíny, ktoré majú projekt.
+    # Nová disciplína sa objaví automaticky, len čo k nej priradíš projekt.
+    projects = projects or []
+    used = {p.get("subcategory") for p in projects if p.get("category") == "dalsia-tvorba"}
+    items = "".join(
+        f'          <a href="{up}dalsia-tvorba.html#{slug}">{label}</a>\n'
+        for slug, _h, label in CATEGORIES["dalsia-tvorba"]["groups"] if slug in used
+    )
+    if items:
+        dalsia = f'''<div class="nav-dropdown">
+        <a href="{up}dalsia-tvorba.html" class="has-caret{' active' if active == 'dalsia-tvorba' else ''}">ĎALŠIA TVORBA
+          {CARET}
+        </a>
+        <div class="dropdown-menu">
+{items}        </div>
+      </div>'''
+    else:
+        dalsia = f'<a href="{up}dalsia-tvorba.html"{cls("dalsia-tvorba")}>ĎALŠIA TVORBA</a>'
+
     return f'''
 <header class="site-header" id="domov">
   <div class="container header-inner">
@@ -99,7 +119,7 @@ def header(active, depth=0):
     <nav class="main-nav">
       <a href="{up}index.html"{cls('domov')}>DOMOV</a>
       <a href="{up}knizny-dizajn.html"{cls('knizny-dizajn')}>KNIŽNÝ DIZAJN</a>
-      <a href="{up}dalsia-tvorba.html"{cls('dalsia-tvorba')}>ĎALŠIA TVORBA</a>
+      {dalsia}
       <a href="{up}index.html#o-mne">O MNE</a>
       <a href="{up}index.html#kontakt">KONTAKT</a>
     </nav>
@@ -192,7 +212,7 @@ def build_index(projects, about_html):
 
     html = head(f"{SITE_NAME} — {TAGLINE}",
                 "Mgr. Viktória Mikušková — grafická dizajnérka z Bratislavy so zameraním na knižný dizajn: obálky, sadzba a propagácia kníh.")
-    html += header("domov")
+    html += header("domov", projects=projects)
     html += '''
 <!-- ================= HERO ================= -->
 <section class="hero">
@@ -276,7 +296,7 @@ def build_category(key, projects):
                   key=lambda p: p.get("order") or 999)
 
     html = head(f"{cat['title']} — {SITE_NAME}", f"{cat['title']} — {cat['lead']}")
-    html += header(key)
+    html += header(key, projects=projects)
     html += f'''
 <main>
   <section class="cat-hero">
@@ -294,12 +314,12 @@ def build_category(key, projects):
     </div>
   </section>
 '''
-    for slug, label in cat["groups"]:
+    for slug, label, _short in cat["groups"]:
         group = [p for p in mine if p.get("subcategory") == slug]
         if not group:
             continue
         html += f'''
-  <section class="cat-projects">
+  <section class="cat-projects" id="{slug}">
     <div class="container">
       <div class="cat-projects-head">
         <p class="eyebrow eyebrow-olive">{esc(label)}</p>
@@ -355,7 +375,7 @@ def build_project(p, projects):
 
     desc = p.get("subtitle") or f"{p['title']} — {cat['title']}"
     html = head(f"{p['title']} — {SITE_NAME}", desc, depth=1)
-    html += header(p["category"], depth=1)
+    html += header(p["category"], depth=1, projects=projects)
 
     html += f'''
 <main class="case-study">
