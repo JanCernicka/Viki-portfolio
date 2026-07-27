@@ -27,7 +27,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 # nové portfólio, prepíš SITE_URL, spusti build_docs.py a node make_pdf.js —
 # adresa sa zmení v CV, na hlavičkovom papieri, v podpise aj na záložkách.
 # ---------------------------------------------------------------------------
-SITE_URL = "viktoriamikuskova.com"
+SITE_URL = "viktoria-mikuskova.pages.dev"
 SITE_HREF = "https://" + SITE_URL
 
 NAME = "Viktória Mikušková"

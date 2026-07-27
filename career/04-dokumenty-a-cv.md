@@ -46,11 +46,12 @@ vydavateľstva, nie do londýnskej agentúry.
 
 Takže: **fotku dnu, a tvoj inštinkt bol lepší než moja prvá odpoveď.**
 
-Použil som tvoj portrét z webu — ten s akvarelovou podmaľbou. Robí dve veci
-naraz: je to skutočná fotka tváre (čo personalista chce) a zároveň nesie tvoju
-vizuálnu identitu, takže CV a web vyzerajú ako jedna vec. Orezal som ju na tvár
-a ramená a skomprimoval — pôvodný súbor mal 1,2 MB a nafúkol PDF na 1,8 MB, čo
-je na prílohu do e-mailu priveľa. Teraz má fotka 69 kB a celé CV 358 kB.
+Použitá je tvoja fotka z pôvodného CV, ktorú si poslala. Vytiahol som ju priamo
+z toho PDF, orezal na pomer rámčeka (27 × 34 mm) a výrez posunul za tvárou, nie
+za stredom obrázka. **Farebne som do nej nezasahoval.** Zvažoval som, či sivé
+pozadie zladiť s krémovým papierom, ale to sa pri vlasoch nedá spraviť bez
+viditeľného lemu a neutrálne sivé pozadie je na životopise úplne bežné. Ak by si
+ho chcela teplejšie, dá sa to, len to treba spraviť poriadne a nie automaticky.
 
 ### AI nástroje — pridal som ich, ale zmenil som rámovanie
 
@@ -129,6 +130,20 @@ naozaj sú — nie je to len farebný text.
 a pod tým *knižný dizajn · sadzba · ilustrácia · vizuálna identita*. To isté
 je aj na hlavičkovom papieri a v e-mailovom podpise, aby sa dalo hlásiť aj
 na pozície grafika a ilustrátora, nielen na knižný dizajn.
+
+**Hlavička už nie je zlepená.** Meno, podnadpis aj riadok so zameraním majú
+riadkovanie 1,5. Na výšku strany to nemalo vplyv, lebo výšku hlavičky určuje
+fotka, nie text.
+
+**Opis bez pomlčiek.** Odsek pod hlavičkou je prepísaný tak, aby v ňom nebola
+ani jedna pomlčka. Pri tom sa opravila aj gramatická chyba, ktorá tam bola
+predtým: *„ktorá text nesie a nie prekrýva"* je teraz *„ktorá text nesie
+a neprekrýva"*.
+
+Pomlčky ostali v zoznamoch (*InDesign — sadzba*, *Angličtina — B2*,
+*2024 — 2026*). Tam nefungujú ako interpunkcia, ale ako oddeľovač dvoch stĺpcov
+informácie a nahradiť sa dajú len dvojbodkou alebo tabulátorom. Ak ich tam
+nechceš, povedz a prerobím to.
 
 **Celé to ostalo na jednej strane A4.** Po pridaní fotky a dvoch riadkov
 zručností to pretieklo na druhú stranu o 0,9 mm; stiahol som riadkovanie
@@ -229,11 +244,10 @@ aj s tlačidlom, ktoré podpis skopíruje aj s formátovaním.
 
 ## Dve veci, ktoré musíš urobiť ty
 
-### A) Prepnúť viktoriamikuskova.com na nový web — **toto je teraz blokujúce**
+### A) Prepnúť viktoriamikuskova.com na nový web
 
-Chcela si v CV `.com`, tak tam `.com` je — v CV, na hlavičkovom papieri,
-v e-mailovom podpise aj v QR kóde. **Ale musí sa prepnúť skôr, než niečo z toho
-odošleš.**
+Adresa v dokumentoch je späť na `viktoria-mikuskova.pages.dev`, teda na tú,
+ktorá dnes naozaj vedie na nové portfólio. **CV sa tým pádom dá poslať hneď.**
 
 Čo som overil priamo cez Cloudflare API, nie od oka:
 
@@ -245,7 +259,11 @@ beží starý web) a **ja to prepnúť nemôžem** — nemám k tomu prístup a 
 zásah do tvojej živej domény, ktorý by som ti aj tak najprv predložil.
 
 Dnes teda `viktoriamikuskova.com` vedie na stránku, ktorá podľa auditu z bodu 3
-dostala 4 z 29 bodov. Kým sa to nezmení, CV posiela človeka na starý web.
+dostala 4 z 29 bodov. Preto tam zatiaľ tá adresa nie je: pages.dev nie je pekná
+adresa, ale vedie na správny web, a to je viac.
+
+Prepnúť sa to oplatí čo najskôr — vlastná doména na CV pôsobí lepšie a je to
+adresa, ktorá ti ostane, aj keby sa hosting raz menil.
 
 **Ako to prepnúť:**
 
