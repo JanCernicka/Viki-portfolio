@@ -320,4 +320,46 @@ Zoznam ľudí a vydavateľstiev (krok 4) môžem pripraviť **súbežne** s tým
 
 ---
 
+---
+
+# DODATOK (doplnené po zistení o diplomovej práci)
+
+**Nová informácia:** existuje diplomová práca — **Alica v krajine zázrakov, obálka spracovaná v 5 rôznych žánroch**. Súbory sú zatiaľ na inom zariadení.
+
+## Čo to mení
+
+Zistenie 3.1 („nula knižných prác") **už neplatí**. Existuje 5 knižných obálok, len nie sú dostupné. To je zásadný posun a skracuje kritickú cestu z fázy 3 o niekoľko týždňov.
+
+**A je to lepší materiál, než by bolo 5 náhodných obálok.** Kniha uvádza ako kľúčovú kompetenciu pre vydavateľstvá práve toto:
+
+> „Versatility, strong typographical skills, the ability to use different kinds of visual imagery, and a **keen awareness of how different genres are packaged** are all integral to the role of jacket designer."
+
+a inde:
+
+> „a historical bodice-ripper can't be packaged in the same way as a psychological thriller"
+
+Diplomová práca **je presne táto téza, vykonaná v praxi**. Jeden text, päť žánrových spracovaní — to nie je cvičenie, to je priamy dôkaz žánrovej gramotnosti, ktorý sa dá vysvetliť za tridsať sekúnd a je okamžite čitateľný aj bez komentára (splní teda aj bod 14 rubriky — „drop-off test").
+
+Zároveň má za sebou **obhajobu**, čo znamená, že existuje písomná časť s rešeršou a zdôvodnením. Tá je zlatou baňou pre texty ku case study (problém → riešenie → prečo, bod 18 rubriky).
+
+**Odporúčanie: diplomová práca sa stáva ťažiskom celého portfólia** — nie jedným z projektov, ale úvodným a nosným. Kniha žiada otvárať najsilnejšou prácou; toto je ona.
+
+## Čo tým NIE je vyriešené
+
+Aby sme neboli príliš optimistickí — tri veci zostávajú:
+
+1. **Päť obálok jedného titulu ≠ päť obálok piatich kníh.** Ukazuje žánrový rozsah, ale nie prácu s rôznymi predlohami. Odporúčam doplniť **2–3 obálky iných, skutočných titulov** (ideálne z produkcie cieľových vydavateľstiev — viď C1). Nie 6–8, ako pôvodne. Stačí menej.
+2. **Sadzba stále chýba** — pokiaľ diplomovka neobsahovala aj vnútro knihy. Pre vydavateľstvo je sadzba (mriežka, štýly, InDesign) **dôležitejšia než obálka**, lebo to je každodenná práca. Toto je teraz najväčšia medzera.
+3. **Fyzická realizácia.** Ak obálky existujú len digitálne, aspoň jednu vytlačiť a nafotiť.
+
+## Aktualizovaný rozsah C1
+
+| Čo | Pôvodne | Teraz |
+|---|---|---|
+| Obálky kníh | 6–8 vytvoriť | **5 hotových** + doplniť 2–3 iných titulov |
+| Sadzba — dvojstrany | 2–3 | **2–3 (nezmenené — hlavná priorita)** |
+| Plagát ku knihe | 1–2 | 1 (dá sa odvodiť z diplomovky) |
+
+---
+
 *Analýza vychádza z kompletného prečítania Fig Taylor, „How to Create a Portfolio & Get Hired" (2010) — poznámky v `01-portfolio-book-notes.md`. Doplnkové odkazy na Molly Beck, „Reach Out" (2018) — poznámky v `02-networking-book-notes.md`.*
