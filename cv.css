@@ -50,12 +50,14 @@ body{
   font-family:var(--serif);
   font-weight:500;
   font-size:31pt;
-  line-height:1.5;
+  line-height:1.2;
   color:var(--dark);
   letter-spacing:.002em;
 }
+/* Tri riadky hlavičky sú rôzne veľké, takže rovnaké riadkovanie ich nerozostupí
+   rovnomerne — odstup medzi nimi je preto daný okrajom, nie riadkovaním. */
 .cv-role{
-  margin:0;
+  margin:4mm 0 0;
   font-size:11pt;
   line-height:1.5;
   letter-spacing:.16em;
@@ -63,7 +65,7 @@ body{
   color:var(--terra);
 }
 .cv-focus{
-  margin:0;
+  margin:3.2mm 0 0;
   font-size:8.6pt;
   line-height:1.5;
   letter-spacing:.10em;

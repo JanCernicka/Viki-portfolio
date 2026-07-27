@@ -1,9 +1,15 @@
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
+# Cloudflare Pages pravidlá nenahrádza, ale zreťazuje — pri zhode viacerých
+# vznikne jedna hlavička s oboma hodnotami za sebou. Preto idú konkrétne
+# pravidlá prvé: prehliadač berie prvý max-age, ktorý v hlavičke nájde.
 
-# Dokumenty na stiahnutie sa menia — nesmú ostať rok v cache prehliadača.
-# Neskoršie pravidlo prepíše Cache-Control z pravidla vyššie.
+# Dokumenty na stiahnutie a ich obrázky sa menia najčastejšie.
 /assets/cv/*
   Cache-Control: public, max-age=300, must-revalidate
 /assets/dokumenty/*
   Cache-Control: public, max-age=300, must-revalidate
+
+# Zvyšok. Zámerne tu nie je "immutable": obrázky sa počas stavby portfólia
+# prepisujú a immutable by znamenalo, že kto stránku raz otvoril, uvidí starú
+# verziu ešte rok. Deň s overením je dosť rýchly a pascu to zavrie.
+/assets/*
+  Cache-Control: public, max-age=86400, must-revalidate

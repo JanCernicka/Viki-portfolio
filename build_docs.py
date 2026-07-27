@@ -11,7 +11,7 @@ Vytvorí:
     promo.html              záložky do knihy — promo kus, 4 na A4
     podpis.html             e-mailový podpis + návod na vloženie
     dokumenty.html          rozcestník ku všetkým dokumentom
-    assets/images/qr-web.png
+    assets/dokumenty/qr-web.png
 
 Potom sa z nich urobia PDF-ká:
     node make_pdf.js
@@ -93,7 +93,7 @@ def build_qr():
     except ImportError:
         print("  ! segno nie je nainštalované — QR preskočený (pip install segno)")
         return False
-    out = os.path.join(ROOT, "assets", "images", "qr-web.png")
+    out = os.path.join(ROOT, "assets", "dokumenty", "qr-web.png")
     segno.make(SITE_HREF, error="m").save(
         out, scale=14, border=2, dark="#011126", light="#FBEFE3")
     print(f"  qr-web.png ({os.path.getsize(out)} B) -> {SITE_HREF}")
@@ -196,7 +196,7 @@ def build_portfolio_pdf(projects):
         <li>{esc(CITY)}</li>
       </ul>
     </div>
-    <img class="pf-end-qr" src="assets/images/qr-web.png" alt="QR kód na portfólio">
+    <img class="pf-end-qr" src="assets/dokumenty/qr-web.png" alt="QR kód na portfólio">
   </section>
 </body>
 </html>
@@ -281,7 +281,7 @@ def bookmark_back():
       <div class="bm bm-back">
         <img class="bm-logo" src="assets/images/logo.png" alt="">
         <p class="bm-quote">Typografia má text niesť, nie ho prekrývať.</p>
-        <img class="bm-qr" src="assets/images/qr-web.png" alt="">
+        <img class="bm-qr" src="assets/dokumenty/qr-web.png" alt="">
         <ul class="bm-contact">
           <li>{esc(SITE_URL)}</li>
           <li>{esc(EMAIL)}</li>
