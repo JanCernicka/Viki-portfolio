@@ -36,6 +36,32 @@ Header/nav · Hero · Služby (services) · Vybrané projekty · O mne · Kde č
 | Peach | `#F1CBAC` | icon circles |
 | Dark | `#011126` | headings |
 
+
+## Adding projects
+
+Project content lives in one place: **`content/projects.json`**. The HTML is
+generated from it.
+
+```bash
+python3 build.py
+```
+
+This regenerates `index.html`, the two category pages and one page per project
+under `projekt/`. Nothing else is touched.
+
+To add or finish a project, edit its entry in `content/projects.json`:
+
+| Field | Notes |
+|---|---|
+| `cover`, `images[].src` | Paths under `assets/projects/…`. `null` renders a placeholder block at the right aspect ratio. |
+| `orientation` | `portrait` for book covers, `landscape`, or `square`. Drives the thumbnail ratio. |
+| `status` | `skolsky` · `komercny` · `publikovany` · `koncept` — renders a badge. |
+| `brief`, `solution`, `why` | The case-study text. `null` renders a visible "doplniť" marker. |
+| `featured` | Shows the project on the homepage. |
+| `order` | Controls sequence — lowest first. Put the strongest work first. |
+
+Images should be at least 2000 px on the long edge.
+
 ## Local preview
 
 ```bash

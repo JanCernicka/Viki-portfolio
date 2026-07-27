@@ -768,3 +768,225 @@ a{color:inherit;text-decoration:none;}
   .category-grid{grid-template-columns:1fr;}
   .project-grid{grid-template-columns:1fr;}
 }
+
+/* =========================================================
+   PORTFÓLIO — karty projektov, mriežky, case study
+   Náhľady rešpektujú orientáciu: knižné obálky sú na výšku.
+   ========================================================= */
+
+/* ---- mriežka ---- */
+.p-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(26px,2.6vw,42px) clamp(22px,2.2vw,34px);
+  margin-top:var(--sp-gap);
+}
+.p-grid-featured{grid-template-columns:repeat(3,1fr);}
+
+/* ---- karta ---- */
+.p-card{
+  display:flex;
+  flex-direction:column;
+  transition:transform .25s ease;
+}
+.p-card:hover{transform:translateY(-5px);}
+.p-card:hover .p-thumb{box-shadow:0 22px 48px rgba(90,66,42,.20);}
+.p-card:hover .p-link{color:#a4512c;}
+
+/* ---- náhľad: pomer strán podľa orientácie ---- */
+.p-thumb{
+  position:relative;
+  overflow:hidden;
+  border-radius:10px;
+  background:#efe4d8;
+  box-shadow:0 10px 28px rgba(90,66,42,.12);
+  transition:box-shadow .25s ease;
+}
+.p-thumb.is-portrait{aspect-ratio:2/3;}
+.p-thumb.is-landscape{aspect-ratio:4/3;}
+.p-thumb.is-square{aspect-ratio:1/1;}
+.p-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+
+/* zástupná plocha, kým nepríde obrázok */
+.p-thumb.is-empty{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:repeating-linear-gradient(135deg,#ece1d5,#ece1d5 12px,#e6dacd 12px,#e6dacd 24px);
+  box-shadow:inset 0 0 0 1px rgba(120,105,90,.18);
+}
+.p-thumb.is-empty span{
+  font-size:var(--fs-small);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(90,80,66,.55);
+}
+
+/* ---- telo karty ---- */
+.p-body{padding:16px 2px 0;display:flex;flex-direction:column;align-items:flex-start;}
+.p-body h3{
+  margin:0 0 5px;
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:var(--fs-card);
+  color:var(--dark);
+  line-height:1.2;
+}
+.p-sub{
+  margin:0 0 10px;
+  font-size:var(--fs-small);
+  line-height:1.5;
+  color:var(--muted);
+}
+.p-link{
+  font-size:var(--fs-small);
+  letter-spacing:.04em;
+  font-weight:600;
+  color:var(--terra);
+  transition:color .2s ease;
+}
+
+/* ---- štítok stavu práce ---- */
+.p-status{
+  display:inline-block;
+  margin-bottom:9px;
+  font-size:calc(var(--fs-small) * .84);
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  font-weight:600;
+  padding:4px 10px;
+  border-radius:20px;
+}
+.st-school{background:rgba(172,183,131,.30);color:#5b6535;}
+.st-commercial{background:rgba(198,103,61,.16);color:#a4512c;}
+.st-published{background:rgba(198,103,61,.90);color:#fff;}
+.st-concept{background:rgba(120,105,90,.16);color:#5f564a;}
+
+/* =========================== CASE STUDY =========================== */
+.case-study{padding-bottom:10px;}
+.cs-top{padding:calc(var(--sp-sect) * .6) 0 0;}
+.cs-head{max-width:var(--measure);}
+.cs-title{
+  margin:6px 0 10px;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:var(--fs-name);
+  line-height:1.06;
+  color:var(--dark);
+}
+.cs-sub{
+  margin:0;
+  font-size:var(--fs-body);
+  line-height:1.6;
+  color:var(--muted);
+}
+
+/* hlavný vizuál — na výšku sa nesmie roztiahnuť cez celú šírku */
+.cs-hero{padding:var(--sp-gap) 0 0;}
+.cs-hero .p-thumb{margin:0 auto;}
+.cs-hero .p-thumb.is-portrait{max-width:min(520px,68vw);}
+.cs-hero .p-thumb.is-square{max-width:min(660px,80vw);}
+.cs-hero .p-thumb.is-landscape{max-width:100%;}
+
+/* ---- fakty o projekte ---- */
+.cs-meta{padding:var(--sp-gap) 0 0;}
+.cs-meta-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px 26px;
+  margin:0;
+  padding-top:var(--sp-gap);
+  border-top:1px solid rgba(120,105,90,.28);
+}
+.m-item dt{
+  font-size:calc(var(--fs-small) * .9);
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:var(--olive);
+  margin-bottom:5px;
+}
+.m-item dd{
+  margin:0;
+  font-size:var(--fs-small);
+  line-height:1.5;
+  color:#1c1c1c;
+}
+.m-item.is-todo dd{color:rgba(90,80,66,.45);font-style:italic;}
+
+/* ---- zadanie / riešenie / prečo ---- */
+.cs-prose{padding:var(--sp-sect) 0 0;}
+.cs-block{max-width:var(--measure);margin-bottom:var(--sp-gap);}
+.cs-block h2{
+  margin:0 0 10px;
+  font-size:var(--fs-label);
+  font-weight:500;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--olive);
+}
+.cs-block p{
+  margin:0;
+  font-size:var(--fs-body);
+  line-height:1.72;
+  color:#000;
+}
+.cs-block .todo{color:rgba(90,80,66,.45);font-style:italic;}
+
+/* ---- galéria ---- */
+.cs-gallery{padding:var(--sp-sect) 0 0;}
+.g-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:clamp(20px,2.2vw,34px);
+}
+.g-item{margin:0;}
+.g-item figcaption{
+  margin-top:9px;
+  font-size:calc(var(--fs-small) * .92);
+  letter-spacing:.05em;
+  color:var(--muted);
+}
+
+/* ---- predchádzajúci / ďalší projekt ---- */
+.cs-nav{padding:var(--sp-sect) 0 0;}
+.cs-nav-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  border-top:1px solid rgba(120,105,90,.28);
+  padding-top:var(--sp-gap);
+}
+.cs-prev,.cs-next{display:flex;flex-direction:column;gap:4px;max-width:46%;}
+.cs-next{text-align:right;align-items:flex-end;}
+.cs-nav span{
+  font-size:calc(var(--fs-small) * .9);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--olive);
+}
+.cs-nav strong{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:var(--fs-card);
+  color:var(--dark);
+  transition:color .2s ease;
+}
+.cs-prev:hover strong,.cs-next:hover strong{color:var(--terra);}
+
+/* ---- aktívna položka v menu ---- */
+.main-nav a.active{color:var(--terra);}
+
+/* ---- responzívne ---- */
+@media (max-width:1100px){
+  .p-grid,.p-grid-featured{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:620px){
+  .p-grid,.p-grid-featured{grid-template-columns:1fr;gap:30px;}
+  .cs-hero .p-thumb.is-portrait{max-width:78vw;}
+  .cs-nav-inner{flex-direction:column;gap:22px;}
+  .cs-prev,.cs-next{max-width:100%;text-align:left;align-items:flex-start;}
+}
+
+/* Vybrané projekty na homepage: jednotný pomer strán, aby riadok čítal ako celok.
+   Skutočné proporcie práce sa ukážu na stránke projektu. */
+.p-grid-featured .p-thumb{aspect-ratio:4/5;}

@@ -4,55 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viktória Mikušková — Grafická dizajnérka</title>
-<meta name="description" content="Mgr. Viktória Mikušková — grafická dizajnérka a marketérka z Bratislavy. Branding, ilustrácie, UI/UX dizajn, tlačoviny a marketing.">
+<meta name="description" content="Mgr. Viktória Mikušková — grafická dizajnérka z Bratislavy so zameraním na knižný dizajn: obálky, sadzba a propagácia kníh.">
 <link rel="icon" type="image/png" href="assets/images/logo.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ================= HEADER / NAV ================= -->
 <header class="site-header" id="domov">
   <div class="container header-inner">
-    <a class="logo" href="#domov" aria-label="Viktória Mikušková">
+    <a class="logo" href="index.html" aria-label="Viktória Mikušková">
       <img src="assets/images/logo.png" alt="Logo VM">
     </a>
     <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <nav class="main-nav">
-      <a href="#domov">DOMOV</a>
-      <a href="#o-mne">O MNE</a>
-      <a href="#sluzby">SLUŽBY</a>
-      <div class="nav-dropdown">
-        <a href="#portfolio" class="has-caret">PORTFOLIO
-          <svg viewBox="0 0 448 512" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
-        </a>
-        <div class="dropdown-menu">
-          <a href="branding.html">Branding</a>
-          <a href="ilustracie.html">Ilustrácie</a>
-          <a href="uiux.html">UI/UX dizajn</a>
-          <a href="tlaciviny.html">Tlačoviny</a>
-          <a href="marketing.html">Marketing</a>
-        </div>
-      </div>
-      <a href="#kontakt">KONTAKT</a>
+      <a href="index.html" class="active">DOMOV</a>
+      <a href="knizny-dizajn.html">KNIŽNÝ DIZAJN</a>
+      <a href="dalsia-tvorba.html">ĎALŠIA TVORBA</a>
+      <a href="index.html#o-mne">O MNE</a>
+      <a href="index.html#kontakt">KONTAKT</a>
     </nav>
   </div>
 </header>
 
-<!-- ================= HERO =================
-     Wide screens use the original artwork, which has the headline painted
-     into it; the copy below is kept for assistive tech and search engines.
-     Narrow screens show that copy as real text with the illustration
-     underneath, so the hero stays legible on a phone. -->
+<!-- ================= HERO ================= -->
 <section class="hero">
   <div class="hero-copy">
     <h1 class="hero-title">
       <span class="hl1">Dizajn, ktorý</span>
       <span class="hl2">rozpráva váš <em>príbeh</em></span>
     </h1>
-    <p class="hero-sub">Som grafická dizajnérka a marketérka s vášňou pre vizuálne príbehy, značky a kreatívne riešenia, ktoré zanechávajú dojem</p>
+    <p class="hero-sub">Grafická dizajnérka so zameraním na knižný dizajn — obálky, sadzba a propagácia kníh.</p>
   </div>
 
   <picture class="hero-pic">
@@ -60,50 +44,7 @@
     <img class="hero-img" src="assets/images/hero.jpg" alt="Ilustrácia — Viktória kreslí na grafickom tablete pri stole s knihami a rastlinami">
   </picture>
 
-  <a class="hero-btn" href="#portfolio">POZRIEŤ PORTFOLIO</a>
-</section>
-
-<!-- ================= SLUŽBY (services icons) ================= -->
-<section class="services" id="sluzby">
-  <div class="container">
-    <ul class="services-row">
-      <li class="service">
-        <img class="service-icon" src="assets/images/icon-branding.png" alt="Branding">
-        <div class="service-text">
-          <span class="service-title">BRANDING</span>
-          <span class="service-sub">logá, vizuálna identita</span>
-        </div>
-      </li>
-      <li class="service">
-        <img class="service-icon" src="assets/images/icon-ilustracie.png" alt="Ilustrácie">
-        <div class="service-text">
-          <span class="service-title">ILUSTRÁCIE</span>
-          <span class="service-sub">digitálne ilustrácie</span>
-        </div>
-      </li>
-      <li class="service">
-        <img class="service-icon" src="assets/images/icon-uiux.png" alt="UI/UX dizajn">
-        <div class="service-text">
-          <span class="service-title">UI/UX DIZAJN</span>
-          <span class="service-sub">web stránky, responzívny dizajn</span>
-        </div>
-      </li>
-      <li class="service">
-        <img class="service-icon" src="assets/images/icon-tlaciviny.png" alt="Tlačoviny">
-        <div class="service-text">
-          <span class="service-title">TLAČOVINY</span>
-          <span class="service-sub">plagáty, brožúry, knihy</span>
-        </div>
-      </li>
-      <li class="service">
-        <img class="service-icon" src="assets/images/icon-marketing.png" alt="Marketing">
-        <div class="service-text">
-          <span class="service-title">MARKETING</span>
-          <span class="service-sub">sociálne siete, stratégia</span>
-        </div>
-      </li>
-    </ul>
-  </div>
+  <a class="hero-btn" href="knizny-dizajn.html">POZRIEŤ PORTFÓLIO</a>
 </section>
 
 <!-- ================= VYBRANÉ PROJEKTY ================= -->
@@ -111,41 +52,75 @@
   <div class="container">
     <div class="section-head">
       <h2 class="projects-title">VYBRANÉ PROJEKTY</h2>
-      <a class="projects-link" href="branding.html">CELÉ PORTFÓLIO&nbsp;→</a>
+      <a class="projects-link" href="knizny-dizajn.html">CELÉ PORTFÓLIO&nbsp;→</a>
     </div>
 
-    <div class="category-grid">
-      <a class="category-tile" href="branding.html">
-        <img src="assets/images/icon-branding.png" alt="Branding">
-        <h3>Branding</h3>
-        <p>Logá a vizuálne identity s jasným charakterom.</p>
-        <span class="tile-link">Zobraziť →</span>
+    <div class="p-grid p-grid-featured">
+      <a class="p-card" href="projekt/alica-v-krajine-zazrakov.html">
+        <div class="p-thumb is-portrait is-empty" role="img" aria-label="Obrázok sa doplní"><span>čaká na obrázok</span></div>
+        <div class="p-body">
+          <span class="p-status st-school">Školský projekt</span>
+          <h3>Alica v krajine zázrakov</h3>
+          <p class="p-sub">Jeden titul, päť žánrových spracovaní</p>
+          <span class="p-link">Pozrieť projekt →</span>
+        </div>
       </a>
-      <a class="category-tile" href="ilustracie.html">
-        <img src="assets/images/icon-ilustracie.png" alt="Ilustrácie">
-        <h3>Ilustrácie</h3>
-        <p>Digitálne ilustrácie, ktoré dávajú značke osobnosť.</p>
-        <span class="tile-link">Zobraziť →</span>
+      <a class="p-card" href="projekt/plagaty-k-skolskym-filmom.html">
+        <div class="p-thumb is-portrait is-empty" role="img" aria-label="Obrázok sa doplní"><span>čaká na obrázok</span></div>
+        <div class="p-body">
+          <span class="p-status st-school">Školský projekt</span>
+          <h3>Plagáty k školským filmom</h3>
+          
+          <span class="p-link">Pozrieť projekt →</span>
+        </div>
       </a>
-      <a class="category-tile" href="uiux.html">
-        <img src="assets/images/icon-uiux.png" alt="UI/UX dizajn">
-        <h3>UI/UX dizajn</h3>
-        <p>Weby a rozhrania — pekné, prehľadné, responzívne.</p>
-        <span class="tile-link">Zobraziť →</span>
-      </a>
-      <a class="category-tile" href="tlaciviny.html">
-        <img src="assets/images/icon-tlaciviny.png" alt="Tlačoviny">
-        <h3>Tlačoviny</h3>
-        <p>Plagáty, brožúry a knihy s citom pre typografiu.</p>
-        <span class="tile-link">Zobraziť →</span>
-      </a>
-      <a class="category-tile" href="marketing.html">
-        <img src="assets/images/icon-marketing.png" alt="Marketing">
-        <h3>Marketing</h3>
-        <p>Vizuály a stratégia pre sociálne siete.</p>
-        <span class="tile-link">Zobraziť →</span>
+      <a class="p-card" href="projekt/mapa-skoly.html">
+        <div class="p-thumb is-landscape is-empty" role="img" aria-label="Obrázok sa doplní"><span>čaká na obrázok</span></div>
+        <div class="p-body">
+          <span class="p-status st-school">Školský projekt</span>
+          <h3>Návrh mapy školy</h3>
+          <p class="p-sub">Informačný dizajn a orientačný systém</p>
+          <span class="p-link">Pozrieť projekt →</span>
+        </div>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- ================= OBLASTI ================= -->
+<section class="services" id="sluzby">
+  <div class="container">
+    <p class="eyebrow eyebrow-olive">ČOMU SA VENUJEM</p>
+    <ul class="services-row">
+      <li class="service">
+        <img class="service-icon" src="assets/images/icon-tlaciviny.png" alt="">
+        <div class="service-text">
+          <span class="service-title">KNIŽNÝ DIZAJN</span>
+          <span class="service-sub">obálky, sadzba, propagácia</span>
+        </div>
+      </li>
+      <li class="service">
+        <img class="service-icon" src="assets/images/icon-branding.png" alt="">
+        <div class="service-text">
+          <span class="service-title">BRANDING</span>
+          <span class="service-sub">logá, vizuálna identita</span>
+        </div>
+      </li>
+      <li class="service">
+        <img class="service-icon" src="assets/images/icon-ilustracie.png" alt="">
+        <div class="service-text">
+          <span class="service-title">ILUSTRÁCIE</span>
+          <span class="service-sub">digitálne ilustrácie</span>
+        </div>
+      </li>
+      <li class="service">
+        <img class="service-icon" src="assets/images/icon-marketing.png" alt="">
+        <div class="service-text">
+          <span class="service-title">MARKETING</span>
+          <span class="service-sub">sociálne siete, stratégia</span>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -201,15 +176,13 @@
   </div>
 </section>
 
-<!-- ================= FOOTER / KONTAKT ================= -->
 <footer class="site-footer" id="kontakt">
   <div class="container">
     <hr class="footer-rule">
     <div class="footer-inner">
-      <a class="footer-logo" href="#domov" aria-label="Viktória Mikušková">
+      <a class="footer-logo" href="index.html" aria-label="Viktória Mikušková">
         <img src="assets/images/logo.png" alt="Logo VM">
       </a>
-
       <div class="footer-contact">
         <a href="tel:0917749871">
           <svg class="ci" viewBox="0 0 512 512" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
@@ -220,7 +193,6 @@
           viki.mikuskova@gmail.com
         </a>
       </div>
-
       <div class="footer-social">
         <a href="https://www.instagram.com/vikca.design" target="_blank" rel="noopener" aria-label="Instagram" class="soc soc-ig">
           <svg viewBox="0 0 448 512" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
