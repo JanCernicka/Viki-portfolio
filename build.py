@@ -30,6 +30,7 @@ CATEGORIES = {
         "groups": [
             ("obalky", "Obálky kníh", "Obálky"),
             ("sadzba", "Sadzba a dvojstrany", "Sadzba"),
+            ("knizna-ilustracia", "Knižná ilustrácia", "Ilustrácia"),
             ("propagacia", "Plagáty a propagácia", "Propagácia"),
         ],
     },
@@ -38,10 +39,11 @@ CATEGORIES = {
         "lead": "Branding, ilustrácia, informačný dizajn a marketingové vizuály.",
         "groups": [
             ("branding", "Branding a vizuálna identita", "Branding"),
-            ("informacny-dizajn", "Informačný dizajn", "Informačný dizajn"),
+            ("produktovy-dizajn", "Produktový dizajn a obaly", "Produktový dizajn"),
             ("ilustracia", "Ilustrácia", "Ilustrácie"),
+            ("informacny-dizajn", "Informačný dizajn", "Informačný dizajn"),
             ("uiux", "UI/UX dizajn", "UI/UX dizajn"),
-            ("marketing", "Marketing a sociálne siete", "Marketing"),
+            ("marketing", "Sociálne siete a marketing", "Sociálne siete"),
         ],
     },
 }

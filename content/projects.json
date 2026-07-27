@@ -2,7 +2,6 @@
   "_comment": "Jediný zdroj pravdy pre projekty. Po doplnení obrázkov a textov spusti: python3 build.py",
   "_status_values": "skolsky | komercny | publikovany | koncept",
   "_orientation_values": "portrait | landscape | square",
-
   "projects": [
     {
       "slug": "alica-v-krajine-zazrakov",
@@ -24,11 +23,31 @@
       "orientation": "portrait",
       "cover": null,
       "images": [
-        { "src": null, "caption": "Žáner 1", "orientation": "portrait" },
-        { "src": null, "caption": "Žáner 2", "orientation": "portrait" },
-        { "src": null, "caption": "Žáner 3", "orientation": "portrait" },
-        { "src": null, "caption": "Žáner 4", "orientation": "portrait" },
-        { "src": null, "caption": "Žáner 5", "orientation": "portrait" }
+        {
+          "src": null,
+          "caption": "Žáner 1",
+          "orientation": "portrait"
+        },
+        {
+          "src": null,
+          "caption": "Žáner 2",
+          "orientation": "portrait"
+        },
+        {
+          "src": null,
+          "caption": "Žáner 3",
+          "orientation": "portrait"
+        },
+        {
+          "src": null,
+          "caption": "Žáner 4",
+          "orientation": "portrait"
+        },
+        {
+          "src": null,
+          "caption": "Žáner 5",
+          "orientation": "portrait"
+        }
       ]
     },
     {
@@ -115,5 +134,21 @@
       "cover": null,
       "images": []
     }
-  ]
+  ],
+  "_kam_zaradit": {
+    "knizny-dizajn": {
+      "obalky": "obálky kníh",
+      "sadzba": "sadzba, dvojstrany, vnútro knihy",
+      "knizna-ilustracia": "ilustrácia k textu, postavy, narativne scény, detská kniha",
+      "propagacia": "plagáty a propagačné materiály ku knihám"
+    },
+    "dalsia-tvorba": {
+      "branding": "logá, vizuálne identity",
+      "produktovy-dizajn": "obaly, packaging, produkty",
+      "ilustracia": "voľná a dekoratívna ilustrácia",
+      "informacny-dizajn": "mapy, orientačné systémy, infografika",
+      "uiux": "weby a rozhrania",
+      "marketing": "sociálne siete, kampane"
+    }
+  }
 }
