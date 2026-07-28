@@ -70,8 +70,14 @@ def esc(s):
     return (str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;"))
 
 
-def head(title, description, depth=0):
+# Adresa webu naživo. Open Graph vyžaduje absolútne adresy — relatívna cesta
+# k obrázku sa v náhľade nezobrazí a LinkedIn odkaz bez náhľadu odmietne.
+SITE_URL = "https://viktoria-mikuskova.pages.dev"
+
+
+def head(title, description, depth=0, path=""):
     up = "../" * depth
+    url = SITE_URL + ("/" + path if path else "/")
     return f'''<!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -79,6 +85,24 @@ def head(title, description, depth=0):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
+<link rel="canonical" href="{esc(url)}">
+
+<!-- náhľadová karta pre LinkedIn, Facebook, WhatsApp a spol. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{esc(SITE_NAME)}">
+<meta property="og:locale" content="sk_SK">
+<meta property="og:url" content="{esc(url)}">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:image" content="{SITE_URL}/assets/images/share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Viktória Mikušková — grafická dizajnérka, knižný dizajn a sadzba">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(title)}">
+<meta name="twitter:description" content="{esc(description)}">
+<meta name="twitter:image" content="{SITE_URL}/assets/images/share-card.jpg">
+
 <link rel="icon" type="image/png" href="{up}assets/images/logo.png">
 <link rel="stylesheet" href="{up}assets/fonts/fonts.css">
 <link rel="stylesheet" href="{up}styles.css">
@@ -327,7 +351,8 @@ def build_category(key, projects):
     mine = sorted([p for p in projects if p.get("category") == key],
                   key=lambda p: p.get("order") or 999)
 
-    html = head(f"{cat['title']} — {SITE_NAME}", f"{cat['title']} — {cat['lead']}")
+    html = head(f"{cat['title']} — {SITE_NAME}", f"{cat['title']} — {cat['lead']}",
+                path=f"{key}.html")
     html += header(key, projects=projects)
     html += f'''
 <main>
@@ -406,7 +431,8 @@ def build_project(p, projects):
     next_p = ordered[idx + 1] if idx < len(ordered) - 1 else None
 
     desc = p.get("subtitle") or f"{p['title']} — {cat['title']}"
-    html = head(f"{p['title']} — {SITE_NAME}", desc, depth=1)
+    html = head(f"{p['title']} — {SITE_NAME}", desc, depth=1,
+                path=f"projekt/{p['slug']}.html")
     html += header(p["category"], depth=1, projects=projects)
 
     html += f'''
