@@ -139,31 +139,37 @@ Nie je zlý, ale nie je v ňom **ani jedno slovo, podľa ktorého by ťa vydavat
 alebo tlačiareň hľadali**. Zmeň na:
 
 ```
-Grafická dizajnérka a ilustrátorka | knižný dizajn · sadzba · DTP | Book design & typesetting | InDesign
+Grafická dizajnérka a ilustrátorka | vizuálna identita · knižný dizajn · sadzba · DTP | InDesign
 ```
 
-Slovenčina je prvá, lebo tvoje ciele sú slovenské a hľadajú po slovensky.
-Anglická časť ťa udrží v hre pri agentúrach. Zmestí sa to, limit je 220 znakov.
+Vedie širšia rola, špecializácia ide za ňou — profil číta aj vydavateľstvo, aj
+agentúra, a LinkedIn sa nedá rozdvojiť ako web alebo PDF portfólio.
 (Pri pôvodnom si mala aj drobnosť: `designer` na konci malým, ostatné veľkým.)
 
 **2. Sekcia O mne — momentálne ju nemáš vôbec.** LinkedIn ti to sám ponúka
-v „Suggested for you". Toto je miesto, kde žijú kľúčové slová. Text máš hotový:
+v „Suggested for you". Drž to krátke: na mobile vidno len prvé dva riadky
+a zvyšok sa skryje pod *see more*. Kľúčové slová nemusia byť tu, tie sídlia
+v titulku a v zručnostiach.
 
-> Som grafická dizajnérka a ilustrátorka z Bratislavy. Najbližšie mám ku knihám,
-> k obálkam, sadzbe a k typografii, ktorá text nesie a neprekrýva.
+> Grafická dizajnérka a ilustrátorka z Bratislavy. Robím vizuálne identity,
+> ilustráciu a obsah pre značky, najbližšie mám ku knihám: k obálkam, sadzbe
+> a typografii.
 >
-> Vyštudovala som SOŠ polygrafickú, odbor grafik digitálnych médií, potom Dizajn
-> médií na Paneurópskej vysokej škole a magisterské štúdium masmediálnej
-> a marketingovej komunikácie. Vďaka polygrafickej priemyslovke viem, čo sa
-> s návrhom stane v tlačiarni: spadávky, pasovanie, gramáže, väzby.
+> Vyštudovala som polygrafickú priemyslovku, takže viem, čo sa s návrhom stane
+> v tlačiarni. Pracujem v InDesigne, Illustratore a Photoshope.
 >
-> Diplomovú prácu som robila na jeden titul v piatich žánrových spracovaniach
-> obálky. Môj návrh orientačného systému je vyrobený a vystavený v areáli PEVŠ.
+> Hľadám miesto v štúdiu, v agentúre alebo vo vydavateľstve.
 >
-> Pracujem v InDesigne, Illustratore a Photoshope. Hľadám miesto vo
-> vydavateľstve, v tlačiarni alebo v štúdiu, kde sa dá robiť na knihách.
->
-> Portfólio: viktoria-mikuskova.pages.dev
+> viktoria-mikuskova.pages.dev
+
+Prvý riadok povie oboje naraz a zmestí sa do toho, čo je vidieť pred *see more*.
+Posledná veta je zámerne otvorená: keby tam stálo len „vo vydavateľstve",
+personalista z agentúry si povie, že odídeš pri prvej ponuke z Ikaru.
+
+> **Toto je jediné miesto na profile, kde máš hovoriť vlastným hlasom.** Text
+> je odo mňa, fakty sú tvoje. Prejdi vetu po vete a čo by si takto nepovedala,
+> prepíš. Pokojne kostrbatejšie, ale svoje. A veta o tlačiarni je moja domnienka
+> o tom, čo vieš — ak niečo z toho neovládaš, škrtni to.
 
 **3. Fotka.** Máš na nej peknú súkromnú fotku pri rieke. Vymeň ju za ten
 ateliérový portrét, ktorý je v CV. Nie preto, že by bola zlá, ale preto, že
@@ -205,6 +211,11 @@ Photoshop a Illustrator máš zatiaľ len prilepené k strednej škole, nie ako
 samostatné zručnosti. Hore si pripni tri: **Adobe InDesign, Typography,
 Book Design**.
 
+**Tie marketingové nemaž.** Nech tam ostane Graphic Design, Branding, Digital
+Marketing aj Social Media Management. Zručnosti sú jediné miesto, kde šírka nič
+nestojí — profil sa tak nájde pod oboma svetmi naraz. Šírka patrí sem,
+odlíšenie do textu.
+
 **2. Vzdelanie — chýba ti Erasmus.** Máš tam PEVŠ dvakrát a priemyslovku,
 ale **Yaşar University v Izmire tam nie je**. Doplň ju: je to zahraničná škola
 a zároveň jediné miesto, kde vysvetlíš, odkiaľ sa vzali tvoje kreslené postavy.
@@ -213,6 +224,11 @@ a zároveň jediné miesto, kde vysvetlíš, odkiaľ sa vzali tvoje kreslené po
 Pridaj tretiu položku za spoluprácu so školou a v nej **mapu areálu, ktorá je
 vyrobená a vystavená**. Je to jediná tvoja práca, ktorá fyzicky existuje vo
 svete, a na LinkedIne o nej nie je ani slovo.
+
+**4. Vypýtaj si odporúčania.** Kniha odporúča jedno až dve pod každú predošlú
+prax. Pre teba to znamená MojeSidlo a spoluprácu s PEVŠ. Sedí to do týždňa 1:
+keď píšeš bývalému kolegovi alebo vedúcemu diplomovky, prosbu o odporúčanie
+pridáš do toho istého e-mailu.
 
 **Ešte drobnosť:** ShapelesAI máš popísané po slovensky a MojeSidlo po anglicky.
 Zjednoť to. Odporúčam slovenčinu, tvoje ciele sú slovenské.
