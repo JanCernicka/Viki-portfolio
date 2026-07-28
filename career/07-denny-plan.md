@@ -131,18 +131,55 @@ Ak by bol priveľký, nahraj ho na Google Disk a pošli mi odkaz.
 > čo ešte chýba.
 
 ### Utorok — LinkedIn, deň 1 (40 min)
-Kniha má na zakladanie profilu trojdňový postup. Nerob to celé naraz, druhý
-deň uvidíš vlastný text inak.
 
-Dnes vyplň:
-- **Fotka** — tá istá, čo máš v CV. Rovnaká tvár všade.
-- **Titulok** pod menom. Nie „Študentka". Napíš, kam ideš, nie odkiaľ:
-  `Grafická dizajnérka a ilustrátorka | knižný dizajn, sadzba, DTP | InDesign`
-- **Vlastná adresa profilu** — uprav si ju na `linkedin.com/in/viktoriamikuskova`
-  alebo podobne. Terajšia s číslami na konci vyzerá ako nedokončená.
-- **O mne** — štyri až päť viet. Kľúčové slová, podľa ktorých ťa personalista
-  hľadá: *grafický dizajn, knižný dizajn, sadzba, obálky kníh, InDesign, DTP,
-  príprava do tlače, polygrafia, ilustrácia*.
+*Profil som videl 27. 7. 2026, takže tu nie sú rady, ale konkrétne zmeny.*
+
+**1. Titulok.** Máš `Graphic Designer | Illustrator | Visual Identity designer`.
+Nie je zlý, ale nie je v ňom **ani jedno slovo, podľa ktorého by ťa vydavateľstvo
+alebo tlačiareň hľadali**. Zmeň na:
+
+```
+Grafická dizajnérka a ilustrátorka | knižný dizajn · sadzba · DTP | Book design & typesetting | InDesign
+```
+
+Slovenčina je prvá, lebo tvoje ciele sú slovenské a hľadajú po slovensky.
+Anglická časť ťa udrží v hre pri agentúrach. Zmestí sa to, limit je 220 znakov.
+(Pri pôvodnom si mala aj drobnosť: `designer` na konci malým, ostatné veľkým.)
+
+**2. Sekcia O mne — momentálne ju nemáš vôbec.** LinkedIn ti to sám ponúka
+v „Suggested for you". Toto je miesto, kde žijú kľúčové slová. Text máš hotový:
+
+> Som grafická dizajnérka a ilustrátorka z Bratislavy. Najbližšie mám ku knihám,
+> k obálkam, sadzbe a k typografii, ktorá text nesie a neprekrýva.
+>
+> Vyštudovala som SOŠ polygrafickú, odbor grafik digitálnych médií, potom Dizajn
+> médií na Paneurópskej vysokej škole a magisterské štúdium masmediálnej
+> a marketingovej komunikácie. Vďaka polygrafickej priemyslovke viem, čo sa
+> s návrhom stane v tlačiarni: spadávky, pasovanie, gramáže, väzby.
+>
+> Diplomovú prácu som robila na jeden titul v piatich žánrových spracovaniach
+> obálky. Môj návrh orientačného systému je vyrobený a vystavený v areáli PEVŠ.
+>
+> Pracujem v InDesigne, Illustratore a Photoshope. Hľadám miesto vo
+> vydavateľstve, v tlačiarni alebo v štúdiu, kde sa dá robiť na knihách.
+>
+> Portfólio: viktoria-mikuskova.pages.dev
+
+**3. Fotka.** Máš na nej peknú súkromnú fotku pri rieke. Vymeň ju za ten
+ateliérový portrét, ktorý je v CV. Nie preto, že by bola zlá, ale preto, že
+**CV, web aj LinkedIn majú ukazovať tú istú tvár** — kto ťa uvidí na dvoch
+miestach, má si ťa spojiť na prvý pohľad.
+
+**4. Vlastná adresa profilu.** Máš
+`linkedin.com/in/viktória-mikušková-245b77324`. Diakritika sa v odkaze zakóduje
+na nečitateľné `vikt%C3%B3ria-miku%C5%A1kov%C3%A1` a číslo na konci pôsobí ako
+nedokončený profil. Zmeň na `linkedin.com/in/viktoriamikuskova`.
+Je to *Edit public profile & URL* vpravo hore, **len v prehliadači**.
+
+**5. Úvodná grafika je dobrá, ale posúva ťa inam.** Ten banner s tvojím logom
+je pekná práca. Stojí na ňom ale *Graphic Designer • Social Media Manager*.
+Pre vydavateľstvo je „social media manager" vedľajšia koľaj. Keď budeš meniť
+logo, prepíš to na knižný dizajn.
 
 > Kniha hovorí jednu vec, ktorú si veľa ľudí netrúfne: **na LinkedIne smieš
 > uvádzať aj to, kam smeruješ, nielen to, čo už bolo.** Personalisti hľadajú
@@ -150,23 +187,55 @@ Dnes vyplň:
 > ale smie to byť dopredu.
 
 ### Streda — LinkedIn, deň 2 (40 min)
-Prečítaj si včerajší text načisto a oprav ho. Potom doplň:
-- **Prax:** SHAPELESAI, MOJESIDLO.SK, spolupráca s PEVŠ. Pri PEVŠ uveď
-  **mapu školy — realizovanú a vystavenú**.
-- **Vzdelanie:** PEVŠ (Mgr. aj Bc.), Erasmus+ Yaşar University, **SOŠ
-  polygrafická**. Priemyslovku tam maj, je to tvoja výhoda.
-- **Zručnosti:** InDesign, Illustrator, Photoshop, typografia, sadzba, príprava
-  do tlače, vizuálna identita, ilustrácia, AI nástroje.
-- **Odkaz na portfólio** do sekcie kontaktov aj do „O mne".
+
+Prečítaj si včerajší text načisto a oprav ho. Potom tri konkrétne diery:
+
+**1. Zručnosti — toto je najdôležitejšie z celého dňa.** Máš tam
+*Graphic Design, Branding & Identity, Online Graphics, Digital Marketing,
+Social Media Management, Creative Content Creation*. Všetkých šesť opisuje
+človeka na sociálne siete. **Ani jedna nie je remeslo, na ktoré sa hlásiš.**
+LinkedIn pritom vyhľadáva ľudí hlavne podľa zručností, takže dnes ťa pod slovom
+*sadzba* ani *InDesign* nikto nenájde. Dopĺň:
+
+`Adobe InDesign` · `Typography` · `Typesetting` · `Book Design` ·
+`Editorial Design` · `Prepress` · `Print Production` · `Layout Design` ·
+`Illustration` · `Adobe Photoshop` · `Adobe Illustrator`
+
+Photoshop a Illustrator máš zatiaľ len prilepené k strednej škole, nie ako
+samostatné zručnosti. Hore si pripni tri: **Adobe InDesign, Typography,
+Book Design**.
+
+**2. Vzdelanie — chýba ti Erasmus.** Máš tam PEVŠ dvakrát a priemyslovku,
+ale **Yaşar University v Izmire tam nie je**. Doplň ju: je to zahraničná škola
+a zároveň jediné miesto, kde vysvetlíš, odkiaľ sa vzali tvoje kreslené postavy.
+
+**3. Prax — chýba ti PEVŠ a mapa školy.** Máš len ShapelesAI a MojeSidlo.
+Pridaj tretiu položku za spoluprácu so školou a v nej **mapu areálu, ktorá je
+vyrobená a vystavená**. Je to jediná tvoja práca, ktorá fyzicky existuje vo
+svete, a na LinkedIne o nej nie je ani slovo.
+
+**Ešte drobnosť:** ShapelesAI máš popísané po slovensky a MojeSidlo po anglicky.
+Zjednoť to. Odporúčam slovenčinu, tvoje ciele sú slovenské.
 
 > Kniha výslovne hovorí: **neoznačuj, čo bolo platené a čo nie, ani čo bolo na
-> plný a čo na čiastočný úväzok.** Školské a dobrovoľnícke projekty tam patria
-> rovnako ako platená práca. A roky píš bez mesiacov — *2024 – 2025*, nie
-> *november 2024 – jún 2025*.
+> plný a čo na čiastočný úväzok.** Pri MojeSidlo máš *Part-time* — pokojne to
+> zmaž, nič ti to nepridáva. Školské a dobrovoľnícke projekty tam patria rovnako
+> ako platená práca.
 
 ### Štvrtok — LinkedIn, deň 3: spojenia naraz (30 min)
+
+> **Máš dve spojenia a dvoch sledovateľov.** Toto je najväčší jediný problém
+> tvojho profilu a je väčší než všetko z utorka a stredy dokopy. LinkedIn radí
+> ľudí vo vyhľadávaní podľa toho, ako blízko sú tvojej sieti, takže s dvoma
+> spojeniami si prakticky neviditeľná. A profil s dvoma spojeniami pôsobí ako
+> opustený, aj keď je obsahovo v poriadku.
+>
+> Kniha to pomenúva presne: *„problém nových účtov je, že každý začína na
+> nule."* Cieľ je päťdesiat a potom prestaň počítať. Z dvoch na päťdesiat sa
+> dá dostať za jedno popoludnie.
+
 Kniha to hovorí jasne: **spoj sa so všetkými naraz, v jednej dávke, nie po
-jednom cez týždne.** Cieľ je asi päťdesiat spojení a potom prestaň počítať.
+jednom cez týždne.**
 
 Dnes pošli žiadosti:
 1. **Všetkým spolužiakom** z PEVŠ aj z priemyslovky, ktorých nájdeš.
