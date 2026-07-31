@@ -634,7 +634,7 @@
     {
       "slug": "shapelesai",
       "title": "SHAPELESAI",
-      "subtitle": "Obsah a vizuály pre sociálne siete",
+      "subtitle": "Vizuálny systém a obsah pre profil",
       "category": "socialne-siete",
       "cross": [],
       "featured": false,
@@ -642,19 +642,56 @@
       "year": "od 2025",
       "client": "SHAPELESAI",
       "status": "komercny",
-      "role": "Social media manager",
-      "format": null,
+      "role": "Social media manager, grafika a copywriting",
+      "format": "Karusely a príspevky 1080 × 1350 px",
       "software": [
         "Photoshop",
         "Illustrator",
         "Canva"
       ],
-      "brief": null,
-      "solution": null,
-      "why": null,
-      "orientation": "square",
-      "cover": null,
-      "images": []
+      "brief": "Robiť profil firme, ktorá predáva AI a marketing, tak, aby ho ľudia sledovali pre to, čo sa z neho dozvedia, nie pre ponuky. Obsah musel byť vzdelávací a zároveň rozoznateľný na prvý pohľad v cudzom feede.",
+      "solution": "Celý profil stojí na dvoch farbách, kyslej žltej a tmavomodrej, a na dvoch písmach: tučnom bezpätkovom na tvrdenia a strojopise na vysvetlenie. Nadpisy podčiarkujem zvýrazňovačom, takže oko vie, kde má zastať. Na to som postavila formáty, ktoré sa dajú opakovať donekonečna. Mýtus alebo realita je kvíz: prvá strana dá tvrdenie a dve tlačidlá, druhá odpoveď na pokrčenom papieri. Vzdelávacie karusely majú úvodnú stranu urobenú ako príspevok v príspevku, s krížikom, šípkou a ikonami, číslované kroky a na konci otázku, ktorá vracia čitateľa k sebe. Nechýba bodka s počtom strán, aby človek vedel, do čoho ide.",
+      "why": "Karusel je jediný formát na Instagrame, kde musí čitateľ niečo urobiť, aby pokračoval. Preto ma zaujímalo hlavne to, čo drží prst v pohybe: aby prvá strana sľúbila konkrétnu vec a každá ďalšia ju splnila skôr, než ju prestane baviť.",
+      "orientation": "portrait",
+      "cover": "assets/projects/shapelesai/01-ai-uvod.jpg",
+      "images": [
+        {
+          "src": "assets/projects/shapelesai/02-mytus-otazka.jpg",
+          "caption": "Mýtus alebo realita, otázka",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/03-mytus-odpoved.jpg",
+          "caption": "Mýtus alebo realita, odpoveď",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/04-mytus-tmava.jpg",
+          "caption": "Tmavá verzia toho istého formátu",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/05-chyby-uvod.jpg",
+          "caption": "Vzdelávací karusel, úvodná strana",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/06-chyby-krok.jpg",
+          "caption": "Číslovaný krok v karuseli",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/07-chyby-zaver.jpg",
+          "caption": "Záverečná strana s otázkou",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/08-ai-zvyraznenie.jpg",
+          "caption": "Zvýrazňovač ako opakovaný prvok",
+          "orientation": "portrait"
+        }
+      ],
+      "hero_caption": "AI plánovanie, úvodná strana karuselu"
     },
     {
       "slug": "plagaty-k-skolskym-filmom",
