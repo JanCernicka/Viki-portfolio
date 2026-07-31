@@ -500,7 +500,7 @@
       ],
       "featured": false,
       "order": 13,
-      "year": null,
+      "year": "2024",
       "client": "Telekom",
       "status": "koncept",
       "role": "Grafika notifikácie",
@@ -510,7 +510,7 @@
         "Illustrator"
       ],
       "brief": "Navrhnúť notifikáciu, ktorá používateľovi Predplatenky ponúkne desať gigabajtov za euro, a spraviť ju tak, aby ju nezavrel skôr, než si prečíta ponuku.",
-      "solution": "Text ostáva rovnaký, mení sa spôsob, akým sa dostane k oku. Prvá varianta roztrhne magentovú plochu ako papier a číslo sa objaví v trhline. Druhá ho odkryje sprejom a do rohu pridá ruku s mincou. Tretia stavia na darčeku, z ktorého vypadáva SIM karta. Vo všetkých troch je desať gigabajtov najväčšia vec na obrazovke a tlačidlo sedí na tom istom mieste.",
+      "solution": "Text ostáva rovnaký, mení sa spôsob, akým sa dostane k oku. Prvá varianta roztrhne magentovú plochu ako papier a číslo sa objaví v trhline. Druhá funguje ako stierací žreb: plocha sa zotrie a pod ňou je ponuka, v rohu ruka s mincou, ktorou sa stiera. Tretia stavia na darčeku, z ktorého vypadáva SIM karta. Vo všetkých troch je desať gigabajtov najväčšia vec na obrazovke a tlačidlo sedí na tom istom mieste.",
       "why": "Notifikáciu človek zatvára reflexne. Tri varianty tej istej správy sú tu preto, aby sa dalo porovnať, ktorá ho zastaví, a nie preto, aby som si vybrala tú najkrajšiu.",
       "orientation": "landscape",
       "cover": "assets/projects/telekom/01-mockup.jpg",
@@ -522,13 +522,13 @@
           "orientation": "landscape"
         },
         {
-          "src": "assets/projects/telekom/03-varianta-sprej.jpg",
-          "caption": "Varianta so sprejom",
+          "src": "assets/projects/telekom/03-varianta-zotieranie.jpg",
+          "caption": "Varianta so stieracím žrebom",
           "orientation": "landscape"
         },
         {
           "src": "assets/projects/telekom/04-varianta-darcek.jpg",
-          "caption": "Varianta s darčekom",
+          "caption": "Varianta so SIM kartou ako darčekom",
           "orientation": "landscape"
         },
         {
@@ -663,27 +663,6 @@
       "solution": null,
       "why": null,
       "orientation": "portrait",
-      "cover": null,
-      "images": []
-    },
-    {
-      "slug": "packaging",
-      "title": "Obaly zo školy",
-      "subtitle": null,
-      "category": "obaly",
-      "cross": [],
-      "featured": false,
-      "order": 18,
-      "year": null,
-      "client": null,
-      "status": "skolsky",
-      "role": null,
-      "format": null,
-      "software": [],
-      "brief": null,
-      "solution": null,
-      "why": null,
-      "orientation": "landscape",
       "cover": null,
       "images": []
     }
