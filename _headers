@@ -13,7 +13,3 @@
 # verziu ešte rok. Deň s overením je dosť rýchly a pascu to zavrie.
 /assets/*
   Cache-Control: public, max-age=86400, must-revalidate
-
-# Video: nemení sa, ale rovnako ako obrázky sa smie prepísať, tak bez immutable.
-/assets/projects/*.mp4
-  Cache-Control: public, max-age=86400, must-revalidate
