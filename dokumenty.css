@@ -135,13 +135,32 @@ img{display:block;max-width:100%;}
   gap:4mm;
   height:30mm;
   flex:0 0 auto;
+  justify-content:center;
 }
 .pf-strip img{
-  flex:1;
+  flex:1 1 0;
+  /* Pri jednom alebo dvoch záberoch by sa roztiahli cez celý pás a vyzerali
+     by ako hlavný obrázok. Šírka bunky je preto najviac tretina. */
+  max-width:calc((100% - 8mm) / 3);
   height:100%;
   object-fit:contain;
   background:#fff;
   min-width:0;
+}
+
+/* Zábery vedľa seba namiesto jedného hlavného. */
+.pf-row{
+  flex:1;
+  display:flex;
+  gap:4mm;
+  min-height:0;
+  justify-content:center;
+}
+.pf-row img{
+  flex:1 1 0;
+  min-width:0;
+  height:100%;
+  object-fit:contain;
 }
 .pf-text{
   flex:0 0 auto;

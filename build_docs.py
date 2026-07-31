@@ -100,7 +100,17 @@ def portfolio_page(p, n, total):
     cover = p.get("cover")
     imgs = [i for i in (p.get("images") or []) if i.get("src")]
 
-    if cover:
+    # Projekty, ktoré majú na webe zábery vedľa seba, ich majú vedľa seba aj tu.
+    # Dvojica portrétov alebo dvojica plagátov je pointa práce; jeden veľký
+    # a jeden ako známka pod ním to rozbíja. Zábery na šírku sa takto ale
+    # zmestia do tretiny strany a zdrobnejú, tie ostávajú pri jednom hlavnom.
+    row = p.get("hero_layout") == "row" and orient != "landscape"
+    shots = ([{"src": cover}] if cover else []) + imgs
+    if row and len(shots) > 1:
+        cells = "".join(f'<img src="{esc(i["src"])}" alt="">' for i in shots[:3])
+        visual = f'<div class="pf-row">{cells}</div>'
+        imgs = []
+    elif cover:
         visual = f'<img class="pf-img" src="{esc(cover)}" alt="">'
     elif imgs:
         visual = f'<img class="pf-img" src="{esc(imgs[0]["src"])}" alt="">'
@@ -115,8 +125,12 @@ def portfolio_page(p, n, total):
         imgs = imgs + [{"src": v["poster"]}]
 
     # Ďalšie zábery na tej istej strane — max tri, aby strana ostala čistá.
+    # Keď je hlavný obrázok cover, pás začína prvým obrázkom z galérie; bez
+    # coveru ho zabral prvý obrázok, takže pás začína až druhým. Predtým sa
+    # v oboch prípadoch preskakoval prvý, čiže pri projekte s coverom a jedným
+    # obrázkom (Portréty psov) nezostalo do pásu nič.
     strip = ""
-    extra = imgs[1:4] if cover else imgs[1:4]
+    extra = imgs[0:3] if cover else imgs[1:4]
     if extra:
         cells = "".join(f'<img src="{esc(i["src"])}" alt="">' for i in extra)
         strip = f'<div class="pf-strip">{cells}</div>'
