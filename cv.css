@@ -75,13 +75,13 @@ body{
   border-radius:2mm;
 }
 
-/* ---- profil ---- */
+/* Profil sedí v hlavičke, nad linkou, vedľa fotky. Predtým bol pod linkou
+   a hlavička nad ním ostávala poloprázdna. */
 .cv-profile{
-  margin:5mm 0 0;
+  margin:4mm 0 0;
   font-size:9.4pt;
   line-height:1.62;
   color:#000;
-  max-width:165mm;
 }
 
 /* ---- dva stĺpce ---- */
