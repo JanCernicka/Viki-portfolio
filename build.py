@@ -291,16 +291,27 @@ def hero_visual(p, depth=1):
         cls = ASPECT.get(p.get("orientation") or "portrait", "is-portrait")
         return (f'<div class="p-thumb {cls} is-empty" role="img" aria-label="Obrázok pripravujem">'
                 f'<span>pripravujem</span></div>')
-    return (f'<a class="cs-hero-img zoom" href="{up}{esc(src)}" '
-            f'data-cap="{esc(p.get("subtitle") or p["title"])}">'
-            f'<img src="{up}{esc(src)}" alt="{esc(p["title"])}"></a>')
+    cap = esc(p.get("hero_caption") or p.get("subtitle") or p["title"])
+    img = (f'<a class="cs-hero-img zoom" href="{up}{esc(src)}" data-cap="{cap}">'
+           f'<img src="{up}{esc(src)}" alt="{esc(p["title"])}"></a>')
+
+    # Príspevok a reel vedľa seba: obe médiá majú rovnakú výšku, takže sa dá
+    # porovnať statický formát s videom bez toho, aby jedno prebilo druhé.
+    if (p.get("video") or {}).get("beside_cover"):
+        hero_cap = (f'<figcaption>{esc(p["hero_caption"])}</figcaption>'
+                    if p.get("hero_caption") else "")
+        return f'''<div class="cs-duo">
+        <figure class="d-item">{img}{hero_cap}</figure>
+        {video_figure(p, depth)}
+      </div>'''
+    return img
 
 
-def video_block(p, depth=1):
-    """Video projektu. Vlastný prehrávač prehliadača, nič sa nenačítava vopred.
+def video_figure(p, depth=1):
+    """Prehrávač prehliadača, nič sa nenačítava vopred.
 
-    Vertikálne video by pri plnej šírke zabralo celú obrazovku, preto ho
-    obmedzujeme výškou rovnako ako úvodný obrázok.
+    Bez JavaScriptu ostane vnútri odkaz na súbor, takže sa video dá aspoň
+    stiahnuť.
     """
     v = p.get("video")
     if not v or not v.get("src"):
@@ -308,16 +319,24 @@ def video_block(p, depth=1):
     up = "../" * depth
     poster = f' poster="{up}{esc(v["poster"])}"' if v.get("poster") else ""
     cap = f'<figcaption>{esc(v["caption"])}</figcaption>' if v.get("caption") else ""
+    return f'''<figure class="v-item">
+          <video class="v-player" controls preload="none" playsinline{poster}>
+            <source src="{up}{esc(v["src"])}" type="video/mp4">
+            <a href="{up}{esc(v["src"])}">Stiahnuť video</a>
+          </video>
+          {cap}
+        </figure>'''
+
+
+def video_block(p, depth=1):
+    """Video samostatne, keď nestojí vedľa úvodného obrázka."""
+    fig = video_figure(p, depth)
+    if not fig or p.get("video", {}).get("beside_cover"):
+        return ""
     return f'''
   <section class="cs-video">
     <div class="container">
-      <figure class="v-item">
-        <video class="v-player" controls preload="none" playsinline{poster}>
-          <source src="{up}{esc(v["src"])}" type="video/mp4">
-          <a href="{up}{esc(v["src"])}">Stiahnuť video</a>
-        </video>
-        {cap}
-      </figure>
+      {fig}
     </div>
   </section>
 '''

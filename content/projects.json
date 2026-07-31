@@ -695,7 +695,8 @@
       "video": {
         "src": "assets/projects/shapelesai/reel-historia.mp4",
         "poster": "assets/projects/shapelesai/reel-historia.jpg",
-        "caption": "Reel Hľadám firmu s históriou. Na YouTube a sociálnych sieťach presiahol tisíc pozretí."
+        "caption": "Reel Hľadám firmu s históriou, viac než tisíc pozretí",
+        "beside_cover": true
       }
     },
     {

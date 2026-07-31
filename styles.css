@@ -1007,7 +1007,29 @@ a{color:inherit;text-decoration:none;}
    Reel je na výšku 9:16. Bez obmedzenia výšky by vytlačil celý text projektu
    pod okraj okna, presne ako predtým banner. */
 .cs-video{padding:var(--sp-gap) 0 0;}
-.v-item{margin:0;display:flex;flex-direction:column;align-items:center;}
+.v-item{margin:0;display:flex;flex-direction:column;align-items:center;max-width:100%;}
+
+/* Príspevok a reel vedľa seba. Obe médiá držia rovnakú výšku, nie rovnakú
+   šírku — 4:5 a 9:16 sa inak nedajú postaviť vedľa seba tak, aby to nevyzeralo
+   ako chyba. Na úzkom displeji sa poskladajú pod seba. */
+.cs-duo{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  justify-content:center;
+  gap:clamp(18px,2.6vw,40px);
+}
+.d-item{margin:0;display:flex;flex-direction:column;align-items:center;max-width:100%;}
+.cs-duo .cs-hero-img img,
+.cs-duo .v-player{max-height:min(52vh,440px);}
+.cs-duo figcaption{
+  margin-top:10px;
+  font-size:calc(var(--fs-small) * .92);
+  letter-spacing:.05em;
+  color:var(--muted);
+  text-align:center;
+  max-width:34ch;
+}
 .v-player{
   display:block;
   max-height:min(58vh,540px);
