@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dokumenty — Viktória Mikušková</title>
-<meta name="robots" content="noindex">
+<title>Dokumenty na stiahnutie — Viktória Mikušková</title>
 <link rel="icon" type="image/png" href="assets/images/logo.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="dokumenty.css">
@@ -12,70 +11,24 @@
 <body>
 
   <div class="tool">
-    <h1>Dokumenty</h1>
+    <h1>Dokumenty na stiahnutie</h1>
     <p class="tool-lead">
-      Všetko, čo sa posiela alebo tlačí. Táto strana nie je v menu webu a
-      vyhľadávače ju neindexujú — je pracovná.
+      Ak Vás moje portfólio zaujalo, viete si ho tu stiahnuť.
     </p>
-    <p class="hub-warn">Pozor: 3 projektov v posielateľnom portfóliu zatiaľ nemá obrázok. Kým tam nebudú, PDF neposielaj — doplň obrázky do <code>content/projects.json</code> a spusti <code>python3 build_docs.py</code> a <code>node make_pdf.js</code>.</p>
 
     <ul class="hub">
       <li>
-        <h2><a href="cv.html">Životopis</a></h2>
-        <p>Jedna strana A4 v tvojej identite.
-           <a href="assets/cv/Viktoria-Mikuskova-CV.pdf" download>Stiahnuť PDF</a></p>
+        <h2><a href="assets/cv/Viktoria-Mikuskova-CV.pdf" download>Životopis na stiahnutie</a></h2>
+        <p>Jedna strana A4.
+           <a href="cv.html">Pozrieť v prehliadači</a></p>
       </li>
       <li>
-        <h2><a href="portfolio-knihy.html">Portfólio — knižný dizajn</a></h2>
-        <p>Do vydavateľstiev. Knižné práce naplno, ostatná tvorba v prehľade na konci.
-           <a href="assets/dokumenty/Viktoria-Mikuskova-portfolio-knizny-dizajn.pdf" download>Stiahnuť PDF</a></p>
-      </li>
-      <li>
-        <h2><a href="portfolio-grafika.html">Portfólio — grafický dizajn</a></h2>
-        <p>Do štúdií a agentúr. Rovnaké práce, opačné poradie: grafika naplno,
-           knižný dizajn na konci ako odlíšenie.
-           <a href="assets/dokumenty/Viktoria-Mikuskova-portfolio-grafika.pdf" download>Stiahnuť PDF</a></p>
-      </li>
-      <li>
-        <h2><a href="hlavickovy-papier.html">Hlavičkový papier</a></h2>
-        <p>Na sprievodné listy a žiadosti. Text sa dá prepísať priamo v prehliadači.
-           <a href="assets/dokumenty/Viktoria-Mikuskova-hlavickovy-papier.pdf" download>Stiahnuť PDF</a></p>
-      </li>
-      <li>
-        <h2><a href="promo.html">Promo kus — záložky</a> <span class="tag">na prepracovanie</span></h2>
-        <p>Štyri záložky do knihy na jednom A4. Formát a mechanika sedia, ale
-           dizajn ide preč a urobí sa nanovo — zatiaľ ich netlač.
-           <a href="assets/dokumenty/Viktoria-Mikuskova-zalozky.pdf" download>Stiahnuť PDF</a></p>
-      </li>
-      <li>
-        <h2><a href="podpis.html">E-mailový podpis</a></h2>
-        <p>Aj s návodom, ako ho vložiť do Gmailu a Outlooku.</p>
+        <h2><a href="assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf" download>Portfólio na stiahnutie</a></h2>
+        <p>Výber prác naprieč vizuálnou identitou, obalmi, ilustráciou, knižným
+           dizajnom, tlačovinami aj sociálnymi sieťami.
+           <a href="portfolio-dokument.html">Pozrieť v prehliadači</a></p>
       </li>
     </ul>
-
-    <h2 class="hub-h">Čaká sa na</h2>
-    <ul class="hub-todo">
-      <li><strong>Nové logo.</strong> Všetko ho ťahá z jedného súboru —
-          <code>assets/images/logo.png</code>. Keď ho prepíšeš novým a spustíš
-          príkazy nižšie, vymení sa naraz na webe, v CV, na hlavičkovom papieri,
-          na záložkách aj vo favicone.</li>
-      <li><strong>Nový dizajn záložiek.</strong> Formát 45 × 180 mm a tlačová
-          príprava sú hotové, mení sa len obsah rámčeka.</li>
-      <li><strong>Prepnutie domény.</strong> Dokumenty už uvádzajú
-          <code>viktoriamikuskova.com</code> — kým doména vedie na starý web,
-          neposielaj ich.</li>
-      <li><strong>Obrázky projektov.</strong> Bez nich je posielateľné portfólio
-          prázdne.</li>
-    </ul>
-
-    <h2 class="hub-h">Keď sa niečo zmení</h2>
-    <p class="tool-lead">
-      Adresa webu je na jednom mieste — <code>SITE_URL</code> v súbore
-      <code>build_docs.py</code>. Po zmene spusti:
-    </p>
-    <pre class="tool-code">python3 build.py
-python3 build_docs.py
-node make_pdf.js</pre>
   </div>
 </body>
 </html>

@@ -464,7 +464,7 @@ def build_portfolio(projects):
       <div class="cat-cta-inner">
         <div>
           <h2>Chcete portfólio v PDF?</h2>
-          <p>Na stiahnutie je verzia pre grafiku aj verzia zameraná na knižný dizajn.</p>
+          <p>Výber prác na jednom mieste, spolu so životopisom.</p>
         </div>
         <a class="cta-btn" href="dokumenty.html">Stiahnuť portfólio</a>
       </div>

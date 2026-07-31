@@ -6,7 +6,7 @@
 /tlaciviny     /knizny-dizajn   301
 
 # posielateľné portfólio sa rozdelilo na dve verzie
-/portfolio-pdf   /portfolio-knihy   301
+/portfolio-pdf   /portfolio-dokument   301
 
 # prestavba na disciplíny — staré adresy nech neskončia na 404
 /dalsia-tvorba                        /vizualna-identita              301
@@ -17,3 +17,9 @@
 /projekt/plagaty-reklama              /projekt/zara.html              301
 /projekt/kaviaren-turecko             /projekt/noww.html              301
 /projekt/packaging                    /obaly                          301
+
+# dve verzie portfólia sa zlúčili do jednej
+/portfolio-knihy                      /portfolio-dokument             301
+/portfolio-grafika                    /portfolio-dokument             301
+/assets/dokumenty/Viktoria-Mikuskova-portfolio-knizny-dizajn.pdf  /assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf  301
+/assets/dokumenty/Viktoria-Mikuskova-portfolio-grafika.pdf        /assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf  301

@@ -6,12 +6,11 @@ Generátor tlačených a posielateľných dokumentov.
     python3 build_docs.py
 
 Vytvorí:
-    portfolio-knihy.html    posielateľné portfólio — knižný dizajn
-    portfolio-grafika.html  posielateľné portfólio — grafický dizajn
+    portfolio-dokument.html posielateľné portfólio (jedno, všetky disciplíny)
     hlavickovy-papier.html  hlavičkový papier na sprievodné listy
     promo.html              záložky do knihy — promo kus, 4 na A4
     podpis.html             e-mailový podpis + návod na vloženie
-    dokumenty.html          rozcestník ku všetkým dokumentom
+    dokumenty.html          stránka na stiahnutie: životopis a portfólio
     assets/dokumenty/qr-web.png
 
 Potom sa z nich urobia PDF-ká:
@@ -49,6 +48,7 @@ STATUS = {
     "komercny": "Komerčná práca",
     "publikovany": "Publikované",
     "realizovany": "Realizované",
+    "sutaz": "2. miesto v súťaži",
     "koncept": "Koncepčný projekt",
 }
 
@@ -131,7 +131,14 @@ def portfolio_page(p, n, total):
         meta.append(esc(p["year"]))
     if p.get("status") in STATUS:
         meta.append(STATUS[p["status"]])
-    meta_line = " &nbsp;·&nbsp; ".join(meta)
+    # Pri školských prácach je zadávateľ aj štítok "Školský projekt", takže by
+    # sa v riadku zopakoval dvakrát. Na webe sú od seba, tu vedľa seba.
+    seen, uniq = set(), []
+    for m in meta:
+        if m.casefold() not in seen:
+            seen.add(m.casefold())
+            uniq.append(m)
+    meta_line = " &nbsp;·&nbsp; ".join(uniq)
 
     body = p.get("solution") or p.get("brief") or p.get("subtitle") or ""
 
@@ -161,36 +168,28 @@ def portfolio_page(p, n, total):
 '''
 
 
-# Dve verzie posielateľného portfólia z tých istých dát. Nie sú to dve rôzne
-# portfóliá — je to to isté telo práce vpustené dvoma vchodmi. Každá verzia
-# vedie tým, na čo sa príjemca pýta, a druhú disciplínu ukáže na záver ako
-# doklad rozsahu. Kniha o portfóliu varuje pred zmiešaným portfóliom, kde je
-# od každého trochu; toto je opak — v každej verzii je jedno zameranie hlboko.
+# Jedno posielateľné portfólio zo všetkých disciplín. Predtým boli dve verzie,
+# jedna pre vydavateľstvá a jedna pre agentúry, a pred každým odoslaním sa
+# muselo rozhodovať, ktorá pôjde von. Teraz je jeden odkaz, ktorý sa dá poslať
+# komukoľvek, a poradie strán robí to, čo predtým robil výber verzie: najprv
+# najsilnejšie práce, potom zvyšok.
 COVER_ROLE = "Grafická dizajnérka a ilustrátorka"
 CV_PROFILE = (
     "Grafická dizajnérka s polygrafickým vzdelaním a praxou v tvorbe vizuálnych identít, obalov, tlačovín a obsahu pre značky. "
     "Remeselný základ z polygrafie a z prípravy podkladov do tlače spájam s marketingovým myslením zo štúdia mediálnej komunikácie a s typografiou, ktorá text nesie a neprekrýva.")
 
 VARIANTS = {
-    "grafika": {
-        "file": "portfolio-grafika.html",
-        "pdf": "Viktoria-Mikuskova-portfolio-grafika.pdf",
-        "lead": ["vizualna-identita", "obaly", "ilustracia", "tlacoviny", "socialne-siete"],
-        "title": "Grafický dizajn",
+    "portfolio": {
+        "file": "portfolio-dokument.html",
+        "pdf": "Viktoria-Mikuskova-portfolio.pdf",
+        # Všetky disciplíny naplno. Dve verzie znamenali, že sa pred každým
+        # odoslaním muselo rozhodovať, ktorú poslať; jedna to rozhodovanie ruší.
+        "lead": ["vizualna-identita", "obaly", "ilustracia", "knizny-dizajn",
+                 "tlacoviny", "socialne-siete"],
+        "title": "Portfólio",
         "closing": CV_PROFILE,
-        "more_title": "Knižný dizajn",
-        "more_lead": ("Obálky, sadzba a knižná ilustrácia. Zameranie, v ktorom mám "
-                      "odborné vzdelanie."),
-    },
-    "knihy": {
-        "file": "portfolio-knihy.html",
-        "pdf": "Viktoria-Mikuskova-portfolio-knizny-dizajn.pdf",
-        "lead": ["knizny-dizajn"],
-        "title": "Knižný dizajn",
-        "closing": CV_PROFILE,
-        "more_title": "Aj mimo kníh",
-        "more_lead": ("Vizuálna identita, obaly, ilustrácia a tlačoviny. "
-                      "Celé projekty sú na webe."),
+        "more_title": None,
+        "more_lead": None,
     },
 }
 
@@ -238,15 +237,15 @@ def build_portfolio_pdf(projects, key):
 
     total = len(lead)
     pages = "".join(portfolio_page(p, i + 1, total) for i, p in enumerate(lead))
-    tail = more_page(other, v["more_title"], v["more_lead"]) if other else ""
+    tail = (more_page(other, v["more_title"], v["more_lead"])
+            if other and v.get("more_title") else "")
 
     html = doc_head(f'Portfólio — {v["title"]} — {NAME}', "dokumenty.css") + f'''
   <section class="page pf-cover">
     <img class="pf-cover-logo" src="assets/images/logo.png" alt="">
     <div class="pf-cover-mid">
       <h1>{esc(NAME)}</h1>
-      <p class="pf-cover-role">{esc(v["title"])}</p>
-      <p class="pf-cover-focus">{esc(COVER_ROLE)}</p>
+      <p class="pf-cover-role">{esc(COVER_ROLE)}</p>
     </div>
     <div class="pf-cover-foot">
       <span>Výber z prác</span>
@@ -511,79 +510,37 @@ def sync_cv_url():
 
 
 def build_hub(missing):
-    warn = ""
+    """Stránka na stiahnutie. Sem chodí človek, ktorý si prezrel prácu a chce
+    si ju odniesť — teda dva súbory a nič iné. Hlavičkový papier, záložky
+    a e-mailový podpis sa naďalej generujú, len sa už neponúkajú tu; sú to jej
+    pracovné nástroje, nie niečo, čo si sťahuje personalista."""
+    # Upozornenie na chýbajúce obrázky patrí do terminálu, nie na stránku,
+    # ktorú vidí personalista.
     if missing:
-        warn = (f'<p class="hub-warn">Pozor: {missing} projektov v posielateľnom '
-                f'portfóliu zatiaľ nemá obrázok. Kým tam nebudú, PDF neposielaj — '
-                f'doplň obrázky do <code>content/projects.json</code> a spusti '
-                f'<code>python3 build_docs.py</code> a <code>node make_pdf.js</code>.</p>')
+        print(f"  ! {missing} projektov nemá obrázok, do PDF sa nedostali")
 
-    html = doc_head("Dokumenty — " + NAME, "dokumenty.css") + f'''
+    v = VARIANTS["portfolio"]
+    html = doc_head("Dokumenty na stiahnutie — " + NAME, "dokumenty.css",
+                    noindex=False) + f'''
   <div class="tool">
-    <h1>Dokumenty</h1>
+    <h1>Dokumenty na stiahnutie</h1>
     <p class="tool-lead">
-      Všetko, čo sa posiela alebo tlačí. Táto strana nie je v menu webu a
-      vyhľadávače ju neindexujú — je pracovná.
+      Ak Vás moje portfólio zaujalo, viete si ho tu stiahnuť.
     </p>
-    {warn}
 
     <ul class="hub">
       <li>
-        <h2><a href="cv.html">Životopis</a></h2>
-        <p>Jedna strana A4 v tvojej identite.
-           <a href="assets/cv/Viktoria-Mikuskova-CV.pdf" download>Stiahnuť PDF</a></p>
+        <h2><a href="assets/cv/Viktoria-Mikuskova-CV.pdf" download>Životopis na stiahnutie</a></h2>
+        <p>Jedna strana A4.
+           <a href="cv.html">Pozrieť v prehliadači</a></p>
       </li>
       <li>
-        <h2><a href="portfolio-knihy.html">Portfólio — knižný dizajn</a></h2>
-        <p>Do vydavateľstiev. Knižné práce naplno, ostatná tvorba v prehľade na konci.
-           <a href="assets/dokumenty/Viktoria-Mikuskova-portfolio-knizny-dizajn.pdf" download>Stiahnuť PDF</a></p>
-      </li>
-      <li>
-        <h2><a href="portfolio-grafika.html">Portfólio — grafický dizajn</a></h2>
-        <p>Do štúdií a agentúr. Rovnaké práce, opačné poradie: grafika naplno,
-           knižný dizajn na konci ako odlíšenie.
-           <a href="assets/dokumenty/Viktoria-Mikuskova-portfolio-grafika.pdf" download>Stiahnuť PDF</a></p>
-      </li>
-      <li>
-        <h2><a href="hlavickovy-papier.html">Hlavičkový papier</a></h2>
-        <p>Na sprievodné listy a žiadosti. Text sa dá prepísať priamo v prehliadači.
-           <a href="assets/dokumenty/Viktoria-Mikuskova-hlavickovy-papier.pdf" download>Stiahnuť PDF</a></p>
-      </li>
-      <li>
-        <h2><a href="promo.html">Promo kus — záložky</a> <span class="tag">na prepracovanie</span></h2>
-        <p>Štyri záložky do knihy na jednom A4. Formát a mechanika sedia, ale
-           dizajn ide preč a urobí sa nanovo — zatiaľ ich netlač.
-           <a href="assets/dokumenty/Viktoria-Mikuskova-zalozky.pdf" download>Stiahnuť PDF</a></p>
-      </li>
-      <li>
-        <h2><a href="podpis.html">E-mailový podpis</a></h2>
-        <p>Aj s návodom, ako ho vložiť do Gmailu a Outlooku.</p>
+        <h2><a href="assets/dokumenty/{v["pdf"]}" download>Portfólio na stiahnutie</a></h2>
+        <p>Výber prác naprieč vizuálnou identitou, obalmi, ilustráciou, knižným
+           dizajnom, tlačovinami aj sociálnymi sieťami.
+           <a href="{v["file"]}">Pozrieť v prehliadači</a></p>
       </li>
     </ul>
-
-    <h2 class="hub-h">Čaká sa na</h2>
-    <ul class="hub-todo">
-      <li><strong>Nové logo.</strong> Všetko ho ťahá z jedného súboru —
-          <code>assets/images/logo.png</code>. Keď ho prepíšeš novým a spustíš
-          príkazy nižšie, vymení sa naraz na webe, v CV, na hlavičkovom papieri,
-          na záložkách aj vo favicone.</li>
-      <li><strong>Nový dizajn záložiek.</strong> Formát 45 × 180 mm a tlačová
-          príprava sú hotové, mení sa len obsah rámčeka.</li>
-      <li><strong>Prepnutie domény.</strong> Dokumenty už uvádzajú
-          <code>viktoriamikuskova.com</code> — kým doména vedie na starý web,
-          neposielaj ich.</li>
-      <li><strong>Obrázky projektov.</strong> Bez nich je posielateľné portfólio
-          prázdne.</li>
-    </ul>
-
-    <h2 class="hub-h">Keď sa niečo zmení</h2>
-    <p class="tool-lead">
-      Adresa webu je na jednom mieste — <code>SITE_URL</code> v súbore
-      <code>build_docs.py</code>. Po zmene spusti:
-    </p>
-    <pre class="tool-code">python3 build.py
-python3 build_docs.py
-node make_pdf.js</pre>
   </div>
 </body>
 </html>
