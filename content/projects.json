@@ -700,25 +700,28 @@
       }
     },
     {
-      "slug": "plagaty-k-skolskym-filmom",
-      "title": "Plagáty k školským filmom",
-      "subtitle": null,
+      "slug": "podozrivy",
+      "title": "Podozrivý",
+      "subtitle": "Plagát k študentskému filmu",
       "category": "tlacoviny",
       "cross": [],
       "featured": false,
       "order": 17,
-      "year": null,
-      "client": null,
+      "year": "2025",
+      "client": "Školský projekt",
       "status": "skolsky",
-      "role": null,
-      "format": null,
-      "software": [],
-      "brief": null,
-      "solution": null,
-      "why": null,
+      "role": "Filmový plagát",
+      "format": "Plagát A4",
+      "software": [
+        "Photoshop"
+      ],
+      "brief": "Študenti natočili krátky film Podozrivý a mojou úlohou bolo spraviť k nemu plagát.",
+      "solution": "Vybrala som záber z výsluchu a nechala ho takmer nedotknutý. Celý plagát je studený, modrozelený a tmavý, jediná teplá vec na ňom je žltý názov, takže oko ide najprv naň a až potom do miestnosti. Vľavo v popredí ostala rozostrená silueta, vďaka ktorej divák nesedí pred scénou, ale v nej, akoby vypočúval spolu s ňou. Názov je v úzkej kondenzovanej grotesque League Gothic, tvorcovia dole v troch stĺpcoch v Ubuntu Light, aby nekonkurovali obrazu.",
+      "why": "Filmový plagát má dať pocit z filmu bez toho, aby ho prezradil. Pracovala som preto skôr s tmou a s tým, čo na zábere nie je vidieť, než s tým, čo je.",
       "orientation": "portrait",
-      "cover": null,
-      "images": []
+      "cover": "assets/projects/podozrivy/01-plagat.jpg",
+      "images": [],
+      "hero_caption": "Réžia Boris Zimáni, scénar Dorotea Buranová, kamera Adam Melničák"
     }
   ]
 }
