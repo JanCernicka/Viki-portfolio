@@ -108,6 +108,12 @@ def portfolio_page(p, n, total):
         visual = ('<div class="pf-empty"><span>obrázok projektu</span>'
                   '<span class="pf-empty-note">doplniť pred odoslaním</span></div>')
 
+    # Do PDF sa video nedostane, ale jeho úvodná snímka áno — inak by
+    # najúspešnejšia práca v portfóliu chýbala.
+    v = p.get("video") or {}
+    if v.get("poster"):
+        imgs = imgs + [{"src": v["poster"]}]
+
     # Ďalšie zábery na tej istej strane — max tri, aby strana ostala čistá.
     strip = ""
     extra = imgs[1:4] if cover else imgs[1:4]

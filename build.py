@@ -296,6 +296,33 @@ def hero_visual(p, depth=1):
             f'<img src="{up}{esc(src)}" alt="{esc(p["title"])}"></a>')
 
 
+def video_block(p, depth=1):
+    """Video projektu. Vlastný prehrávač prehliadača, nič sa nenačítava vopred.
+
+    Vertikálne video by pri plnej šírke zabralo celú obrazovku, preto ho
+    obmedzujeme výškou rovnako ako úvodný obrázok.
+    """
+    v = p.get("video")
+    if not v or not v.get("src"):
+        return ""
+    up = "../" * depth
+    poster = f' poster="{up}{esc(v["poster"])}"' if v.get("poster") else ""
+    cap = f'<figcaption>{esc(v["caption"])}</figcaption>' if v.get("caption") else ""
+    return f'''
+  <section class="cs-video">
+    <div class="container">
+      <figure class="v-item">
+        <video class="v-player" controls preload="none" playsinline{poster}>
+          <source src="{up}{esc(v["src"])}" type="video/mp4">
+          <a href="{up}{esc(v["src"])}">Stiahnuť video</a>
+        </video>
+        {cap}
+      </figure>
+    </div>
+  </section>
+'''
+
+
 def status_badge(p):
     s = STATUS.get(p.get("status"))
     if not s:
@@ -659,7 +686,7 @@ def build_project(p, projects):
       {hero_visual(p)}
     </div>
   </section>
-
+{video_block(p)}
   <section class="cs-meta">
     <div class="container">
       <dl class="cs-meta-grid">

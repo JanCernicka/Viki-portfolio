@@ -1003,6 +1003,28 @@ a{color:inherit;text-decoration:none;}
 }
 .cs-block .todo{color:rgba(90,80,66,.45);font-style:italic;}
 
+/* ---- video ----
+   Reel je na výšku 9:16. Bez obmedzenia výšky by vytlačil celý text projektu
+   pod okraj okna, presne ako predtým banner. */
+.cs-video{padding:var(--sp-gap) 0 0;}
+.v-item{margin:0;display:flex;flex-direction:column;align-items:center;}
+.v-player{
+  display:block;
+  max-height:min(58vh,540px);
+  max-width:100%;
+  width:auto;
+  border-radius:10px;
+  background:#1c1610;
+  box-shadow:0 14px 34px rgba(90,66,42,.16);
+}
+.v-item figcaption{
+  margin-top:10px;
+  font-size:calc(var(--fs-small) * .92);
+  letter-spacing:.05em;
+  color:var(--muted);
+  text-align:center;
+}
+
 /* ---- galéria ----
    Obrázky sa nesmú orezávať: mockupy a logotypy majú rôzne pomery strán a
    výplňou sa im odrezávali okraje aj s názvom. Rám má preto pevný pomer,
