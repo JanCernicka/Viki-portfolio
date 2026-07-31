@@ -236,6 +236,48 @@ a{color:inherit;text-decoration:none;}
   letter-spacing:.01em;
 }
 
+
+/* ---- pás disciplín: mriežka odkazov, nie zoznam služieb ---- */
+.services-grid{
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(16px,1.8vw,26px);
+  margin-top:var(--sp-gap);
+}
+.services-grid .service{align-items:stretch;}
+.services-grid .service::after{display:none;}
+.services-grid .service > a{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  width:100%;
+  padding:16px 20px;
+  border:1px solid rgba(120,105,90,.22);
+  border-radius:14px;
+  background:var(--cream);
+  transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.services-grid .service > a:hover,
+.services-grid .service > a:focus-visible{
+  border-color:var(--terra);
+  transform:translateY(-2px);
+  box-shadow:0 14px 30px rgba(90,66,42,.10);
+}
+.services-grid .service-icon{width:clamp(54px,3.8vw,68px);height:clamp(54px,3.8vw,68px);}
+.services-grid .service-sub{max-width:30ch;line-height:1.5;}
+@media (max-width:1100px){ .services-grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:620px){ .services-grid{grid-template-columns:1fr;} }
+
+/* ---- počet prác v hlavičke kategórie ---- */
+.cat-hero-inner{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;}
+.cat-count{
+  flex:0 0 auto;
+  font-size:var(--fs-small);
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--muted);
+  white-space:nowrap;
+}
+
 /* ======================= PROJEKTY NA DOMOVSKEJ ======================= */
 .projects{padding:var(--sp-sect) 0 var(--sp-gap);}
 /* Druhý blok má jemne inú plochu, aby sa dve zamerania nezliali do jedného. */
@@ -794,8 +836,18 @@ a{color:inherit;text-decoration:none;}
   margin-top:var(--sp-gap);
 }
 .p-grid-featured{grid-template-columns:repeat(3,1fr);}
-/* Ďalšia tvorba je pod knižnou — menšie dlaždice, aby neprebíjala hlavné zameranie. */
-.p-grid-more{grid-template-columns:repeat(4,1fr);}
+/* Pás disciplín pod prácami — mriežka odkazov, nie zoznam služieb. */
+.services-grid{grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,30px);margin-top:var(--sp-gap);}
+.services-grid .service{align-items:flex-start;}
+.services-grid .service::after{display:none;}
+.services-grid .service a{
+  display:flex;align-items:center;gap:15px;width:100%;
+  padding:16px 18px;border:1px solid var(--rule-soft,rgba(120,105,90,.22));
+  border-radius:14px;background:var(--cream);
+  transition:border-color .2s ease, transform .2s ease;
+}
+.services-grid .service a:hover{border-color:var(--terra);transform:translateY(-2px);}
+.services-grid .service-sub{max-width:28ch;}
 
 /* ---- karta ---- */
 .p-card{
@@ -1010,7 +1062,9 @@ a{color:inherit;text-decoration:none;}
 
 /* Vybrané projekty na homepage: jednotný pomer strán, aby riadok čítal ako celok.
    Skutočné proporcie práce sa ukážu na stránke projektu. */
-.p-grid-featured .p-thumb{aspect-ratio:4/5;}
+/* Jej hero zábery sú 4:3 mockupy — pomer 4/5 im odrezával okraje aj s názvom.
+   Dlaždice teda držia 4:3, aby sa práca zobrazila celá. */
+.p-grid-featured .p-thumb{aspect-ratio:4/3;}
 /* V druhej mriežke musia byť všetky náhľady rovnaké, inak sa nadpisy rozídu
    do rôznych výšok. Preto tu pomer strán prebíja orientáciu projektu. */
 .p-grid-more .p-thumb{aspect-ratio:1/1;}

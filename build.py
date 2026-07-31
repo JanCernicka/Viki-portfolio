@@ -23,31 +23,58 @@ PROJ_DIR = os.path.join(ROOT, "projekt")
 SITE_NAME = "Viktória Mikušková"
 TAGLINE = "Grafická dizajnérka"
 
+# Kategórie sú disciplíny, nie dve vetvy. Agentúra hľadá "branding" alebo
+# "packaging", nie "ďalšiu tvorbu"; knižný dizajn ostáva ako jedna z nich,
+# aby ho vydavateľstvo našlo bez toho, aby rámcoval celé portfólio.
 CATEGORIES = {
+    "vizualna-identita": {
+        "title": "Vizuálna identita",
+        "short": "Vizuálna identita",
+        "icon": "icon-branding.png",
+        "lead": "Logotypy, značky a ich aplikácie — od vizitky po vývesku prevádzky.",
+    },
+    "obaly": {
+        "title": "Obaly a packaging",
+        "short": "Obaly",
+        "icon": "icon-tlaciviny.png",
+        "lead": "Obalový dizajn od ilustrácie cez sadzbu až po prípravu do tlače.",
+    },
+    "ilustracia": {
+        "title": "Ilustrácia",
+        "short": "Ilustrácia",
+        "icon": "icon-ilustracie.png",
+        "lead": "Kresba postáv, digitálna maľba a ilustrácia k textu.",
+    },
     "knizny-dizajn": {
         "title": "Knižný dizajn",
-        "lead": "Obálky, sadzba a propagácia kníh — od žánrovej analýzy po hotovú tlačovú predlohu.",
-        "groups": [
-            ("obalky", "Obálky kníh", "Obálky"),
-            ("sadzba", "Sadzba a dvojstrany", "Sadzba"),
-            ("knizna-ilustracia", "Knižná ilustrácia", "Ilustrácia"),
-            ("znacka", "Značka a knižné produkty", "Značka"),
-            ("propagacia", "Plagáty a propagácia", "Propagácia"),
-        ],
+        "short": "Knižný dizajn",
+        "icon": "icon-tlaciviny.png",
+        "lead": "Obálky, sadzba a typografia. Zameranie, v ktorom mám polygrafické vzdelanie.",
     },
-    "dalsia-tvorba": {
-        "title": "Ďalšia tvorba",
-        "lead": "Branding, ilustrácia, informačný dizajn a marketingové vizuály.",
-        "groups": [
-            ("branding", "Branding a vizuálna identita", "Branding"),
-            ("produktovy-dizajn", "Produktový dizajn a obaly", "Produktový dizajn"),
-            ("ilustracia", "Ilustrácia", "Ilustrácie"),
-            ("informacny-dizajn", "Informačný dizajn", "Informačný dizajn"),
-            ("uiux", "UI/UX dizajn", "UI/UX dizajn"),
-            ("marketing", "Sociálne siete a marketing", "Sociálne siete"),
-        ],
+    "tlacoviny": {
+        "title": "Tlačoviny a orientačné systémy",
+        "short": "Tlačoviny",
+        "icon": "icon-uiux.png",
+        "lead": "Plagáty, mapy a veľkoformátová tlač.",
+    },
+    "socialne-siete": {
+        "title": "Sociálne siete",
+        "short": "Sociálne siete",
+        "icon": "icon-marketing.png",
+        "lead": "Vizuály, obsah a produktová fotografia pre značky.",
     },
 }
+
+
+def in_category(p, key):
+    """Projekt patrí do kategórie priamo alebo cez pole cross."""
+    return p.get("category") == key or key in (p.get("cross") or [])
+
+
+def of_category(projects, key):
+    return sorted([p for p in projects if in_category(p, key)],
+                  key=lambda p: p.get("order") or 999)
+
 
 STATUS = {
     "skolsky":    ("Školský projekt", "st-school"),
@@ -116,24 +143,24 @@ def header(active, depth=0, projects=None):
     def cls(name):
         return ' class="active"' if name == active else ""
 
-    # Rozbaľovacie menu pre Ďalšiu tvorbu — len disciplíny, ktoré majú projekt.
-    # Nová disciplína sa objaví automaticky, len čo k nej priradíš projekt.
+    # V menu je len disciplína, ktorá má aspoň jeden projekt. Nová sa objaví
+    # sama, len čo k nej priradíš prácu.
     projects = projects or []
-    used = {p.get("subcategory") for p in projects if p.get("category") == "dalsia-tvorba"}
-    items = "".join(
-        f'          <a href="{up}dalsia-tvorba.html#{slug}">{label}</a>\n'
-        for slug, _h, label in CATEGORIES["dalsia-tvorba"]["groups"] if slug in used
-    )
-    if items:
-        dalsia = f'''<div class="nav-dropdown">
-        <a href="{up}dalsia-tvorba.html" class="has-caret{' active' if active == 'dalsia-tvorba' else ''}">ĎALŠIA TVORBA
+    items = ""
+    for key, cat in CATEGORIES.items():
+        if not of_category(projects, key):
+            continue
+        act = ' class="active"' if key == active else ""
+        items += f'          <a href="{up}{key}.html"{act}>{cat["short"]}</a>\n'
+
+    portfolio_active = active in CATEGORIES or active == "portfolio"
+    dropdown = f'''<div class="nav-dropdown">
+        <a href="{up}vizualna-identita.html" class="has-caret{' active' if portfolio_active else ''}">PORTFÓLIO
           {CARET}
         </a>
         <div class="dropdown-menu">
 {items}        </div>
       </div>'''
-    else:
-        dalsia = f'<a href="{up}dalsia-tvorba.html"{cls("dalsia-tvorba")}>ĎALŠIA TVORBA</a>'
 
     return f'''
 <header class="site-header" id="domov">
@@ -146,8 +173,7 @@ def header(active, depth=0, projects=None):
     </button>
     <nav class="main-nav">
       <a href="{up}index.html"{cls('domov')}>DOMOV</a>
-      <a href="{up}knizny-dizajn.html"{cls('knizny-dizajn')}>KNIŽNÝ DIZAJN</a>
-      {dalsia}
+      {dropdown}
       <a href="{up}index.html#o-mne">O MNE</a>
       <a href="{up}index.html#kontakt">KONTAKT</a>
     </nav>
@@ -235,22 +261,30 @@ def card(p, depth=0):
 
 # ---------------------------------------------------------------- homepage
 def build_index(projects, about_html):
-    # Domovská stránka má dvoje dvere. Hore knižný dizajn, lebo tam je prevaha
-    # a tam mieri väčšina oslovení; hneď pod ním ďalšia tvorba, aby človek
-    # z agentúry nemusel hľadať v menu, či robíš aj niečo iné.
-    def in_cat(key):
-        return sorted([p for p in projects if p.get("category") == key],
-                      key=lambda p: p.get("order") or 999)
+    # Domovská ukazuje najlepšiu prácu naprieč disciplínami, nie taxonómiu.
+    # Personalista z agentúry chce vidieť práce, nie štruktúru menu.
+    featured = sorted([p for p in projects if p.get("featured")],
+                      key=lambda p: p.get("order") or 999)[:6]
+    cards = "".join(card(p) for p in featured)
 
-    lead = [p for p in in_cat("knizny-dizajn") if p.get("featured")][:3] \
-        or in_cat("knizny-dizajn")[:3]
-    more = in_cat("dalsia-tvorba")[:4]
-
-    cards = "".join(card(p) for p in lead)
-    more_cards = "".join(card(p) for p in more)
+    disciplines = ""
+    for key, cat in CATEGORIES.items():
+        if not of_category(projects, key):
+            continue
+        disciplines += f'''      <li class="service">
+        <a href="{key}.html">
+          <img class="service-icon" src="assets/images/{cat["icon"]}" alt="">
+          <span class="service-text">
+            <span class="service-title">{esc(cat["short"]).upper()}</span>
+            <span class="service-sub">{esc(cat["lead"])}</span>
+          </span>
+        </a>
+      </li>
+'''
 
     html = head(f"{SITE_NAME} — {TAGLINE}",
-                "Mgr. Viktória Mikušková — grafická dizajnérka z Bratislavy so zameraním na knižný dizajn: obálky, sadzba a propagácia kníh.")
+                "Mgr. Viktória Mikušková — grafická dizajnérka a ilustrátorka z Bratislavy. "
+                "Vizuálna identita, obaly, ilustrácia, knižný dizajn a tlačoviny.")
     html += header("domov", projects=projects)
     html += '''
 <!-- ================= HERO ================= -->
@@ -260,7 +294,7 @@ def build_index(projects, about_html):
       <span class="hl1">Dizajn, ktorý</span>
       <span class="hl2">rozpráva váš <em>príbeh</em></span>
     </h1>
-    <p class="hero-sub">Grafická dizajnérka a ilustrátorka so zameraním na knižný dizajn. Okrem kníh robím vizuálne identity, ilustráciu a obsah pre značky.</p>
+    <p class="hero-sub">Grafická dizajnérka a ilustrátorka. Vizuálna identita, obaly, ilustrácia a tlačoviny. Za tým všetkým polygrafická priemyslovka, takže viem, čo sa s návrhom stane v tlačiarni.</p>
   </div>
 
   <picture class="hero-pic">
@@ -268,17 +302,15 @@ def build_index(projects, about_html):
     <img class="hero-img" src="assets/images/hero.jpg" alt="Ilustrácia — Viktória kreslí na grafickom tablete pri stole s knihami a rastlinami">
   </picture>
 
-  <a class="hero-btn" href="knizny-dizajn.html">POZRIEŤ PORTFÓLIO</a>
+  <a class="hero-btn" href="vizualna-identita.html">POZRIEŤ PORTFÓLIO</a>
 </section>
 
-<!-- ================= KNIŽNÝ DIZAJN ================= -->
+<!-- ================= VYBRANÉ PROJEKTY ================= -->
 <section class="projects" id="portfolio">
   <div class="container">
     <div class="section-head">
-      <h2 class="projects-title">KNIŽNÝ DIZAJN</h2>
-      <a class="projects-link" href="knizny-dizajn.html">VŠETKY KNIŽNÉ PRÁCE&nbsp;→</a>
+      <h2 class="projects-title">VYBRANÉ PROJEKTY</h2>
     </div>
-    <p class="section-lead">Obálky, sadzba, knižná ilustrácia a propagácia. Toto je práca, ku ktorej mám najbližšie a v ktorej mám polygrafické vzdelanie.</p>
 
     <div class="p-grid p-grid-featured">
 '''
@@ -287,56 +319,16 @@ def build_index(projects, about_html):
   </div>
 </section>
 
-<!-- ================= ĎALŠIA TVORBA ================= -->
-<section class="projects projects-alt" id="dalsia-tvorba">
+<!-- ================= DISCIPLÍNY ================= -->
+<section class="services projects-alt" id="sluzby">
   <div class="container">
     <div class="section-head">
-      <h2 class="projects-title">ĎALŠIA TVORBA</h2>
-      <a class="projects-link" href="dalsia-tvorba.html">VŠETKY OSTATNÉ PRÁCE&nbsp;→</a>
+      <h2 class="projects-title">ČOMU SA VENUJEM</h2>
     </div>
-    <p class="section-lead">Vizuálna identita, obaly, ilustrácia, informačný dizajn a obsah pre sociálne siete.</p>
-
-    <div class="p-grid p-grid-more">
+    <ul class="services-row services-grid">
 '''
-    html += more_cards
-    html += '''    </div>
-  </div>
-</section>
-
-<!-- ================= OBLASTI ================= -->
-<section class="services" id="sluzby">
-  <div class="container">
-    <p class="eyebrow eyebrow-olive">ČOMU SA VENUJEM</p>
-    <ul class="services-row">
-      <li class="service">
-        <img class="service-icon" src="assets/images/icon-tlaciviny.png" alt="">
-        <div class="service-text">
-          <span class="service-title">TLAČOVINY</span>
-          <span class="service-sub">knihy, plagáty, sadzba</span>
-        </div>
-      </li>
-      <li class="service">
-        <img class="service-icon" src="assets/images/icon-branding.png" alt="">
-        <div class="service-text">
-          <span class="service-title">BRANDING</span>
-          <span class="service-sub">logá, vizuálna identita</span>
-        </div>
-      </li>
-      <li class="service">
-        <img class="service-icon" src="assets/images/icon-ilustracie.png" alt="">
-        <div class="service-text">
-          <span class="service-title">ILUSTRÁCIE</span>
-          <span class="service-sub">digitálne ilustrácie</span>
-        </div>
-      </li>
-      <li class="service">
-        <img class="service-icon" src="assets/images/icon-marketing.png" alt="">
-        <div class="service-text">
-          <span class="service-title">MARKETING</span>
-          <span class="service-sub">sociálne siete, stratégia</span>
-        </div>
-      </li>
-    </ul>
+    html += disciplines
+    html += '''    </ul>
   </div>
 </section>
 '''
@@ -348,8 +340,9 @@ def build_index(projects, about_html):
 # ------------------------------------------------------------ category page
 def build_category(key, projects):
     cat = CATEGORIES[key]
-    mine = sorted([p for p in projects if p.get("category") == key],
-                  key=lambda p: p.get("order") or 999)
+    mine = of_category(projects, key)
+    n = len(mine)
+    pocet = "projekt" if n == 1 else "projekty" if n < 5 else "projektov"
 
     html = head(f"{cat['title']} — {SITE_NAME}", f"{cat['title']} — {cat['lead']}",
                 path=f"{key}.html")
@@ -367,35 +360,26 @@ def build_category(key, projects):
           <h1 class="cat-title">{esc(cat['title'])}</h1>
           <p class="cat-desc">{esc(cat['lead'])}</p>
         </div>
+        <span class="cat-count">{n} {pocet}</span>
       </div>
     </div>
   </section>
-'''
-    for slug, label, _short in cat["groups"]:
-        group = [p for p in mine if p.get("subcategory") == slug]
-        if not group:
-            continue
-        html += f'''
-  <section class="cat-projects" id="{slug}">
+
+  <section class="cat-projects">
     <div class="container">
-      <div class="cat-projects-head">
-        <p class="eyebrow eyebrow-olive">{esc(label)}</p>
-        <span class="cat-count">{len(group)} {"projekt" if len(group)==1 else "projekty" if len(group)<5 else "projektov"}</span>
-      </div>
       <div class="p-grid">
 '''
-        html += "".join(card(p) for p in group)
-        html += '''      </div>
+    html += "".join(card(p) for p in mine)
+    html += '''      </div>
     </div>
   </section>
-'''
-    html += '''
+
   <section class="cat-cta">
     <div class="container">
       <div class="cat-cta-inner">
         <div>
-          <h2>Máte podobný projekt v hlave?</h2>
-          <p>Rada si vypočujem váš nápad a posuniem ho vizuálne ďalej.</p>
+          <h2>Hľadáte grafického dizajnéra?</h2>
+          <p>Napíšte mi, čo potrebujete. Pošlem portfólio aj životopis.</p>
         </div>
         <a class="cta-btn" href="mailto:viki.mikuskova@gmail.com">Napíšte mi</a>
       </div>
@@ -558,11 +542,19 @@ def main():
         print(f"projekt/{p['slug']}.html")
 
     # staré kategórie sa nahrádzajú novou štruktúrou
-    for old in ("branding", "ilustracie", "uiux", "tlaciviny", "marketing"):
+    for old in ("branding", "ilustracie", "uiux", "tlaciviny", "marketing",
+                "dalsia-tvorba"):
         f = os.path.join(ROOT, f"{old}.html")
         if os.path.exists(f):
             os.remove(f)
             print(f"odstránené: {old}.html")
+
+    # stránky projektov, ktoré už v dátach nie sú (premenované slugy)
+    live = {p["slug"] + ".html" for p in projects}
+    for f in sorted(os.listdir(PROJ_DIR)):
+        if f.endswith(".html") and f not in live:
+            os.remove(os.path.join(PROJ_DIR, f))
+            print(f"odstránené: projekt/{f}")
 
     n_img = sum(1 for p in projects if p.get("cover")) + sum(
         1 for p in projects for i in (p.get("images") or []) if i.get("src"))

@@ -37,7 +37,7 @@ NAME_FORMAL = "Mgr. Viktória Mikušková"
 ROLE = "Grafická dizajnérka a ilustrátorka"
 # Na záložku sa dlhý titulok nezmestí — 45 mm šírky neuživí dva riadky verzálok.
 ROLE_SHORT = "Grafická dizajnérka"
-FOCUS = "knižný dizajn · sadzba · ilustrácia · vizuálna identita"
+FOCUS = "vizuálna identita · obaly · ilustrácia · knižný dizajn"
 PHONE = "0917 749 871"
 PHONE_TEL = "0917749871"
 EMAIL = "viki.mikuskova@gmail.com"
@@ -168,37 +168,43 @@ def portfolio_page(p, n, total):
 # doklad rozsahu. Kniha o portfóliu varuje pred zmiešaným portfóliom, kde je
 # od každého trochu; toto je opak — v každej verzii je jedno zameranie hlboko.
 VARIANTS = {
+    "grafika": {
+        "file": "portfolio-grafika.html",
+        "pdf": "Viktoria-Mikuskova-portfolio-grafika.pdf",
+        "lead": ["vizualna-identita", "obaly", "ilustracia", "tlacoviny", "socialne-siete"],
+        "title": "Grafický dizajn",
+        "focus": "vizuálna identita · obaly · ilustrácia · tlačoviny",
+        "closing": (
+            "Robím vizuálne identity, obaly, ilustráciu a tlačoviny. Za tým všetkým "
+            "je polygrafická priemyslovka, takže viem, čo sa s návrhom stane "
+            "v tlačiarni. Hľadám miesto v štúdiu, v agentúre alebo vo vydavateľstve, "
+            "kde sa dá robiť grafika od návrhu po hotový výstup."),
+        "more_title": "Knižný dizajn",
+        "more_lead": ("Obálky, sadzba a knižná ilustrácia. Zameranie, v ktorom mám "
+                      "odborné vzdelanie."),
+    },
     "knihy": {
         "file": "portfolio-knihy.html",
         "pdf": "Viktoria-Mikuskova-portfolio-knizny-dizajn.pdf",
-        "lead": "knizny-dizajn",
+        "lead": ["knizny-dizajn"],
         "title": "Knižný dizajn",
-        "focus": "obálky · sadzba · knižná ilustrácia · propagácia kníh",
+        "focus": "obálky · sadzba · knižná ilustrácia · vizuálna identita",
         "closing": (
             "Najbližšie mám ku knihám, k obálkam, sadzbe a k typografii, ktorá "
             "text nesie a neprekrýva. Hľadám miesto vo vydavateľstve, kde sa dá "
             "na knihe pracovať od rukopisu po tlačový hárok. Rada ukážem viac, "
             "aj rozpracované veci."),
         "more_title": "Aj mimo kníh",
-        "more_lead": ("Vizuálna identita, obaly, ilustrácia a informačný dizajn. "
+        "more_lead": ("Vizuálna identita, obaly, ilustrácia a tlačoviny. "
                       "Celé projekty sú na webe."),
     },
-    "grafika": {
-        "file": "portfolio-grafika.html",
-        "pdf": "Viktoria-Mikuskova-portfolio-grafika.pdf",
-        "lead": "dalsia-tvorba",
-        "title": "Grafický dizajn",
-        "focus": "vizuálna identita · obaly · ilustrácia · informačný dizajn",
-        "closing": (
-            "Robím vizuálne identity, obaly, ilustráciu a obsah pre značky. "
-            "Za tým všetkým je polygrafická priemyslovka, takže viem, čo sa "
-            "s návrhom stane v tlačiarni. Hľadám miesto, kde sa dá robiť "
-            "grafika od návrhu po hotový výstup."),
-        "more_title": "Knižný dizajn",
-        "more_lead": ("Obálky, sadzba a knižná ilustrácia. Toto je zameranie, "
-                      "v ktorom mám odborné vzdelanie."),
-    },
 }
+
+
+def in_lead(p, keys):
+    """Projekt patrí do vedúcej časti priamo alebo cez pole cross."""
+    cats = {p.get("category")} | set(p.get("cross") or [])
+    return bool(cats & set(keys))
 
 
 def more_page(items, title, lead):
@@ -222,10 +228,19 @@ def more_page(items, title, lead):
 '''
 
 
+def has_image(p):
+    return bool(p.get("cover") or [i for i in (p.get("images") or []) if i.get("src")])
+
+
 def build_portfolio_pdf(projects, key):
     v = VARIANTS[key]
-    lead = [p for p in projects if p.get("category") == v["lead"]]
-    other = [p for p in projects if p.get("category") != v["lead"]]
+    # Do posielaného PDF ide len hotová práca. Projekt bez obrázka by bol
+    # prázdna strana, a tá ubližuje viac, než keby tam nebola vôbec — na webe
+    # ostáva s poznámkou, že sa pripravuje.
+    ready = [p for p in projects if has_image(p)]
+    lead = [p for p in ready if in_lead(p, v["lead"])]
+    other = [p for p in ready if not in_lead(p, v["lead"])]
+    skipped = len(projects) - len(ready)
 
     total = len(lead)
     pages = "".join(portfolio_page(p, i + 1, total) for i, p in enumerate(lead))
@@ -264,12 +279,10 @@ def build_portfolio_pdf(projects, key):
     with open(os.path.join(ROOT, v["file"]), "w", encoding="utf-8") as f:
         f.write(html)
 
-    missing = sum(1 for p in lead if not p.get("cover")
-                  and not [i for i in (p.get("images") or []) if i.get("src")])
     n_pages = 1 + total + (1 if tail else 0) + 1
     print(f'  {v["file"]} — {n_pages} strán, {total} projektov naplno, '
-          f'{len(other)} v prehľade, {missing} bez obrázka')
-    return missing
+          f'{len(other)} v prehľade, {skipped} vynechaných (bez obrázka)')
+    return skipped
 
 
 # ===========================================================================

@@ -7,3 +7,8 @@
 
 # posielateľné portfólio sa rozdelilo na dve verzie
 /portfolio-pdf   /portfolio-knihy   301
+
+# prestavba na disciplíny — staré adresy nech neskončia na 404
+/dalsia-tvorba                        /vizualna-identita              301
+/projekt/knihkupectvo-branding        /projekt/nook-books.html        301
+/projekt/character-design             /projekt/charaktery.html        301
