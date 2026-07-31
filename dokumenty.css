@@ -128,16 +128,19 @@ img{display:block;max-width:100%;}
   text-transform:none;
   color:var(--terra);
 }
+/* Doplnkové zábery. Výplňou sa plagátom a obalom na výšku odrezávala hlavička
+   aj názov, takže sa vojdú celé a prázdne miesto pokryje podklad. */
 .pf-strip{
   display:flex;
   gap:4mm;
-  height:26mm;
+  height:30mm;
   flex:0 0 auto;
 }
 .pf-strip img{
   flex:1;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;
+  background:#fff;
   min-width:0;
 }
 .pf-text{

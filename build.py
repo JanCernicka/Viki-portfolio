@@ -31,37 +31,43 @@ CATEGORIES = {
         "title": "Vizuálna identita",
         "short": "Vizuálna identita",
         "icon": "icon-branding.png",
-        "lead": "Logotypy, značky a ich aplikácie — od vizitky po vývesku prevádzky.",
+        "lead": "Logotypy, značky a ich aplikácie, od vizitky po vývesku prevádzky.",
+        "hero": "assets/projects/nook-books/01-identita.jpg",
     },
     "obaly": {
         "title": "Obaly a packaging",
         "short": "Obaly",
         "icon": "icon-tlaciviny.png",
         "lead": "Obalový dizajn od ilustrácie cez sadzbu až po prípravu do tlače.",
+        "hero": "assets/projects/macarons/03-obal-vrch.jpg",
     },
     "ilustracia": {
         "title": "Ilustrácia",
         "short": "Ilustrácia",
         "icon": "icon-ilustracie.png",
         "lead": "Kresba postáv, digitálna maľba a ilustrácia k textu.",
+        "hero": "assets/projects/charaktery/01-charaktery.jpg",
     },
     "knizny-dizajn": {
         "title": "Knižný dizajn",
         "short": "Knižný dizajn",
         "icon": "icon-tlaciviny.png",
         "lead": "Obálky, sadzba a typografia. Zameranie, v ktorom mám polygrafické vzdelanie.",
+        "hero": "assets/projects/nook-books/02-tlacoviny.jpg",
     },
     "tlacoviny": {
         "title": "Tlačoviny a orientačné systémy",
         "short": "Tlačoviny",
         "icon": "icon-uiux.png",
-        "lead": "Plagáty, mapy a veľkoformátová tlač.",
+        "lead": "Plagáty, letáky, mapy a veľkoformátová tlač.",
+        "hero": "assets/projects/mapa-skoly/01-ekonomia.jpg",
     },
     "socialne-siete": {
         "title": "Sociálne siete",
         "short": "Sociálne siete",
         "icon": "icon-marketing.png",
         "lead": "Vizuály, obsah a produktová fotografia pre značky.",
+        "hero": "assets/projects/spolok-farmacie/04-socialne-siete.jpg",
     },
 }
 
@@ -81,6 +87,7 @@ STATUS = {
     "komercny":   ("Komerčná práca", "st-commercial"),
     "publikovany": ("Publikované", "st-published"),
     "realizovany": ("Realizované", "st-published"),
+    "sutaz":      ("2. miesto v súťaži", "st-award"),
     "koncept":    ("Koncepčný projekt", "st-concept"),
 }
 
@@ -146,7 +153,10 @@ def header(active, depth=0, projects=None):
     # V menu je len disciplína, ktorá má aspoň jeden projekt. Nová sa objaví
     # sama, len čo k nej priradíš prácu.
     projects = projects or []
-    items = ""
+    # Prvá položka je rozcestník so všetkými sekciami. Kto nevie, čo hľadá,
+    # nemusí sa rozhodovať už v menu.
+    all_act = ' class="active"' if active == "portfolio" else ""
+    items = f'          <a href="{up}portfolio.html"{all_act}>Všetky sekcie</a>\n'
     for key, cat in CATEGORIES.items():
         if not of_category(projects, key):
             continue
@@ -155,7 +165,7 @@ def header(active, depth=0, projects=None):
 
     portfolio_active = active in CATEGORIES or active == "portfolio"
     dropdown = f'''<div class="nav-dropdown">
-        <a href="{up}vizualna-identita.html" class="has-caret{' active' if portfolio_active else ''}">PORTFÓLIO
+        <a href="{up}portfolio.html" class="has-caret{' active' if portfolio_active else ''}">PORTFÓLIO
           {CARET}
         </a>
         <div class="dropdown-menu">
@@ -235,6 +245,24 @@ def thumb(p, depth=0):
             f'<span>pripravujem</span></div>')
 
 
+def hero_visual(p, depth=1):
+    """Úvodný vizuál projektu.
+
+    Nie je to orezaná dlaždica ako v mriežke, ale celý obrázok s obmedzenou
+    výškou. Banner cez celú obrazovku odsúval text pod okraj okna a zároveň
+    odrezával okraje mockupov.
+    """
+    up = "../" * depth
+    src = p.get("cover")
+    if not src:
+        cls = ASPECT.get(p.get("orientation") or "portrait", "is-portrait")
+        return (f'<div class="p-thumb {cls} is-empty" role="img" aria-label="Obrázok pripravujem">'
+                f'<span>pripravujem</span></div>')
+    return (f'<a class="cs-hero-img zoom" href="{up}{esc(src)}" '
+            f'data-cap="{esc(p.get("subtitle") or p["title"])}">'
+            f'<img src="{up}{esc(src)}" alt="{esc(p["title"])}"></a>')
+
+
 def status_badge(p):
     s = STATUS.get(p.get("status"))
     if not s:
@@ -302,7 +330,7 @@ def build_index(projects, about_html):
     <img class="hero-img" src="assets/images/hero.jpg" alt="Ilustrácia — Viktória kreslí na grafickom tablete pri stole s knihami a rastlinami">
   </picture>
 
-  <a class="hero-btn" href="vizualna-identita.html">POZRIEŤ PORTFÓLIO</a>
+  <a class="hero-btn" href="portfolio.html">POZRIEŤ PORTFÓLIO</a>
 </section>
 
 <!-- ================= VYBRANÉ PROJEKTY ================= -->
@@ -333,6 +361,84 @@ def build_index(projects, about_html):
 </section>
 '''
     html += about_html
+    html += footer()
+    return html
+
+
+# --------------------------------------------------------- portfolio rozcestník
+def build_portfolio(projects):
+    """Rozcestník: každá sekcia ako obrázok, ktorý na ňu vedie.
+
+    Tlačidlo v úvodnom banneri viedlo priamo na vizuálnu identitu, takže
+    zvyšok práce ostal skrytý v menu. Tu vidno naraz všetko, čo robím.
+    """
+    tiles = ""
+    for key, cat in CATEGORIES.items():
+        mine = of_category(projects, key)
+        if not mine:
+            continue
+        n = len(mine)
+        pocet = "projekt" if n == 1 else "projekty" if n < 5 else "projektov"
+        hero = cat.get("hero")
+        if hero:
+            visual = f'<img src="{esc(hero)}" alt="{esc(cat["title"])}" loading="lazy">'
+        else:
+            visual = '<span class="sec-empty">pripravujem</span>'
+        tiles += f'''      <a class="sec-card" href="{key}.html">
+        <span class="sec-pic">{visual}</span>
+        <span class="sec-body">
+          <span class="sec-count">{n} {pocet}</span>
+          <span class="sec-title">{esc(cat["title"])}</span>
+          <span class="sec-lead">{esc(cat["lead"])}</span>
+          <span class="sec-link">Pozrieť sekciu →</span>
+        </span>
+      </a>
+'''
+
+    html = head(f"Portfólio — {SITE_NAME}",
+                "Portfólio Viktórie Mikuškovej podľa sekcií: vizuálna identita, obaly, "
+                "ilustrácia, knižný dizajn, tlačoviny a sociálne siete.",
+                path="portfolio.html")
+    html += header("portfolio", projects=projects)
+    html += '''
+<main>
+  <section class="cat-hero">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href="index.html">Domov</a><span class="sep">/</span><span class="current">Portfólio</span>
+      </p>
+      <div class="cat-hero-inner">
+        <div>
+          <p class="cat-eyebrow">PORTFÓLIO</p>
+          <h1 class="cat-title">Čo nájdete vnútri</h1>
+          <p class="cat-desc">Práca je rozdelená podľa disciplín. Kliknite na obrázok a otvorí sa celá sekcia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sections">
+    <div class="container">
+      <div class="sec-grid">
+'''
+    html += tiles
+    html += '''      </div>
+    </div>
+  </section>
+
+  <section class="cat-cta">
+    <div class="container">
+      <div class="cat-cta-inner">
+        <div>
+          <h2>Chcete portfólio v PDF?</h2>
+          <p>Na stiahnutie je verzia pre grafiku aj verzia zameraná na knižný dizajn.</p>
+        </div>
+        <a class="cta-btn" href="dokumenty.html">Stiahnuť portfólio</a>
+      </div>
+    </div>
+  </section>
+</main>
+'''
     html += footer()
     return html
 
@@ -437,7 +543,7 @@ def build_project(p, projects):
 
   <section class="cs-hero">
     <div class="container">
-      {thumb(p, depth=1)}
+      {hero_visual(p)}
     </div>
   </section>
 
@@ -464,19 +570,33 @@ def build_project(p, projects):
 
     imgs = p.get("images") or []
     if imgs:
-        html += '''
+        # Pri jednom alebo dvoch obrázkoch by mriežka roztiahla dlaždicu cez
+        # celú šírku. Počet stĺpcov preto obmedzujeme podľa počtu obrázkov.
+        grid_cls = "g-grid" + (f" is-{len(imgs)}" if len(imgs) <= 2 else "")
+        # Rám je pre všetky obrázky projektu rovnaký, inak sa popisky rozídu
+        # do rôznych výšok. Jeho pomer sa riadi prevahou v projekte, aby
+        # obrázky na výšku nesedeli ako známka uprostred širokého rámu.
+        portrait_n = sum(1 for im in imgs
+                         if (im.get("orientation") or p.get("orientation")) == "portrait")
+        grid_cls += " frame-portrait" if portrait_n * 2 >= len(imgs) else " frame-landscape"
+        html += f'''
   <section class="cs-gallery">
     <div class="container">
-      <div class="g-grid">
+      <p class="g-hint">Kliknutím sa obrázok zväčší.</p>
+      <div class="{grid_cls}">
 '''
         for im in imgs:
-            cls = ASPECT.get(im.get("orientation") or p.get("orientation") or "portrait", "is-portrait")
             if im.get("src"):
-                inner = f'<img src="../{esc(im["src"])}" alt="{esc(im.get("caption") or p["title"])}" loading="lazy">'
-                body = f'<div class="p-thumb {cls}">{inner}</div>'
+                alt = esc(im.get("caption") or p["title"])
+                inner = f'<img src="../{esc(im["src"])}" alt="{alt}" loading="lazy">'
+                # Obrázky sa nesmú orezávať, ale musia mať rovnakú veľkosť,
+                # inak sa popisky rozídu do rôznych výšok. Preto jednotný rám
+                # a obrázok v ňom celý, nie orezaný na výplň.
+                body = (f'<a class="g-frame zoom" href="../{esc(im["src"])}" '
+                        f'data-cap="{alt}">{inner}</a>')
             else:
-                body = (f'<div class="p-thumb {cls} is-empty" role="img" aria-label="Obrázok pripravujem">'
-                        f'<span>pripravujem</span></div>')
+                body = ('<div class="g-frame is-empty" role="img" aria-label="Obrázok pripravujem">'
+                        '<span>pripravujem</span></div>')
             cap = f'<figcaption>{esc(im.get("caption"))}</figcaption>' if im.get("caption") else ""
             html += f'        <figure class="g-item">{body}{cap}</figure>\n'
         html += '''      </div>
@@ -532,6 +652,9 @@ def main():
 
     open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(build_index(projects, about))
     print("index.html")
+
+    open(os.path.join(ROOT, "portfolio.html"), "w", encoding="utf-8").write(build_portfolio(projects))
+    print("portfolio.html")
 
     for key in CATEGORIES:
         open(os.path.join(ROOT, f"{key}.html"), "w", encoding="utf-8").write(build_category(key, projects))
