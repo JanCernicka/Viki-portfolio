@@ -25,3 +25,8 @@
 /portfolio-grafika.html               /portfolio-dokument             301
 /assets/dokumenty/Viktoria-Mikuskova-portfolio-knizny-dizajn.pdf  /assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf  301
 /assets/dokumenty/Viktoria-Mikuskova-portfolio-grafika.pdf        /assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf  301
+
+# hlavičkový papier, záložky a e-mailový podpis boli zrušené
+/hlavickovy-papier                    /dokumenty                      301
+/promo                                /dokumenty                      301
+/podpis                               /dokumenty                      301

@@ -476,6 +476,86 @@ def build_portfolio(projects):
     return html
 
 
+# ------------------------------------------------------- stránka na stiahnutie
+# Súbory drží build_docs.py, tu je len stránka. Keď sa v build_docs.py zmení
+# názov PDF portfólia, treba ho prepísať aj tu.
+DOWNLOADS = [
+    {
+        "title": "Životopis na stiahnutie",
+        "lead": "Jedna strana A4.",
+        "pdf": "assets/cv/Viktoria-Mikuskova-CV.pdf",
+        "view": "cv.html",
+    },
+    {
+        "title": "Portfólio na stiahnutie",
+        "lead": ("Výber prác naprieč vizuálnou identitou, obalmi, ilustráciou, "
+                 "knižným dizajnom, tlačovinami aj sociálnymi sieťami."),
+        "pdf": "assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf",
+        "view": "portfolio-dokument.html",
+    },
+]
+
+
+def build_dokumenty(projects):
+    cards = ""
+    for d in DOWNLOADS:
+        cards += f'''        <article class="dl-card">
+          <h2>{esc(d["title"])}</h2>
+          <p>{esc(d["lead"])}</p>
+          <p class="dl-actions">
+            <a class="dl-btn" href="{d["pdf"]}" download>Stiahnuť PDF</a>
+            <a class="dl-view" href="{d["view"]}">Pozrieť v prehliadači</a>
+          </p>
+        </article>
+'''
+
+    html = head(f"Dokumenty na stiahnutie — {SITE_NAME}",
+                "Životopis a portfólio Viktórie Mikuškovej na stiahnutie v PDF.",
+                path="dokumenty.html")
+    html += header("dokumenty", projects=projects)
+    html += '''
+<main>
+  <section class="cat-hero">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href="index.html">Domov</a><span class="sep">/</span><span class="current">Dokumenty</span>
+      </p>
+      <div class="cat-hero-inner">
+        <div>
+          <p class="cat-eyebrow">NA STIAHNUTIE</p>
+          <h1 class="cat-title">Dokumenty na stiahnutie</h1>
+          <p class="cat-desc">Ak Vás moje portfólio zaujalo, viete si ho tu stiahnuť.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="downloads">
+    <div class="container">
+      <div class="dl-grid">
+'''
+    html += cards
+    html += '''      </div>
+    </div>
+  </section>
+
+  <section class="cat-cta">
+    <div class="container">
+      <div class="cat-cta-inner">
+        <div>
+          <h2>Máte otázku?</h2>
+          <p>Napíšte mi, čo potrebujete. Rada pošlem aj rozpracované veci.</p>
+        </div>
+        <a class="cta-btn" href="index.html#kontakt">Napíšte mi</a>
+      </div>
+    </div>
+  </section>
+</main>
+'''
+    html += footer()
+    return html
+
+
 # ------------------------------------------------------------ category page
 def build_category(key, projects):
     cat = CATEGORIES[key]
@@ -689,6 +769,9 @@ def main():
 
     open(os.path.join(ROOT, "portfolio.html"), "w", encoding="utf-8").write(build_portfolio(projects))
     print("portfolio.html")
+
+    open(os.path.join(ROOT, "dokumenty.html"), "w", encoding="utf-8").write(build_dokumenty(projects))
+    print("dokumenty.html")
 
     for key in CATEGORIES:
         open(os.path.join(ROOT, f"{key}.html"), "w", encoding="utf-8").write(build_category(key, projects))

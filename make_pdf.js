@@ -18,8 +18,6 @@ const PORT = 8123;
 const DOCS = [
   { html: 'cv.html',                out: 'assets/cv/Viktoria-Mikuskova-CV.pdf' },
   { html: 'portfolio-dokument.html', out: 'assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf' },
-  { html: 'hlavickovy-papier.html', out: 'assets/dokumenty/Viktoria-Mikuskova-hlavickovy-papier.pdf' },
-  { html: 'promo.html',             out: 'assets/dokumenty/Viktoria-Mikuskova-zalozky.pdf' },
 ];
 
 const MIME = {
