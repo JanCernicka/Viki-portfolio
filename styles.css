@@ -1127,6 +1127,15 @@ a{color:inherit;text-decoration:none;}
 /* Jej hero zábery sú 4:3 mockupy — pomer 4/5 im odrezával okraje aj s názvom.
    Dlaždice teda držia 4:3, aby sa práca zobrazila celá. */
 .p-grid-featured .p-thumb{aspect-ratio:4/3;}
+
+/* V sekcii sú vedľa seba práce na šírku aj na výšku. Keby si každá držala
+   vlastný pomer, náhľady by mali rôznu výšku a nadpisy by sa rozišli. Rám je
+   preto všade rovnaký a obrázok v ňom celý, nie orezaný na výplň. */
+.cat-projects .p-thumb,
+.cat-projects .p-thumb.is-portrait,
+.cat-projects .p-thumb.is-landscape,
+.cat-projects .p-thumb.is-square{aspect-ratio:4/3;background:#fff;}
+.cat-projects .p-thumb img{object-fit:contain;padding:8px;}
 /* V druhej mriežke musia byť všetky náhľady rovnaké, inak sa nadpisy rozídu
    do rôznych výšok. Preto tu pomer strán prebíja orientáciu projektu. */
 .p-grid-more .p-thumb{aspect-ratio:1/1;}
@@ -1164,7 +1173,10 @@ a{color:inherit;text-decoration:none;}
   border-color:var(--terra);
   box-shadow:0 22px 48px rgba(90,66,42,.18);
 }
+/* flex:0 0 auto — inak sa náhľad vo vyššej karte natiahne a náhľady vedľa
+   seba prestanú byť rovnako vysoké. */
 .sec-pic{
+  flex:0 0 auto;
   display:flex;
   align-items:center;
   justify-content:center;

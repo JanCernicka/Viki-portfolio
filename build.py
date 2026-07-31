@@ -53,7 +53,7 @@ CATEGORIES = {
         "short": "Knižný dizajn",
         "icon": "icon-tlaciviny.png",
         "lead": "Obálky, sadzba a typografia. Zameranie, v ktorom mám polygrafické vzdelanie.",
-        "hero": "assets/projects/nook-books/02-tlacoviny.jpg",
+        "hero": "assets/projects/alica/04-fantasy.jpg",
     },
     "tlacoviny": {
         "title": "Tlačoviny a orientačné systémy",
@@ -245,6 +245,35 @@ def thumb(p, depth=0):
             f'<span>pripravujem</span></div>')
 
 
+def hero_row(p, depth=1):
+    """Všetky zábery projektu vedľa seba hore.
+
+    Pri projektoch s dvoma alebo troma obrázkami nemá zmysel schovávať
+    zvyšok pod text: človek ich chce vidieť naraz a hneď rozkliknúť.
+    """
+    up = "../" * depth
+    shots = []
+    if p.get("cover"):
+        shots.append({"src": p["cover"], "caption": p.get("hero_caption"),
+                      "orientation": p.get("orientation")})
+    shots += [i for i in (p.get("images") or []) if i.get("src")]
+    if not shots:
+        return None
+
+    portrait_n = sum(1 for s in shots
+                     if (s.get("orientation") or p.get("orientation")) == "portrait")
+    frame = "frame-portrait" if portrait_n * 2 >= len(shots) else "frame-landscape"
+    cells = ""
+    for s in shots:
+        alt = esc(s.get("caption") or p["title"])
+        cells += (f'<figure class="g-item"><a class="g-frame zoom" href="{up}{esc(s["src"])}" '
+                  f'data-cap="{alt}"><img src="{up}{esc(s["src"])}" alt="{alt}"></a>'
+                  + (f'<figcaption>{esc(s["caption"])}</figcaption>' if s.get("caption") else "")
+                  + "</figure>")
+    return (f'<p class="g-hint">Kliknutím sa obrázok zväčší.</p>'
+            f'<div class="g-grid is-{min(len(shots), 3)} {frame}">{cells}</div>')
+
+
 def hero_visual(p, depth=1):
     """Úvodný vizuál projektu.
 
@@ -252,6 +281,10 @@ def hero_visual(p, depth=1):
     výškou. Banner cez celú obrazovku odsúval text pod okraj okna a zároveň
     odrezával okraje mockupov.
     """
+    if p.get("hero_layout") == "row":
+        row = hero_row(p, depth)
+        if row:
+            return row
     up = "../" * depth
     src = p.get("cover")
     if not src:
@@ -410,8 +443,8 @@ def build_portfolio(projects):
       <div class="cat-hero-inner">
         <div>
           <p class="cat-eyebrow">PORTFÓLIO</p>
-          <h1 class="cat-title">Čo nájdete vnútri</h1>
-          <p class="cat-desc">Práca je rozdelená podľa disciplín. Kliknite na obrázok a otvorí sa celá sekcia.</p>
+          <h1 class="cat-title">Kreatívna cesta</h1>
+          <p class="cat-desc">Objavte moje projekty podľa jednotlivých sekcií.</p>
         </div>
       </div>
     </div>
@@ -568,7 +601,8 @@ def build_project(p, projects):
   </section>
 '''
 
-    imgs = p.get("images") or []
+    # Pri rade hore sú obrázky už použité, pod textom by sa zopakovali.
+    imgs = [] if p.get("hero_layout") == "row" else (p.get("images") or [])
     if imgs:
         # Pri jednom alebo dvoch obrázkoch by mriežka roztiahla dlaždicu cez
         # celú šírku. Počet stĺpcov preto obmedzujeme podľa počtu obrázkov.

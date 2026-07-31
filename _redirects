@@ -12,3 +12,7 @@
 /dalsia-tvorba                        /vizualna-identita              301
 /projekt/knihkupectvo-branding        /projekt/nook-books.html        301
 /projekt/character-design             /projekt/charaktery.html        301
+
+# ZARA a Old Spice sú dva projekty, nie jeden; kaviareň má vlastný názov
+/projekt/plagaty-reklama              /projekt/zara.html              301
+/projekt/kaviaren-turecko             /projekt/noww.html              301

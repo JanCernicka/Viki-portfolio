@@ -9,51 +9,144 @@
       "title": "NOOK BOOKS",
       "subtitle": "Vizuálna identita a dizajn manuál kníhkupectva",
       "category": "vizualna-identita",
-      "cross": ["knizny-dizajn"],
+      "cross": [
+        "knizny-dizajn"
+      ],
       "featured": true,
       "order": 1,
       "year": "2024",
       "client": "Bakalárska práca, Fakulta masmédií PEVŠ",
       "status": "skolsky",
       "role": "Vizuálna identita a dizajn manuál",
-      "format": "Logotyp, dizajn manuál 200 × 200 mm, tlačoviny",
-      "software": ["Procreate", "Illustrator", "InDesign", "Photoshop"],
+      "format": "Logotyp, dizajn manuál, tlačoviny",
+      "software": [
+        "Procreate",
+        "Illustrator",
+        "InDesign",
+        "Photoshop"
+      ],
       "brief": "Vytvoriť značku pre fiktívne, útulné kníhkupectvo a k nej dizajn manuál, podľa ktorého ju vie správne používať aj človek, ktorý pri jej vzniku nebol. Logo malo byť ľahko rozpoznateľné a moderné, s malým nádychom vintage.",
-      "solution": "Názov vznikol brainstormingom cez slovenčinu a angličtinu až po skracovanie slov. Nook znamená kútik, miesto, kam sa človek na chvíľu stiahne a unikne. Presne to robí aj značka: symbol tvoria knihy na polici a názov je posadený za ne, takže vzniká kútik. Farebnosť som stavala na psychológii farieb, žltá za optimizmus a nádej, modrá za pokoj a stabilitu. Primárne písmo je IslaVistaDemo Regular, ktoré som zúžila, sekundárne Verdana. K základnému logotypu patrí aj variabilná verzia s názvom pod symbolom, čiernobiele prevedenie a slogan kde sa slová stretávajú. Všetko som zhrnula do dizajn manuálu 200 × 200 mm: ochranná zóna, sieťová konštrukcia, farebné profily RGB, CMYK aj HEX, minimálne rozmery, zakázané verzie a vizualizácie na vizitke, hlavičkovom papieri, záložke, pere, plátennej taške a na fasáde predajne.",
+      "solution": "Názov vznikol brainstormingom cez slovenčinu a angličtinu až po skracovanie slov. Nook znamená kútik, miesto, kam sa človek na chvíľu stiahne a unikne. Presne to robí aj značka: symbol tvoria knihy na polici a názov je posadený za ne, takže vzniká kútik. Farebnosť som stavala na psychológii farieb, žltá za optimizmus a nádej, modrá za pokoj a stabilitu. Primárne písmo je IslaVistaDemo Regular, ktoré som zúžila, sekundárne Verdana. K základnému logotypu patrí aj variabilná verzia s názvom pod symbolom, čiernobiele prevedenie a slogan kde sa slová stretávajú. Všetko som zhrnula do dizajn manuálu ako napríklad ochrannú zónu, sieťovú konštrukciu, farebné profily RGB, CMYK a HEX, minimálne rozmery, zakázané verzie a vizualizácie na vizitke, hlavičkovom papieri, pere, záložke, plátennej taške a na fasáde predajne.",
       "why": "Logo je jednoduchá časť. Ťažšie bolo napísať pravidlá tak, aby značku nepokazil niekto iný. Dizajn manuál ma naučil premýšľať nad tým, čo sa s návrhom stane potom, ako odíde odo mňa.",
       "orientation": "landscape",
       "cover": "assets/projects/nook-books/01-identita.jpg",
       "images": [
-        { "src": "assets/projects/nook-books/03-logo.jpg", "caption": "Logotyp a jeho varianty", "orientation": "landscape" },
-        { "src": "assets/projects/nook-books/04-farebnost-pismo.jpg", "caption": "Farebnosť a písmo", "orientation": "landscape" },
-        { "src": "assets/projects/nook-books/02-tlacoviny.jpg", "caption": "Tlačoviny: záložka, hlavičkový papier, vizitka", "orientation": "landscape" },
-        { "src": "assets/projects/nook-books/05-banner.jpg", "caption": "Aplikácia značky", "orientation": "landscape" }
+        {
+          "src": "assets/projects/nook-books/03-logo.jpg",
+          "caption": "Logotyp a jeho varianty",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/nook-books/04-farebnost-pismo.jpg",
+          "caption": "Farebnosť a písmo",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/nook-books/02-tlacoviny.jpg",
+          "caption": "Tlačoviny: záložka, hlavičkový papier, vizitka",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/nook-books/05-banner.jpg",
+          "caption": "Aplikácia značky",
+          "orientation": "landscape"
+        }
       ]
+    },
+    {
+      "slug": "alica-v-krajine-zazrakov",
+      "title": "Alica v krajine zázrakov",
+      "subtitle": "Jeden titul, päť žánrových obálok",
+      "category": "knizny-dizajn",
+      "cross": [],
+      "featured": true,
+      "order": 2,
+      "year": "2026",
+      "client": "Diplomová práca, Fakulta masmédií PEVŠ",
+      "status": "skolsky",
+      "role": "Výskum, ilustrácia a sadzba obálok",
+      "format": "Päť kompletných prebalov, predná strana, chrbát a zadná strana",
+      "software": [
+        "Procreate",
+        "Photoshop",
+        "Illustrator",
+        "InDesign"
+      ],
+      "brief": "Zistiť, či dokáže obálka sama o sebe povedať čitateľovi, o aký žáner ide. Vzala som jeden titul, Alicu v krajine zázrakov, a spracovala ho ako päť rôznych kníh: detskú literatúru, román, psychologický thriller, fantasy a horor.",
+      "solution": "Detská obálka stavia na páde do králičej diery, ktorý pokračuje cez chrbát na zadnú stranu, kde sa diera zmení na šálku. Román je pokojný a vintage, silueta Alice v ornamentálnom ráme, modrá a tyrkysová. Psychologický thriller je čierno červený, padajúca silueta a za ňou nezreteľná Srdcová kráľovná. Fantasy stojí na starožitných vreckových hodinkách a lietajúcich kartách so zlatou typografiou na tmavomodrom prechode. Horor je realistický portrét zajaca s červeno žiariacim okom a hodinkami v ruke. Každý žáner má vlastnú farebnosť aj vlastné písmo, od Headinoru cez Zasliu a American Typewriter až po Dark Mystic a Strange Path.",
+      "why": "Návrhy som pred dokončením ukázala aktívnym čitateľom v individuálnych rozhovoroch a pýtala sa, aký žáner v nich vidia. Podľa ich odpovedí som obálky upravovala, menila typografiu, farebnosť aj kompozíciu, a dopĺňala zadné strany. Obálka musí fungovať na pulte aj ako malá miniatúra v e-shope, a to sa nedá overiť inak než tak, že sa človeka spýtam.",
+      "orientation": "landscape",
+      "cover": "assets/projects/alica/01-detska.jpg",
+      "images": [
+        {
+          "src": "assets/projects/alica/02-roman.jpg",
+          "caption": "Román",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/alica/03-thriller.jpg",
+          "caption": "Psychologický thriller",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/alica/04-fantasy.jpg",
+          "caption": "Fantasy",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/alica/05-horor.jpg",
+          "caption": "Horor",
+          "orientation": "landscape"
+        }
+      ],
+      "hero_caption": "Detská literatúra"
     },
     {
       "slug": "spolok-farmacie",
       "title": "Spolok košických študentov farmácie",
       "subtitle": "Redizajn loga, 2. miesto v celoslovenskej súťaži",
       "category": "vizualna-identita",
-      "cross": ["socialne-siete"],
+      "cross": [
+        "socialne-siete"
+      ],
       "featured": true,
-      "order": 2,
+      "order": 3,
       "year": "2024",
       "client": "Spolok košických študentov farmácie",
       "status": "sutaz",
       "role": "Redizajn loga a vizuálna identita",
       "format": "Logotyp, tlačoviny, sociálne siete",
-      "software": ["Illustrator", "InDesign", "Photoshop"],
+      "software": [
+        "Illustrator",
+        "InDesign",
+        "Photoshop"
+      ],
       "brief": "Spolok vypísal v roku 2024 súťaž na nové logo pre celé Slovensko. Zadaním bol redizajn, ktorý nadviaže na pôvodnú značku a zároveň ju posunie do formátov, v ktorých spolok reálne funguje. Môj návrh sa umiestnil na druhom mieste.",
       "solution": "Kruhový znak s mažiarom a listami spája lekárnictvo s rastlinným pôvodom liečiv. Zelená a biela, striedma bezpätková sadzba. Identitu som doviedla od vizitky a letáku až po formáty pre Instagram a Facebook, aby profil držal pokope aj pri každodennom pridávaní.",
       "why": "Cieľom bolo zachovať jeho identitu, no zároveň ho prispôsobiť požiadavkám klienta na funkčný redizajn. Logo som zjednodušila, aby bolo čitateľné, ľahšie rozpoznateľné a fungovalo vo všetkých veľkostiach aj na rôznych médiách, ako sú sociálne siete a tlač. Minimalistický prístup zabezpečuje jeho nadčasovosť, vďaka čomu nebude podliehať krátkodobým dizajnovým trendom. Výsledkom je moderná vizuálna identita, ktorá rešpektuje pôvod značky a zároveň je pripravená na jej dlhodobé fungovanie.",
       "orientation": "landscape",
       "cover": "assets/projects/spolok-farmacie/01-identita.jpg",
       "images": [
-        { "src": "assets/projects/spolok-farmacie/02-logo.jpg", "caption": "Logotyp", "orientation": "landscape" },
-        { "src": "assets/projects/spolok-farmacie/05-pismo.jpg", "caption": "Písmo a farebnosť", "orientation": "landscape" },
-        { "src": "assets/projects/spolok-farmacie/03-tlacoviny.jpg", "caption": "Tlačoviny a aplikácie", "orientation": "landscape" },
-        { "src": "assets/projects/spolok-farmacie/04-socialne-siete.jpg", "caption": "Formáty pre sociálne siete", "orientation": "landscape" }
+        {
+          "src": "assets/projects/spolok-farmacie/02-logo.jpg",
+          "caption": "Logotyp",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/spolok-farmacie/05-pismo.jpg",
+          "caption": "Písmo a farebnosť",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/spolok-farmacie/03-tlacoviny.jpg",
+          "caption": "Tlačoviny a aplikácie",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/spolok-farmacie/04-socialne-siete.jpg",
+          "caption": "Formáty pre sociálne siete",
+          "orientation": "landscape"
+        }
       ]
     },
     {
@@ -61,49 +154,123 @@
       "title": "Macarons Factory",
       "subtitle": "Značka a obal pre fiktívnu pekáreň",
       "category": "obaly",
-      "cross": ["vizualna-identita"],
+      "cross": [
+        "vizualna-identita"
+      ],
       "featured": true,
-      "order": 3,
+      "order": 4,
       "year": "2021",
       "client": "Školský projekt",
       "status": "skolsky",
       "role": "Značka, obalový dizajn, ilustrácia",
       "format": "Logotyp, krabička, etikety",
-      "software": ["Illustrator", "Photoshop"],
+      "software": [
+        "Illustrator",
+        "Photoshop"
+      ],
       "brief": "Značka a obal pre fiktívnu pekáreň na makrónky, kde obal predáva skôr než obsah.",
       "solution": "Celý obal nesie akvarelovú ilustráciu makrónok, ktorú som kreslila sama, vďaka čomu výrobok vyzerá ručne robene a nie ako sériový tovar. Krabička existuje v dvoch farebných variantoch, ružovom a modrom. Nejde o príchute, ale o výber: niekto siahne po ružovej, niekto po modrej, a rad tak drží pokope pre oboch.",
       "why": "Chcela som si vyskúšať obal ako celok, od ilustrácie cez sadzbu príchutí až po to, ako sa krabička reálne otvára.",
       "orientation": "landscape",
       "cover": "assets/projects/macarons/01-identita.jpg",
       "images": [
-        { "src": "assets/projects/macarons/02-obal.jpg", "caption": "Obal, vizualizácia", "orientation": "portrait" },
-        { "src": "assets/projects/macarons/03-obal-vrch.jpg", "caption": "Obal, pohľad zhora", "orientation": "portrait" },
-        { "src": "assets/projects/macarons/04-dizajn.jpg", "caption": "Dizajn obalu", "orientation": "landscape" },
-        { "src": "assets/projects/macarons/05-ilustracia.jpg", "caption": "Akvarelové ilustrácie", "orientation": "portrait" },
-        { "src": "assets/projects/macarons/06-typografia.jpg", "caption": "Typografia", "orientation": "portrait" }
+        {
+          "src": "assets/projects/macarons/02-obal.jpg",
+          "caption": "Obal, vizualizácia",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/macarons/03-obal-vrch.jpg",
+          "caption": "Obal, pohľad zhora",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/macarons/04-dizajn.jpg",
+          "caption": "Dizajn obalu",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/macarons/05-ilustracia.jpg",
+          "caption": "Akvarelové ilustrácie",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/macarons/06-typografia.jpg",
+          "caption": "Typografia",
+          "orientation": "portrait"
+        }
       ]
     },
     {
-      "slug": "rosie",
-      "title": "Rosie",
-      "subtitle": "Logotyp pre fiktívne kvetinárstvo",
-      "category": "vizualna-identita",
-      "cross": [],
+      "slug": "charaktery",
+      "title": "Behind the Secrets of the Teachers",
+      "subtitle": "Návrh postáv pre animovaný seriál",
+      "category": "ilustracia",
+      "cross": [
+        "knizny-dizajn"
+      ],
       "featured": true,
-      "order": 4,
-      "year": "2022",
-      "client": "Školský projekt",
+      "order": 5,
+      "year": "2023",
+      "client": "Yaşar University, Izmir",
       "status": "skolsky",
-      "role": "Logotyp",
-      "format": "Logotyp v štyroch variantoch",
-      "software": ["Illustrator"],
-      "brief": "Navrhnúť logo pre moderné kvetinárstvo, ktoré pôsobí elegantne, rozprávkovo, prirodzene a je ľahko rozpoznateľné.",
-      "solution": "Kaligrafický ťah spája tulipán s menom tak, že kvet vyrastá priamo z písma. Logotyp existuje vo štyroch variantoch, farebnom, horizontálnom, kruhovom a čiernobielom, aby sa dal použiť na okrúhlu vývesku aj na úzku stuhu.",
-      "why": "Zaujímalo ma, ako spraviť ručne písanú značku, ktorá ostane čitateľná aj vtedy, keď sa zmenší na centimeter.",
-      "orientation": "square",
-      "cover": "assets/projects/rosie/01-oznacenie-prevadzky.jpg",
+      "role": "Námet, scenár a kresba postáv",
+      "format": "Digitálna ilustrácia",
+      "software": [
+        "Procreate",
+        "Illustrator"
+      ],
+      "brief": "Navrhnúť zostavu postáv pre vlastný kreslený seriál a napísať k nim scenár. Postavy sa museli dať rozoznať na prvý pohľad a fungovať vedľa seba v jednej scéne.",
+      "solution": "Vymyslela som seriál o tom, čo sa deje za dverami zborovne na druhom stupni základnej školy. Šesť učiteľov, každý s jednou vlastnosťou, ktorá ho celého vysvetlí: prísny, mačkárka, fešák, vtipkár, supertréner a láskavá. Prísny je vysoký, zamračený starší pán, ktorého život nudí. Mačkárka je milá štyridsiatnička v babkovskom oblečení. Fešák sa o seba stará, ale nepredvádza sa. Vtipkár vyzerá skoro ako študent a učí cez hru. Supertréner neodmietne žiadnu výzvu a velí po vojensky, hoci vnútri je dobrák. Láskavá má rada deti a vždy pomôže. Každá postava má vlastnú siluetu, držanie tela, strih oblečenia a farebnú paletu, takže sa dá rozoznať aj v obryse. Postup šiel od skice celej zostavy cez jednotlivé postavy až po farebné palety, kde má každá vlastnú paletu oblečenia aj pleti.",
+      "why": "Inšpiroval ma South Park, seriál, ktorý nie je pre deti, ale pre tínedžerov a dospelých. Žáner je komédia s kúskom drámy: milostný trojuholník medzi tromi učiteľmi, zrady a tajomstvá. Vzniklo to počas Erasmu na univerzite Yaşar v Izmire a kresba postáv je najbližšie k tomu, čo by som chcela robiť pre knihu.",
+      "orientation": "landscape",
+      "cover": "assets/projects/charaktery/01-charaktery.jpg",
       "images": [
-        { "src": "assets/projects/rosie/02-logo.jpg", "caption": "Varianty logotypu", "orientation": "landscape" }
+        {
+          "src": "assets/projects/charaktery/03-skica-zostavy.jpg",
+          "caption": "Prvá skica celej zostavy",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/charaktery/02-skice.jpg",
+          "caption": "Postavy a ich vlastnosti",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/charaktery/04-farebne-palety.jpg",
+          "caption": "Farebné palety postáv",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/charaktery/05-prisny.jpg",
+          "caption": "Prísny učiteľ",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/charaktery/06-mackarka.jpg",
+          "caption": "Mačkárka",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/charaktery/07-fesak.jpg",
+          "caption": "Fešák",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/charaktery/08-vtipkar.jpg",
+          "caption": "Vtipkár",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/charaktery/09-supertrener.jpg",
+          "caption": "Supertréner",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/charaktery/10-laskava.jpg",
+          "caption": "Láskavá učiteľka",
+          "orientation": "portrait"
+        }
       ]
     },
     {
@@ -113,43 +280,64 @@
       "category": "tlacoviny",
       "cross": [],
       "featured": true,
-      "order": 5,
-      "year": null,
+      "order": 6,
+      "year": "2023 až 2024",
       "client": "Paneurópska vysoká škola",
       "status": "realizovany",
       "role": "Informačný dizajn",
       "format": "Veľkoformátová tlač, tri verzie",
-      "software": ["Illustrator", "InDesign"],
+      "software": [
+        "Illustrator",
+        "InDesign"
+      ],
       "brief": "Zorientovať študenta v budove, kde sú medziposchodia a čísla miestností na seba nenadväzujú.",
       "solution": "Izometrický rez budovou, v ktorom má každá fakulta vlastnú farbu a vlastnú mapu. Miestnosti sú označené bodmi ako na mape, k tomu legenda s číslami, menami vyučujúcich a ich funkciami. Farebne odlíšené sú aj priestory, ktoré patria danej fakulte, takže študent vidí naraz, kde je a kam patrí. Vznikli tri verzie, pre každú fakultu jedna.",
       "why": "Návrh je vyrobený a vystavený v areáli školy. Je to zatiaľ jediná moja práca, ktorá fyzicky existuje vo svete a používa ju denne niekoľko stoviek ľudí.",
       "orientation": "landscape",
       "cover": "assets/projects/mapa-skoly/01-ekonomia.jpg",
       "images": [
-        { "src": "assets/projects/mapa-skoly/02-informatika.jpg", "caption": "Fakulta informatiky", "orientation": "landscape" },
-        { "src": "assets/projects/mapa-skoly/03-masmedialna.jpg", "caption": "Masmediálna fakulta", "orientation": "landscape" }
-      ]
+        {
+          "src": "assets/projects/mapa-skoly/02-informatika.jpg",
+          "caption": "Fakulta informatiky",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/mapa-skoly/03-masmedialna.jpg",
+          "caption": "Masmediálna fakulta",
+          "orientation": "landscape"
+        }
+      ],
+      "hero_layout": "row",
+      "hero_caption": "Fakulta ekonómie a podnikania"
     },
     {
-      "slug": "charaktery",
-      "title": "Behind the Secrets of the Teachers",
-      "subtitle": "Návrh postáv pre animovaný seriál",
-      "category": "ilustracia",
-      "cross": ["knizny-dizajn"],
-      "featured": true,
-      "order": 6,
-      "year": "2023",
-      "client": "Yaşar University, Izmir",
+      "slug": "rosie",
+      "title": "Rosie",
+      "subtitle": "Logotyp pre fiktívne kvetinárstvo",
+      "category": "vizualna-identita",
+      "cross": [],
+      "featured": false,
+      "order": 7,
+      "year": "2022",
+      "client": "Školský projekt",
       "status": "skolsky",
-      "role": "Námet, scenár a kresba postáv",
-      "format": "Digitálna ilustrácia",
-      "software": ["Procreate", "Illustrator"],
-      "brief": "Navrhnúť zostavu postáv pre vlastný kreslený seriál a napísať k nim scenár. Postavy sa museli dať rozoznať na prvý pohľad a fungovať vedľa seba v jednej scéne.",
-      "solution": "Vymyslela som seriál o tom, čo sa deje za dverami zborovne na druhom stupni základnej školy. Šesť učiteľov, každý s jednou vlastnosťou, ktorá ho celého vysvetlí: prísny, mačkárka, fešák, vtipkár, supertréner a láskavá. Prísny je vysoký, zamračený starší pán, ktorého život nudí. Mačkárka je milá štyridsiatnička v babkovskom oblečení. Fešák sa o seba stará, ale nepredvádza sa. Vtipkár vyzerá skoro ako študent a učí cez hru. Supertréner neodmietne žiadnu výzvu a velí po vojensky, hoci vnútri je dobrák. Láskavá má rada deti a vždy pomôže. Každá postava má vlastnú siluetu, držanie tela, strih oblečenia a farebnú paletu, takže sa dá rozoznať aj v obryse.",
-      "why": "Inšpirovala ma South Park, seriál, ktorý nie je pre deti, ale pre tínedžerov a dospelých. Žáner je komédia s kúskom drámy: milostný trojuholník medzi tromi učiteľmi, zrady a tajomstvá. Vzniklo to počas Erasmu na univerzite Yaşar v Izmire a kresba postáv je najbližšie k tomu, čo by som chcela robiť pre knihu.",
-      "orientation": "landscape",
-      "cover": "assets/projects/charaktery/01-charaktery.jpg",
-      "images": []
+      "role": "Logotyp",
+      "format": "Logotyp v štyroch variantoch",
+      "software": [
+        "Illustrator"
+      ],
+      "brief": "Navrhnúť logo pre moderné kvetinárstvo, ktoré pôsobí elegantne, rozprávkovo, prirodzene a je ľahko rozpoznateľné.",
+      "solution": "Kaligrafický ťah spája tulipán s menom tak, že kvet vyrastá priamo z písma. Logotyp existuje vo štyroch variantoch, farebnom, horizontálnom, kruhovom a čiernobielom, aby sa dal použiť na okrúhlu vývesku aj na úzku stuhu.",
+      "why": "Zaujímalo ma, ako spraviť ručne písanú značku, ktorá ostane čitateľná aj vtedy, keď sa zmenší na centimeter.",
+      "orientation": "square",
+      "cover": "assets/projects/rosie/01-oznacenie-prevadzky.jpg",
+      "images": [
+        {
+          "src": "assets/projects/rosie/02-logo.jpg",
+          "caption": "Varianty logotypu",
+          "orientation": "landscape"
+        }
+      ]
     },
     {
       "slug": "portrety-psov",
@@ -158,96 +346,125 @@
       "category": "ilustracia",
       "cross": [],
       "featured": false,
-      "order": 7,
+      "order": 8,
       "year": "2024",
       "client": "Voľná tvorba",
       "status": null,
       "role": "Ilustrácia",
       "format": "Digitálna maľba, A4",
-      "software": ["Procreate"],
+      "software": [
+        "Procreate"
+      ],
       "brief": "Voľná tvorba. Namaľovať psa tak, aby mal výraz, nie iba podobu.",
       "solution": "Dva realistické portréty. Práca so srsťou, so svetlom v očiach a s tým, aby zviera niečo hovorilo aj bez tela a bez pozadia.",
       "why": "Kreslím to, čo mám rada, a psi sú najlepší tréning na trpezlivosť. Pri srsti sa nedá nič odflaknúť.",
       "orientation": "portrait",
       "cover": "assets/projects/portrety-psov/01-goldie.jpg",
       "images": [
-        { "src": "assets/projects/portrety-psov/02-border-collie.jpg", "caption": "Border kólia", "orientation": "portrait" }
-      ]
+        {
+          "src": "assets/projects/portrety-psov/02-border-collie.jpg",
+          "caption": "Border kólia",
+          "orientation": "portrait"
+        }
+      ],
+      "hero_layout": "row",
+      "hero_caption": "Goldie"
     },
     {
-      "slug": "alica-v-krajine-zazrakov",
-      "title": "Alica v krajine zázrakov",
-      "subtitle": "Jeden titul, päť žánrových spracovaní",
-      "category": "knizny-dizajn",
-      "cross": [],
-      "featured": false,
-      "order": 8,
-      "year": "2026",
-      "client": "Diplomová práca",
-      "status": "skolsky",
-      "role": "Obálky",
-      "format": null,
-      "software": ["InDesign", "Illustrator", "Photoshop"],
-      "brief": null,
-      "solution": null,
-      "why": null,
-      "orientation": "portrait",
-      "cover": null,
-      "images": [
-        { "src": null, "caption": "Žáner 1", "orientation": "portrait" },
-        { "src": null, "caption": "Žáner 2", "orientation": "portrait" },
-        { "src": null, "caption": "Žáner 3", "orientation": "portrait" },
-        { "src": null, "caption": "Žáner 4", "orientation": "portrait" },
-        { "src": null, "caption": "Žáner 5", "orientation": "portrait" }
-      ]
-    },
-    {
-      "slug": "plagaty-reklama",
-      "title": "Reklamné plagáty",
-      "subtitle": "ZARA a Old Spice, produktová fotografia a sadzba",
+      "slug": "zara",
+      "title": "ZARA Deep Garden",
+      "subtitle": "Reklamné plagáty pre parfum",
       "category": "tlacoviny",
       "cross": [],
       "featured": false,
       "order": 9,
-      "year": null,
-      "client": null,
-      "status": "koncept",
+      "year": "2023",
+      "client": "Yaşar University, Izmir",
+      "status": "skolsky",
       "role": "Produktová fotografia a sadzba",
-      "format": "Plagáty A4",
-      "software": ["Photoshop", "InDesign"],
-      "brief": "Postaviť reklamný plagát na jednej fotografii a jednej vete, bez toho, aby som mala k dispozícii oficiálnu kampaň značky.",
-      "solution": "Dve značky, dva úplne odlišné tóny. ZARA Deep Garden stojí na zelenej a bielej, na figovom liste a na kvetoch, ktoré parfum obklopujú tak, aby fľaštička ostala jediná ostrá vec v zábere. Old Spice ide opačne: sýta červená plocha, chilli papričky a mleté korenie nasypané do tvaru srdca. Sadzba je v oboch prípadoch ticho, aby fotografia mala priestor.",
-      "why": "Plagát nemá čas. Buď funguje na tri kroky vzdialenosti, alebo nefunguje vôbec, a to je presne to cvičenie, ktoré ma na tom baví.",
+      "format": "Plagáty A4, dva motívy",
+      "software": [
+        "Photoshop",
+        "InDesign"
+      ],
+      "brief": "Postaviť reklamný plagát na parfum ZARA Deep Garden na jednej fotografii a jednej vete.",
+      "solution": "Vôňa sa volá Deep Garden, tak som ju do záhrady aj postavila. Prvý motív je hutný: fľaštička uprostred bielych a fialových kvetov, kde je jediná ostrá vec v zábere. Druhý ide opačne, jeden veľký figový list na bielom a fľaštička položená na ňom. Sadzba je v oboch prípadoch ticho, aby fotografia mala priestor.",
+      "why": "Parfum sa nedá odfotiť. Dá sa odfotiť len to, čo má človeku pripomenúť, a to bola celá práca na tomto zadaní.",
       "orientation": "portrait",
-      "cover": "assets/projects/plagaty-reklama/01-zara-deep-garden.jpg",
+      "cover": "assets/projects/zara/01-deep-garden.jpg",
+      "hero_layout": "row",
+      "hero_caption": "Deep Garden, hlavný motív",
       "images": [
-        { "src": "assets/projects/plagaty-reklama/02-zara-freshness.jpg", "caption": "ZARA Deep Garden, druhý motív", "orientation": "portrait" },
-        { "src": "assets/projects/plagaty-reklama/03-spice-korenie.jpg", "caption": "Old Spice, motív s korením", "orientation": "portrait" },
-        { "src": "assets/projects/plagaty-reklama/04-spice-produkt.jpg", "caption": "Old Spice, produktový motív", "orientation": "portrait" }
+        {
+          "src": "assets/projects/zara/02-freshness.jpg",
+          "caption": "Freshness of, druhý motív",
+          "orientation": "portrait"
+        }
+      ]
+    },
+    {
+      "slug": "old-spice",
+      "title": "Old Spice",
+      "subtitle": "Reklamné plagáty pre dezodorant",
+      "category": "tlacoviny",
+      "cross": [],
+      "featured": false,
+      "order": 10,
+      "year": "2023",
+      "client": "Yaşar University, Izmir",
+      "status": "skolsky",
+      "role": "Produktová fotografia a sadzba",
+      "format": "Plagáty A4, dva motívy",
+      "software": [
+        "Photoshop",
+        "InDesign"
+      ],
+      "brief": "Reklamný plagát na dezodorant Old Spice Captain, ktorý postaví celú vôňu na jednom obraze.",
+      "solution": "Značka má korenie priamo v názve, tak som z neho spravila obraz. Prvý motív má mleté chilli nasypané na bielom a v ňom prstom nakreslené srdce, sušené papričky ležia navrchu. Druhý je celý červený, produkt aj pozadie, aby plocha pálila rovnako ako vôňa. Titulok SPICE does the job je v oboch prípadoch jediný text.",
+      "why": "Dve verzie tej istej myšlienky, jedna tichá a jedna hlasná. Chcela som vedieť, ktorá funguje na diaľku lepšie.",
+      "orientation": "portrait",
+      "cover": "assets/projects/old-spice/01-korenie.jpg",
+      "hero_layout": "row",
+      "hero_caption": "Motív s korením",
+      "images": [
+        {
+          "src": "assets/projects/old-spice/02-produkt.jpg",
+          "caption": "Produktový motív",
+          "orientation": "portrait"
+        }
       ]
     },
     {
       "slug": "utulok-kampan",
       "title": "Kampaň pre útulok",
-      "subtitle": "Plagáty pre HIPDER",
+      "subtitle": "Plagáty pre útulok HIPDER",
       "category": "tlacoviny",
-      "cross": ["socialne-siete"],
+      "cross": [],
       "featured": false,
-      "order": 10,
-      "year": null,
-      "client": "HIPDER",
-      "status": null,
+      "order": 11,
+      "year": "2023",
+      "client": "Yaşar University, Izmir",
+      "status": "skolsky",
       "role": "Koncept a sadzba plagátov",
       "format": "Plagáty A4",
-      "software": ["Photoshop", "InDesign"],
+      "software": [
+        "Photoshop",
+        "InDesign"
+      ],
       "brief": "Presvedčiť ľudí, aby si psa z útulku adoptovali a nebrali ho ako vec, ktorú sa dá po čase odložiť.",
       "solution": "Dva plagáty a dva rôzne tóny. Prvý hovorí za psa v prvej osobe: I am not a toy. Fotografia je farebná a milá, text je tvrdý, a práve ten rozdiel má zabolieť. Druhý je čiernobiely, kde jediná farebná vec na celom plagáte je slovo NOT HATE. Farba tam nie je pre krásu, ale preto, aby sa oko nemalo kam pozrieť.",
       "why": "Pri charitatívnej kampani je najľahšie skĺznuť do ľútosti. Chcela som, aby plagát namiesto toho oslovil človeka priamo a nechal ho s nepríjemnou otázkou.",
       "orientation": "portrait",
       "cover": "assets/projects/utulok-kampan/01-nie-som-hracka.jpg",
       "images": [
-        { "src": "assets/projects/utulok-kampan/02-laska-nie-nenavist.jpg", "caption": "They deserve love, not hate", "orientation": "portrait" }
-      ]
+        {
+          "src": "assets/projects/utulok-kampan/02-laska-nie-nenavist.jpg",
+          "caption": "They deserve love, not hate",
+          "orientation": "portrait"
+        }
+      ],
+      "hero_layout": "row",
+      "hero_caption": "I am not a toy"
     },
     {
       "slug": "pwc-workshop",
@@ -256,19 +473,116 @@
       "category": "tlacoviny",
       "cross": [],
       "featured": false,
-      "order": 11,
+      "order": 12,
       "year": "2023",
       "client": "PwC Slovensko",
-      "status": null,
+      "status": "komercny",
       "role": "Sadzba a grafika letáku",
       "format": "Jednostranový leták A4",
-      "software": ["Illustrator", "InDesign"],
-      "brief": "Pozvať študentov na workshop PwC Slovensko o tom, ako naozaj vyzerá práca audítora, a na jednej strane povedať čo, kedy a prečo by mali prísť.",
+      "software": [
+        "Illustrator",
+        "InDesign"
+      ],
+      "brief": "Zadanie od PwC Slovensko: pozvať študentov na workshop o tom, ako naozaj vyzerá práca audítora, a na jednej strane povedať čo, kedy a prečo by mali prísť.",
       "solution": "Leták drží firemnú oranžovú a pracuje s ňou ako s tvarom, nie ako s výplňou. Oranžový pás vedie okom zhora nadol a v ňom sedia dva kruhové výrezy s fotografiami. Dátum a čas sú v jedinom výraznom bloku, aby ich človek našiel aj bez čítania. Dole sú kontakty na sociálne siete a web.",
       "why": "Leták pre firmu má tú výhodu, že farby a logo sú dané. Práca je celá v tom, ako sa v tých mantineloch dá spraviť niečo, čo nevyzerá ako šablóna.",
       "orientation": "portrait",
       "cover": "assets/projects/pwc-workshop/01-letak.jpg",
       "images": []
+    },
+    {
+      "slug": "telekom",
+      "title": "Telekom",
+      "subtitle": "Notifikácia v aplikácii, tri varianty",
+      "category": "socialne-siete",
+      "cross": [
+        "tlacoviny"
+      ],
+      "featured": false,
+      "order": 13,
+      "year": null,
+      "client": "Telekom",
+      "status": "koncept",
+      "role": "Grafika notifikácie",
+      "format": "Notifikácia v mobilnej aplikácii",
+      "software": [
+        "Photoshop",
+        "Illustrator"
+      ],
+      "brief": "Navrhnúť notifikáciu, ktorá používateľovi Predplatenky ponúkne desať gigabajtov za euro, a spraviť ju tak, aby ju nezavrel skôr, než si prečíta ponuku.",
+      "solution": "Text ostáva rovnaký, mení sa spôsob, akým sa dostane k oku. Prvá varianta roztrhne magentovú plochu ako papier a číslo sa objaví v trhline. Druhá ho odkryje sprejom a do rohu pridá ruku s mincou. Tretia stavia na darčeku, z ktorého vypadáva SIM karta. Vo všetkých troch je desať gigabajtov najväčšia vec na obrazovke a tlačidlo sedí na tom istom mieste.",
+      "why": "Notifikáciu človek zatvára reflexne. Tri varianty tej istej správy sú tu preto, aby sa dalo porovnať, ktorá ho zastaví, a nie preto, aby som si vybrala tú najkrajšiu.",
+      "orientation": "landscape",
+      "cover": "assets/projects/telekom/01-mockup.jpg",
+      "hero_caption": "Notifikácia v telefóne",
+      "images": [
+        {
+          "src": "assets/projects/telekom/02-varianta-papier.jpg",
+          "caption": "Varianta s roztrhnutým papierom",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/telekom/03-varianta-sprej.jpg",
+          "caption": "Varianta so sprejom",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/telekom/04-varianta-darcek.jpg",
+          "caption": "Varianta s darčekom",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/telekom/05-mockup-2.jpg",
+          "caption": "Druhá varianta v telefóne",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/telekom/06-mockup-3.jpg",
+          "caption": "Tretia varianta v telefóne",
+          "orientation": "landscape"
+        }
+      ]
+    },
+    {
+      "slug": "noww",
+      "title": "NOWW Croissants & Coffee",
+      "subtitle": "Produktová fotografia a obsah pre Instagram",
+      "category": "socialne-siete",
+      "cross": [],
+      "featured": false,
+      "order": 14,
+      "year": "2023",
+      "client": "Yaşar University, Izmir",
+      "status": "koncept",
+      "role": "Produktová fotografia a vizuály pre profil",
+      "format": "Príspevky pre Instagram",
+      "software": [
+        "Photoshop",
+        "Lightroom"
+      ],
+      "brief": "Navrhnúť, ako by mal vyzerať profil tureckej siete kaviarní NOWW Croissants & Coffee, a nafotiť k nemu produkt.",
+      "solution": "Celý profil stojí na jednom pravidle: krémový podklad, biely tanier, prirodzené svetlo a nič navyše. Croissant je vždy jediná farebná vec v zábere, tak aby sa vo štvorcovej mriežke profilu striedali svetlé a tmavšie fotografie a feed držal rytmus. Zábery som fotila zhora aj z úrovne stola, aby profil nebol jednotvárny.",
+      "why": "Jedlo na sociálnych sieťach sa dá pokaziť dvoma spôsobmi, prehnaným retušovaním alebo tým, že vyzerá studené. Celá práca bola v tom, aby fotografia zostala teplá a človek dostal chuť.",
+      "orientation": "square",
+      "cover": "assets/projects/noww/01-profil.jpg",
+      "images": [
+        {
+          "src": "assets/projects/noww/02-lotus.jpg",
+          "caption": "Lotus croissant",
+          "orientation": "square"
+        },
+        {
+          "src": "assets/projects/noww/03-jahody.jpg",
+          "caption": "Jahodový a čokoládový croissant",
+          "orientation": "square"
+        },
+        {
+          "src": "assets/projects/noww/04-produkt.jpg",
+          "caption": "Produktový záber",
+          "orientation": "square"
+        }
+      ],
+      "hero_caption": "Návrh profilu"
     },
     {
       "slug": "mojesidlo",
@@ -277,21 +591,33 @@
       "category": "socialne-siete",
       "cross": [],
       "featured": false,
-      "order": 12,
+      "order": 15,
       "year": "2024 až 2025",
       "client": "MOJESIDLO.SK",
       "status": "komercny",
       "role": "Grafika a produktová fotografia",
       "format": null,
-      "software": ["Photoshop", "Illustrator", "Canva"],
+      "software": [
+        "Photoshop",
+        "Illustrator",
+        "Canva"
+      ],
       "brief": null,
       "solution": null,
       "why": null,
       "orientation": "square",
       "cover": null,
       "images": [
-        { "src": null, "caption": "Vybraný príspevok", "orientation": "square" },
-        { "src": null, "caption": "Príspevky v profile značky", "orientation": "portrait" }
+        {
+          "src": null,
+          "caption": "Vybraný príspevok",
+          "orientation": "square"
+        },
+        {
+          "src": null,
+          "caption": "Príspevky v profile značky",
+          "orientation": "portrait"
+        }
       ]
     },
     {
@@ -301,13 +627,17 @@
       "category": "socialne-siete",
       "cross": [],
       "featured": false,
-      "order": 13,
+      "order": 16,
       "year": "od 2025",
       "client": "SHAPELESAI",
       "status": "komercny",
       "role": "Social media manager",
       "format": null,
-      "software": ["Photoshop", "Illustrator", "Canva"],
+      "software": [
+        "Photoshop",
+        "Illustrator",
+        "Canva"
+      ],
       "brief": null,
       "solution": null,
       "why": null,
@@ -322,7 +652,7 @@
       "category": "tlacoviny",
       "cross": [],
       "featured": false,
-      "order": 14,
+      "order": 17,
       "year": null,
       "client": null,
       "status": "skolsky",
@@ -343,7 +673,7 @@
       "category": "obaly",
       "cross": [],
       "featured": false,
-      "order": 15,
+      "order": 18,
       "year": null,
       "client": null,
       "status": "skolsky",
@@ -354,27 +684,6 @@
       "solution": null,
       "why": null,
       "orientation": "landscape",
-      "cover": null,
-      "images": []
-    },
-    {
-      "slug": "kaviaren-turecko",
-      "title": "Kaviareň v Izmire",
-      "subtitle": "Vizuál a produktová fotografia pre sociálne siete",
-      "category": "socialne-siete",
-      "cross": [],
-      "featured": false,
-      "order": 16,
-      "year": null,
-      "client": null,
-      "status": "koncept",
-      "role": null,
-      "format": null,
-      "software": [],
-      "brief": null,
-      "solution": null,
-      "why": null,
-      "orientation": "square",
       "cover": null,
       "images": []
     }
