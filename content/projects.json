@@ -122,14 +122,19 @@
         "Photoshop"
       ],
       "brief": "Spolok vypísal v roku 2024 súťaž na nové logo pre celé Slovensko. Zadaním bol redizajn, ktorý nadviaže na pôvodnú značku a zároveň ju posunie do formátov, v ktorých spolok reálne funguje. Môj návrh sa umiestnil na druhom mieste.",
-      "solution": "Kruhový znak s mažiarom a listami spája lekárnictvo s rastlinným pôvodom liečiv. Zelená a biela, striedma bezpätková sadzba. Identitu som doviedla od vizitky a letáku až po formáty pre Instagram a Facebook, aby profil držal pokope aj pri každodennom pridávaní.",
+      "solution": "Pôvodný znak mal misku s listami a krížom a názov obtočený dokola, celé čierne a s detailmi, ktoré sa v malom zliali do jednej škvrny. Nechala som z neho to, čo spolok robí spolkom, teda mažiar a rastlinný pôvod liečiv, a všetko ostatné som zjednodušila. Znak je kruhový, zelený s bielou, so striedmou bezpätkovou sadzbou. Identitu som doviedla od vizitky a letáku až po formáty pre Instagram a Facebook, aby profil držal pokope aj pri každodennom pridávaní.",
       "why": "Cieľom bolo zachovať jeho identitu, no zároveň ho prispôsobiť požiadavkám klienta na funkčný redizajn. Logo som zjednodušila, aby bolo čitateľné, ľahšie rozpoznateľné a fungovalo vo všetkých veľkostiach aj na rôznych médiách, ako sú sociálne siete a tlač. Minimalistický prístup zabezpečuje jeho nadčasovosť, vďaka čomu nebude podliehať krátkodobým dizajnovým trendom. Výsledkom je moderná vizuálna identita, ktorá rešpektuje pôvod značky a zároveň je pripravená na jej dlhodobé fungovanie.",
       "orientation": "landscape",
       "cover": "assets/projects/spolok-farmacie/01-identita.jpg",
       "images": [
         {
+          "src": "assets/projects/spolok-farmacie/00-povodne-logo.jpg",
+          "caption": "Pôvodné logo spolku, s ktorým súťaž začínala",
+          "orientation": "square"
+        },
+        {
           "src": "assets/projects/spolok-farmacie/02-logo.jpg",
-          "caption": "Logotyp",
+          "caption": "Môj návrh redizajnu",
           "orientation": "landscape"
         },
         {
@@ -587,7 +592,7 @@
     {
       "slug": "mojesidlo",
       "title": "MOJESIDLO.SK",
-      "subtitle": "Vizuály a obsah pre sociálne siete",
+      "subtitle": "Vizuály, obsah a produktová fotografia",
       "category": "socialne-siete",
       "cross": [],
       "featured": false,
@@ -595,30 +600,36 @@
       "year": "2024 až 2025",
       "client": "MOJESIDLO.SK",
       "status": "komercny",
-      "role": "Grafika a produktová fotografia",
-      "format": null,
+      "role": "Grafika, obsah a produktová fotografia",
+      "format": "Príspevky pre sociálne siete, plagát",
       "software": [
         "Photoshop",
         "Illustrator",
         "Canva"
       ],
-      "brief": null,
-      "solution": null,
-      "why": null,
+      "brief": "Držať profil značky, ktorá predáva virtuálne sídlo pre firmy, teda službu, ktorú nie je vidieť. Obsah musel byť sledovateľný aj vtedy, keď je téma úradnícka.",
+      "solution": "Fialová je daná značkou, tak som z nej spravila pravidlo: fialová je v každom zábere, či už je to stena, bunda alebo kytica tulipánov. Vďaka tomu drží mriežka profilu pokope aj vtedy, keď sa v nej strieda oznam, fotografia zo zákulisia a video. Oznamy majú vlastnú šablónu, takže otváracie hodiny cez sviatky aj míľnik pätnásť tisíc zákazníkov vyzerajú ako jedna rodina. Najväčší kus je vizuál k správam zo slovensko.sk v aplikácii: telefón v uhle, tri bubliny s výhodami a nič iné, aby sa dal prečítať za tri sekundy v feede aj z väčšej diaľky ako plagát.",
+      "why": "Úradná téma sa dá odkomunikovať dvoma spôsobmi. Buď suchým oznamom, alebo tak, že za značkou vidno ľudí, ktorí ju robia. Skúšala som druhý.",
       "orientation": "square",
-      "cover": null,
+      "cover": "assets/projects/mojesidlo/01-plagat-mockup.jpg",
       "images": [
         {
-          "src": null,
-          "caption": "Vybraný príspevok",
-          "orientation": "square"
+          "src": "assets/projects/mojesidlo/02-plagat.jpg",
+          "caption": "Vizuál v plnom formáte",
+          "orientation": "portrait"
         },
         {
-          "src": null,
+          "src": "assets/projects/mojesidlo/03-profil.jpg",
           "caption": "Príspevky v profile značky",
           "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/mojesidlo/04-prispevok.jpg",
+          "caption": "Vybraný príspevok",
+          "orientation": "portrait"
         }
-      ]
+      ],
+      "hero_caption": "Vizuál k správam zo slovensko.sk"
     },
     {
       "slug": "shapelesai",
