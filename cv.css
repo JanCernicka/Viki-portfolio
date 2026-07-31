@@ -64,19 +64,11 @@ body{
   text-transform:uppercase;
   color:var(--terra);
 }
-.cv-focus{
-  margin:3.2mm 0 0;
-  font-size:8.6pt;
-  line-height:1.5;
-  letter-spacing:.10em;
-  text-transform:uppercase;
-  color:var(--olive);
-}
 /* Fotka. Na Slovensku ju zamestnávatelia očakávajú — a táto je už v identite
    webu (akvarelová podmaľba), takže robí dve veci naraz. */
 .cv-photo{
-  width:27mm;
-  height:34mm;
+  width:31mm;
+  height:39mm;
   flex:0 0 auto;
   margin-top:1mm;
   object-fit:cover;
@@ -172,20 +164,8 @@ ul.plain li.link a{color:var(--terra);}
   color:var(--olive);
 }
 
-/* ---- pätička ---- */
-.cv-foot{
-  margin-top:auto;
-  padding-top:4mm;
-  border-top:1px solid var(--rule);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
-  font-size:7.4pt;
-  letter-spacing:.05em;
-  color:var(--muted);
-}
-.cv-mark{width:9mm;height:auto;flex:0 0 auto;}
+/* Pätička tu bola s logom, webom a e-mailom. Kontakt je v ľavom stĺpci,
+   takže na jednostranovom životopise iba opakovala to isté. */
 
 /* ---- tlač / export do PDF ---- */
 @page{size:A4;margin:0;}
@@ -206,5 +186,5 @@ ul.plain li.link a{color:var(--terra);}
   .sheet{width:auto;min-height:0;margin:0;padding:22px 18px;box-shadow:none;}
   .cv-cols{grid-template-columns:1fr;gap:0;}
   .cv-head h1{font-size:26pt;}
-  .cv-photo{width:22mm;height:28mm;}
+  .cv-photo{width:26mm;height:33mm;}
 }
