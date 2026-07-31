@@ -37,7 +37,6 @@ NAME_FORMAL = "Mgr. Viktória Mikušková"
 ROLE = "Grafická dizajnérka a ilustrátorka"
 # Na záložku sa dlhý titulok nezmestí — 45 mm šírky neuživí dva riadky verzálok.
 ROLE_SHORT = "Grafická dizajnérka"
-FOCUS = "vizuálna identita · obaly · ilustrácia · knižný dizajn"
 PHONE = "0917 749 871"
 PHONE_TEL = "0917749871"
 EMAIL = "viki.mikuskova@gmail.com"
@@ -167,18 +166,18 @@ def portfolio_page(p, n, total):
 # vedie tým, na čo sa príjemca pýta, a druhú disciplínu ukáže na záver ako
 # doklad rozsahu. Kniha o portfóliu varuje pred zmiešaným portfóliom, kde je
 # od každého trochu; toto je opak — v každej verzii je jedno zameranie hlboko.
+COVER_ROLE = "Grafická dizajnérka a ilustrátorka"
+CV_PROFILE = (
+    "Grafická dizajnérka s polygrafickým vzdelaním a praxou v tvorbe vizuálnych identít, obalov, tlačovín a obsahu pre značky. "
+    "Remeselný základ z polygrafie a z prípravy podkladov do tlače spájam s marketingovým myslením zo štúdia mediálnej komunikácie a s typografiou, ktorá text nesie a neprekrýva.")
+
 VARIANTS = {
     "grafika": {
         "file": "portfolio-grafika.html",
         "pdf": "Viktoria-Mikuskova-portfolio-grafika.pdf",
         "lead": ["vizualna-identita", "obaly", "ilustracia", "tlacoviny", "socialne-siete"],
         "title": "Grafický dizajn",
-        "focus": "vizuálna identita · obaly · ilustrácia · tlačoviny",
-        "closing": (
-            "Robím vizuálne identity, obaly, ilustráciu a tlačoviny. Za tým všetkým "
-            "je polygrafická priemyslovka, takže viem, čo sa s návrhom stane "
-            "v tlačiarni. Hľadám miesto v štúdiu, v agentúre alebo vo vydavateľstve, "
-            "kde sa dá robiť grafika od návrhu po hotový výstup."),
+        "closing": CV_PROFILE,
         "more_title": "Knižný dizajn",
         "more_lead": ("Obálky, sadzba a knižná ilustrácia. Zameranie, v ktorom mám "
                       "odborné vzdelanie."),
@@ -188,12 +187,7 @@ VARIANTS = {
         "pdf": "Viktoria-Mikuskova-portfolio-knizny-dizajn.pdf",
         "lead": ["knizny-dizajn"],
         "title": "Knižný dizajn",
-        "focus": "obálky · sadzba · knižná ilustrácia · vizuálna identita",
-        "closing": (
-            "Najbližšie mám ku knihám, k obálkam, sadzbe a k typografii, ktorá "
-            "text nesie a neprekrýva. Hľadám miesto vo vydavateľstve, kde sa dá "
-            "na knihe pracovať od rukopisu po tlačový hárok. Rada ukážem viac, "
-            "aj rozpracované veci."),
+        "closing": CV_PROFILE,
         "more_title": "Aj mimo kníh",
         "more_lead": ("Vizuálna identita, obaly, ilustrácia a tlačoviny. "
                       "Celé projekty sú na webe."),
@@ -252,7 +246,7 @@ def build_portfolio_pdf(projects, key):
     <div class="pf-cover-mid">
       <h1>{esc(NAME)}</h1>
       <p class="pf-cover-role">{esc(v["title"])}</p>
-      <p class="pf-cover-focus">{v["focus"]}</p>
+      <p class="pf-cover-focus">{esc(COVER_ROLE)}</p>
     </div>
     <div class="pf-cover-foot">
       <span>Výber z prác</span>
