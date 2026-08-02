@@ -643,8 +643,8 @@ def build_category(key, projects):
     <div class="container">
       <div class="cat-cta-inner">
         <div>
-          <h2>Hľadáte grafického dizajnéra?</h2>
-          <p>Napíšte mi, čo potrebujete. Pošlem portfólio aj životopis.</p>
+          <h2>Zaujali vás moje práce?</h2>
+          <p>Ozvite sa mi. Rada si vypočujem, čo potrebujete.</p>
         </div>
         <a class="cta-btn" href="mailto:viki.mikuskova@gmail.com">Napíšte mi</a>
       </div>

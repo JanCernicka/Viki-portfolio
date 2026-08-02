@@ -15,7 +15,7 @@
       "featured": true,
       "order": 1,
       "year": "2024",
-      "client": "Bakalárska práca, Fakulta masmédií PEVŠ",
+      "client": "Bakalárska práca",
       "status": "skolsky",
       "role": "Vizuálna identita a dizajn manuál",
       "format": "Logotyp, dizajn manuál, tlačoviny",
@@ -27,7 +27,7 @@
       ],
       "brief": "Vytvoriť značku pre fiktívne, útulné kníhkupectvo a k nej dizajn manuál, podľa ktorého ju vie správne používať aj človek, ktorý pri jej vzniku nebol. Logo malo byť ľahko rozpoznateľné a moderné, s malým nádychom vintage.",
       "solution": "Názov vznikol brainstormingom cez slovenčinu a angličtinu až po skracovanie slov. Nook znamená kútik, miesto, kam sa človek na chvíľu stiahne a unikne. Presne to robí aj značka: symbol tvoria knihy na polici a názov je posadený za ne, takže vzniká kútik. Farebnosť som stavala na psychológii farieb, žltá za optimizmus a nádej, modrá za pokoj a stabilitu. Primárne písmo je IslaVistaDemo Regular, ktoré som zúžila, sekundárne Verdana. K základnému logotypu patrí aj variabilná verzia s názvom pod symbolom, čiernobiele prevedenie a slogan kde sa slová stretávajú. Všetko som zhrnula do dizajn manuálu ako napríklad ochrannú zónu, sieťovú konštrukciu, farebné profily RGB, CMYK a HEX, minimálne rozmery, zakázané verzie a vizualizácie na vizitke, hlavičkovom papieri, pere, záložke, plátennej taške a na fasáde predajne.",
-      "why": "Logo je jednoduchá časť. Ťažšie bolo napísať pravidlá tak, aby značku nepokazil niekto iný. Dizajn manuál ma naučil premýšľať nad tým, čo sa s návrhom stane potom, ako odíde odo mňa.",
+      "why": "Logo je jednoduchá časť. Ťažšie bolo napísať pravidlá tak, aby značku nepokazil niekto iný. Dizajn manuál ma naučil premýšľať nad tým, čo sa s návrhom stane, keď ho uvidí celý svet.",
       "orientation": "landscape",
       "cover": "assets/projects/nook-books/01-identita.jpg",
       "images": [
@@ -62,7 +62,7 @@
       "featured": true,
       "order": 2,
       "year": "2026",
-      "client": "Diplomová práca, Fakulta masmédií PEVŠ",
+      "client": "Diplomová práca",
       "status": "skolsky",
       "role": "Výskum, ilustrácia a sadzba obálok",
       "format": "Päť kompletných prebalov, predná strana, chrbát a zadná strana",
@@ -102,6 +102,74 @@
       "hero_caption": "Detská literatúra"
     },
     {
+      "slug": "shapelesai",
+      "title": "SHAPELESAI",
+      "subtitle": "Vizuálny systém a obsah pre profil",
+      "category": "socialne-siete",
+      "cross": [],
+      "featured": true,
+      "order": 3,
+      "year": "od 2025",
+      "client": "SHAPELESAI",
+      "status": "komercny",
+      "role": "Social media manager, grafika a copywriting",
+      "format": "Karusely a príspevky 1080 × 1350 px, reely 1080 × 1920 px",
+      "software": [
+        "Photoshop",
+        "Illustrator",
+        "Canva"
+      ],
+      "brief": "Robiť profil firme, ktorá predáva AI a marketing, tak, aby ho ľudia sledovali pre to, čo sa z neho dozvedia, nie pre ponuky. Obsah musel byť vzdelávací a zároveň rozoznateľný na prvý pohľad v cudzom feede.",
+      "solution": "Celý profil stojí na dvoch farbách, kyslej žltej a tmavomodrej, a na dvoch písmach: tučnom bezpätkovom na tvrdenia a strojopise na vysvetlenie. Nadpisy podčiarkujem zvýrazňovačom, takže oko vie, kde má zastať. Na to som postavila formáty, ktoré sa dajú opakovať donekonečna. Mýtus alebo realita je kvíz: prvá strana dá tvrdenie a dve tlačidlá, druhá odpoveď na pokrčenom papieri. Vzdelávacie karusely majú úvodnú stranu urobenú ako príspevok v príspevku, s krížikom, šípkou a ikonami, číslované kroky a na konci otázku, ktorá vracia čitateľa k sebe. Nechýba bodka s počtom strán, aby človek vedel, do čoho ide. K statickým formátom patrí aj reel Hľadám firmu s históriou, ktorý stavia na jednoduchom vtipe: firma s históriou ako jaskyňa a antický Rím. Presiahol desaťtisíc zhliadnutí.",
+      "why": "Karusel je jediný formát na Instagrame, kde musí čitateľ niečo urobiť, aby pokračoval. Preto ma zaujímalo hlavne to, čo drží prst v pohybe: aby prvá strana sľúbila konkrétnu vec a každá ďalšia ju splnila skôr, než ju prestane baviť.",
+      "orientation": "portrait",
+      "cover": "assets/projects/shapelesai/01-ai-uvod.jpg",
+      "images": [
+        {
+          "src": "assets/projects/shapelesai/02-mytus-otazka.jpg",
+          "caption": "Mýtus alebo realita, otázka",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/03-mytus-odpoved.jpg",
+          "caption": "Mýtus alebo realita, odpoveď",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/04-mytus-tmava.jpg",
+          "caption": "Tmavá verzia toho istého formátu",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/05-chyby-uvod.jpg",
+          "caption": "Vzdelávací karusel, úvodná strana",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/06-chyby-krok.jpg",
+          "caption": "Číslovaný krok v karuseli",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/07-chyby-zaver.jpg",
+          "caption": "Záverečná strana s otázkou",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/shapelesai/08-ai-zvyraznenie.jpg",
+          "caption": "Zvýrazňovač ako opakovaný prvok",
+          "orientation": "portrait"
+        }
+      ],
+      "hero_caption": "AI plánovanie, úvodná strana karuselu",
+      "video": {
+        "src": "assets/projects/shapelesai/reel-historia.mp4",
+        "poster": "assets/projects/shapelesai/reel-historia.jpg",
+        "caption": "Reel Hľadám firmu s históriou, viac než 10 000 zhliadnutí",
+        "beside_cover": true
+      }
+    },
+    {
       "slug": "spolok-farmacie",
       "title": "Spolok košických študentov farmácie",
       "subtitle": "Redizajn loga, 2. miesto v celoslovenskej súťaži",
@@ -110,7 +178,7 @@
         "socialne-siete"
       ],
       "featured": true,
-      "order": 3,
+      "order": 4,
       "year": "2024",
       "client": "Spolok košických študentov farmácie",
       "status": "sutaz",
@@ -144,7 +212,7 @@
         },
         {
           "src": "assets/projects/spolok-farmacie/03-tlacoviny.jpg",
-          "caption": "Tlačoviny a aplikácie",
+          "caption": "Tlačoviny a ich aplikovanie",
           "orientation": "landscape"
         },
         {
@@ -155,15 +223,52 @@
       ]
     },
     {
+      "slug": "mapa-skoly",
+      "title": "Orientačný systém PEVŠ",
+      "subtitle": "Mapy troch fakúlt, realizované a vystavené v škole",
+      "category": "tlacoviny",
+      "cross": [],
+      "featured": true,
+      "order": 5,
+      "year": "2023 až 2024",
+      "client": "Paneurópska vysoká škola",
+      "status": "realizovany",
+      "role": "Informačný dizajn",
+      "format": "Veľkoformátová tlač, tri verzie",
+      "software": [
+        "Illustrator",
+        "InDesign"
+      ],
+      "brief": "Zorientovať študenta v budove, kde sú medziposchodia a čísla miestností na seba nenadväzujú.",
+      "solution": "Izometrický rez budovou, v ktorom má každá fakulta vlastnú farbu a vlastnú mapu. Miestnosti sú označené bodmi ako na mape, k tomu legenda s číslami, menami vyučujúcich a ich funkciami. Farebne odlíšené sú aj priestory, ktoré patria danej fakulte, takže študent vidí naraz, kde je a kam patrí. Vznikli tri verzie, pre každú fakultu jedna.",
+      "why": "Návrh je vyrobený a vystavený v areáli školy. Je to zatiaľ jediná moja práca, ktorá fyzicky existuje vo svete a používa ju denne niekoľko stoviek ľudí.",
+      "orientation": "landscape",
+      "cover": "assets/projects/mapa-skoly/01-ekonomia.jpg",
+      "images": [
+        {
+          "src": "assets/projects/mapa-skoly/02-informatika.jpg",
+          "caption": "Fakulta informatiky",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/mapa-skoly/03-masmedialna.jpg",
+          "caption": "Masmediálna fakulta",
+          "orientation": "landscape"
+        }
+      ],
+      "hero_layout": "row",
+      "hero_caption": "Fakulta ekonómie a podnikania"
+    },
+    {
       "slug": "macarons",
       "title": "Macarons Factory",
-      "subtitle": "Značka a obal pre fiktívnu pekáreň",
+      "subtitle": "Značka a obal pre fiktívnu cukráreň",
       "category": "obaly",
       "cross": [
         "vizualna-identita"
       ],
       "featured": true,
-      "order": 4,
+      "order": 6,
       "year": "2021",
       "client": "Školský projekt",
       "status": "skolsky",
@@ -173,8 +278,8 @@
         "Illustrator",
         "Photoshop"
       ],
-      "brief": "Značka a obal pre fiktívnu pekáreň na makrónky, kde obal predáva skôr než obsah.",
-      "solution": "Celý obal nesie akvarelovú ilustráciu makrónok, ktorú som kreslila sama, vďaka čomu výrobok vyzerá ručne robene a nie ako sériový tovar. Krabička existuje v dvoch farebných variantoch, ružovom a modrom. Nejde o príchute, ale o výber: niekto siahne po ružovej, niekto po modrej, a rad tak drží pokope pre oboch.",
+      "brief": "Značka a obal pre fiktívnu cukráreň na makrónky, kde obal predáva skôr než obsah.",
+      "solution": "Celý obal nesie akvarelovú ilustráciu makrónok, ktorú som kreslila sama, vďaka čomu výrobok vyzerá ručne robene a nie ako sériový tovar. Krabička existuje v dvoch farebných variantoch, ružovom a modrom.",
       "why": "Chcela som si vyskúšať obal ako celok, od ilustrácie cez sadzbu príchutí až po to, ako sa krabička reálne otvára.",
       "orientation": "landscape",
       "cover": "assets/projects/macarons/01-identita.jpg",
@@ -214,8 +319,8 @@
       "cross": [
         "knizny-dizajn"
       ],
-      "featured": true,
-      "order": 5,
+      "featured": false,
+      "order": 7,
       "year": "2023",
       "client": "Yaşar University, Izmir",
       "status": "skolsky",
@@ -279,221 +384,46 @@
       ]
     },
     {
-      "slug": "mapa-skoly",
-      "title": "Orientačný systém PEVŠ",
-      "subtitle": "Mapy troch fakúlt, realizované a vystavené v škole",
-      "category": "tlacoviny",
-      "cross": [],
-      "featured": true,
-      "order": 6,
-      "year": "2023 až 2024",
-      "client": "Paneurópska vysoká škola",
-      "status": "realizovany",
-      "role": "Informačný dizajn",
-      "format": "Veľkoformátová tlač, tri verzie",
-      "software": [
-        "Illustrator",
-        "InDesign"
-      ],
-      "brief": "Zorientovať študenta v budove, kde sú medziposchodia a čísla miestností na seba nenadväzujú.",
-      "solution": "Izometrický rez budovou, v ktorom má každá fakulta vlastnú farbu a vlastnú mapu. Miestnosti sú označené bodmi ako na mape, k tomu legenda s číslami, menami vyučujúcich a ich funkciami. Farebne odlíšené sú aj priestory, ktoré patria danej fakulte, takže študent vidí naraz, kde je a kam patrí. Vznikli tri verzie, pre každú fakultu jedna.",
-      "why": "Návrh je vyrobený a vystavený v areáli školy. Je to zatiaľ jediná moja práca, ktorá fyzicky existuje vo svete a používa ju denne niekoľko stoviek ľudí.",
-      "orientation": "landscape",
-      "cover": "assets/projects/mapa-skoly/01-ekonomia.jpg",
-      "images": [
-        {
-          "src": "assets/projects/mapa-skoly/02-informatika.jpg",
-          "caption": "Fakulta informatiky",
-          "orientation": "landscape"
-        },
-        {
-          "src": "assets/projects/mapa-skoly/03-masmedialna.jpg",
-          "caption": "Masmediálna fakulta",
-          "orientation": "landscape"
-        }
-      ],
-      "hero_layout": "row",
-      "hero_caption": "Fakulta ekonómie a podnikania"
-    },
-    {
-      "slug": "rosie",
-      "title": "Rosie",
-      "subtitle": "Logotyp pre fiktívne kvetinárstvo",
-      "category": "vizualna-identita",
-      "cross": [],
-      "featured": false,
-      "order": 7,
-      "year": "2022",
-      "client": "Školský projekt",
-      "status": "skolsky",
-      "role": "Logotyp",
-      "format": "Logotyp v štyroch variantoch",
-      "software": [
-        "Illustrator"
-      ],
-      "brief": "Navrhnúť logo pre moderné kvetinárstvo, ktoré pôsobí elegantne, rozprávkovo, prirodzene a je ľahko rozpoznateľné.",
-      "solution": "Kaligrafický ťah spája tulipán s menom tak, že kvet vyrastá priamo z písma. Logotyp existuje vo štyroch variantoch, farebnom, horizontálnom, kruhovom a čiernobielom, aby sa dal použiť na okrúhlu vývesku aj na úzku stuhu.",
-      "why": "Zaujímalo ma, ako spraviť ručne písanú značku, ktorá ostane čitateľná aj vtedy, keď sa zmenší na centimeter.",
-      "orientation": "square",
-      "cover": "assets/projects/rosie/01-oznacenie-prevadzky.jpg",
-      "images": [
-        {
-          "src": "assets/projects/rosie/02-logo.jpg",
-          "caption": "Varianty logotypu",
-          "orientation": "landscape"
-        }
-      ]
-    },
-    {
-      "slug": "portrety-psov",
-      "title": "Portréty psov",
-      "subtitle": "Digitálna maľba",
-      "category": "ilustracia",
+      "slug": "mojesidlo",
+      "title": "MOJESIDLO.SK",
+      "subtitle": "Vizuály, obsah a produktová fotografia",
+      "category": "socialne-siete",
       "cross": [],
       "featured": false,
       "order": 8,
-      "year": "2024",
-      "client": "Voľná tvorba",
-      "status": null,
-      "role": "Ilustrácia",
-      "format": "Digitálna maľba, A4",
-      "software": [
-        "Procreate"
-      ],
-      "brief": "Voľná tvorba. Namaľovať psa tak, aby mal výraz, nie iba podobu.",
-      "solution": "Dva realistické portréty. Práca so srsťou, so svetlom v očiach a s tým, aby zviera niečo hovorilo aj bez tela a bez pozadia.",
-      "why": "Kreslím to, čo mám rada, a psi sú najlepší tréning na trpezlivosť. Pri srsti sa nedá nič odflaknúť.",
-      "orientation": "portrait",
-      "cover": "assets/projects/portrety-psov/01-goldie.jpg",
-      "images": [
-        {
-          "src": "assets/projects/portrety-psov/02-border-collie.jpg",
-          "caption": "Border kólia",
-          "orientation": "portrait"
-        }
-      ],
-      "hero_layout": "row",
-      "hero_caption": "Goldie"
-    },
-    {
-      "slug": "zara",
-      "title": "ZARA Deep Garden",
-      "subtitle": "Reklamné plagáty pre parfum",
-      "category": "tlacoviny",
-      "cross": [],
-      "featured": false,
-      "order": 9,
-      "year": "2023",
-      "client": "Yaşar University, Izmir",
-      "status": "skolsky",
-      "role": "Produktová fotografia a sadzba",
-      "format": "Plagáty A4, dva motívy",
-      "software": [
-        "Photoshop",
-        "InDesign"
-      ],
-      "brief": "Postaviť reklamný plagát na parfum ZARA Deep Garden na jednej fotografii a jednej vete.",
-      "solution": "Vôňa sa volá Deep Garden, tak som ju do záhrady aj postavila. Prvý motív je hutný: fľaštička uprostred bielych a fialových kvetov, kde je jediná ostrá vec v zábere. Druhý ide opačne, jeden veľký figový list na bielom a fľaštička položená na ňom. Sadzba je v oboch prípadoch ticho, aby fotografia mala priestor.",
-      "why": "Parfum sa nedá odfotiť. Dá sa odfotiť len to, čo má človeku pripomenúť, a to bola celá práca na tomto zadaní.",
-      "orientation": "portrait",
-      "cover": "assets/projects/zara/01-deep-garden.jpg",
-      "hero_layout": "row",
-      "hero_caption": "Deep Garden, hlavný motív",
-      "images": [
-        {
-          "src": "assets/projects/zara/02-freshness.jpg",
-          "caption": "Freshness of, druhý motív",
-          "orientation": "portrait"
-        }
-      ]
-    },
-    {
-      "slug": "old-spice",
-      "title": "Old Spice",
-      "subtitle": "Reklamné plagáty pre dezodorant",
-      "category": "tlacoviny",
-      "cross": [],
-      "featured": false,
-      "order": 10,
-      "year": "2023",
-      "client": "Yaşar University, Izmir",
-      "status": "skolsky",
-      "role": "Produktová fotografia a sadzba",
-      "format": "Plagáty A4, dva motívy",
-      "software": [
-        "Photoshop",
-        "InDesign"
-      ],
-      "brief": "Reklamný plagát na dezodorant Old Spice Captain, ktorý postaví celú vôňu na jednom obraze.",
-      "solution": "Značka má korenie priamo v názve, tak som z neho spravila obraz. Prvý motív má mleté chilli nasypané na bielom a v ňom prstom nakreslené srdce, sušené papričky ležia navrchu. Druhý je celý červený, produkt aj pozadie, aby plocha pálila rovnako ako vôňa. Titulok SPICE does the job je v oboch prípadoch jediný text.",
-      "why": "Dve verzie tej istej myšlienky, jedna tichá a jedna hlasná. Chcela som vedieť, ktorá funguje na diaľku lepšie.",
-      "orientation": "portrait",
-      "cover": "assets/projects/old-spice/01-korenie.jpg",
-      "hero_layout": "row",
-      "hero_caption": "Motív s korením",
-      "images": [
-        {
-          "src": "assets/projects/old-spice/02-produkt.jpg",
-          "caption": "Produktový motív",
-          "orientation": "portrait"
-        }
-      ]
-    },
-    {
-      "slug": "utulok-kampan",
-      "title": "Kampaň pre útulok",
-      "subtitle": "Plagáty pre útulok HIPDER",
-      "category": "tlacoviny",
-      "cross": [],
-      "featured": false,
-      "order": 11,
-      "year": "2023",
-      "client": "Yaşar University, Izmir",
-      "status": "skolsky",
-      "role": "Koncept a sadzba plagátov",
-      "format": "Plagáty A4",
-      "software": [
-        "Photoshop",
-        "InDesign"
-      ],
-      "brief": "Presvedčiť ľudí, aby si psa z útulku adoptovali a nebrali ho ako vec, ktorú sa dá po čase odložiť.",
-      "solution": "Dva plagáty a dva rôzne tóny. Prvý hovorí za psa v prvej osobe: I am not a toy. Fotografia je farebná a milá, text je tvrdý, a práve ten rozdiel má zabolieť. Druhý je čiernobiely, kde jediná farebná vec na celom plagáte je slovo NOT HATE. Farba tam nie je pre krásu, ale preto, aby sa oko nemalo kam pozrieť.",
-      "why": "Pri charitatívnej kampani je najľahšie skĺznuť do ľútosti. Chcela som, aby plagát namiesto toho oslovil človeka priamo a nechal ho s nepríjemnou otázkou.",
-      "orientation": "portrait",
-      "cover": "assets/projects/utulok-kampan/01-nie-som-hracka.jpg",
-      "images": [
-        {
-          "src": "assets/projects/utulok-kampan/02-laska-nie-nenavist.jpg",
-          "caption": "They deserve love, not hate",
-          "orientation": "portrait"
-        }
-      ],
-      "hero_layout": "row",
-      "hero_caption": "I am not a toy"
-    },
-    {
-      "slug": "pwc-workshop",
-      "title": "Leták na workshop PwC",
-      "subtitle": "Jednostranový leták pre študentov",
-      "category": "tlacoviny",
-      "cross": [],
-      "featured": false,
-      "order": 12,
-      "year": "2023",
-      "client": "PwC Slovensko",
+      "year": "2024 až 2025",
+      "client": "MOJESIDLO.SK",
       "status": "komercny",
-      "role": "Sadzba a grafika letáku",
-      "format": "Jednostranový leták A4",
+      "role": "Grafika, obsah a produktová fotografia",
+      "format": "Príspevky pre sociálne siete, plagát",
       "software": [
+        "Photoshop",
         "Illustrator",
-        "InDesign"
+        "Canva"
       ],
-      "brief": "Zadanie od PwC Slovensko: pozvať študentov na workshop o tom, ako naozaj vyzerá práca audítora, a na jednej strane povedať čo, kedy a prečo by mali prísť.",
-      "solution": "Leták drží firemnú oranžovú a pracuje s ňou ako s tvarom, nie ako s výplňou. Oranžový pás vedie okom zhora nadol a v ňom sedia dva kruhové výrezy s fotografiami. Dátum a čas sú v jedinom výraznom bloku, aby ich človek našiel aj bez čítania. Dole sú kontakty na sociálne siete a web.",
-      "why": "Leták pre firmu má tú výhodu, že farby a logo sú dané. Práca je celá v tom, ako sa v tých mantineloch dá spraviť niečo, čo nevyzerá ako šablóna.",
-      "orientation": "portrait",
-      "cover": "assets/projects/pwc-workshop/01-letak.jpg",
-      "images": []
+      "brief": "Držať profil značky, ktorá predáva virtuálne sídlo pre firmy, teda službu, ktorú nie je vidieť. Obsah musel byť sledovateľný aj vtedy, keď je téma úradnícka.",
+      "solution": "Fialová je daná značkou, tak som z nej spravila pravidlo: fialová je v každom zábere, či už je to stena, bunda alebo kytica tulipánov. Vďaka tomu drží mriežka profilu pokope aj vtedy, keď sa v nej strieda oznam, fotografia zo zákulisia a video. Oznamy majú vlastnú šablónu, takže otváracie hodiny cez sviatky aj míľnik pätnásť tisíc zákazníkov vyzerajú ako jedna rodina. Najväčší kus je vizuál k správam zo slovensko.sk v aplikácii: telefón v uhle, tri bubliny s výhodami a nič iné, aby sa dal prečítať za tri sekundy v feede aj z väčšej diaľky ako plagát.",
+      "why": "Úradná téma sa dá odkomunikovať dvoma spôsobmi. Buď suchým oznamom, alebo tak, že za značkou vidno ľudí, ktorí ju robia. Skúšala som druhý.",
+      "orientation": "square",
+      "cover": "assets/projects/mojesidlo/01-plagat-mockup.jpg",
+      "images": [
+        {
+          "src": "assets/projects/mojesidlo/02-plagat.jpg",
+          "caption": "Vizuál v plnom formáte",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/mojesidlo/03-profil.jpg",
+          "caption": "Príspevky v profile značky",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/mojesidlo/04-prispevok.jpg",
+          "caption": "Vybraný príspevok",
+          "orientation": "portrait"
+        }
+      ],
+      "hero_caption": "Vizuál k správam zo slovensko.sk"
     },
     {
       "slug": "telekom",
@@ -504,7 +434,7 @@
         "tlacoviny"
       ],
       "featured": false,
-      "order": 13,
+      "order": 9,
       "year": "2024",
       "client": "Telekom",
       "status": "koncept",
@@ -555,7 +485,7 @@
       "category": "socialne-siete",
       "cross": [],
       "featured": false,
-      "order": 14,
+      "order": 10,
       "year": "2023",
       "client": "Yaşar University, Izmir",
       "status": "koncept",
@@ -590,114 +520,184 @@
       "hero_caption": "Návrh profilu"
     },
     {
-      "slug": "mojesidlo",
-      "title": "MOJESIDLO.SK",
-      "subtitle": "Vizuály, obsah a produktová fotografia",
-      "category": "socialne-siete",
+      "slug": "rosie",
+      "title": "Rosie",
+      "subtitle": "Logotyp pre fiktívne kvetinárstvo",
+      "category": "vizualna-identita",
+      "cross": [],
+      "featured": false,
+      "order": 11,
+      "year": "2022",
+      "client": "Školský projekt",
+      "status": "skolsky",
+      "role": "Logotyp",
+      "format": "Logotyp v štyroch variantoch",
+      "software": [
+        "Illustrator"
+      ],
+      "brief": "Navrhnúť logo pre moderné kvetinárstvo, ktoré pôsobí elegantne, rozprávkovo, prirodzene a je ľahko rozpoznateľné.",
+      "solution": "Kaligrafický ťah spája tulipán s menom tak, že kvet vyrastá priamo z písma. Logotyp existuje vo štyroch variantoch, farebnom, horizontálnom, kruhovom a čiernobielom, aby sa dal použiť na okrúhlu vývesku aj na úzku stuhu.",
+      "why": "Zaujímalo ma, ako spraviť ručne písanú značku, ktorá ostane čitateľná aj vtedy, keď sa zmenší na centimeter.",
+      "orientation": "square",
+      "cover": "assets/projects/rosie/01-oznacenie-prevadzky.jpg",
+      "images": [
+        {
+          "src": "assets/projects/rosie/02-logo.jpg",
+          "caption": "Varianty logotypu",
+          "orientation": "landscape"
+        }
+      ]
+    },
+    {
+      "slug": "portrety-psov",
+      "title": "Portréty psov",
+      "subtitle": "Digitálna maľba",
+      "category": "ilustracia",
+      "cross": [],
+      "featured": false,
+      "order": 12,
+      "year": "2024",
+      "client": "Voľná tvorba",
+      "status": null,
+      "role": "Ilustrácia",
+      "format": "Digitálna maľba, A4",
+      "software": [
+        "Procreate"
+      ],
+      "brief": "Voľná tvorba. Namaľovať psa tak, aby mal výraz, nie iba podobu.",
+      "solution": "Dva realistické portréty. Práca so srsťou, so svetlom v očiach a s tým, aby zviera niečo hovorilo aj bez tela a bez pozadia.",
+      "why": "Kreslím to, čo mám rada, a psi sú najlepší tréning na trpezlivosť. Pri srsti sa nedá nič odflaknúť.",
+      "orientation": "portrait",
+      "cover": "assets/projects/portrety-psov/01-goldie.jpg",
+      "images": [
+        {
+          "src": "assets/projects/portrety-psov/02-border-collie.jpg",
+          "caption": "Border kólia",
+          "orientation": "portrait"
+        }
+      ],
+      "hero_layout": "row",
+      "hero_caption": "Goldie"
+    },
+    {
+      "slug": "zara",
+      "title": "ZARA Deep Garden",
+      "subtitle": "Reklamné plagáty pre parfum",
+      "category": "tlacoviny",
+      "cross": [],
+      "featured": false,
+      "order": 13,
+      "year": "2023",
+      "client": "Yaşar University, Izmir",
+      "status": "skolsky",
+      "role": "Produktová fotografia a sadzba",
+      "format": "Plagáty A4, dva motívy",
+      "software": [
+        "Photoshop",
+        "InDesign"
+      ],
+      "brief": "Postaviť reklamný plagát na parfum ZARA Deep Garden na jednej fotografii a jednej vete.",
+      "solution": "Vôňa sa volá Deep Garden, tak som ju do záhrady aj postavila. Prvý motív je hutný: fľaštička uprostred bielych a fialových kvetov, kde je jediná ostrá vec v zábere. Druhý ide opačne, jeden veľký figový list na bielom a fľaštička položená na ňom. Sadzba je v oboch prípadoch ticho, aby fotografia mala priestor.",
+      "why": "Parfum sa nedá odfotiť. Dá sa odfotiť len to, čo má človeku pripomenúť, a to bola celá práca na tomto zadaní.",
+      "orientation": "portrait",
+      "cover": "assets/projects/zara/01-deep-garden.jpg",
+      "hero_layout": "row",
+      "hero_caption": "Deep Garden, hlavný motív",
+      "images": [
+        {
+          "src": "assets/projects/zara/02-freshness.jpg",
+          "caption": "Freshness of, druhý motív",
+          "orientation": "portrait"
+        }
+      ]
+    },
+    {
+      "slug": "old-spice",
+      "title": "Old Spice",
+      "subtitle": "Reklamné plagáty pre dezodorant",
+      "category": "tlacoviny",
+      "cross": [],
+      "featured": false,
+      "order": 14,
+      "year": "2023",
+      "client": "Yaşar University, Izmir",
+      "status": "skolsky",
+      "role": "Produktová fotografia a sadzba",
+      "format": "Plagáty A4, dva motívy",
+      "software": [
+        "Photoshop",
+        "InDesign"
+      ],
+      "brief": "Reklamný plagát na dezodorant Old Spice Captain, ktorý postaví celú vôňu na jednom obraze.",
+      "solution": "Značka má korenie priamo v názve, tak som z neho spravila obraz. Prvý motív má mleté chilli nasypané na bielom a v ňom prstom nakreslené srdce, sušené papričky ležia navrchu. Druhý je celý červený, produkt aj pozadie, aby plocha pálila rovnako ako vôňa. Titulok SPICE does the job je v oboch prípadoch jediný text.",
+      "why": "Dve verzie tej istej myšlienky, jedna tichá a jedna hlasná. Chcela som vedieť, ktorá funguje na diaľku lepšie.",
+      "orientation": "portrait",
+      "cover": "assets/projects/old-spice/01-korenie.jpg",
+      "hero_layout": "row",
+      "hero_caption": "Motív s korením",
+      "images": [
+        {
+          "src": "assets/projects/old-spice/02-produkt.jpg",
+          "caption": "Produktový motív",
+          "orientation": "portrait"
+        }
+      ]
+    },
+    {
+      "slug": "utulok-kampan",
+      "title": "Kampaň pre útulok",
+      "subtitle": "Plagáty pre útulok HIPDER",
+      "category": "tlacoviny",
       "cross": [],
       "featured": false,
       "order": 15,
-      "year": "2024 až 2025",
-      "client": "MOJESIDLO.SK",
-      "status": "komercny",
-      "role": "Grafika, obsah a produktová fotografia",
-      "format": "Príspevky pre sociálne siete, plagát",
+      "year": "2023",
+      "client": "Yaşar University, Izmir",
+      "status": "skolsky",
+      "role": "Koncept a sadzba plagátov",
+      "format": "Plagáty A4",
       "software": [
         "Photoshop",
-        "Illustrator",
-        "Canva"
+        "InDesign"
       ],
-      "brief": "Držať profil značky, ktorá predáva virtuálne sídlo pre firmy, teda službu, ktorú nie je vidieť. Obsah musel byť sledovateľný aj vtedy, keď je téma úradnícka.",
-      "solution": "Fialová je daná značkou, tak som z nej spravila pravidlo: fialová je v každom zábere, či už je to stena, bunda alebo kytica tulipánov. Vďaka tomu drží mriežka profilu pokope aj vtedy, keď sa v nej strieda oznam, fotografia zo zákulisia a video. Oznamy majú vlastnú šablónu, takže otváracie hodiny cez sviatky aj míľnik pätnásť tisíc zákazníkov vyzerajú ako jedna rodina. Najväčší kus je vizuál k správam zo slovensko.sk v aplikácii: telefón v uhle, tri bubliny s výhodami a nič iné, aby sa dal prečítať za tri sekundy v feede aj z väčšej diaľky ako plagát.",
-      "why": "Úradná téma sa dá odkomunikovať dvoma spôsobmi. Buď suchým oznamom, alebo tak, že za značkou vidno ľudí, ktorí ju robia. Skúšala som druhý.",
-      "orientation": "square",
-      "cover": "assets/projects/mojesidlo/01-plagat-mockup.jpg",
+      "brief": "Presvedčiť ľudí, aby si psa z útulku adoptovali a nebrali ho ako vec, ktorú sa dá po čase odložiť.",
+      "solution": "Dva plagáty a dva rôzne tóny. Prvý hovorí za psa v prvej osobe: I am not a toy. Fotografia je farebná a milá, text je tvrdý, a práve ten rozdiel má zabolieť. Druhý je čiernobiely, kde jediná farebná vec na celom plagáte je slovo NOT HATE. Farba tam nie je pre krásu, ale preto, aby sa oko nemalo kam pozrieť.",
+      "why": "Pri charitatívnej kampani je najľahšie skĺznuť do ľútosti. Chcela som, aby plagát namiesto toho oslovil človeka priamo a nechal ho s nepríjemnou otázkou.",
+      "orientation": "portrait",
+      "cover": "assets/projects/utulok-kampan/01-nie-som-hracka.jpg",
       "images": [
         {
-          "src": "assets/projects/mojesidlo/02-plagat.jpg",
-          "caption": "Vizuál v plnom formáte",
-          "orientation": "portrait"
-        },
-        {
-          "src": "assets/projects/mojesidlo/03-profil.jpg",
-          "caption": "Príspevky v profile značky",
-          "orientation": "portrait"
-        },
-        {
-          "src": "assets/projects/mojesidlo/04-prispevok.jpg",
-          "caption": "Vybraný príspevok",
+          "src": "assets/projects/utulok-kampan/02-laska-nie-nenavist.jpg",
+          "caption": "They deserve love, not hate",
           "orientation": "portrait"
         }
       ],
-      "hero_caption": "Vizuál k správam zo slovensko.sk"
+      "hero_layout": "row",
+      "hero_caption": "I am not a toy"
     },
     {
-      "slug": "shapelesai",
-      "title": "SHAPELESAI",
-      "subtitle": "Vizuálny systém a obsah pre profil",
-      "category": "socialne-siete",
+      "slug": "pwc-workshop",
+      "title": "Leták na workshop PwC",
+      "subtitle": "Jednostranový leták pre študentov",
+      "category": "tlacoviny",
       "cross": [],
       "featured": false,
       "order": 16,
-      "year": "od 2025",
-      "client": "SHAPELESAI",
+      "year": "2023",
+      "client": "PwC Slovensko",
       "status": "komercny",
-      "role": "Social media manager, grafika a copywriting",
-      "format": "Karusely a príspevky 1080 × 1350 px, reely 1080 × 1920 px",
+      "role": "Sadzba a grafika letáku",
+      "format": "Jednostranový leták A4",
       "software": [
-        "Photoshop",
         "Illustrator",
-        "Canva"
+        "InDesign"
       ],
-      "brief": "Robiť profil firme, ktorá predáva AI a marketing, tak, aby ho ľudia sledovali pre to, čo sa z neho dozvedia, nie pre ponuky. Obsah musel byť vzdelávací a zároveň rozoznateľný na prvý pohľad v cudzom feede.",
-      "solution": "Celý profil stojí na dvoch farbách, kyslej žltej a tmavomodrej, a na dvoch písmach: tučnom bezpätkovom na tvrdenia a strojopise na vysvetlenie. Nadpisy podčiarkujem zvýrazňovačom, takže oko vie, kde má zastať. Na to som postavila formáty, ktoré sa dajú opakovať donekonečna. Mýtus alebo realita je kvíz: prvá strana dá tvrdenie a dve tlačidlá, druhá odpoveď na pokrčenom papieri. Vzdelávacie karusely majú úvodnú stranu urobenú ako príspevok v príspevku, s krížikom, šípkou a ikonami, číslované kroky a na konci otázku, ktorá vracia čitateľa k sebe. Nechýba bodka s počtom strán, aby človek vedel, do čoho ide. K statickým formátom patrí aj reel Hľadám firmu s históriou, ktorý stavia na jednoduchom vtipe: firma s históriou ako jaskyňa a antický Rím. Presiahol tisíc pozretí.",
-      "why": "Karusel je jediný formát na Instagrame, kde musí čitateľ niečo urobiť, aby pokračoval. Preto ma zaujímalo hlavne to, čo drží prst v pohybe: aby prvá strana sľúbila konkrétnu vec a každá ďalšia ju splnila skôr, než ju prestane baviť.",
+      "brief": "Zadanie od PwC Slovensko: pozvať študentov na workshop o tom, ako naozaj vyzerá práca audítora, a na jednej strane povedať čo, kedy a prečo by mali prísť.",
+      "solution": "Leták drží firemnú oranžovú a pracuje s ňou ako s tvarom, nie ako s výplňou. Oranžový pás vedie okom zhora nadol a v ňom sedia dva kruhové výrezy s fotografiami. Dátum a čas sú v jedinom výraznom bloku, aby ich človek našiel aj bez čítania. Dole sú kontakty na sociálne siete a web.",
+      "why": "Leták pre firmu má tú výhodu, že farby a logo sú dané. Práca je celá v tom, ako sa v tých mantineloch dá spraviť niečo, čo nevyzerá ako šablóna.",
       "orientation": "portrait",
-      "cover": "assets/projects/shapelesai/01-ai-uvod.jpg",
-      "images": [
-        {
-          "src": "assets/projects/shapelesai/02-mytus-otazka.jpg",
-          "caption": "Mýtus alebo realita, otázka",
-          "orientation": "portrait"
-        },
-        {
-          "src": "assets/projects/shapelesai/03-mytus-odpoved.jpg",
-          "caption": "Mýtus alebo realita, odpoveď",
-          "orientation": "portrait"
-        },
-        {
-          "src": "assets/projects/shapelesai/04-mytus-tmava.jpg",
-          "caption": "Tmavá verzia toho istého formátu",
-          "orientation": "portrait"
-        },
-        {
-          "src": "assets/projects/shapelesai/05-chyby-uvod.jpg",
-          "caption": "Vzdelávací karusel, úvodná strana",
-          "orientation": "portrait"
-        },
-        {
-          "src": "assets/projects/shapelesai/06-chyby-krok.jpg",
-          "caption": "Číslovaný krok v karuseli",
-          "orientation": "portrait"
-        },
-        {
-          "src": "assets/projects/shapelesai/07-chyby-zaver.jpg",
-          "caption": "Záverečná strana s otázkou",
-          "orientation": "portrait"
-        },
-        {
-          "src": "assets/projects/shapelesai/08-ai-zvyraznenie.jpg",
-          "caption": "Zvýrazňovač ako opakovaný prvok",
-          "orientation": "portrait"
-        }
-      ],
-      "hero_caption": "AI plánovanie, úvodná strana karuselu",
-      "video": {
-        "src": "assets/projects/shapelesai/reel-historia.mp4",
-        "poster": "assets/projects/shapelesai/reel-historia.jpg",
-        "caption": "Reel Hľadám firmu s históriou, viac než tisíc pozretí",
-        "beside_cover": true
-      }
+      "cover": "assets/projects/pwc-workshop/01-letak.jpg",
+      "images": []
     },
     {
       "slug": "podozrivy",
