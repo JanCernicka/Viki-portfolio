@@ -18,7 +18,7 @@
       "client": "Bakalárska práca",
       "status": "skolsky",
       "role": "Vizuálna identita a dizajn manuál",
-      "format": "Logotyp, dizajn manuál, tlačoviny",
+      "format": "Logotyp a jeho varianty, dizajn manuál, tlačoviny",
       "software": [
         "Procreate",
         "Illustrator",
@@ -33,8 +33,28 @@
       "images": [
         {
           "src": "assets/projects/nook-books/03-logo.jpg",
-          "caption": "Logotyp a jeho varianty",
+          "caption": "Základný logotyp",
           "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/nook-books/06-variabilne-logo.jpg",
+          "caption": "Variabilná verzia s názvom pod symbolom",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/nook-books/07-logo-so-sloganom.jpg",
+          "caption": "Logotyp so sloganom",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/nook-books/08-ciernobiele.jpg",
+          "caption": "Čiernobiela verzia",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/nook-books/09-biele-na-tmavom.jpg",
+          "caption": "Biela verzia na tmavom podklade",
+          "orientation": "square"
         },
         {
           "src": "assets/projects/nook-books/04-farebnost-pismo.jpg",
