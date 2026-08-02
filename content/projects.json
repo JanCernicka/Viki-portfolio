@@ -183,14 +183,14 @@
       "client": "Spolok košických študentov farmácie",
       "status": "sutaz",
       "role": "Redizajn loga a vizuálna identita",
-      "format": "Logotyp, tlačoviny, sociálne siete",
+      "format": "Logotyp a jeho varianty, tlačoviny, sociálne siete",
       "software": [
         "Illustrator",
         "InDesign",
         "Photoshop"
       ],
       "brief": "Spolok vypísal v roku 2024 súťaž na nové logo pre celé Slovensko. Zadaním bol redizajn, ktorý nadviaže na pôvodnú značku a zároveň ju posunie do formátov, v ktorých spolok reálne funguje. Môj návrh sa umiestnil na druhom mieste.",
-      "solution": "Pôvodný znak mal misku s listami a krížom a názov obtočený dokola, celé čierne a s detailmi, ktoré sa v malom zliali do jednej škvrny. Nechala som z neho to, čo spolok robí spolkom, teda mažiar a rastlinný pôvod liečiv, a všetko ostatné som zjednodušila. Znak je kruhový, zelený s bielou, so striedmou bezpätkovou sadzbou. Identitu som doviedla od vizitky a letáku až po formáty pre Instagram a Facebook, aby profil držal pokope aj pri každodennom pridávaní.",
+      "solution": "Pôvodný znak mal misku s listami a krížom a názov obtočený dokola, celé čierne a s detailmi, ktoré sa v malom zliali do jednej škvrny. Nechala som z neho to, čo spolok robí spolkom, teda mažiar a rastlinný pôvod liečiv, a všetko ostatné som zjednodušila. Znak je kruhový, zelený s bielou, so striedmou bezpätkovou sadzbou. K primárnemu logu patrí jednofarebná aj čiernobiela verzia a kruhová pečať so slovenským, anglickým a latinským názvom, každá s určeným najmenším rozmerom až do 1,5 × 1,5 cm. Identitu som doviedla od vizitky a letáku až po formáty pre Instagram a Facebook, aby profil držal pokope aj pri každodennom pridávaní.",
       "why": "Cieľom bolo zachovať jeho identitu, no zároveň ho prispôsobiť požiadavkám klienta na funkčný redizajn. Logo som zjednodušila, aby bolo čitateľné, ľahšie rozpoznateľné a fungovalo vo všetkých veľkostiach aj na rôznych médiách, ako sú sociálne siete a tlač. Minimalistický prístup zabezpečuje jeho nadčasovosť, vďaka čomu nebude podliehať krátkodobým dizajnovým trendom. Výsledkom je moderná vizuálna identita, ktorá rešpektuje pôvod značky a zároveň je pripravená na jej dlhodobé fungovanie.",
       "orientation": "landscape",
       "cover": "assets/projects/spolok-farmacie/01-identita.jpg",
@@ -203,6 +203,11 @@
         {
           "src": "assets/projects/spolok-farmacie/02-logo.jpg",
           "caption": "Môj návrh redizajnu",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/spolok-farmacie/06-varianty-loga.jpg",
+          "caption": "Varianty loga a ich najmenšie rozmery",
           "orientation": "landscape"
         },
         {
@@ -549,6 +554,16 @@
         {
           "src": "assets/projects/rosie/03-farebne-bez-podnazvu.jpg",
           "caption": "Farebná verzia bez podnázvu",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/rosie/04-ciernobiela.jpg",
+          "caption": "Čiernobiela verzia s podnázvom",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/rosie/05-ciernobiela-bez-podnazvu.jpg",
+          "caption": "Čiernobiela verzia bez podnázvu",
           "orientation": "landscape"
         }
       ]
