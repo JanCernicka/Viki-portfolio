@@ -251,7 +251,7 @@ def build_portfolio_pdf(projects, key):
     tail = (more_page(other, v["more_title"], v["more_lead"])
             if other and v.get("more_title") else "")
 
-    html = doc_head(f'Portfólio — {v["title"]} — {NAME}', "dokumenty.css") + f'''
+    html = doc_head(f'Portfólio - {NAME}', "dokumenty.css") + f'''
   <section class="page pf-cover">
     <img class="pf-cover-logo" src="assets/images/logo.png" alt="">
     <div class="pf-cover-mid">

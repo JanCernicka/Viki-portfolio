@@ -131,7 +131,7 @@ def head(title, description, depth=0, path=""):
 <meta property="og:image" content="{SITE_URL}/assets/images/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Viktória Mikušková — grafická dizajnérka, knižný dizajn a sadzba">
+<meta property="og:image:alt" content="Viktória Mikušková, grafická dizajnérka a ilustrátorka">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(description)}">
@@ -389,8 +389,8 @@ def build_index(projects, about_html):
       </li>
 '''
 
-    html = head(f"{SITE_NAME} — {TAGLINE}",
-                "Mgr. Viktória Mikušková — grafická dizajnérka a ilustrátorka z Bratislavy. "
+    html = head(f"{SITE_NAME} - {TAGLINE}",
+                "Mgr. Viktória Mikušková, grafická dizajnérka a ilustrátorka z Bratislavy. "
                 "Vizuálna identita, obaly, ilustrácia, knižný dizajn a tlačoviny.")
     html += header("domov", projects=projects)
     html += '''
@@ -474,7 +474,7 @@ def build_portfolio(projects):
       </a>
 '''
 
-    html = head(f"Portfólio — {SITE_NAME}",
+    html = head(f"Portfólio - {SITE_NAME}",
                 "Portfólio Viktórie Mikuškovej podľa sekcií: vizuálna identita, obaly, "
                 "ilustrácia, knižný dizajn, tlačoviny a sociálne siete.",
                 path="portfolio.html")
@@ -555,7 +555,7 @@ def build_dokumenty(projects):
         </article>
 '''
 
-    html = head(f"Dokumenty na stiahnutie — {SITE_NAME}",
+    html = head(f"Dokumenty na stiahnutie - {SITE_NAME}",
                 "Životopis a portfólio Viktórie Mikuškovej na stiahnutie v PDF.",
                 path="dokumenty.html")
     html += header("dokumenty", projects=projects)
@@ -609,7 +609,7 @@ def build_category(key, projects):
     n = len(mine)
     pocet = "projekt" if n == 1 else "projekty" if n < 5 else "projektov"
 
-    html = head(f"{cat['title']} — {SITE_NAME}", f"{cat['title']} — {cat['lead']}",
+    html = head(f"{cat['title']} - {SITE_NAME}", f"{cat['title']}. {cat['lead']}",
                 path=f"{key}.html")
     html += header(key, projects=projects)
     html += f'''
@@ -679,8 +679,8 @@ def build_project(p, projects):
     prev_p = ordered[idx - 1] if idx > 0 else None
     next_p = ordered[idx + 1] if idx < len(ordered) - 1 else None
 
-    desc = p.get("subtitle") or f"{p['title']} — {cat['title']}"
-    html = head(f"{p['title']} — {SITE_NAME}", desc, depth=1,
+    desc = p.get("subtitle") or f"{p['title']}, {cat['title']}"
+    html = head(f"{p['title']} - {SITE_NAME}", desc, depth=1,
                 path=f"projekt/{p['slug']}.html")
     html += header(p["category"], depth=1, projects=projects)
 
