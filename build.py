@@ -739,6 +739,10 @@ def build_project(p, projects):
         portrait_n = sum(1 for im in imgs
                          if (im.get("orientation") or p.get("orientation")) == "portrait")
         grid_cls += " frame-portrait" if portrait_n * 2 >= len(imgs) else " frame-landscape"
+        # Pri väčšom počte záberov nižší rad, aby sa ich vošlo viac vedľa seba
+        # a galéria nebola stĺpec obrovských obrázkov.
+        if len(imgs) >= 6:
+            grid_cls += " is-many"
         html += f'''
   <section class="cs-gallery">
     <div class="container">

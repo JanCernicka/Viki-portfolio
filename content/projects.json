@@ -37,14 +37,14 @@
           "orientation": "landscape"
         },
         {
-          "src": "assets/projects/nook-books/06-variabilne-logo.jpg",
-          "caption": "Variabilná verzia s názvom pod symbolom",
-          "orientation": "portrait"
-        },
-        {
           "src": "assets/projects/nook-books/07-logo-so-sloganom.jpg",
           "caption": "Logotyp so sloganom",
           "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/nook-books/06-variabilne-logo.jpg",
+          "caption": "Variabilná verzia",
+          "orientation": "portrait"
         },
         {
           "src": "assets/projects/nook-books/08-ciernobiele.jpg",
@@ -53,7 +53,7 @@
         },
         {
           "src": "assets/projects/nook-books/09-biele-na-tmavom.jpg",
-          "caption": "Biela verzia na tmavom podklade",
+          "caption": "Biela na tmavom",
           "orientation": "square"
         },
         {
@@ -63,7 +63,7 @@
         },
         {
           "src": "assets/projects/nook-books/02-tlacoviny.jpg",
-          "caption": "Tlačoviny: záložka, hlavičkový papier, vizitka",
+          "caption": "Tlačoviny",
           "orientation": "landscape"
         },
         {

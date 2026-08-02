@@ -1070,6 +1070,9 @@ a{color:inherit;text-decoration:none;}
   --gh:clamp(180px,19vw,270px);
 }
 .g-grid.frame-portrait{--gh:clamp(220px,24vw,330px);}
+/* Šesť a viac záberov: nižší rad, nech sa ich zmestí viac vedľa seba. */
+.g-grid.is-many{--gh:clamp(120px,13vw,180px);}
+.g-grid.is-many.frame-portrait{--gh:clamp(170px,18vw,240px);}
 .g-grid.is-1{--gh:clamp(240px,30vw,400px);}
 .g-grid.is-2{--gh:clamp(220px,24vw,340px);}
 .g-item{margin:0;display:flex;flex-direction:column;max-width:100%;}
