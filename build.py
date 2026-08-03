@@ -106,7 +106,7 @@ def esc(s):
 
 # Adresa webu naživo. Open Graph vyžaduje absolútne adresy — relatívna cesta
 # k obrázku sa v náhľade nezobrazí a LinkedIn odkaz bez náhľadu odmietne.
-SITE_URL = "https://viktoria-mikuskova.pages.dev"
+SITE_URL = "https://viktoriamikuskova.com"
 
 
 def head(title, description, depth=0, path=""):

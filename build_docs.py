@@ -26,7 +26,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 # nové portfólio, prepíš SITE_URL, spusti build_docs.py a node make_pdf.js —
 # adresa sa zmení v CV, na hlavičkovom papieri, v podpise aj na záložkách.
 # ---------------------------------------------------------------------------
-SITE_URL = "viktoria-mikuskova.pages.dev"
+SITE_URL = "viktoriamikuskova.com"
 SITE_HREF = "https://" + SITE_URL
 
 NAME = "Viktória Mikušková"
@@ -298,24 +298,25 @@ KNOWN_URLS = ("viktoria-mikuskova.pages.dev", "viktoriamikuskova.com",
 
 
 def sync_cv_url():
-    path = os.path.join(ROOT, "cv.html")
-    if not os.path.exists(path):
-        print("  ! cv.html neexistuje — adresa nesynchronizovaná")
-        return
-    with open(path, encoding="utf-8") as f:
-        html = f.read()
-
-    changed = 0
-    for old in KNOWN_URLS:
-        if old == SITE_URL:
+    for name in ("cv.html", "cv-en.html"):
+        path = os.path.join(ROOT, name)
+        if not os.path.exists(path):
+            print(f"  ! {name} neexistuje — adresa nesynchronizovaná")
             continue
-        changed += html.count(old)
-        html = html.replace(old, SITE_URL)
+        with open(path, encoding="utf-8") as f:
+            html = f.read()
 
-    if changed:
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(html)
-    print(f"  cv.html — adresa webu: {SITE_URL} ({changed} zmien)")
+        changed = 0
+        for old in KNOWN_URLS:
+            if old == SITE_URL:
+                continue
+            changed += html.count(old)
+            html = html.replace(old, SITE_URL)
+
+        if changed:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(html)
+        print(f"  {name} — adresa webu: {SITE_URL} ({changed} zmien)")
 
 
 def main():
