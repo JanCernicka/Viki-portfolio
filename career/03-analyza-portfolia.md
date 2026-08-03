@@ -1,6 +1,6 @@
 # Krok 3 — Hĺbková analýza portfólia
 
-**Predmet:** viktoria-mikuskova.pages.dev (6 stránok: domov + 5 kategórií)
+**Predmet:** viktoriamikuskova.com (6 stránok: domov + 5 kategórií)
 **Metodika:** 29-bodová rubrika odvodená z knihy Fig Taylor, *How to Create a Portfolio & Get Hired* (Laurence King, 2010) — viď `01-portfolio-book-notes.md`, sekcia 9.
 **Cieľ:** práca v slovenskom vydavateľstve, Trnava / Bratislava alebo dochádzková vzdialenosť.
 

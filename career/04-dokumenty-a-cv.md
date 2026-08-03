@@ -1,4 +1,4 @@
-# Bod 8 — CV, posielateľné portfólio, promo kus, hlavičkový papier, podpis
+# Bod 8 - životopis a posielateľné portfólio
 
 *Vypracované na základe tvojho aktuálneho CV a poznámok z knihy o portfóliu
 (`01-portfolio-book-notes.md`) a z knihy o networkingu (`02-networking-book-notes.md`).*
@@ -7,22 +7,23 @@
 
 ## Čo je hotové
 
-Všetkých päť vecí z bodu 8 existuje a dá sa použiť. Všetko je v tvojej identite —
-krémová, terakotová, olivová, Playfair Display + Montserrat — takže CV, web,
-list aj záložka vyzerajú ako jedna vec od jedného človeka. To je presne to, čo
-Fig Taylorová myslí pod „consistent personal brand": zamestnávateľ ťa má spoznať
-skôr, než si prečíta meno.
+Všetko je v tvojej identite: krémová, terakotová, olivová, Playfair Display
+a Montserrat. Životopis aj portfólio vyzerajú ako jedna vec od jedného človeka.
+To je presne to, čo Fig Taylorová myslí pod „consistent personal brand":
+zamestnávateľ ťa má spoznať skôr, než si prečíta meno.
 
 | Dokument | Kde je | Na čo je |
 |---|---|---|
 | **Životopis** | `cv.html` → [PDF](../assets/cv/Viktoria-Mikuskova-CV.pdf) | Jedna strana A4. Prikladá sa ku každému e-mailu. |
-| **Posielateľné portfólio** | `portfolio-pdf.html` → PDF | Príloha k e-mailu. Obálka, projekty, kontakt. |
-| **Hlavičkový papier** | `hlavickovy-papier.html` → PDF | Sprievodné listy a žiadosti. |
-| **Promo kus — záložky** | `promo.html` → PDF | 4 záložky do knihy na jednom A4. |
-| **E-mailový podpis** | `podpis.html` | Aj s návodom pre Gmail a Outlook. |
+| **Životopis po anglicky** | `cv-en.html` → [PDF](../assets/cv/Viktoria-Mikuskova-CV-EN.pdf) | Pre medzinárodné firmy a agentúry. |
+| **Posielateľné portfólio** | `portfolio-dokument.html` → [PDF](../assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf) | Príloha k e-mailu. Obálka, projekty, kontakt. |
 
-Rozcestník ku všetkému: **`dokumenty.html`** — nie je v menu webu a vyhľadávače
-ho neindexujú, je pracovný.
+Rozcestník ku všetkému: **viktoriamikuskova.com/dokumenty.html** - je aj v menu
+webu pod položkou NA STIAHNUTIE, takže si odtiaľ vie portfólio stiahnuť
+aj ten, komu si poslala len odkaz.
+
+Hlavičkový papier, promo záložky a e-mailový podpis sme zrušili, nepotrebuješ
+ich. Nehľadaj ich, na disku už nie sú.
 
 ---
 
@@ -114,9 +115,10 @@ s preklepom — je to prvá ukážka tvojej práce s textom, ktorú človek uvid
 
 ### Ďalšie úpravy podľa tvojich pripomienok
 
-**Titul Mgr.** — potvrdený, je v hlavičke aj na hlavičkovom papieri a
-v e-mailovom podpise. Na obálke portfólia a na záložke zámerne nie je: portfólio
-nie je úradný dokument a titul tam pôsobí ťažkopádne.
+**Titul Mgr.** — potvrdený, je v hlavičke životopisu. Na obálke portfólia
+zámerne nie je: portfólio nie je úradný dokument a titul tam pôsobí ťažkopádne.
+V anglickej verzii je uvedený ako *Viktória Mikušková, MA*, lebo „Mgr." by
+v zahraničí nikto neprečítal.
 
 **Mapa školy už nekričí.** Bola tučná čierna, teraz je kurzívou v olivovej —
 v tej istej farbe ako nadpisy sekcií. Oko ju nájde, ale neprebíja meno
@@ -126,10 +128,10 @@ zamestnávateľa nad ňou.
 novú správu (`mailto:`), web otvára portfólio. Overil som, že odkazy v PDF
 naozaj sú — nie je to len farebný text.
 
-**Hlavička je širšia.** Teraz je tam *Grafická dizajnérka a ilustrátorka*
-a pod tým *knižný dizajn · sadzba · ilustrácia · vizuálna identita*. To isté
-je aj na hlavičkovom papieri a v e-mailovom podpise, aby sa dalo hlásiť aj
-na pozície grafika a ilustrátora, nielen na knižný dizajn.
+**Pod menom je len *Grafická dizajnérka a ilustrátorka*.** Riadok so
+zameraním (knižný dizajn · sadzba · ilustrácia) si dala preč a je to správne:
+zužoval ťa na knihy práve vtedy, keď sa hlásiš aj do agentúr a štúdií.
+Miesto neho je nad čiarou odsek o tom, čo vieš, ktorý si napísala ty.
 
 **Hlavička už nie je zlepená.** Meno, podnadpis aj riadok so zameraním majú
 riadkovanie 1,5. Na výšku strany to nemalo vplyv, lebo výšku hlavičky určuje
@@ -170,116 +172,31 @@ nič robiť dvakrát.
 Štruktúra podľa knihy: obálka → jeden projekt na stranu → záverečná strana
 s kontaktom a QR kódom.
 
-> ### Toto PDF zatiaľ **neposielaj**
+> ### Toto PDF je hotové a dá sa posielať
 >
-> Momentálne má 12 strán a **10 z 11 projektových strán je prázdnych** — je tam
-> len rámček s nápisom „obrázok projektu — doplniť pred odoslaním". Je to hotový
-> mechanizmus, nie hotový dokument. Keď mi pošleš obrázky z domáceho počítača,
-> spustím dva príkazy a PDF je hotové.
->
-> Poslať ho teraz by bolo horšie než neposlať nič.
+> Má 19 strán a všetky projektové strany majú reálne obrázky. Stiahneš ho na
+> **viktoriamikuskova.com/dokumenty.html**. Toto je príloha, ktorú prikladáš
+> k prihláške na inzerát, spolu so životopisom. Dva súbory, nič viac.
 
-Keď bude plné, dodrž jednu vec z knihy: **do e-mailu patrí PDF pod 10 MB.**
-Väčšia príloha sa buď neodošle, alebo skončí v spame. Ak by bolo väčšie, pošli
-odkaz na web a PDF ponúkni.
-
----
-
-## 3. Hlavičkový papier
-
-Jedna strana A4 s tvojou hlavičkou hore a kontaktom dole. Text listu **sa dá
-prepísať priamo v prehliadači** — klikneš doň a píšeš, nepotrebuješ Word. Keď je
-list hotový, dáš `Ctrl + P` → *Uložiť ako PDF*.
-
-Kedy to použiješ: keď posielaš žiadosť poštou, keď prikladáš sprievodný list
-k fyzickej ukážke, alebo keď chceš, aby e-mailová príloha vyzerala ako list a nie
-ako odsek v tele správy.
-
----
-
-## 4. Promo kus — záložka do knihy
-
-Toto je moje jediné skutočne kreatívne rozhodnutie v celom bode 8, tak ho
-odôvodním.
-
-Fig Taylorová hovorí o „leave-behind" — o veci, ktorú necháš po sebe, keď odídeš
-z pohovoru. Vizitka je slabá, lebo skončí v zásuvke. Dobrý leave-behind je taký,
-ktorý si človek **nechá, lebo ho používa**.
-
-Ty sa hlásiš do vydavateľstva. Ľudia vo vydavateľstve čítajú knihy. **Záložka je
-jediný promo predmet, ktorý si redaktor alebo grafik reálne nechá a bude ho
-mesiace držať v ruke.** A zároveň je to sama o sebe ukážka práce: formát, sadzba,
-práca s obrázkom, tlačová príprava. Predvádza presne tú disciplínu, do ktorej sa
-hlásiš.
-
-Naviac: v bakalárskej práci si robila **záložku do knihy s logom** pre fiktívne
-kníhkupectvo. Takže to nie je náhodný nápad — nadväzuje to na to, čo už máš.
-
-**Špecifikácia:** 4 kusy na jednom A4, 45 × 180 mm, obojstranne, 300 g matná
-kriedka. Predná strana ilustrácia + meno + zameranie, zadná citát, QR kód na web
-a kontakt. Rámček okolo každej záložky je orezová linka.
-
-> **Tento dizajn ide preč.** Povedala si, že záložky zatiaľ netreba a že keď raz
-> budú, chceš iný dizajn. V poriadku — čo ostáva, je **mechanika**: formát,
-> rozloženie štyroch kusov na A4, orezové linky, obojstranná tlač a QR kód. To
-> je tá otravná časť a je hotová. Nový dizajn sa doň vloží a PDF vypadne samo.
->
-> Má to zmysel robiť až po novom logu — inak by sa to robilo dvakrát.
-
----
-
-## 5. E-mailový podpis
-
-Bez obrázka — schválne. Obrázky v podpisoch veľká časť e-mailových klientov
-blokuje a namiesto tvojho loga by prišiel prázdny štvorec s krížikom. Podpis je
-postavený na tabuľke s inline štýlmi, čo je jediný spôsob, ako prežije Outlook.
-
-Obsahuje meno, zameranie, telefón, e-mail, web, Instagram a LinkedIn. Adresa
-webu je zvýraznená terakotovou — je to najdôležitejší odkaz v celom podpise.
-
-Návod na vloženie do Gmailu aj Outlooku je priamo na stránke `podpis.html`,
-aj s tlačidlom, ktoré podpis skopíruje aj s formátovaním.
+Jedna vec z knihy platí stále: **do e-mailu patrí PDF pod 10 MB.** Väčšia
+príloha sa buď neodošle, alebo skončí v spame. Keby raz narástlo, pošli odkaz
+na web a PDF ponúkni.
 
 ---
 
 ## Dve veci, ktoré musíš urobiť ty
 
-### A) Prepnúť viktoriamikuskova.com na nový web
+### A) Prepnúť viktoriamikuskova.com na nový web — HOTOVÉ
 
-Adresa v dokumentoch je späť na `viktoria-mikuskova.pages.dev`, teda na tú,
-ktorá dnes naozaj vedie na nové portfólio. **CV sa tým pádom dá poslať hneď.**
+Doména je prepnutá, apex aj `www` sú v Cloudflare aktívne a obe servírujú nové
+portfólio. Adresa `viktoriamikuskova.com` je zapísaná v slovenskom aj
+anglickom životopise, v PDF exportoch aj v šablónach správ.
 
-Čo som overil priamo cez Cloudflare API, nie od oka:
+Starý web na tejto adrese už nebeží. Ak zaň ešte platíš predplatné, vieš ho
+zrušiť.
 
-- Pages projekt `viktoria-mikuskova` **nemá priradenú žiadnu vlastnú doménu**.
-- Doména `viktoriamikuskova.com` **nie je v tomto Cloudflare účte** ako zóna.
-
-Z toho vyplýva, že DNS domény sedí ešte u pôvodného poskytovateľa (u toho, kde
-beží starý web) a **ja to prepnúť nemôžem** — nemám k tomu prístup a je to
-zásah do tvojej živej domény, ktorý by som ti aj tak najprv predložil.
-
-Dnes teda `viktoriamikuskova.com` vedie na stránku, ktorá podľa auditu z bodu 3
-dostala 4 z 29 bodov. Preto tam zatiaľ tá adresa nie je: pages.dev nie je pekná
-adresa, ale vedie na správny web, a to je viac.
-
-Prepnúť sa to oplatí čo najskôr — vlastná doména na CV pôsobí lepšie a je to
-adresa, ktorá ti ostane, aj keby sa hosting raz menil.
-
-**Ako to prepnúť:**
-
-1. V Cloudflare: *Workers & Pages → viktoria-mikuskova → Custom domains →
-   Set up a custom domain* → zadaj `viktoriamikuskova.com`.
-2. Cloudflare ti ukáže, aký DNS záznam treba nastaviť. Keďže doména nie je
-   v tomto účte, budeš ho musieť pridať tam, kde ti dnes doména beží —
-   `CNAME` na `viktoria-mikuskova.pages.dev`.
-3. Ak chceš, celý web presuň pod Cloudflare (*Add a domain*) — potom sa to
-   nastaví samo a odpadne ti starý hosting.
-
-Pozor na jednu vec: **po prepnutí starý web zmizne.** To je zámer, ale ak zaň
-ešte platíš, vieš potom zrušiť predplatné.
-
-Napíš mi, keď to bude prepnuté — overím, že doména naozaj servíruje nový web,
-a preexportujem PDF-ká.
+Zostáva jedna vec, ktorú viem urobiť len ty: **prepísať odkaz na portfólio na
+LinkedIne** — aj v profile, aj v sekcii O mne. Tam je stará adresa.
 
 ### B) Poslať mi obrázky projektov
 

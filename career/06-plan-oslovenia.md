@@ -61,7 +61,7 @@ a agentúry. Nemusia ti dať prácu, stačí meno.
 Niektorí už niekde robia. Spolužiak je ten najľahší e-mail, aký kedy napíšeš.
 
 > **Preto sa plán nezačína vydavateľstvami.** Začína sa tým, že sa ozveš ľuďom,
-> ktorí ťa poznajú, a **nepýtaš si od nich prácu — pýtaš si mená.** Jedno meno
+> ktorí ťa poznajú, a **nepýtaš si od nich prácu - pýtaš si mená.** Jedno meno
 > od učiteľa z priemyslovky premení studený kontakt na odporúčanie, a tým sa
 > šanca na odpoveď zdvihne z 25 % na násobok.
 
@@ -111,26 +111,26 @@ vidí, že to isté si poslala ďalším desiatim.
 > Ozývam sa preto, že som odvtedy dokončila Dizajn médií a magisterské štúdium
 > masmediálnej komunikácie na Paneurópskej vysokej škole a rok som robila
 > grafiku pre firmu MOJESIDLO. Ale čím ďalej, tým viac mi je jasné, že to
-> najužitočnejšie, čo si zo školy nesiem, je [**konkrétna vec z priemyslovky —
+> najužitočnejšie, čo si zo školy nesiem, je [**konkrétna vec z priemyslovky -
 > napríklad: príprava podkladov do tlače, alebo hodiny, kde sme rozoberali
 > väzby a gramáže**]. Vo vysokoškolských ateliéroch to nikto neriešil a dnes
 > viem, prečo to bolo dôležité.
 >
-> Chcela by som sa venovať knižnému dizajnu a hľadám prvé miesto — vo
+> Chcela by som sa venovať knižnému dizajnu a hľadám prvé miesto - vo
 > vydavateľstve, v tlačiarni alebo v knižnej výrobe.
 >
 > Mám jednu prosbu, ak by ste našli chvíľu: **napadá vám niekto z vašich
 > bývalých žiakov alebo z tlačiarní, s ktorými škola spolupracuje, komu by malo
 > zmysel sa ozvať?** Stačilo by mi meno a firma, ostatné si zistím sama.
 >
-> Moje práce sú na viktoria-mikuskova.pages.dev.
+> Moje práce sú na viktoriamikuskova.com.
 >
 > Ďakujem vám a prajem pekný deň.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> grafická dizajnérka — knižný dizajn a sadzba
-> viktoria-mikuskova.pages.dev · 0917 749 871
+> grafická dizajnérka - knižný dizajn a sadzba
+> viktoriamikuskova.com · 0917 749 871
 
 **Čo je v tom Dar:** pochvala, ktorá pomenúva **presne to**, čo ti dal, a
 spája to s tým, čo dnes robíš. To je najvyšší stupeň z knihy.
@@ -140,11 +140,11 @@ spája to s tým, čo dnes robíš. To je najvyšší stupeň z knihy.
 
 ## B. Re-RO — vedúci diplomovej práce, PEVŠ
 
-**Predmet:** Alica v piatich žánroch — a jedna otázka po obhajobe
+**Predmet:** Alica v piatich žánroch - a jedna otázka po obhajobe
 
 > Dobrý deň, [titul a priezvisko],
 >
-> ozývam sa po obhajobe, ktorú ste so mnou viedli — päť žánrových spracovaní
+> ozývam sa po obhajobe, ktorú ste so mnou viedli - päť žánrových spracovaní
 > obálky Alice v krajine zázrakov.
 >
 > Chcela som vám povedať, že [**konkrétna vec, ktorú ti poradil, a čo z nej
@@ -156,13 +156,13 @@ spája to s tým, čo dnes robíš. To je najvyšší stupeň z knihy.
 > alebo v tlačiarni, kto berie začínajúcich grafikov?** Aj jedno meno by mi
 > veľmi pomohlo.
 >
-> Portfólio je na viktoria-mikuskova.pages.dev, diplomovka je tam hore.
+> Portfólio je na viktoriamikuskova.com, diplomovka je tam hore.
 >
 > Ďakujem za všetko.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> viktoria-mikuskova.pages.dev · 0917 749 871
+> viktoriamikuskova.com · 0917 749 871
 
 ---
 
@@ -173,7 +173,7 @@ spája to s tým, čo dnes robíš. To je najvyšší stupeň z knihy.
 > Ahoj [meno],
 >
 > dúfam, že sa u vás darí. Spomínam si na [**konkrétny projekt, na ktorom ste
-> spolu robili**] — bola to najlepšia škola produktovej fotografie, akú som
+> spolu robili**] - bola to najlepšia škola produktovej fotografie, akú som
 > mohla dostať.
 >
 > Odvtedy som dokončila magisterské štúdium a robím social media pre
@@ -183,7 +183,7 @@ spája to s tým, čo dnes robíš. To je najvyšší stupeň z knihy.
 > Nechcem prácu od teba, chcem sa spýtať na jednu vec: **nepoznáš niekoho
 > v tlačiarni, v agentúre alebo vo vydavateľstve, komu by som mohla napísať?**
 >
-> Portfólio: viktoria-mikuskova.pages.dev
+> Portfólio: viktoriamikuskova.com
 >
 > Ďakujem a maj sa pekne,
 > **Viktória**
@@ -204,31 +204,31 @@ odpoveďovosť. Kniha má na ňu prísnu etiketu — dodrž ju celú:
 - Poďakuj odporúčajúcemu **dvakrát**: raz hneď a raz potom, ako sa dozvieš,
   čo z toho vzišlo.
 
-**Predmet:** Od [meno odporúčajúceho] — grafika ku knihám
+**Predmet:** Od [meno odporúčajúceho] - grafika ku knihám
 
 > Dobrý deň, pani/pán [priezvisko],
 >
 > volám sa Viktória Mikušková a kontakt na vás mi dal(a) [**meno
-> odporúčajúceho**], ktorý(á) mi povedal(a), že [**čo o ňom povedal — napr. že
+> odporúčajúceho**], ktorý(á) mi povedal(a), že [**čo o ňom povedal - napr. že
 > u vás robíte sadzbu kníh už roky**].
 >
 > Som grafická dizajnérka so zameraním na knižný dizajn. Vyštudovala som SOŠ
 > polygrafickú a potom Dizajn médií na PEVŠ, diplomovú prácu som robila na päť
 > žánrových spracovaní obálky jedného titulu.
 >
-> [**Jedna veta o tom, čo konkrétne u nich obdivuješ — musí byť konkrétna.**]
+> [**Jedna veta o tom, čo konkrétne u nich obdivuješ - musí byť konkrétna.**]
 >
-> Mám jednu otázku, na ktorú by mi stačila jedna veta: **[konkrétna prosba —
+> Mám jednu otázku, na ktorú by mi stačila jedna veta: **[konkrétna prosba -
 > pozri zoznam nižšie]**
 >
-> Portfólio: viktoria-mikuskova.pages.dev
+> Portfólio: viktoriamikuskova.com
 >
 > Ďakujem za váš čas.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> grafická dizajnérka — knižný dizajn a sadzba
-> viktoria-mikuskova.pages.dev · 0917 749 871
+> grafická dizajnérka - knižný dizajn a sadzba
+> viktoriamikuskova.com · 0917 749 871
 
 ---
 
@@ -246,7 +246,7 @@ máš za sebou tri Re-RO a vieš, ako to ide.
 >
 > Slovart sledujem preto, že píšete, že vydávate knihy, v ktorých sa náročný
 > obsah spája s polygraficky aj výtvarne bezchybnou formou. To nie je bežná
-> veta a na vašich knihách je vidieť, že to myslíte vážne — [**konkrétny titul
+> veta a na vašich knihách je vidieť, že to myslíte vážne - [**konkrétny titul
 > a konkrétna vec na ňom: sadzba, papier, väzba, písmo, riešenie obálky**] je
 > pre mňa ukážkou toho, ako to má vyzerať.
 >
@@ -259,20 +259,20 @@ máš za sebou tri Re-RO a vieš, ako to ide.
 > portfóliá, ktoré vám prídu?** Rada by som vedela, ktorá cesta má u vás vôbec
 > zmysel.
 >
-> Moje práce sú na viktoria-mikuskova.pages.dev.
+> Moje práce sú na viktoriamikuskova.com.
 >
 > Ďakujem za váš čas.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> grafická dizajnérka — knižný dizajn a sadzba
-> viktoria-mikuskova.pages.dev · 0917 749 871
+> grafická dizajnérka - knižný dizajn a sadzba
+> viktoriamikuskova.com · 0917 749 871
 
 ---
 
 ## F. Studený kontakt — Spolok sv. Vojtecha, Eva Bubnášová (šéfredaktorka)
 
-**Predmet:** Grafička z Trnavy — knižný dizajn a sadzba
+**Predmet:** Grafička z Trnavy - knižný dizajn a sadzba
 
 > Dobrý deň, pani Bubnášová,
 >
@@ -280,7 +280,7 @@ máš za sebou tri Re-RO a vieš, ako to ide.
 > vydávate knihy priamo v Trnave.
 >
 > [**Konkrétna vec: napríklad sadzba Jednotného katolíckeho spevníka alebo
-> konkrétny titul — čo presne ťa na tom zaujalo.**] Sadzba takého typu textu je
+> konkrétny titul - čo presne ťa na tom zaujalo.**] Sadzba takého typu textu je
 > remeselne najnáročnejšia vec, aká sa v knihe dá robiť, a je to práca, ktorú
 > by som sa chcela naučiť poriadne.
 >
@@ -291,14 +291,14 @@ máš za sebou tri Re-RO a vieš, ako to ide.
 > Jedna otázka, ak by ste našli chvíľu: **robíte sadzbu a grafiku interne,
 > alebo ju zadávate externým grafikom?**
 >
-> Portfólio: viktoria-mikuskova.pages.dev
+> Portfólio: viktoriamikuskova.com
 >
 > Ďakujem za váš čas.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> grafická dizajnérka — knižný dizajn a sadzba
-> viktoria-mikuskova.pages.dev · 0917 749 871
+> grafická dizajnérka - knižný dizajn a sadzba
+> viktoriamikuskova.com · 0917 749 871
 
 ---
 
@@ -307,7 +307,7 @@ máš za sebou tri Re-RO a vieš, ako to ide.
 Tu meno nepoznáš, tak sa naň v prvej vete spýtaj. Je to lepšie než anonymné
 oslovenie.
 
-**Predmet:** Grafika učebníc — grafička so vzdelaním v polygrafii
+**Predmet:** Grafika učebníc - grafička so vzdelaním v polygrafii
 
 > Dobrý deň,
 >
@@ -316,24 +316,24 @@ oslovenie.
 >
 > Píšem preto, že na vašom webe uvádzate, že spolupracujete s grafikmi
 > a ilustrátormi učebníc. Učebnica je dlhý dokument s pevnou štruktúrou a to je
-> práca, ktorá ma baví najviac — [**konkrétna vec z ich učebníc**].
+> práca, ktorá ma baví najviac - [**konkrétna vec z ich učebníc**].
 >
 > Vyštudovala som SOŠ polygrafickú, potom Dizajn médií na PEVŠ. Pracujem
 > v InDesigne, viem pripraviť podklady do tlače a mám za sebou realizovaný
-> orientačný systém — mapu areálu Paneurópskej vysokej školy, ktorá je vyrobená
+> orientačný systém - mapu areálu Paneurópskej vysokej školy, ktorá je vyrobená
 > a vystavená.
 >
 > Jedna otázka: **spolupracujete s grafikmi na živnosť, alebo máte grafikov
 > interne?**
 >
-> Portfólio: viktoria-mikuskova.pages.dev
+> Portfólio: viktoriamikuskova.com
 >
 > Ďakujem za váš čas.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> grafická dizajnérka — knižný dizajn a sadzba
-> viktoria-mikuskova.pages.dev · 0917 749 871
+> grafická dizajnérka - knižný dizajn a sadzba
+> viktoriamikuskova.com · 0917 749 871
 
 ---
 
@@ -343,7 +343,7 @@ Technická redakcia rieši sadzbu a tlačovú prípravu, takže Prosba je iná �
 to tá najlepšia otázka v celom dokumente, lebo na ňu ľudia radi odpovedajú.
 Je to totiž ich každodenná bolesť.
 
-**Predmet:** Otázka na technickú redakciu — podklady od externých grafikov
+**Predmet:** Otázka na technickú redakciu - podklady od externých grafikov
 
 > Dobrý deň, pani Friedrichová,
 >
@@ -358,14 +358,14 @@ Je to totiž ich každodenná bolesť.
 > **Aká je najčastejšia chyba v podkladoch, ktoré vám prídu od externých
 > grafikov?** Chcela by som ju nerobiť skôr, než ju začnem robiť.
 >
-> Portfólio: viktoria-mikuskova.pages.dev
+> Portfólio: viktoriamikuskova.com
 >
 > Ďakujem za váš čas.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> grafická dizajnérka — knižný dizajn a sadzba
-> viktoria-mikuskova.pages.dev · 0917 749 871
+> grafická dizajnérka - knižný dizajn a sadzba
+> viktoriamikuskova.com · 0917 749 871
 
 ---
 
@@ -381,7 +381,7 @@ oslovení, ktoré fungujú spoľahlivo** — autori dúfajú, že sa čitateľ o
 >
 > volám sa Viktória Mikušková a som grafická dizajnérka a ilustrátorka.
 >
-> [**Konkrétna jej kniha a čo presne na nej — text aj to, ako je urobená.
+> [**Konkrétna jej kniha a čo presne na nej - text aj to, ako je urobená.
 > Toto musí byť naozaj prečítané, ona to spozná.**]
 >
 > Počas Erasmu na univerzite Yaşar v Izmire som sa venovala kresbe postáv
@@ -391,14 +391,14 @@ oslovení, ktoré fungujú spoľahlivo** — autori dúfajú, že sa čitateľ o
 > Jedna otázka, ak by ste našli chvíľu: **čo je pri detskej knihe to, čo vám
 > ilustrátori najčastejšie nedodajú, hoci by mali?**
 >
-> Kresby sú na viktoria-mikuskova.pages.dev.
+> Kresby sú na viktoriamikuskova.com.
 >
 > Ďakujem za váš čas.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
 > grafická dizajnérka a ilustrátorka
-> viktoria-mikuskova.pages.dev · 0917 749 871
+> viktoriamikuskova.com · 0917 749 871
 
 ---
 
@@ -412,7 +412,7 @@ Kniha je v tomto presná: po dvoch týždňoch je odpoveď nepravdepodobná, po
 >
 > Dobrý deň, pani/pán [priezvisko],
 >
-> ozývam sa krátko s jednou novinkou: [**čo je nové — nový projekt v portfóliu,
+> ozývam sa krátko s jednou novinkou: [**čo je nové - nový projekt v portfóliu,
 > dokončená obálka, niečo, čo vyšlo**].
 >
 > Ak by sa u vás niekedy naskytla príležitosť pre grafičku so zameraním na
@@ -420,7 +420,7 @@ Kniha je v tomto presná: po dvoch týždňoch je odpoveď nepravdepodobná, po
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> viktoria-mikuskova.pages.dev · 0917 749 871
+> viktoriamikuskova.com · 0917 749 871
 
 > **Len raz.** Druhý nudge už nie je vytrvalosť, ale otravovanie.
 
@@ -451,7 +451,7 @@ Toto je iný žáner. Žiadne Dary a Prosby, tu ide o to, aby personalista za
 tridsať sekúnd videl, že spĺňaš zadanie. **Sem životopis prílohou patrí**
 (na rozdiel od oslovení vyššie, kde sa neprikladá, kým si ho nevypýtajú).
 
-**Predmet:** Grafik s DTP zručnosťami — Viktória Mikušková
+**Predmet:** Grafik s DTP zručnosťami - Viktória Mikušková
 
 > Dobrý deň,
 >
@@ -467,18 +467,17 @@ tridsať sekúnd videl, že spĺňaš zadanie. **Sem životopis prílohou patrí
 > robím obsah pre sociálne siete pre SHAPELESAI. Môj návrh orientačného systému
 > pre areál Paneurópskej vysokej školy je vyrobený a vystavený.
 >
-> Portfólio: viktoria-mikuskova.pages.dev
+> Portfólio: viktoriamikuskova.com
 > Životopis prikladám.
 >
 > Ďakujem za zváženie a prajem pekný deň.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> viktoria-mikuskova.pages.dev · 0917 749 871 · viki.mikuskova@gmail.com
+> viktoriamikuskova.com · 0917 749 871 · viki.mikuskova@gmail.com
 
-Prikladaj **grafickú** verziu portfólia
-(`Viktoria-Mikuskova-portfolio-grafika.pdf`), nie knižnú. Na inzerát na DTP
-grafika nikto nechce vidieť päť obálok Alice.
+Prikladaj `Viktoria-Mikuskova-portfolio.pdf` (stiahneš ho na
+viktoriamikuskova.com/dokumenty.html) a životopis. Dva súbory, nie viac.
 
 ---
 
@@ -532,6 +531,63 @@ ako chyba. Čo z toho platí aj u nás, je podstata: predmet musí byť
 ťa odporučil.
 
 Nikdy nepoužívaj slovo **„súrne"** ani **„prepáčte"**.
+
+### Keď reaguješ na inzerát
+
+Tu platí iné pravidlo než pri oslovení. Personalista netriedi e-maily podľa
+toho, ktorý je najzaujímavejší, ale podľa toho, ktorý vie priradiť k pozícii.
+Preto:
+
+**1. Ak je v inzeráte napísané, čo máš dať do predmetu, daj presne to.**
+Slovo od slova, nič nepridávaj. Býva to na konci inzerátu, často drobným
+písmom („Do predmetu uveďte...", „Reagujte s číslom ponuky..."). Toto je
+prvý test, či vieš čítať zadanie. Kto ho nesplní, končí ešte pred portfóliom.
+
+**2. Ak tam nič nie je, použi tento vzorec:**
+
+> Presný názov pozície z inzerátu, meno
+
+Napríklad:
+
+> Grafický dizajnér, Viktória Mikušková
+>
+> DTP operátor, Viktória Mikušková
+>
+> Grafik junior, Viktória Mikušková
+
+Názov pozície **odpíš z inzerátu, neprepisuj ho po svojom.** Keď hľadajú
+„DTP grafika", nepíš „grafický dizajnér". Vo väčších firmách beží na schránke
+filter podľa názvu pozície a ten hľadá presný reťazec.
+
+**3. Ak má inzerát číslo alebo kód ponuky, pridaj ho na koniec.**
+
+> Grafický dizajnér, Viktória Mikušková (ref. 4821)
+
+**4. Ak ti niekto pozíciu odporučil, meno odporúčajúceho patrí na začiatok.**
+Je to najsilnejšia informácia, akú v predmete môžeš mať.
+
+> Od Jany Novákovej, grafický dizajnér
+
+**Čo do predmetu nedávaj:**
+
+| Nepíš | Prečo |
+|---|---|
+| Žiadosť o prácu | Nedá sa priradiť k pozícii. Takých má denne desať. |
+| Životopis | Ako predmet nehovorí nič. Vyzerá ako hromadná pošta. |
+| Mám záujem o prácu vo vašej firme | To vedia z toho, že píšeš. |
+| Grafička hľadá prácu | Stavia ťa do pozície prosebníka. |
+| Prosím o zváženie mojej žiadosti | Ospravedlňujúci tón ešte pred otvorením. |
+| CV Mikuskova.pdf | Predmet nie je názov prílohy. |
+| Prázdny predmet | Spamový filter aj personalista ho odložia rovnako. |
+
+**Formálne detaily:** predmet píš normálnym písmom, nie veľkými písmenami.
+Bez výkričníkov. Bez emoji. Krátko, do šesťdesiatich znakov, aby sa zmestil
+celý aj na mobile. A skontroluj diakritiku v svojom mene, pretože v predmete
+je najviditeľnejšia.
+
+**Rovnako dôležité:** meno odosielateľa v e-mailovej schránke. Skontroluj si
+v nastaveniach Gmailu, či ti tam nesvieti prezývka alebo len „viki". Má tam
+byť **Viktória Mikušková**. Personalista vidí najprv toto, až potom predmet.
 
 ---
 

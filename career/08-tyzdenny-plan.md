@@ -102,8 +102,8 @@ Veci mimo týždenného kolobehu. Urob vždy jednu, keď ti vyjde čas, a nezdr�
   > Doklad musí vzniknúť sám pri prihlasovaní, nie spätne pred návštevou úradu.
 - [ ] Over si na úrade, akú presnú formu dokladu od teba chcú.
   > Každé pracovisko to má trochu inak a je lepšie to vedieť dopredu než po termíne.
-- [ ] Doriešiť doménu viktoriamikuskova.com, aby portfólio bežalo na tvojej adrese.
-  > Kým je adresa pages.dev, vyzerá to ako rozrobené.
+- [ ] Prepísať odkaz na portfólio na LinkedIne na viktoriamikuskova.com.
+  > Doména už beží, ale na profile máš starú adresu. Kto na ňu klikne, skončí inde.
 - [ ] Vypýtať si zo SHAPELESAI písomné odporúčanie na LinkedIn.
   > Odporúčanie od súčasného zamestnávateľa je najsilnejšia vec, akú vie absolvent na profil dať.
 - [ ] Pridať na LinkedIn reel a nové práce zo Spolku a NOOK BOOKS.

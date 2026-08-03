@@ -160,7 +160,7 @@ v titulku a v zručnostiach.
 >
 > Hľadám miesto v štúdiu, v agentúre alebo vo vydavateľstve.
 >
-> viktoria-mikuskova.pages.dev
+> viktoriamikuskova.com
 
 Prvý riadok povie oboje naraz a zmestí sa do toho, čo je vidieť pred *see more*.
 Posledná veta je zámerne otvorená: keby tam stálo len „vo vydavateľstve",
