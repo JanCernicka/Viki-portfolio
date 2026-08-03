@@ -101,7 +101,11 @@ vidí, že to isté si poslala ďalším desiatim.
 
 ## A. Re-RO — učiteľ zo SOŠ polygrafickej
 
-**Predmet:** Bývalá žiačka odboru grafik digitálnych médií (2017 – 2021)
+**Predmet:** Poďakovanie od bývalej žiačky, grafik digitálnych médií 2021
+
+*(Ak by ti „poďakovanie" prišlo priveľmi dopredu, druhá možnosť:
+**Bývalá žiačka Viktória Mikušková, maturita 2021**. Obe fungujú, prvá sa
+otvára o niečo istejšie.)*
 
 > Dobrý deň, pani/pán [priezvisko],
 >
@@ -116,11 +120,12 @@ vidí, že to isté si poslala ďalším desiatim.
 > väzby a gramáže**]. Vo vysokoškolských ateliéroch to nikto neriešil a dnes
 > viem, prečo to bolo dôležité.
 >
-> Chcela by som sa venovať knižnému dizajnu a hľadám prvé miesto - vo
-> vydavateľstve, v tlačiarni alebo v knižnej výrobe.
+> Teraz hľadám prvé miesto ako grafička. Najradšej v niečom, kde sa robí aj
+> tlač: v tlačiarni, vo vydavateľstve, v štúdiu alebo v agentúre, ktorá si
+> pripravuje podklady sama.
 >
 > Mám jednu prosbu, ak by ste našli chvíľu: **napadá vám niekto z vašich
-> bývalých žiakov alebo z tlačiarní, s ktorými škola spolupracuje, komu by malo
+> bývalých žiakov alebo z firiem, s ktorými škola spolupracuje, komu by malo
 > zmysel sa ozvať?** Stačilo by mi meno a firma, ostatné si zistím sama.
 >
 > Moje práce sú na viktoriamikuskova.com.
@@ -129,12 +134,20 @@ vidí, že to isté si poslala ďalším desiatim.
 >
 > S pozdravom
 > **Mgr. Viktória Mikušková**
-> grafická dizajnérka - knižný dizajn a sadzba
+> grafická dizajnérka a ilustrátorka
 > viktoriamikuskova.com · 0917 749 871
 
 **Čo je v tom Dar:** pochvala, ktorá pomenúva **presne to**, čo ti dal, a
 spája to s tým, čo dnes robíš. To je najvyšší stupeň z knihy.
 **Čo je Prosba:** meno. Malá, konkrétna, odpovie sa jednou vetou.
+
+**K predmetu:** do predmetu nedávaj, že hľadáš prácu. Keď je to prvá vec,
+ktorú učiteľ uvidí, mail sa zmení zo stretnutia po rokoch na žiadosť a učitelia
+ich dostávajú veľa. Prácu spomeň až v tretej vete, keď je už jasné, kto píše.
+Rovnako nefunguje samotné „Dobrý deň", „Prosba", „Otázka" ani „Ohľadom práce" -
+sú to predmety, ktoré nehovoria nič a od neznámej adresy vyzerajú ako spam.
+Tvoje meno a rok maturity sú to jediné, čo mu pomôže spomenúť si na teba ešte
+pred otvorením.
 
 ---
 
