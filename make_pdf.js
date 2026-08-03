@@ -17,6 +17,7 @@ const PORT = 8123;
 
 const DOCS = [
   { html: 'cv.html',                out: 'assets/cv/Viktoria-Mikuskova-CV.pdf' },
+  { html: 'cv-en.html',             out: 'assets/cv/Viktoria-Mikuskova-CV-EN.pdf' },
   { html: 'portfolio-dokument.html', out: 'assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf' },
 ];
 
