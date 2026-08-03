@@ -184,6 +184,7 @@ def header(active, depth=0, projects=None):
     <nav class="main-nav">
       <a href="{up}index.html"{cls('domov')}>DOMOV</a>
       {dropdown}
+      <a href="{up}dokumenty.html"{cls('dokumenty')}>NA STIAHNUTIE</a>
       <a href="{up}index.html#o-mne">O MNE</a>
       <a href="{up}index.html#kontakt">KONTAKT</a>
     </nav>
@@ -531,6 +532,12 @@ DOWNLOADS = [
         "lead": "Jedna strana A4.",
         "pdf": "assets/cv/Viktoria-Mikuskova-CV.pdf",
         "view": "cv.html",
+    },
+    {
+        "title": "Životopis v angličtine",
+        "lead": "Rovnaký životopis po anglicky, jedna strana A4.",
+        "pdf": "assets/cv/Viktoria-Mikuskova-CV-EN.pdf",
+        "view": "cv-en.html",
     },
     {
         "title": "Portfólio na stiahnutie",
