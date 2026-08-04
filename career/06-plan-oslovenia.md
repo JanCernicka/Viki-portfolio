@@ -494,6 +494,69 @@ viktoriamikuskova.com/dokumenty.html) a životopis. Dva súbory, nie viac.
 
 ---
 
+## M. Kanál 1 — prihláška do agentúry
+
+Agentúra číta inak než vydavateľstvo. Nezaujíma ju, že vieš sadzbu; zaujíma ju,
+či vieš vymyslieť koncept a či ho vieš dotiahnuť do výstupu. **Polygrafia je
+pre teba v agentúre výhoda, nie hlavná vec** — v štrnásťčlennom tíme je človek,
+ktorý vie pripraviť podklady do tlače bez chyby, vzácny, ale ide o jeden riadok,
+nie o celý list.
+
+**Predmet:** Presný názov pozície z inzerátu, Viktória Mikušková
+
+> Dobrý deň,
+>
+> reagujem na Vašu ponuku na pozíciu [**presný názov pozície**].
+>
+> Som grafická dizajnérka s polygrafickým vzdelaním a magisterským štúdiom
+> masmediálnej komunikácie. To spojenie je moja výhoda: viem pripraviť podklady
+> do tlače tak, aby v tlačiarni nikto nemusel volať, a zároveň rozumiem tomu,
+> prečo kampaň funguje.
+>
+> Aktuálne robím obsah a vizuály pre SHAPELESAI, kde mám sociálne siete od
+> konceptu po výstup vrátane copy. Jedno reelsko má cez 10 000 zhliadnutí.
+> Predtým som robila grafiku a produktovú fotografiu pre MOJESIDLO.SK
+> a podieľala som sa na budovaní ich vizuálnej identity. Z brandingu mám
+> v portfóliu redizajn loga a vizuálnu identitu pre Spolok košických študentov
+> farmácie, ktorý získal druhé miesto v súťaži, a kompletný dizajn manuál pre
+> značku NOOK BOOKS. Môj orientačný systém pre areál Paneurópskej vysokej školy
+> je vyrobený a visí tam.
+>
+> [**Jedna veta o tom, čo konkrétne ťa zaujalo na ICH agentúre. Musí to byť
+> vec, ktorá je v ich inzeráte alebo na ich webe a nikde inde.**]
+>
+> Portfólio: https://viktoriamikuskova.com
+> Životopis prikladám.
+>
+> Ďakujem za zváženie a prajem pekný deň.
+>
+> S pozdravom
+> **Mgr. Viktória Mikušková**
+> 0917 749 871 · viki.mikuskova@gmail.com
+
+**Čo ktorý odsek robí:**
+
+| Odsek | Úloha |
+|---|---|
+| 1 | Zaradí ťa. Personalista vie po prvej vete, koho číta. |
+| 2 | Odlíši ťa. Polygrafia plus marketing je kombinácia, ktorú väčšina uchádzačov nemá. |
+| 3 | Dôkaz. Firmy, čísla, ocenenie, vyrobená vec. Žiadne prídavné mená. |
+| 4 | Motivácia. Toto je jediný odsek, ktorý sa nedá skopírovať do ďalšieho mailu. |
+| 5 | Odkaz a príloha. |
+
+**Tri pravidlá, ktoré tu platia navyše:**
+
+1. **Odsek 4 nikdy nevynechávaj a nikdy ho nerecykluj.** Agentúra dostane
+   na jeden inzerát desiatky prihlášok a všetky majú rovnaké odseky 1 až 3.
+   Rozhoduje ten štvrtý.
+2. **Nepíš, čo nevieš.** Keď v inzeráte žiadajú vec, ktorú si nerobila, mlč
+   o nej. Do prvého mailu sa nepíše zoznam vlastných dier. Keď sa spýtajú
+   na pohovore, odpovedz rovno a bez okolkov.
+3. **Ak inzerát pýta „pár viet o sebe", drž sa pod dvesto slov.** Je to prvý
+   test, či vieš dodržať zadanie. Kto pošle dve strany, ukázal, že nevie.
+
+---
+
 # Ako to celé nepokaziť
 
 ## Zoznam dobrých Prosieb
