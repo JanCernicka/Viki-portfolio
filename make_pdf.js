@@ -19,7 +19,8 @@ const PORT = 8123;
 const DOCS = [
   { html: 'cv.html',                out: 'assets/cv/Viktoria-Mikuskova-CV.pdf' },
   { html: 'cv-en.html',             out: 'assets/cv/Viktoria-Mikuskova-CV-EN.pdf' },
-  { html: 'portfolio-dokument.html', out: 'assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf' },
+  { html: 'portfolio-dokument.html', out: 'assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf',
+    landscape: true },
 ];
 
 const MIME = {
@@ -65,7 +66,8 @@ function serve() {
 
     await page.goto(`http://127.0.0.1:${PORT}/${doc.html}`, { waitUntil: 'networkidle' });
     await page.evaluate(() => document.fonts.ready);
-    await page.pdf({ path: out, format: 'A4', printBackground: true });
+    await page.pdf({ path: out, format: 'A4', landscape: !!doc.landscape,
+      printBackground: true });
 
     const kb = Math.round(fs.statSync(out).size / 1024);
     console.log(`  ${doc.out} — ${kb} kB`);

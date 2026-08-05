@@ -22,9 +22,9 @@ import os
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # ---------------------------------------------------------------------------
-# Jedno miesto, kde je adresa webu. Keď sa viktoriamikuskova.com prepne na
-# nové portfólio, prepíš SITE_URL, spusti build_docs.py a node make_pdf.js —
-# adresa sa zmení v CV, na hlavičkovom papieri, v podpise aj na záložkách.
+# Jedno miesto, kde je adresa webu. Prepíš SITE_URL, spusti build_docs.py
+# a node make_pdf.js a adresa sa zmení v oboch životopisoch, v portfóliu
+# aj v QR kóde.
 # ---------------------------------------------------------------------------
 SITE_URL = "viktoriamikuskova.com"
 SITE_HREF = "https://" + SITE_URL
@@ -98,11 +98,9 @@ def portfolio_page(p, n, total):
     orient = p.get("orientation") or "landscape"
     ratio = ASPECT.get(orient, "4 / 3")
     cover = p.get("cover")
-    # Panel s textom strieda hornú a dolnú polovicu strany a k tomu strieda
-    # odtieň. Devätnásť strán s rovnakým rozložením sa číta ako tabuľka;
-    # striedanie z toho spraví rytmus a obrázky pritom ostanú veľké, čo by
-    # bočný stĺpec s textom na A4 nedovolil.
-    side, tint = ("is-a", "tint-peach") if n % 2 else ("is-b", "tint-sage")
+    # Panel s textom strieda ľavú a pravú stranu a k tomu strieda odtieň.
+    # Sedemnásť strán s rovnakým rozložením sa číta ako katalóg.
+    side, tint = ("is-left", "tint-peach") if n % 2 else ("is-right", "tint-sage")
     imgs = [i for i in (p.get("images") or []) if i.get("src")]
 
     # Projekty, ktoré majú na webe zábery vedľa seba, ich majú vedľa seba aj tu.
@@ -157,6 +155,9 @@ def portfolio_page(p, n, total):
     meta_line = " &nbsp;·&nbsp; ".join(uniq)
 
     body = p.get("solution") or p.get("brief") or p.get("subtitle") or ""
+    # Najdlhší popis má vyše deväťsto znakov a v bočnom stĺpci by pretiekol
+    # cez spodok strany. Namiesto skracovania jej textu sa zmenší písmo.
+    long_cls = " is-long" if len(body) > 620 else ""
 
     facts = []
     if p.get("role"):
@@ -171,7 +172,7 @@ def portfolio_page(p, n, total):
             f"<dt>{esc(k)}</dt><dd>{esc(v)}</dd>" for k, v in facts) + "</dl>"
 
     return f'''
-  <section class="page pf-project {side} {tint}" style="--ratio:{ratio}">
+  <section class="page pf-project {side} {tint}{long_cls}" style="--ratio:{ratio}">
     <div class="pf-visual">{visual}{strip}</div>
     <div class="pf-panel">
       <div class="pf-panel-head">
@@ -242,12 +243,12 @@ def about_page():
         <p class="pf-about-lead">{esc(ABOUT_TEXT)}</p>
         <p class="pf-about-quote">{esc(ABOUT_QUOTE)}</p>
       </div>
+    </div>
+    <div class="pf-about-bottom">
       <div class="pf-about-photo">
         <span class="pf-photo-disc"></span>
         <img src="assets/cv/portrait.jpg" alt="{esc(NAME)}">
       </div>
-    </div>
-    <div class="pf-about-bottom">
       <dl class="pf-about-facts">{facts}</dl>
       <div class="pf-about-foot">
         <span>{esc(PHONE)}</span><span>{esc(EMAIL)}</span><span>{esc(SITE_URL)}</span>
