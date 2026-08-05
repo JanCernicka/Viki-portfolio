@@ -98,6 +98,11 @@ def portfolio_page(p, n, total):
     orient = p.get("orientation") or "landscape"
     ratio = ASPECT.get(orient, "4 / 3")
     cover = p.get("cover")
+    # Panel s textom strieda hornú a dolnú polovicu strany a k tomu strieda
+    # odtieň. Devätnásť strán s rovnakým rozložením sa číta ako tabuľka;
+    # striedanie z toho spraví rytmus a obrázky pritom ostanú veľké, čo by
+    # bočný stĺpec s textom na A4 nedovolil.
+    side, tint = ("is-a", "tint-peach") if n % 2 else ("is-b", "tint-sage")
     imgs = [i for i in (p.get("images") or []) if i.get("src")]
 
     # Projekty, ktoré majú na webe zábery vedľa seba, ich majú vedľa seba aj tu.
@@ -166,15 +171,88 @@ def portfolio_page(p, n, total):
             f"<dt>{esc(k)}</dt><dd>{esc(v)}</dd>" for k, v in facts) + "</dl>"
 
     return f'''
-  <section class="page pf-project" style="--ratio:{ratio}">
+  <section class="page pf-project {side} {tint}" style="--ratio:{ratio}">
     <div class="pf-visual">{visual}{strip}</div>
-    <div class="pf-text">
-      <h2>{esc(p.get("title"))}</h2>
-      <p class="pf-meta">{meta_line}</p>
-      <p class="pf-body">{esc(body)}</p>
-      {facts_html}
+    <div class="pf-panel">
+      <div class="pf-panel-head">
+        <span class="pf-num">{n:02d}</span>
+        <h2>{esc(p.get("title"))}</h2>
+        <p class="pf-meta">{meta_line}</p>
+      </div>
+      <div class="pf-panel-body">
+        <p class="pf-body">{esc(body)}</p>
+        {facts_html}
+      </div>
     </div>
-    <div class="pf-num">{n} / {total}</div>
+  </section>
+'''
+
+
+# ---------------------------------------------------------------------------
+# Obsah a strana o mne. Devätnásťstranový dokument bez obsahu sa listuje
+# naslepo a personalista sa k práci, ktorá ho zaujíma, nedostane.
+# ---------------------------------------------------------------------------
+CAT_LABEL = {
+    "vizualna-identita": "Vizuálna identita",
+    "obaly": "Obaly a packaging",
+    "ilustracia": "Ilustrácia",
+    "knizny-dizajn": "Knižný dizajn",
+    "tlacoviny": "Tlačoviny a orientačné systémy",
+    "socialne-siete": "Sociálne siete",
+}
+
+
+def contents_page(items):
+    rows = "".join(
+        f'<li><span class="pf-toc-n">{i + 1:02d}</span>'
+        f'<span class="pf-toc-t">{esc(p.get("title"))}</span>'
+        f'<span class="pf-toc-c">{esc(CAT_LABEL.get(p.get("category"), ""))}</span></li>'
+        for i, p in enumerate(items))
+    return f'''
+  <section class="page pf-toc">
+    <div class="pf-toc-list"><ol>{rows}</ol></div>
+    <h2 class="pf-toc-title">Obsah</h2>
+    <span class="pf-shape pf-shape-c"></span>
+    <span class="pf-shape pf-shape-d"></span>
+  </section>
+'''
+
+
+ABOUT_TEXT = (
+    "Vyštudovala som SOŠ polygrafickú, odbor grafik digitálnych médií, potom Dizajn médií "
+    "a magisterské štúdium masmediálnej komunikácie na Paneurópskej vysokej škole. "
+    "Remeslo z polygrafie a z prípravy podkladov do tlače spájam s marketingovým myslením "
+    "zo štúdia mediálnej komunikácie.")
+ABOUT_QUOTE = "Typografia, ktorá text nesie a neprekrýva."
+
+ABOUT_FACTS = [
+    ("Robím", "Vizuálnu identitu, obaly, tlačoviny, ilustráciu a obsah pre značky"),
+    ("Softvér", "InDesign, Illustrator, Photoshop, Acrobat, Figma, Procreate"),
+    ("Prax", "SHAPELESAI, MOJESIDLO.SK, PwC Slovensko"),
+]
+
+
+def about_page():
+    facts = "".join(f"<dt>{esc(k)}</dt><dd>{esc(v)}</dd>" for k, v in ABOUT_FACTS)
+    return f'''
+  <section class="page pf-about">
+    <div class="pf-about-top">
+      <div class="pf-about-text">
+        <h2>O mne</h2>
+        <p class="pf-about-lead">{esc(ABOUT_TEXT)}</p>
+        <p class="pf-about-quote">{esc(ABOUT_QUOTE)}</p>
+      </div>
+      <div class="pf-about-photo">
+        <span class="pf-photo-disc"></span>
+        <img src="assets/cv/portrait.jpg" alt="{esc(NAME)}">
+      </div>
+    </div>
+    <div class="pf-about-bottom">
+      <dl class="pf-about-facts">{facts}</dl>
+      <div class="pf-about-foot">
+        <span>{esc(PHONE)}</span><span>{esc(EMAIL)}</span><span>{esc(SITE_URL)}</span>
+      </div>
+    </div>
   </section>
 '''
 
@@ -253,18 +331,32 @@ def build_portfolio_pdf(projects, key):
 
     html = doc_head(f'Portfólio - {NAME}', "dokumenty.css") + f'''
   <section class="page pf-cover">
-    <img class="pf-cover-logo" src="assets/images/logo.png" alt="">
+    <header class="pf-cover-top">
+      <div class="pf-cover-id">
+        <img class="pf-cover-logo" src="assets/images/logo.png" alt="">
+        <p class="pf-cover-name">{esc(NAME)}</p>
+      </div>
+      <div class="pf-cover-cols">
+        <div><h3>Kontakt</h3><p>{esc(EMAIL)}<br>{esc(PHONE)}</p></div>
+        <div><h3>Miesto</h3><p>{esc(CITY)}<br>Slovensko</p></div>
+        <div><h3>Web</h3><p>{esc(SITE_URL)}</p></div>
+      </div>
+    </header>
     <div class="pf-cover-mid">
-      <h1>{esc(NAME)}</h1>
+      <p class="pf-cover-kicker">Výber z prác</p>
+      <h1><span class="pf-outline">Grafické</span><span class="pf-solid">Portfólio</span></h1>
       <p class="pf-cover-role">{esc(COVER_ROLE)}</p>
     </div>
-    <div class="pf-cover-foot">
-      <span>Výber z prác</span>
-      <span>{esc(SITE_URL)}</span>
-    </div>
+    <span class="pf-shape pf-shape-a"></span>
+    <span class="pf-shape pf-shape-b"></span>
   </section>
+{contents_page(lead)}{about_page()}
 {pages}{tail}
   <section class="page pf-end">
+    <div class="pf-cover-id pf-end-id">
+      <img class="pf-cover-logo" src="assets/images/logo.png" alt="">
+      <p class="pf-cover-name">{esc(NAME)}</p>
+    </div>
     <div class="pf-end-mid">
       <h2>Ďakujem za pozornosť</h2>
       <p class="pf-end-text">{esc(v["closing"])}</p>
@@ -275,7 +367,11 @@ def build_portfolio_pdf(projects, key):
         <li>{esc(CITY)}</li>
       </ul>
     </div>
-    <img class="pf-end-qr" src="assets/dokumenty/qr-web.png" alt="QR kód na portfólio">
+    <figure class="pf-end-qr">
+      <img src="assets/dokumenty/qr-web.png" alt="QR kód na portfólio">
+      <figcaption>{esc(SITE_URL)}</figcaption>
+    </figure>
+    <span class="pf-shape pf-shape-e"></span>
   </section>
 </body>
 </html>
@@ -283,7 +379,7 @@ def build_portfolio_pdf(projects, key):
     with open(os.path.join(ROOT, v["file"]), "w", encoding="utf-8") as f:
         f.write(html)
 
-    n_pages = 1 + total + (1 if tail else 0) + 1
+    n_pages = 3 + total + (1 if tail else 0) + 1
     print(f'  {v["file"]} — {n_pages} strán, {total} projektov naplno, '
           f'{len(other)} v prehľade, {skipped} vynechaných (bez obrázka)')
     return skipped

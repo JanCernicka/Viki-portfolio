@@ -12,6 +12,9 @@
   --dark:#011126;
   --muted:#5a5348;
   --rule:rgba(120,105,90,.30);
+  --tint-peach:#F7E3D0;
+  --tint-sage:#E1E6CD;
+  --ink:#2b2a25;
   --serif:"Playfair Display", Georgia, serif;
   --sans:"Montserrat", "Segoe UI", Helvetica, Arial, sans-serif;
 }
@@ -41,70 +44,232 @@ img{display:block;max-width:100%;}
 
 /* =========================================================
    POSIELATEĽNÉ PORTFÓLIO
+   Farebné bloky, veľké obrysové číslo a geometrické tvary.
+   Paleta aj písma sú tie isté ako na webe a v životopise.
    ========================================================= */
+
+/* ---- geometrické tvary ---- */
+.pf-shape{position:absolute;display:block;}
+.pf-shape-a{right:0;bottom:0;width:66mm;height:33mm;
+  background:var(--peach);border-radius:66mm 66mm 0 0;}
+.pf-shape-b{right:66mm;bottom:0;width:30mm;height:30mm;
+  background:var(--sage);border-radius:30mm 0 0 0;}
+.pf-shape-c{right:0;top:0;width:48mm;height:24mm;
+  background:var(--olive);border-radius:0 0 48mm 48mm;}
+.pf-shape-d{right:48mm;top:0;width:22mm;height:22mm;
+  background:var(--peach);border-radius:0 0 0 22mm;}
+.pf-shape-e{left:0;bottom:0;width:48mm;height:24mm;
+  background:var(--terra);border-radius:0 48mm 0 0;}
 
 /* ---- obálka ---- */
 .pf-cover{
-  padding:22mm 20mm 16mm;
-  align-items:center;
-  text-align:center;
-  background:var(--cream);
+  padding:20mm 18mm 20mm;
+  background:var(--olive);
+  color:var(--cream);
 }
-.pf-cover-logo{width:30mm;margin:0 auto;}
-.pf-cover-mid{margin:auto 0;}
+.pf-cover-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:10mm;
+  position:relative;
+  z-index:2;
+}
+.pf-cover-name{
+  margin:0;
+  white-space:nowrap;
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:17pt;
+  color:var(--peach);
+}
+.pf-cover-cols{display:flex;gap:10mm;flex:0 0 auto;}
+.pf-cover-cols h3{
+  margin:0 0 2mm;
+  font-size:6.6pt;
+  font-weight:600;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+  color:var(--sage);
+}
+.pf-cover-cols p{
+  margin:0;
+  font-size:7.6pt;
+  line-height:1.75;
+  color:rgba(251,239,227,.88);
+}
+.pf-cover-id{display:flex;align-items:center;gap:5mm;flex:0 0 auto;}
+/* Blok s názvom sa vycentruje medzi hlavičku a spodok strany. Na A4 na výšku
+   by predloha s názvom pri dolnej hrane nechala v strane pol metra prázdna. */
+.pf-cover-mid{margin:auto 0;position:relative;z-index:2;}
+.pf-cover-kicker{
+  margin:0 0 7mm;
+  font-size:8pt;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  color:var(--sage);
+}
 .pf-cover h1{
   margin:0;
   font-family:var(--serif);
-  font-weight:500;
-  font-size:44pt;
-  line-height:1.05;
-  color:var(--dark);
+  font-weight:600;
+  line-height:.96;
 }
+.pf-outline,.pf-solid{display:block;}
+/* Obrysové písmo je hlavný ťah predlohy. V Chromiu sa do PDF vykreslí
+   ako vektor, takže ostane ostré aj pri zväčšení. */
+.pf-outline{
+  font-size:50pt;
+  color:transparent;
+  -webkit-text-stroke:.9px var(--peach);
+}
+.pf-solid{font-size:70pt;color:var(--terra);}
 .pf-cover-role{
-  margin:6mm 0 0;
-  font-size:13pt;
-  letter-spacing:.22em;
+  margin:9mm 0 0;
+  font-size:8.6pt;
+  letter-spacing:.20em;
   text-transform:uppercase;
-  color:var(--terra);
+  color:var(--peach);
 }
-.pf-cover-focus{
-  margin:3mm 0 0;
-  font-size:9.5pt;
+.pf-cover-logo{width:15mm;flex:0 0 auto;}
+
+/* ---- obsah ---- */
+.pf-toc{padding:24mm 18mm 20mm;justify-content:space-between;}
+.pf-toc-list{position:relative;z-index:2;margin-top:10mm;}
+.pf-toc-list ol{list-style:none;margin:0;padding:0;}
+.pf-toc-list li{
+  display:grid;
+  grid-template-columns:11mm 1fr auto;
+  align-items:baseline;
+  gap:4mm;
+  padding:3.6mm 0;
+  border-bottom:1px solid var(--rule);
+}
+.pf-toc-list li:first-child{border-top:1px solid var(--rule);}
+.pf-toc-n{font-family:var(--serif);font-size:11pt;color:var(--terra);}
+.pf-toc-t{font-size:9.4pt;font-weight:500;color:var(--dark);}
+.pf-toc-c{
+  font-size:7pt;
   letter-spacing:.12em;
   text-transform:uppercase;
   color:var(--olive);
 }
-.pf-cover-mid::after{
-  content:"";
-  display:block;
-  width:34mm;
-  height:2px;
-  margin:9mm auto 0;
+.pf-toc-title{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:50pt;
+  line-height:1;
+  color:var(--terra);
+}
+
+/* ---- o mne ---- */
+/* Strana je delená na dva farebné bloky a fotka prechádza cez ich hranu.
+   Celá v olivovej ostávala dolná polovica prázdna. */
+.pf-about{padding:0;}
+.pf-about-top{
+  flex:1;
+  position:relative;
+  padding:24mm 18mm 10mm;
+  background:var(--olive);
+  color:var(--cream);
+}
+.pf-about-bottom{
+  flex:0 0 auto;
+  padding:15mm 18mm 13mm;
+  background:var(--cream);
+}
+.pf-about-text{max-width:88mm;}
+.pf-about h2{
+  margin:0;
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:42pt;
+  line-height:1;
+  color:var(--peach);
+}
+.pf-about-lead{
+  margin:9mm 0 0;
+  font-size:9.8pt;
+  line-height:1.78;
+  color:rgba(251,239,227,.92);
+}
+.pf-about-quote{
+  margin:11mm 0 0;
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:19pt;
+  line-height:1.32;
+  color:var(--peach);
+}
+.pf-about-photo{
+  position:absolute;
+  right:18mm;
+  bottom:-22mm;
+  width:72mm;
+  z-index:3;
+}
+.pf-photo-disc{
+  position:absolute;
+  left:-14mm;
+  top:-14mm;
+  width:60mm;
+  height:60mm;
+  border-radius:50%;
   background:var(--terra);
 }
-.pf-cover-foot{
-  display:flex;
-  justify-content:space-between;
-  width:100%;
-  font-size:8pt;
+.pf-about-photo img{position:relative;width:100%;border-radius:1.5mm;}
+.pf-about-facts{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:3.4mm 6mm;
+  max-width:98mm;
+}
+.pf-about-facts dt{
+  font-size:7pt;
   letter-spacing:.14em;
   text-transform:uppercase;
-  color:var(--muted);
+  color:var(--olive);
+  padding-top:.4mm;
+}
+.pf-about-facts dd{
+  margin:0;
+  font-size:8.6pt;
+  line-height:1.55;
+  color:var(--ink);
+}
+.pf-about-foot{
+  display:flex;
+  gap:9mm;
+  margin-top:11mm;
+  padding-top:6mm;
+  border-top:1px solid var(--rule);
+  font-size:7.4pt;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--olive);
 }
 
 /* ---- strana projektu ---- */
-.pf-project{padding:18mm 18mm 14mm;}
+.pf-project{padding:0;}
+/* Panel s textom strieda hornú a dolnú polovicu strany. Sedemnásť rovnakých
+   strán za sebou sa listuje ako katalóg; striedanie z toho spraví rytmus. */
+.pf-project.is-b{flex-direction:column-reverse;}
 .pf-visual{
   flex:1;
   display:flex;
   flex-direction:column;
-  gap:5mm;
+  justify-content:center;
+  gap:6mm;
   min-height:0;
+  padding:17mm 16mm 9mm;
 }
+.pf-project.is-b .pf-visual{padding:6mm 16mm 17mm;}
 .pf-img{
-  flex:1;
+  flex:0 1 auto;
   width:100%;
   min-height:0;
+  max-height:100%;
   object-fit:contain;
   object-position:center;
 }
@@ -144,7 +309,6 @@ img{display:block;max-width:100%;}
   max-width:calc((100% - 8mm) / 3);
   height:100%;
   object-fit:contain;
-  background:#fff;
   min-width:0;
 }
 
@@ -162,55 +326,63 @@ img{display:block;max-width:100%;}
   height:100%;
   object-fit:contain;
 }
-.pf-text{
+
+/* Farebný blok s textom. Odtieň sa strieda po dvojiciach strán. */
+.pf-panel{
   flex:0 0 auto;
-  margin-top:8mm;
-  padding-top:5mm;
-  border-top:1px solid var(--rule);
+  display:flex;
+  gap:9mm;
+  padding:10mm 16mm 11mm;
 }
-.pf-text h2{
-  margin:0;
+.tint-peach .pf-panel{background:var(--tint-peach);}
+.tint-sage .pf-panel{background:var(--tint-sage);}
+.pf-panel-head{flex:0 0 50mm;}
+.pf-panel-body{flex:1;min-width:0;}
+.pf-num{
+  display:block;
   font-family:var(--serif);
-  font-weight:500;
-  font-size:20pt;
-  line-height:1.15;
+  font-weight:600;
+  font-size:36pt;
+  line-height:.9;
+  color:transparent;
+  -webkit-text-stroke:.9px var(--terra);
+}
+.pf-panel h2{
+  margin:4mm 0 0;
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:16pt;
+  line-height:1.14;
   color:var(--dark);
 }
 .pf-meta{
-  margin:2mm 0 0;
-  font-size:8pt;
-  letter-spacing:.14em;
+  margin:2.4mm 0 0;
+  font-size:7pt;
+  letter-spacing:.13em;
   text-transform:uppercase;
   color:var(--terra);
 }
 .pf-body{
-  margin:4mm 0 0;
-  font-size:9.4pt;
-  line-height:1.62;
-  color:#232323;
-  max-width:150mm;
+  margin:0;
+  font-size:8.4pt;
+  line-height:1.66;
+  color:var(--ink);
 }
 .pf-facts{
   display:grid;
   grid-template-columns:auto 1fr;
-  gap:1.2mm 5mm;
-  margin:4mm 0 0;
-  font-size:8.4pt;
+  gap:1.4mm 5mm;
+  margin:5mm 0 0;
+  padding-top:4mm;
+  border-top:1px solid rgba(120,105,90,.25);
+  font-size:7.4pt;
 }
 .pf-facts dt{
   color:var(--olive);
   letter-spacing:.10em;
   text-transform:uppercase;
 }
-.pf-facts dd{margin:0;color:#232323;}
-.pf-num{
-  position:absolute;
-  right:18mm;
-  bottom:8mm;
-  font-size:7.6pt;
-  letter-spacing:.12em;
-  color:var(--muted);
-}
+.pf-facts dd{margin:0;color:var(--ink);}
 
 /* ---- prehľad druhej disciplíny: kontaktný hárok, nie plné strany ---- */
 .pf-more{padding:20mm 18mm 16mm;}
@@ -267,34 +439,52 @@ img{display:block;max-width:100%;}
 
 /* ---- záverečná strana ---- */
 .pf-end{
-  padding:24mm 20mm 16mm;
+  padding:26mm 20mm 22mm;
   align-items:center;
   text-align:center;
+  background:var(--olive);
+  color:var(--cream);
 }
-.pf-end-mid{margin:auto 0;max-width:135mm;}
+.pf-end-id{align-self:flex-start;position:relative;z-index:2;}
+.pf-end-mid{margin:auto 0;max-width:135mm;position:relative;z-index:2;}
 .pf-end h2{
   margin:0;
   font-family:var(--serif);
-  font-weight:500;
-  font-size:28pt;
-  color:var(--dark);
+  font-weight:600;
+  font-size:32pt;
+  color:var(--peach);
 }
 .pf-end-text{
-  margin:6mm 0 0;
-  font-size:10pt;
-  line-height:1.7;
-  color:#232323;
+  margin:8mm 0 0;
+  font-size:9.6pt;
+  line-height:1.75;
+  color:rgba(251,239,227,.92);
 }
 .pf-end-contact{
   list-style:none;
-  margin:9mm 0 0;
-  padding:6mm 0 0;
-  border-top:1px solid var(--rule);
+  margin:10mm 0 0;
+  padding:7mm 0 0;
+  border-top:1px solid rgba(251,239,227,.28);
   font-size:10pt;
-  line-height:1.9;
-  color:var(--dark);
+  line-height:2;
+  color:var(--cream);
 }
-.pf-end-qr{width:26mm;height:26mm;}
+.pf-end-qr{
+  margin:0;
+  position:relative;
+  z-index:2;
+  padding:4mm 4mm 3mm;
+  background:var(--cream);
+  border-radius:2mm;
+}
+.pf-end-qr img{width:26mm;height:26mm;}
+.pf-end-qr figcaption{
+  margin-top:2mm;
+  font-size:6.4pt;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:var(--olive);
+}
 
 /* =========================================================
    HLAVIČKOVÝ PAPIER

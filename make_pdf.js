@@ -9,6 +9,7 @@
 const path = require('path');
 const fs = require('fs');
 const http = require('http');
+const { spawnSync } = require('child_process');
 const { chromium } = require(process.env.PW_PATH ||
   '/opt/node22/lib/node_modules/playwright');
 
@@ -72,5 +73,19 @@ function serve() {
 
   await browser.close();
   server.close();
+
+  // Chromium vkladá obrázky v pôvodnej veľkosti, takže portfólio vyjde cez
+  // 11 MB a ako e-mailová príloha je nepoužiteľné. Prevzorkovanie na 200 dpi
+  // ho zmenší na polovicu bez viditeľného rozdielu.
+  const big = DOCS.map((d) => d.out).filter(
+    (o) => fs.existsSync(path.join(ROOT, o)) &&
+           fs.statSync(path.join(ROOT, o)).size > 2 * 1024 * 1024);
+  if (big.length) {
+    const r = spawnSync('python3', [path.join(ROOT, 'optimize_pdf.py'), ...big],
+      { cwd: ROOT, encoding: 'utf8' });
+    process.stdout.write(r.stdout || '');
+    if (r.status !== 0) console.log('  ! optimize_pdf.py zlyhalo — PDF ostáva veľké');
+  }
+
   console.log('Hotovo.');
 })();
