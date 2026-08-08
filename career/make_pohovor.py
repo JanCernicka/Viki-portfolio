@@ -83,6 +83,72 @@ PRACE = [
      "Ako som z jedného zadania spravila tri smery a podľa čoho by som vybrala jeden."),
 ]
 
+# ---------------------------------------------------------------------------
+# Praktické zadanie
+# ---------------------------------------------------------------------------
+ZADANIE_UVOD = ("Pri grafickej pozícii v agentúre je to bežné a treba s tým rátať. "
+                "Buď ti dajú hodinu priamo u nich, alebo zadanie domov na pár dní. "
+                "Nehodnotia, či je to krásne. Hodnotia, či si prečítala zadanie, "
+                "ako rýchlo pracuješ, či je súbor čistý a či to vieš obhájiť.")
+
+ZADANIE_KROKY = [
+    ("1. Najprv sa pýtaj, až potom otváraj program.",
+     "Toto je celý rozdiel medzi juniorom a profesionálom a väčšina uchádzačov to "
+     "preskočí. Päť otázok ti zaberie tri minúty a hneď si inde.",
+     "Kto je cieľová skupina? Kde to bude zverejnené a v akých rozmeroch? "
+     "Čo má ten vizuál dosiahnuť, predaj alebo povedomie? Máte logo, fonty "
+     "a farby, alebo si ich mám určiť? Koľko variantov chcete a dokedy?"),
+    ("2. Rozvrhni si čas hneď na začiatku.",
+     "Keď máš hodinu, nekresli päťdesiatpäť minút. Zadanie je aj test toho, "
+     "či vieš odovzdať hotovú vec načas.",
+     "Pri hodine: 10 minút zadanie a koncept, 35 minút návrh, 10 minút "
+     "dokončenie a export, 5 minút na to, čo o tom povieš."),
+    ("3. Radšej menej vecí, ale dokončených.",
+     "Tri rozrobené varianty vyzerajú horšie než jeden hotový. Ak si pýtali tri "
+     "a stíhaš dva, odovzdaj dva a povedz prečo.",
+     "Stihla som dva varianty poriadne. Tretí mám rozkreslený, ale radšej "
+     "odovzdám dve hotové veci než tri polovičné."),
+    ("4. Odovzdaj to slovami, nie mlčky.",
+     "Aj pri hodinovom zadaní patrí tridsaťsekundové vysvetlenie. Rovnaká "
+     "štruktúra ako pri portfóliu: zadanie, rozhodnutie, prečo.",
+     "Zadanie bolo X. Zvolila som Y, lebo Z. Keby som mala viac času, "
+     "doriešila by som ešte W."),
+    ("5. Súbor musí byť čistý. Toto je tvoja výhoda.",
+     "Pomenované vrstvy, poriadok v artboardoch, správne rozmery, export v tom, "
+     "čo pýtali. Toto si videl vedúci grafiky za tri sekundy a presne podľa toho "
+     "spozná, kto už niekde robil. Ty máš polygrafiu, tak to ukáž.",
+     "Ak ide niečo do tlače, sprav PDF/X so spadávkou a povedz to nahlas. "
+     "V agentúre to väčšina grafikov nevie."),
+]
+
+ZADANIE_PYTAJ = [
+    ("Budem robiť na svojom notebooku alebo na vašom?",
+     "Toto si zisti dopredu. Ak na svojom, over si ešte doma, že máš funkčné "
+     "Adobe, nainštalované fonty a že ti nič nevyprší práve v ten deň."),
+    ("Môžem použiť stockové fotky a AI nástroje?",
+     "Oni sami zaviedli AI do procesov v roku 2024, takže to skôr ocenia. "
+     "Ale spýtaj sa, nepredpokladaj."),
+    ("Koľko času na to mám a čo presne mám odovzdať?",
+     "Formát, rozmery a počet variantov. Bez toho robíš naslepo."),
+    ("Ak je to zadanie domov: je to cvičné zadanie, alebo reálny klient?",
+     "Cvičné zadanie na dve až štyri hodiny je normálne. Kompletná kampaň pre "
+     "ich skutočného klienta zadarmo nie je. Vtedy sa slušne spýtaj, či ide "
+     "o ostrú zákazku, a či je za ňu honorár."),
+]
+
+ZADANIE_CVIC = [
+    ("Coller Klíma, jesenná kampaň",
+     "Tri vizuály na Meta reklamu, 1080 × 1080 px, na servis klimatizácie pred "
+     "zimou. Máš logo a dve firemné farby. Cieľ: objednávky na servis. Šesťdesiat minút.",
+     "Coller Klíma je ich skutočný klient. Ak to zvládneš doma, budeš vedieť, "
+     "ako sa v tom tempe cítiš."),
+    ("Papa Grill, otvorenie letnej terasy",
+     "Jeden vizuál na Instagram 1080 × 1350 px a jedna story 1080 × 1920 px, "
+     "z toho istého motívu. Cieľ: povedomie. Štyridsaťpäť minút.",
+     "Toto testuje, či vieš previesť jeden motív do dvoch formátov bez toho, "
+     "aby si ho kreslila dvakrát. Presne to sa v agentúre robí každý deň."),
+]
+
 OTAZKY = [
     ("Povedzte nám niečo o sebe.",
      "Deväťdesiat sekúnd, nie životopis. Tri vety: odkiaľ prichádzaš, čo robíš teraz, "
@@ -406,6 +472,18 @@ def build():
 
     o += ['<section class="sect"><h2>Otázky, ktoré prídu</h2>']
     o += [item(q, None, why, say) for q, why, say in OTAZKY]
+    o += ["</section>"]
+
+    o += ['<section class="sect"><h2>Ak dostaneš praktické zadanie</h2>',
+          f'<p class="intro">{e(ZADANIE_UVOD)}</p>']
+    o += [item(k, None, why, say) for k, why, say in ZADANIE_KROKY]
+    o += ['<h2 style="margin-top:8px">Čo si o zadaní zisti</h2>', '<ul class="rows">']
+    o += [f"<li><b>{e(k)}</b><span>{e(v)}</span></li>" for k, v in ZADANIE_PYTAJ]
+    o += ["</ul>",
+          '<h2 style="margin-top:8px">Dve cvičné zadania na doma</h2>',
+          '<p class="intro">Sprav si aspoň jedno pred pohovorom, so stopkami. '
+          'Nie kvôli výsledku, ale aby si vedela, ako sa v tom tempe cítiš.</p>']
+    o += [item(k, None, brief, why, "say angle") for k, brief, why in ZADANIE_CVIC]
     o += ["</section>"]
 
     o += ['<section class="sect"><h2>Čo sa spýtaš ty</h2>',
