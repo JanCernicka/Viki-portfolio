@@ -350,6 +350,23 @@ a{color:var(--accent);}
 @media (max-width:420px){
   .facts div{grid-template-columns:1fr;gap:2px;}
 }
+/* Tlač a export do PDF: karta s otázkou sa nesmie zlomiť cez dve strany
+   a nadpis sekcie nesmie ostať sám na spodku. */
+@media print{
+  :root{
+    --paper:#FBEFE3;--card:#FFF8EF;--ink:#241B12;--muted:#6B5F51;
+    --accent:#C6673D;--olive:#676340;
+    --rule:rgba(120,105,90,.20);--rule2:rgba(120,105,90,.36);
+  }
+  @page{size:A4;}
+  body{font-size:10.5pt;background:var(--paper);}
+  .wrap{max-width:none;padding:0;gap:26px;}
+  h1{font-size:26pt;}
+  .item{break-inside:avoid;page-break-inside:avoid;}
+  .rows li{break-inside:avoid;}
+  .sect > h2{break-after:avoid;page-break-after:avoid;}
+  .facts div{break-inside:avoid;}
+}
 """
 
 
