@@ -31,3 +31,7 @@
 /promo                                /dokumenty                      301
 /podpis                               /dokumenty                      301
 /projekt/plagaty-k-skolskym-filmom    /projekt/podozrivy.html         301
+
+# vlastná HTML verzia portfólia zrušená, PDF robí Viktória v InDesigne
+/portfolio-dokument       /dokumenty       301
+/portfolio-dokument.html  /dokumenty       301

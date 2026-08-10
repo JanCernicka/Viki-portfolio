@@ -19,8 +19,8 @@ const PORT = 8123;
 const DOCS = [
   { html: 'cv.html',                out: 'assets/cv/Viktoria-Mikuskova-CV.pdf' },
   { html: 'cv-en.html',             out: 'assets/cv/Viktoria-Mikuskova-CV-EN.pdf' },
-  { html: 'portfolio-dokument.html', out: 'assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf',
-    landscape: true },
+  // Portfólio sa negeneruje. Viktória ho robí v InDesigne a jej súbor leží
+  // priamo v assets/dokumenty. Keby sa sem vrátil, prepísalo by jej prácu.
 ];
 
 const MIME = {

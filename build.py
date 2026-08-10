@@ -550,7 +550,9 @@ DOWNLOADS = [
         "lead": ("Výber prác naprieč vizuálnou identitou, obalmi, ilustráciou, "
                  "knižným dizajnom, tlačovinami aj sociálnymi sieťami."),
         "pdf": "assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf",
-        "view": "portfolio-dokument.html",
+        # Bez atribútu download prehliadač PDF otvorí, nestiahne. Vlastná
+        # HTML verzia už neexistuje, portfólio robí Viktória v InDesigne.
+        "view": "assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf",
     },
 ]
 

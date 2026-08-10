@@ -6,8 +6,12 @@ Generátor tlačených a posielateľných dokumentov.
     python3 build_docs.py
 
 Vytvorí:
-    portfolio-dokument.html posielateľné portfólio (jedno, všetky disciplíny)
     assets/dokumenty/qr-web.png
+
+Posielateľné portfólio sa už negeneruje. Viktória ho robí v InDesigne
+a hotové PDF leží v assets/dokumenty/Viktoria-Mikuskova-portfolio.pdf.
+Kód na generovanie tu ostáva pre prípad, že by sa k nemu vrátila; zapne
+sa vrátením build_portfolio_pdf do main().
 
 Stránku na stiahnutie (dokumenty.html) generuje build.py — je to bežná
 stránka webu s menu a pätičkou, nie dokument.
@@ -423,9 +427,7 @@ def main():
     print(f"Dokumenty ({len(projects)} projektov, web: {SITE_URL})")
     build_qr()
     sync_cv_url()
-    missing = max(build_portfolio_pdf(projects, k) for k in VARIANTS)
-    if missing:
-        print(f"  ! {missing} projektov nemá obrázok, do PDF sa nedostali")
+    print("  portfólio sa negeneruje, používa sa PDF z InDesignu")
     print("Hotovo. PDF-ká: node make_pdf.js")
 
 
