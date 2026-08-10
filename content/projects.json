@@ -273,12 +273,19 @@
         {
           "src": "assets/projects/mapa-skoly/02-informatika.jpg",
           "caption": "Fakulta informatiky",
-          "orientation": "landscape"
+          "orientation": "landscape",
+          "hero": true
         },
         {
           "src": "assets/projects/mapa-skoly/03-masmedialna.jpg",
           "caption": "Masmediálna fakulta",
-          "orientation": "landscape"
+          "orientation": "landscape",
+          "hero": true
+        },
+        {
+          "src": "assets/projects/mapa-skoly/04-rollup-mockup.jpg",
+          "caption": "Roll-up 100 × 142 cm v areáli školy",
+          "orientation": "portrait"
         }
       ],
       "hero_layout": "row",
