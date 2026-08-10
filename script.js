@@ -19,10 +19,47 @@
       });
     }
 
+    /* Rozbaľovacie PORTFÓLIO.
+       Bez tohto sa zoznam sekcií otváral len hoverom, takže na tablete a na
+       dotykovom notebooku sa nedal otvoriť vôbec: kliknutie rovno odišlo na
+       prehľadovú stránku. Prvé kliknutie teraz rozbalí, druhé pustí odkaz.
+       Pod 760 px je zoznam v zásuvke rozbalený stále, tam sa nič nemení. */
+    var wide = window.matchMedia('(min-width: 761px)');
+    var drops = Array.prototype.slice.call(document.querySelectorAll('.nav-dropdown'));
+
+    function closeDrops(except) {
+      drops.forEach(function (d) {
+        if (d !== except) {
+          d.classList.remove('is-open');
+          var t = d.querySelector('.has-caret');
+          if (t) t.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    drops.forEach(function (drop) {
+      var trigger = drop.querySelector('.has-caret');
+      if (!trigger) return;
+      trigger.setAttribute('aria-expanded', 'false');
+      trigger.addEventListener('click', function (e) {
+        if (!wide.matches) return;            // v mobilnej zásuvke je zoznam vždy vidieť
+        if (drop.classList.contains('is-open')) return;   // druhé kliknutie pustí odkaz
+        e.preventDefault();
+        closeDrops(drop);
+        drop.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest || !e.target.closest('.nav-dropdown')) closeDrops(null);
+    });
+
     // Close on Escape
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && nav) {
-        nav.classList.remove('open');
+      if (e.key === 'Escape') {
+        closeDrops(null);
+        if (nav) nav.classList.remove('open');
         if (toggle) toggle.setAttribute('aria-expanded', 'false');
       }
     });

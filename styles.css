@@ -121,14 +121,20 @@ a{color:inherit;text-decoration:none;}
 }
 .dropdown-menu a:hover{color:var(--terra);background:rgba(198,103,61,.08);}
 .dropdown-menu a.active{color:var(--terra);font-weight:500;}
+/* Hover sám nestačí: na dotykových zariadeniach neexistuje a kliknutie
+   na odkaz stránku rovno otvorilo, takže sa zoznam sekcií nedal zobraziť.
+   Trieda is-open ho otvára kliknutím, hover ostáva pre myš. */
 .nav-dropdown:hover .dropdown-menu,
-.nav-dropdown:focus-within .dropdown-menu{
+.nav-dropdown:focus-within .dropdown-menu,
+.nav-dropdown.is-open .dropdown-menu{
   opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);
 }
 .nav-dropdown:hover > .has-caret,
-.nav-dropdown:focus-within > .has-caret{color:var(--terra);}
+.nav-dropdown:focus-within > .has-caret,
+.nav-dropdown.is-open > .has-caret{color:var(--terra);}
 .nav-dropdown:hover > .has-caret svg,
-.nav-dropdown:focus-within > .has-caret svg{transform:rotate(180deg);}
+.nav-dropdown:focus-within > .has-caret svg,
+.nav-dropdown.is-open > .has-caret svg{transform:rotate(180deg);}
 
 /* ---- hamburger ---- */
 .nav-toggle{
