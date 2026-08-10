@@ -108,11 +108,13 @@ def portfolio_page(p, n, total):
     # a jeden ako známka pod ním to rozbíja. Zábery na šírku sa takto ale
     # zmestia do tretiny strany a zdrobnejú, tie ostávajú pri jednom hlavnom.
     row = p.get("hero_layout") == "row" and orient != "landscape"
-    shots = ([{"src": cover}] if cover else []) + imgs
+    picked = [i for i in imgs if i.get("hero")]
+    shots = ([{"src": cover}] if cover else []) + (picked if picked else imgs)
     if row and len(shots) > 1:
         cells = "".join(f'<img src="{esc(i["src"])}" alt="">' for i in shots[:3])
         visual = f'<div class="pf-row">{cells}</div>'
-        imgs = []
+        # Zábery mimo radu ostávajú do pásu pod ním.
+        imgs = [i for i in imgs if not i.get("hero")] if picked else []
     elif cover:
         visual = f'<img class="pf-img" src="{esc(cover)}" alt="">'
     elif imgs:

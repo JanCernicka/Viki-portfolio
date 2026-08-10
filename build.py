@@ -257,7 +257,13 @@ def hero_row(p, depth=1):
     if p.get("cover"):
         shots.append({"src": p["cover"], "caption": p.get("hero_caption"),
                       "orientation": p.get("orientation")})
-    shots += [i for i in (p.get("images") or []) if i.get("src")]
+    # Keď má aspoň jeden obrázok príznak hero, do radu idú len tie označené
+    # a zvyšok spadne do galérie pod text. Portréty psov sú kresby a k nim
+    # patria mockupy v ráme, ale to sú dve rôzne veci a do jedného radu
+    # nepatria: štyri zábery vedľa seba by boli známky.
+    gal = [i for i in (p.get("images") or []) if i.get("src")]
+    picked = [i for i in gal if i.get("hero")]
+    shots += picked if picked else gal
     if not shots:
         return None
 
@@ -735,7 +741,11 @@ def build_project(p, projects):
 '''
 
     # Pri rade hore sú obrázky už použité, pod textom by sa zopakovali.
-    imgs = [] if p.get("hero_layout") == "row" else (p.get("images") or [])
+    # Výnimka: keď je rad zúžený príznakom hero, zvyšok patrí do galérie.
+    imgs = p.get("images") or []
+    if p.get("hero_layout") == "row":
+        imgs = [i for i in imgs if not i.get("hero")] if any(
+            i.get("hero") for i in imgs) else []
     if imgs:
         # Pri jednom alebo dvoch obrázkoch by mriežka roztiahla dlaždicu cez
         # celú šírku. Počet stĺpcov preto obmedzujeme podľa počtu obrázkov.

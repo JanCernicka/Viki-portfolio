@@ -600,7 +600,7 @@
       "client": "Voľná tvorba",
       "status": null,
       "role": "Ilustrácia",
-      "format": "Digitálna maľba, A4",
+      "format": "Digitálna maľba, A4, pripravené na tlač a rámovanie",
       "software": [
         "Procreate"
       ],
@@ -613,6 +613,17 @@
         {
           "src": "assets/projects/portrety-psov/02-border-collie.jpg",
           "caption": "Border kólia",
+          "orientation": "portrait",
+          "hero": true
+        },
+        {
+          "src": "assets/projects/portrety-psov/03-mockup-goldie.jpg",
+          "caption": "Goldie v ráme",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/portrety-psov/04-mockup-border-collie.jpg",
+          "caption": "Border kólia v ráme",
           "orientation": "portrait"
         }
       ],
