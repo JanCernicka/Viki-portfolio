@@ -789,9 +789,10 @@
       {
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
         "meno": "Ing. Ján Černička",
-        "rola": "CEO ShapelesAI",
-        "firma": "ShapelesAI",
-        "logo": "assets/images/ref-shapelesai.png"
+        "rola": "CEO ShapelesAi",
+        "firma": "ShapelesAi",
+        "logo": "assets/images/ref-shapelesai-kruh.png",
+        "logo_tvar": "znacka"
       }
     ]
   }
