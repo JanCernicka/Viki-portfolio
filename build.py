@@ -463,14 +463,22 @@ def quotes(data):
 
     cards = ""
     for q in polozky:
-        kto = esc(q.get("meno", ""))
-        rola = " · ".join(x for x in (esc(q.get("rola", "")),
-                                      esc(q.get("firma", ""))) if x)
+        # Logo sa vykreslí len vtedy, keď súbor naozaj existuje. Kým ho nemáme,
+        # karta vyzerá celá a nezostane v nej diera po chýbajúcom obrázku.
+        src = q.get("logo") or ""
+        logo = ""
+        if src and os.path.exists(os.path.join(ROOT, src)):
+            logo = (f'<img class="quote-logo" src="{esc(src)}" '
+                    f'alt="{esc(q.get("firma", ""))}">')
+
         cards += f'''      <figure class="quote">
         <blockquote>{esc(q["text"])}</blockquote>
         <figcaption>
-          <span class="quote-who">{kto}</span>
-          <span class="quote-role">{rola}</span>
+          {logo}
+          <span class="quote-said">
+            <span class="quote-who">{esc(q.get("meno", ""))}</span>
+            <span class="quote-role">{esc(q.get("rola", ""))}</span>
+          </span>
         </figcaption>
       </figure>
 '''

@@ -787,22 +787,11 @@
     "nadpis": "REFERENCIE",
     "polozky": [
       {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.",
-        "meno": "Meno Priezvisko",
-        "rola": "marketingová manažérka",
-        "firma": "Názov firmy"
-      },
-      {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
-        "meno": "Meno Priezvisko",
-        "rola": "konateľ",
-        "firma": "Názov firmy"
-      },
-      {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam quis.",
-        "meno": "Meno Priezvisko",
-        "rola": "šéfredaktorka",
-        "firma": "Názov vydavateľstva"
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "meno": "Ing. Ján Černička",
+        "rola": "CEO ShapelesAI",
+        "firma": "ShapelesAI",
+        "logo": "assets/images/ref-shapelesai.png"
       }
     ]
   }

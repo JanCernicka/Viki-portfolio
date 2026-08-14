@@ -1410,6 +1410,7 @@ body.lbx-lock{overflow:hidden;}
   margin:0;
   padding-top:16px;
   font-family:var(--serif);
+  font-style:italic;
   font-size:1.02rem;
   line-height:1.62;
   color:var(--ink);
@@ -1427,23 +1428,48 @@ body.lbx-lock{overflow:hidden;}
 }
 .quote figcaption{
   display:flex;
-  flex-direction:column;
-  gap:3px;
+  align-items:center;
+  gap:16px;
   margin-top:auto;
   padding-top:14px;
   border-top:1px solid rgba(103,99,64,.16);
+}
+.quote-logo{
+  flex:0 0 auto;
+  width:auto;
+  max-width:76px;
+  max-height:44px;
+  object-fit:contain;
+}
+.quote-said{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+  min-width:0;
 }
 .quote-who{
   font-size:var(--fs-label);
   font-weight:600;
   letter-spacing:.04em;
-  color:var(--dark);
+  color:var(--terra);
 }
 .quote-role{
   font-size:var(--fs-label);
   letter-spacing:.04em;
   color:var(--muted);
 }
+
+/* Jedna referencia sa neroztiahne cez tri stĺpce, ale ostane v strede
+   v čitateľnej šírke. */
+.quote-grid .quote:only-child{
+  grid-column:1 / -1;
+  max-width:44rem;
+  margin:0 auto;
+}
+
+/* Pätička má vlastnú linku navrchu. Keď nad ňou stoja referencie, ktoré už
+   majú svoju plochu, je tá linka navyše. */
+#referencie + .site-footer .footer-rule{display:none;}
 
 @media (max-width:900px){
   .quote-grid{grid-template-columns:1fr 1fr;}
