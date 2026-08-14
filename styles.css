@@ -1384,3 +1384,72 @@ body.lbx-lock{overflow:hidden;}
   .lbx-prev,.lbx-next{top:auto;bottom:14px;transform:none;}
   .lbx-fig img{max-height:calc(100vh - 190px);}
 }
+
+/* ======================= REFERENCIE ======================= */
+/* Sekcia je zámerne tichá. Stojí medzi „o mne" a kontaktom, teda tam, kde
+   už návštevník videl prácu aj človeka a chýba mu len cudzie potvrdenie. */
+.quotes{padding:var(--sp-sect) 0;}
+.quote-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:clamp(18px, 2.4vw, 34px);
+  margin-top:28px;
+}
+.quote{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin:0;
+  padding:26px 26px 24px;
+  background:var(--cream);
+  border:1px solid rgba(103,99,64,.16);
+  border-radius:3px;
+}
+.quote blockquote{
+  position:relative;
+  margin:0;
+  padding-top:16px;
+  font-family:var(--serif);
+  font-size:1.02rem;
+  line-height:1.62;
+  color:var(--ink);
+}
+/* Úvodzovka je ozdoba, čítačke obrazovky ju netreba hlásiť. */
+.quote blockquote::before{
+  content:"\201C";
+  position:absolute;
+  top:-14px;
+  left:-4px;
+  font-family:var(--serif);
+  font-size:3.4rem;
+  line-height:1;
+  color:var(--sage);
+}
+.quote figcaption{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+  margin-top:auto;
+  padding-top:14px;
+  border-top:1px solid rgba(103,99,64,.16);
+}
+.quote-who{
+  font-size:var(--fs-label);
+  font-weight:600;
+  letter-spacing:.04em;
+  color:var(--dark);
+}
+.quote-role{
+  font-size:var(--fs-label);
+  letter-spacing:.04em;
+  color:var(--muted);
+}
+
+@media (max-width:900px){
+  .quote-grid{grid-template-columns:1fr 1fr;}
+  .quote-grid .quote:last-child:nth-child(odd){grid-column:1 / -1;}
+}
+@media (max-width:620px){
+  .quote-grid{grid-template-columns:1fr;}
+  .quote-grid .quote:last-child:nth-child(odd){grid-column:auto;}
+}

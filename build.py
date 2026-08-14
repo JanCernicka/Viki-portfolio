@@ -374,7 +374,7 @@ def card(p, depth=0):
 
 
 # ---------------------------------------------------------------- homepage
-def build_index(projects, about_html):
+def build_index(projects, about_html, refs=""):
     # Domovská ukazuje najlepšiu prácu naprieč disciplínami, nie taxonómiu.
     # Personalista z agentúry chce vidieť práce, nie štruktúru menu.
     featured = sorted([p for p in projects if p.get("featured")],
@@ -447,8 +447,46 @@ def build_index(projects, about_html):
 </section>
 '''
     html += about_html
+    html += refs
     html += footer()
     return html
+
+
+# --------------------------------------------------------------------- referencie
+def quotes(data):
+    """Referencie. Kým je v dátach zobrazit=false, sekcia sa nevygeneruje
+    vôbec, takže sa nedá omylom dostať na živý web."""
+    ref = data.get("referencie") or {}
+    polozky = [q for q in (ref.get("polozky") or []) if q.get("text")]
+    if not ref.get("zobrazit") or not polozky:
+        return ""
+
+    cards = ""
+    for q in polozky:
+        kto = esc(q.get("meno", ""))
+        rola = " · ".join(x for x in (esc(q.get("rola", "")),
+                                      esc(q.get("firma", ""))) if x)
+        cards += f'''      <figure class="quote">
+        <blockquote>{esc(q["text"])}</blockquote>
+        <figcaption>
+          <span class="quote-who">{kto}</span>
+          <span class="quote-role">{rola}</span>
+        </figcaption>
+      </figure>
+'''
+
+    return f'''
+<!-- ================= REFERENCIE ================= -->
+<section class="quotes projects-alt" id="referencie">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="projects-title">{esc(ref.get("nadpis", "REFERENCIE"))}</h2>
+    </div>
+    <div class="quote-grid">
+{cards}    </div>
+  </div>
+</section>
+'''
 
 
 # --------------------------------------------------------- portfolio rozcestník
@@ -833,7 +871,8 @@ def main():
 
     os.makedirs(PROJ_DIR, exist_ok=True)
 
-    open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(build_index(projects, about))
+    open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(
+        build_index(projects, about, quotes(data)))
     print("index.html")
 
     open(os.path.join(ROOT, "portfolio.html"), "w", encoding="utf-8").write(build_portfolio(projects))
