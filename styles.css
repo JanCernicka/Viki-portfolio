@@ -1434,12 +1434,18 @@ body.lbx-lock{overflow:hidden;}
   padding-top:14px;
   border-top:1px solid rgba(103,99,64,.16);
 }
+/* Logo býva široký nápis, nie štvorec, tak dostane radšej šírku než výšku. */
 .quote-logo{
   flex:0 0 auto;
   width:auto;
-  max-width:76px;
-  max-height:44px;
+  max-width:150px;
+  max-height:40px;
   object-fit:contain;
+  object-position:left center;
+}
+@media (max-width:520px){
+  .quote figcaption{align-items:flex-start;flex-direction:column;gap:12px;}
+  .quote-logo{max-width:130px;}
 }
 .quote-said{
   display:flex;
