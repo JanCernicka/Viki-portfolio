@@ -1443,9 +1443,18 @@ body.lbx-lock{overflow:hidden;}
   object-fit:contain;
   object-position:left center;
 }
+/* Značka v kocke alebo v kruhu je štvorec, tak dostane pevný rozmer
+   namiesto širokého pásu. */
+.quote-logo.is-znacka{
+  width:64px;
+  height:64px;
+  max-width:none;
+  max-height:none;
+}
 @media (max-width:520px){
   .quote figcaption{align-items:flex-start;flex-direction:column;gap:12px;}
   .quote-logo{max-width:130px;}
+  .quote-logo.is-znacka{width:56px;height:56px;}
 }
 .quote-said{
   display:flex;

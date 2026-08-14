@@ -468,7 +468,8 @@ def quotes(data):
         src = q.get("logo") or ""
         logo = ""
         if src and os.path.exists(os.path.join(ROOT, src)):
-            logo = (f'<img class="quote-logo" src="{esc(src)}" '
+            tvar = " is-znacka" if q.get("logo_tvar") == "znacka" else ""
+            logo = (f'<img class="quote-logo{tvar}" src="{esc(src)}" '
                     f'alt="{esc(q.get("firma", ""))}">')
 
         cards += f'''      <figure class="quote">
