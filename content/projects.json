@@ -783,11 +783,11 @@
     }
   ],
   "referencie": {
-    "zobrazit": false,
+    "zobrazit": true,
     "nadpis": "REFERENCIE",
     "polozky": [
       {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "text": "Náš Facebook, Instagram, LinkedIn a TikTok vybudovala úplne od nuly. Niečo, čo u väčšiny firiem vyzerá iba ako kopka predajných postov, dokáže vyjadriť kreatívne a zábavne do tej miery, že nám išli hore čísla a tešili sme sa na každý ďalší jej nápad. Zachytila farby, dizajn aj poslanie firmy a výstižne ich preložila do jazyka sociálnych sietí. Zároveň sa podieľala na tvorbe landing pages a reklamných kreatív pre Meta kampane našich klientov. Odporúčam ju bez výhrad.",
         "meno": "Ing. Ján Černička",
         "rola": "CEO ShapelesAi",
         "firma": "ShapelesAi",
