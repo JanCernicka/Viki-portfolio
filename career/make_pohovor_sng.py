@@ -65,12 +65,44 @@ IDENTITA_PRECO = (
 )
 
 VYSTAVY = [
+    ("Galanda a galandovci · toto je tvoja voľba",
+     "12. decembra 2025 až 6. septembra 2026. Kurátori Martin Dostál a Martin "
+     "Vančo. Mikuláš Galanda a Skupina Mikuláša Galandu, ktorá vznikla na prvej "
+     "spoločnej výstave v decembri 1957 v Žiline. Krivoš, Barčík, Štubňa, Laluha."),
     ("Jiří Kolář a Ladislav Novák: Pocta muchám pavúkom rybám myšiam a psom",
-     "26. marca až 30. augusta 2026"),
-    ("Galanda a galandovci", "12. decembra 2025 až 6. septembra 2026"),
-    ("Adam Szentpétery: Network", "29. mája až 25. októbra 2026"),
-    ("Bang?! Bang! 2", "30. apríla až 15. novembra 2026"),
+     "26. marca až 30. augusta 2026. Končí o dva týždne."),
+    ("Adam Szentpétery: Network", "29. mája až 25. októbra 2026."),
+    ("Bang?! Bang! 2",
+     "30. apríla až 15. novembra 2026. Táto sa ako obľúbená nehodí, pozri "
+     "poznámku nižšie."),
 ]
+
+GALANDA = (
+    "Mikuláš Galanda, 1895 až 1938, je jeden zo zakladateľov slovenskej výtvarnej "
+    "moderny. Pre teba je dôležité niečo iné než maľba: v rokoch 1924 až 1926 bol "
+    "prvým grafickým redaktorom avantgardného časopisu DAV, s Ľudovítom Fullom "
+    "vydával Súkromné listy Fullu a Galandu, ktorých prvé číslo vyšlo 28. februára "
+    "1930, a napísali spolu Manifest slovenskej výtvarnej moderny. Knižnej grafike "
+    "a ilustrácii sa venoval celý život a práve za ňu dostal za svojho života "
+    "najväčšie uznanie: v roku 1933 krajinskú cenu za knižnú grafiku a na Svetovej "
+    "výstave v Paríži v roku 1937 striebornú medailu."
+)
+
+GALANDA_POVEDZ = (
+    "Galanda bol v podstate grafický dizajnér. Robil grafickú redakciu časopisu, "
+    "sám si s Fullom vydával a sádzal manifest a navrhoval obálky a ilustrácie "
+    "pre básnikov. A za svojho života ho ocenili práve za knižnú grafiku, nie za "
+    "maľbu. Preto ma tá výstava zaujíma z môjho konca, nie len ako diváčku."
+)
+
+BANG = (
+    "Bang?! Bang! 2 je pokračovanie výstavy, ktorá vyvolala verejný spor. Pri "
+    "prvej časti viacerí vystavení umelci žiadali stiahnutie svojich diel a "
+    "tvrdili, že ich nikto neoslovil. Kurátormi série sú generálny a umelecký "
+    "riaditeľ. Nevyberaj si ju ako obľúbenú a sama tú tému neotváraj. Ak ju "
+    "otvoria oni, povedz, že si o tom čítala, ale nemáš dosť informácií, aby si "
+    "to hodnotila, a vráť sa k dielam."
+)
 
 ZHODY = [
     ("Orientačný systém pre Paneurópsku vysokú školu",
@@ -237,6 +269,68 @@ DIZAJN = [
      "K tomu ilustrácia, tú robím rada, ale ako doplnok, nie ako hlavnú vec."),
 ]
 
+VKUS_UVOD = (
+    "Toto je pri galérii najpravdepodobnejšia skupina otázok a zároveň jediná, "
+    "kde ti nemôžem napísať odpoveď. Musí byť tvoja, inak je počuť, že je "
+    "naučená. Čo sa dá pripraviť, je tvar odpovede a menu mien, z ktorého si "
+    "vyberieš len to, čo je pravda. Netestujú vedomosti. Testujú, či vieš "
+    "pomenovať, prečo sa ti niečo páči. Konkrétna odpoveď o menej známom mene "
+    "je vždy lepšia než vzletná odpoveď o Picassovi."
+)
+
+VKUS_FORMULA = (
+    "Meno, potom jedna konkrétna práca, potom jedno rozhodnutie, ktoré v nej "
+    "vidíš, a na koniec veta, čo si z toho berieš do vlastnej práce. Štyri kroky, "
+    "tridsať sekúnd. Kto povie len meno, pôsobí, že ho počul, nie videl."
+)
+
+VKUS = [
+    ("Kto je váš obľúbený dizajnér?",
+     "Vyber si niekoho, koho prácu vieš naozaj otvoriť a opísať. Ak povieš "
+     "meno, ktoré len znie dobre, druhá otázka ťa položí. Pri slovenskej "
+     "inštitúcii sa slovenské meno cení viac než zahraničná hviezda, lebo "
+     "ukazuje, že poznáš prostredie, do ktorého ideš.",
+     "Mená, ktoré sedia k tomu, čo robíš ty: Vladislav Rostoka, plagáty "
+     "a typografia, a je práve teraz v ich Bang?! Bang! 2. Albín Brunovský "
+     "a Dušan Kállay, ak ťa ťahá knižná ilustrácia. Miroslav Cipár, ak ťa baví "
+     "spojenie ilustrácie a logotypu. Ľudovít Fulla, ak chceš ostať pri téme "
+     "výstavy. Otvor si dnes jedno z tých mien a vyber si podľa toho, čo ti "
+     "naozaj sadne."),
+    ("Kto je váš obľúbený umelec?",
+     "Túto máš vďaka dnešku vybavenú. Ak si na výstave, odpoveď je Galanda "
+     "a máš k nemu dôvod, ktorý nepovie nikto iný.",
+     "Mikuláš Galanda. Bol v podstate grafický dizajnér, robil grafickú "
+     "redakciu časopisu DAV, s Fullom si sám vydával manifest a navrhoval "
+     "obálky pre básnikov. A za svojho života ho ocenili práve za knižnú "
+     "grafiku, nie za maľbu."),
+    ("Aký štýl umenia máte rada?",
+     "Nepovedz minimalizmus. To hovorí každý a nič to nehovorí. Neodpovedaj "
+     "názvom smeru, odpovedz tým, čo ťa na veciach zaujíma, a jedným príkladom.",
+     "Skôr než smer ma zaujíma, keď je za vecou systém. Baví ma, keď vidno "
+     "pravidlo, podľa ktorého to vzniklo, a keď sa to pravidlo dá použiť ďalej. "
+     "Preto mi sedia geometrické a konceptuálne veci a preto ma bavila práca "
+     "na dizajn manuáli aj na orientačnom systéme."),
+    ("Akým štýlom tvoríte vy?",
+     "Neodpovedaj prídavnými menami. Odpovedz tým, čo je v tvojom portfóliu, "
+     "lebo to si vedia otvoriť a overiť.",
+     "Mám dve polohy a viem, ktorá je ktorá. Prvá je typografia a sadzba, tam "
+     "pracujem v systémoch, mriežkach a pravidlách. Druhá je ilustrácia, kresba "
+     "postáv a digitálna maľba, tam je to voľnejšie. Najradšej mám zadania, kde "
+     "sa obe stretnú, napríklad knižná obálka alebo obal."),
+    ("Sledujete niečo zo súčasnej scény?",
+     "Ak nesleduješ systematicky, nepredstieraj to. Priznaná medzera "
+     "s konkrétnym plánom znie lepšie než vymyslený zoznam mien.",
+     "Systematicky nie, sledujem skôr jednotlivé veci než celé scény. Čo si "
+     "otváram pravidelne, sú súťaže knižného dizajnu a Národná cena za dizajn, "
+     "lebo tam je vidieť, čo sa v odbore hýbe."),
+    ("Máte obľúbenú knihu alebo obálku?",
+     "Táto padne pri galérii ľahko a je to darček. Maj pripravený jeden titul, "
+     "ktorý si naozaj držala v ruke.",
+     "Odpovedz konkrétnym titulom a jednou vecou na ňom, napríklad ako je "
+     "riešený chrbát alebo ako sa správa názov na obálke a na titulnej strane. "
+     "Toto je presne ten typ detailu, ktorý od grafika chcú počuť."),
+]
+
 CERVENE = [
     ("Politika okolo vedenia galérie",
      "Okolo súčasného generálneho riaditeľa boli v médiách spory. Nespomínaj "
@@ -288,6 +382,11 @@ DNES_VECER = [
      "papier ťa zachráni."),
     ("Prejdi si prvú odpoveď nahlas",
      "Len tú jednu, o sebe. Zvyšok sa neuč naspamäť, naučená veta je počuť."),
+    ("Choď tam dnes, kým je otvorené",
+     "Nedeľa 10:00 až 18:00, v pondelok majú zatvorené, takže dnes je posledná "
+     "možnosť. Pozri si Galandu a k tomu si všímaj tlačoviny: texty na stenách, "
+     "popisky pri dielach, sprievodcu, navigáciu v budove. Odfoť si to. "
+     "Veta „bola som tam včera a všimla som si“ je na pohovore neprebitná."),
     ("Otvor si dva ich plagáty a napíš si o nich tri vety",
      "Konkrétne veci: aké písmo, koľko priestoru okolo názvu, ako je použité "
      "logo. Toto je jediná príprava na otázku, či sa ti páči ich dizajn. "
@@ -353,7 +452,12 @@ def build():
           '<p class="intro">Vyber si jednu a vedz, prečo práve tú.</p>',
           '<ul class="rows">']
     o += [f"<li><b>{e(k)}</b><span>{e(v)}</span></li>" for k, v in VYSTAVY]
-    o += ["</ul></section>"]
+    o += ["</ul>",
+          '<h2 style="margin-top:8px">Galanda, a prečo práve on</h2>',
+          f'<p class="intro">{e(GALANDA)}</p>',
+          f'<p class="say">{e(GALANDA_POVEDZ)}</p>',
+          f'<p class="note"><b>Pozor na Bang?! Bang! 2.</b> {e(BANG)}</p>',
+          "</section>"]
 
     o += ['<section class="sect"><h2>Tri veci, ktorými vyhráš</h2>',
           '<p class="intro">Toto nie je zoznam prác. Sú to tri miesta, kde tvoj '
@@ -364,6 +468,12 @@ def build():
 
     o += ['<section class="sect"><h2>Otázky, ktoré prídu</h2>']
     o += [item(q, None, why, say) for q, why, say in OTAZKY]
+    o += ["</section>"]
+
+    o += ['<section class="sect"><h2>Otázky na vkus a na umenie</h2>',
+          f'<p class="intro">{e(VKUS_UVOD)}</p>',
+          f'<p class="say angle">{e(VKUS_FORMULA)}</p>']
+    o += [item(q, None, why, say) for q, why, say in VKUS]
     o += ["</section>"]
 
     o += ['<section class="sect"><h2>Otázky na dizajn</h2>',
