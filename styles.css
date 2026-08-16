@@ -1415,7 +1415,9 @@ body.lbx-lock{overflow:hidden;}
   line-height:1.62;
   color:var(--ink);
 }
-/* Úvodzovka je ozdoba, čítačke obrazovky ju netreba hlásiť. */
+/* Úvodzovky sú ozdoba, čítačke obrazovky ich netreba hlásiť. Otváracia
+   visí nad textom, zatváracia ide inline za posledné slovo, aby sa pri
+   krátkom poslednom riadku neodtrhla od textu. */
 .quote blockquote::before{
   content:"\201C";
   position:absolute;
@@ -1424,6 +1426,15 @@ body.lbx-lock{overflow:hidden;}
   font-family:var(--serif);
   font-size:3.4rem;
   line-height:1;
+  color:var(--sage);
+}
+.quote blockquote::after{
+  content:"\201D";
+  font-family:var(--serif);
+  font-size:2.6rem;
+  line-height:0;
+  vertical-align:-.42em;
+  margin-left:.06em;
   color:var(--sage);
 }
 .quote figcaption{
@@ -1483,8 +1494,9 @@ body.lbx-lock{overflow:hidden;}
 }
 
 /* Pätička má vlastnú linku navrchu. Keď nad ňou stoja referencie, ktoré už
-   majú svoju plochu, je tá linka navyše. */
-#referencie + .site-footer .footer-rule{display:none;}
+   majú svoju plochu, je tá linka navyše. Skryje sa jej len orámovanie, nie
+   celý prvok, inak by zmizli aj jej okraje a logo by sa nalepilo na sekciu. */
+#referencie + .site-footer .footer-rule{border-top:0;}
 
 @media (max-width:900px){
   .quote-grid{grid-template-columns:1fr 1fr;}
