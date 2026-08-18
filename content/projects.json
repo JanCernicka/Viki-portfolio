@@ -784,7 +784,7 @@
     {
       "slug": "miriam-czompoly",
       "title": "Miriam Czompoly Design",
-      "subtitle": "Landing page pre interiérovú dizajnérku",
+      "subtitle": "Landing page pre interiérovú dizajnérku, dve verzie rozloženia",
       "category": "web",
       "cross": [],
       "featured": false,
@@ -793,20 +793,22 @@
       "client": "Miriam Czompoly Design",
       "status": "komercny",
       "role": "Dizajn a stavba landing page",
-      "format": "Jednostránkový web, desktop aj mobil",
+      "format": "Jednostránkový web v dvoch verziách, desktop aj mobil",
       "software": [
         "GoHighLevel"
       ],
       "brief": "Miriam Czompoly navrhuje interiéry v Trnave od roku 2010. Potrebovala jednu stránku, ktorá z návštevníka spraví človeka, čo si rezervuje bezplatný úvodný hovor, a ktorá zároveň zrozumiteľne vysvetlí tri úrovne spolupráce, od jednorazovej konzultácie doma až po kompletný návrh interiéru na mieru. Cieľovou skupinou sú ženy, ktoré rekonštruujú alebo zariaďujú vlastné bývanie a boja sa, že spravia drahú chybu.",
       "solution": "Celá stránka má jediný cieľ, rezervovaný hovor, a preto sa výzva opakuje po každej sekcii, zakaždým inými slovami. Hore beží tiché video skutočného interiéru stlmené na polovicu, aby text nad ním ostal čitateľný, nadpis je otázka, nie tvrdenie, a hneď pod ním sú dve tlačidlá pre dva typy návštevníkov: kto je rozhodnutý, klikne na konzultáciu, kto sa len pozerá, na projekty. Hneď za úvodom idú tri e-booky zadarmo, lebo väčšina ľudí prvýkrát nechce volať, ale kontakt nechá výmenou za niečo užitočné. Sekciu o autorke som poskladala z rozbaľovacích otázok, takže si návštevník otvorí len to, čo ho zaujíma, a dlhý text nikoho neodplaší. Služby sú tri karty a v každej je cena aj jedna veta v úvodzovkách, ktorá povie, kedy si ktorú vybrať, lebo najčastejšia otázka nie je čo to stojí, ale čo z toho je pre mňa. Typografia stojí na pätkovom písme v nadpisoch a na zlatej ako jedinej farbe navyše k čiernej a krémovej.",
-      "why": "Pri weboch ma najviac naučilo, že dizajn nekončí pri tom, ako to vyzerá. Musela som rozmýšľať, v ktorom momente je človek ochotný nechať kontakt a čo potrebuje vedieť predtým. Preto je na stránke aj cena, aj vetička kedy si ktorú službu vybrať, hoci by bez nich vyzerala čistejšie.",
+      "why": "Pri weboch ma najviac naučilo, že dizajn nekončí pri tom, ako to vyzerá. Musela som rozmýšľať, v ktorom momente je človek ochotný nechať kontakt a čo potrebuje vedieť predtým. Preto som skúsila dve poradia sekcií a preto je na stránke aj cena, aj vetička kedy si ktorú službu vybrať, hoci by bez nich vyzerala čistejšie.",
       "orientation": "landscape",
       "cover": "assets/projects/miriam-czompoly/01-uvodna-obrazovka.jpg",
       "hero_caption": "Úvodná obrazovka s videom interiéru a dvomi výzvami",
       "images": [
         {
+          "group": "Ostrá verzia",
+          "group_note": "Táto beží na miriamczompoly.sk. E-booky sú hneď za úvodom, pretože človek, ktorý stránku vidí prvýkrát, skôr nechá mail za niečo užitočné, ako zavolá.",
           "src": "assets/projects/miriam-czompoly/02-ebooky.jpg",
-          "caption": "E-booky zadarmo hneď za úvodom, pre návštevníkov, ktorí ešte nechcú volať",
+          "caption": "E-booky hneď za úvodom, pre návštevníkov, ktorí ešte nechcú volať",
           "orientation": "landscape"
         },
         {
@@ -827,6 +829,33 @@
         {
           "src": "assets/projects/miriam-czompoly/05-pata.jpg",
           "caption": "Pätička s kontaktom",
+          "orientation": "landscape"
+        },
+        {
+          "group": "Druhá verzia rozloženia",
+          "group_note": "Skúška, čo sa stane, keď sa poradie otočí. Navigácia sedí vnútri úvodnej obrazovky, hneď za ňou idú projekty a e-booky sú až na konci, ako posledná záchrana pre toho, kto sa nerozhodol.",
+          "src": "assets/projects/miriam-czompoly/b1-uvodna-obrazovka.jpg",
+          "caption": "Úvodná obrazovka, navigácia je v nej ako biela pilulka a výzva je jedna",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/miriam-czompoly/b2-o-mne.jpg",
+          "caption": "Tá istá sekcia o autorke",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/miriam-czompoly/b3-sluzby.jpg",
+          "caption": "Služby ostali rovnaké, menilo sa okolie",
+          "orientation": "portrait"
+        },
+        {
+          "src": "assets/projects/miriam-czompoly/b4-ebooky.jpg",
+          "caption": "E-booky až na konci, pred pätičkou",
+          "orientation": "landscape"
+        },
+        {
+          "src": "assets/projects/miriam-czompoly/b5-mobil.jpg",
+          "caption": "Mobilná verzia druhého rozloženia",
           "orientation": "landscape"
         }
       ]
