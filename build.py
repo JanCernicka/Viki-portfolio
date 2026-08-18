@@ -803,56 +803,41 @@ def build_project(p, projects):
         imgs = [i for i in imgs if not i.get("hero")] if any(
             i.get("hero") for i in imgs) else []
     if imgs:
-        # Galéria sa dá rozdeliť na skupiny. Obrázok s kľúčom group začína
-        # novú skupinu a jeho hodnota je nadpis nad ňou. Bez neho je celá
-        # galéria jedna skupina ako doteraz.
-        skupiny = []
-        for im in imgs:
-            if im.get("group") or not skupiny:
-                skupiny.append([im.get("group"), im.get("group_note"), [im]])
-            else:
-                skupiny[-1][2].append(im)
-
-        html += '''
+        # Pri jednom alebo dvoch obrázkoch by mriežka roztiahla dlaždicu cez
+        # celú šírku. Počet stĺpcov preto obmedzujeme podľa počtu obrázkov.
+        grid_cls = "g-grid" + (f" is-{len(imgs)}" if len(imgs) <= 2 else "")
+        # Rám je pre všetky obrázky projektu rovnaký, inak sa popisky rozídu
+        # do rôznych výšok. Jeho pomer sa riadi prevahou v projekte, aby
+        # obrázky na výšku nesedeli ako známka uprostred širokého rámu.
+        portrait_n = sum(1 for im in imgs
+                         if (im.get("orientation") or p.get("orientation")) == "portrait")
+        grid_cls += " frame-portrait" if portrait_n * 2 >= len(imgs) else " frame-landscape"
+        # Pri väčšom počte záberov nižší rad, aby sa ich vošlo viac vedľa seba
+        # a galéria nebola stĺpec obrovských obrázkov.
+        if len(imgs) >= 6:
+            grid_cls += " is-many"
+        html += f'''
   <section class="cs-gallery">
     <div class="container">
       <p class="g-hint">Kliknutím sa obrázok zväčší.</p>
+      <div class="{grid_cls}">
 '''
-        for nadpis, poznamka, kusy in skupiny:
-            # Pri jednom alebo dvoch obrázkoch by mriežka roztiahla dlaždicu
-            # cez celú šírku. Počet stĺpcov preto obmedzujeme podľa počtu.
-            grid_cls = "g-grid" + (f" is-{len(kusy)}" if len(kusy) <= 2 else "")
-            # Rám je v rámci skupiny rovnaký, inak sa popisky rozídu do
-            # rôznych výšok. Pomer sa riadi prevahou, aby obrázky na výšku
-            # nesedeli ako známka uprostred širokého rámu.
-            portrait_n = sum(1 for im in kusy
-                             if (im.get("orientation") or p.get("orientation")) == "portrait")
-            grid_cls += " frame-portrait" if portrait_n * 2 >= len(kusy) else " frame-landscape"
-            # Pri väčšom počte záberov nižší rad, aby sa ich vošlo viac vedľa
-            # seba a galéria nebola stĺpec obrovských obrázkov.
-            if len(kusy) >= 6:
-                grid_cls += " is-many"
-            if nadpis:
-                html += f'      <h2 class="g-group">{esc(nadpis)}</h2>\n'
-                if poznamka:
-                    html += f'      <p class="g-group-note">{esc(poznamka)}</p>\n'
-            html += f'      <div class="{grid_cls}">\n'
-            for im in kusy:
-                if im.get("src"):
-                    alt = esc(im.get("caption") or p["title"])
-                    inner = f'<img src="../{esc(im["src"])}" alt="{alt}" loading="lazy">'
-                    # Obrázky sa nesmú orezávať, ale musia mať rovnakú
-                    # veľkosť, inak sa popisky rozídu do rôznych výšok. Preto
-                    # jednotný rám a obrázok v ňom celý, nie orezaný.
-                    body = (f'<a class="g-frame zoom" href="../{esc(im["src"])}" '
-                            f'data-cap="{alt}">{inner}</a>')
-                else:
-                    body = ('<div class="g-frame is-empty" role="img" aria-label="Obrázok pripravujem">'
-                            '<span>pripravujem</span></div>')
-                cap = f'<figcaption>{esc(im.get("caption"))}</figcaption>' if im.get("caption") else ""
-                html += f'        <figure class="g-item">{body}{cap}</figure>\n'
-            html += '      </div>\n'
-        html += '''    </div>
+        for im in imgs:
+            if im.get("src"):
+                alt = esc(im.get("caption") or p["title"])
+                inner = f'<img src="../{esc(im["src"])}" alt="{alt}" loading="lazy">'
+                # Obrázky sa nesmú orezávať, ale musia mať rovnakú veľkosť,
+                # inak sa popisky rozídu do rôznych výšok. Preto jednotný rám
+                # a obrázok v ňom celý, nie orezaný na výplň.
+                body = (f'<a class="g-frame zoom" href="../{esc(im["src"])}" '
+                        f'data-cap="{alt}">{inner}</a>')
+            else:
+                body = ('<div class="g-frame is-empty" role="img" aria-label="Obrázok pripravujem">'
+                        '<span>pripravujem</span></div>')
+            cap = f'<figcaption>{esc(im.get("caption"))}</figcaption>' if im.get("caption") else ""
+            html += f'        <figure class="g-item">{body}{cap}</figure>\n'
+        html += '''      </div>
+    </div>
   </section>
 '''
 
