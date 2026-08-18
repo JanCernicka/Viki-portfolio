@@ -96,7 +96,7 @@ Toto sú jediné layouty, ktoré počas týždňa používaš. Nový sa nekresl�
 
 ## Štvrtok · Tvoja kariéra
 
-- **9:15 · 2 h 30 · SHAPELESAI** — Portfólio: dokonči jednu vlastnú vec. Nevyžiadaný návrh, chýbajúci banner, prekreslenie starej práce.
+- **9:15 · 2 h 30 · Portfólio** — Dokonči jednu vlastnú vec. Prekreslená obálka knihy, sadzba dvojstrany, plagát na výstavu, nevyžiadaný návrh.
   > Toto je jediný blok v týždni, ktorý patrí len tebe. Neposúvaj ho, aj keby horelo.
 - **12:30 · 2 h 15 · Hľadanie práce** — Prihlášky: sprievodné listy na inzeráty, ktoré si cez týždeň našla. Odsek štyri prepíš pri každom.
   > Odseky jeden až tri sú rovnaké vždy. Štvrtý je ten, podľa ktorého poznajú, že si inzerát čítala.
@@ -156,6 +156,5 @@ Veci mimo týždenného kolobehu. Urob vždy jednu, keď ti vyjde čas.
 - [ ] Vypýtaj si zo SHAPELESAI písomné odporúčanie na LinkedIn.
   > Odporúčanie od súčasného zamestnávateľa je najsilnejšia vec, akú vie absolvent na profil dať.
 - [ ] Pridaj na LinkedIn reel a nové práce zo Spolku a NOOK BOOKS.
-- [ ] Dokresli banner tušom pre Portréty psov, 1600 × 1200 px.
 - [ ] Napíš trom bývalým učiteľom zo SOŠ polygrafickej.
   > Ľudia, ktorí ťa poznajú, odpisujú v drvivej väčšine prípadov. Cudzí ľudia zriedka.
