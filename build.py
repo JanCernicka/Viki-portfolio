@@ -58,9 +58,16 @@ CATEGORIES = {
     "tlacoviny": {
         "title": "Tlačoviny a orientačné systémy",
         "short": "Tlačoviny",
-        "icon": "icon-uiux.png",
+        "icon": "icon-tlaciviny.png",
         "lead": "Plagáty, letáky, mapy a veľkoformátová tlač.",
         "hero": "assets/projects/mapa-skoly/01-ekonomia.jpg",
+    },
+    "web": {
+        "title": "Web a landing pages",
+        "short": "Web",
+        "icon": "icon-uiux.png",
+        "lead": "Jednostránkové weby, ktoré majú jeden cieľ a vedú k nemu návštevníka.",
+        "hero": "assets/projects/miriam-czompoly/01-uvodna-obrazovka.jpg",
     },
     "socialne-siete": {
         "title": "Sociálne siete",
