@@ -793,13 +793,13 @@
       "client": "Miriam Czompoly Design",
       "status": "komercny",
       "role": "Dizajn landing page",
-      "format": "Jednostránkový web, desktop aj mobil",
+      "format": "Návrh jednostránkového webu, desktop aj mobil",
       "software": [
         "Figma",
         "Photoshop"
       ],
       "brief": "Miriam Czompoly navrhuje interiéry v Trnave od roku 2010. Potrebovala jednu stránku, ktorá z návštevníka spraví človeka, čo si rezervuje bezplatný úvodný hovor, a ktorá zároveň zrozumiteľne vysvetlí tri úrovne spolupráce, od jednorazovej konzultácie doma až po kompletný návrh interiéru na mieru. Cieľovou skupinou sú ženy, ktoré rekonštruujú alebo zariaďujú vlastné bývanie a boja sa, že spravia drahú chybu.",
-      "solution": "Celá stránka má jediný cieľ, rezervovaný hovor, a preto sa výzva opakuje po každej sekcii, zakaždým inými slovami. Hore beží tiché video skutočného interiéru stlmené na polovicu, aby text nad ním ostal čitateľný, a nadpis je otázka, nie tvrdenie. Sekciu o autorke som poskladala z rozbaľovacích otázok, takže si návštevník otvorí len to, čo ho zaujíma, a dlhý text nikoho neodplaší. Služby sú tri karty a v každej je cena aj jedna veta v úvodzovkách, ktorá povie, kedy si ktorú vybrať, lebo najčastejšia otázka nie je čo to stojí, ale čo z toho je pre mňa. Na konci sú tri e-booky zadarmo pre ľudí, ktorí ešte nie sú pripravení volať. Typografia stojí na pätkovom písme v nadpisoch a na zlatej ako jedinej farbe navyše k čiernej a krémovej.",
+      "solution": "Celá stránka má jediný cieľ, rezervovaný hovor, a preto sa výzva opakuje po každej sekcii, zakaždým inými slovami. Hore beží tiché video skutočného interiéru stlmené na polovicu, aby text nad ním ostal čitateľný, a nadpis je otázka, nie tvrdenie. Sekciu o autorke som poskladala z rozbaľovacích otázok, takže si návštevník otvorí len to, čo ho zaujíma, a dlhý text nikoho neodplaší. Služby sú tri karty a v každej je cena aj jedna veta v úvodzovkách, ktorá povie, kedy si ktorú vybrať, lebo najčastejšia otázka nie je čo to stojí, ale čo z toho je pre mňa. Na konci sú tri e-booky zadarmo pre ľudí, ktorí ešte nie sú pripravení volať. Typografia stojí na pätkovom písme v nadpisoch a na zlatej ako jedinej farbe navyše k čiernej a krémovej. Toto je môj návrh. Stránka, ktorá dnes beží na miriamczompoly.sk, sa od neho v detailoch líši.",
       "why": "Pri webe som sa naučila, že dôležitejšia je jeho funkčnosť a prvý dojem. Musela som rozmýšľať, v ktorom momente je človek ochotný nechať kontakt a čo všetko predtým potrebuje vedieť.",
       "orientation": "landscape",
       "cover": "assets/projects/miriam-czompoly/01-uvodna-obrazovka.jpg",
