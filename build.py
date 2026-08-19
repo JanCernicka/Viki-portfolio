@@ -84,6 +84,44 @@ def in_category(p, key):
     return p.get("category") == key or key in (p.get("cross") or [])
 
 
+def build_robots():
+    """Bez tohto súboru vracia server na /robots.txt celú úvodnú stránku.
+    Vyhľadávač na mieste textového súboru dostane HTML a mapu stránok
+    nemá odkiaľ vziať."""
+    return (
+        "User-agent: *\n"
+        "Allow: /\n"
+        "\n"
+        "# Zdroje generátora a súkromné veci na web nepatria, ale keby sa\n"
+        "# tam raz omylom dostali, nech ich aspoň nikto nehľadá cez Google.\n"
+        "Disallow: /career/\n"
+        "Disallow: /content/\n"
+        "\n"
+        f"Sitemap: {SITE_URL}/sitemap.xml\n"
+    )
+
+
+def build_sitemap(projects):
+    """Zoznam adries pre vyhľadávače. Priorita hovorí, čo je dôležitejšie:
+    úvod, potom rozcestník a sekcie, až potom jednotlivé projekty."""
+    adresy = [("", "1.0"), ("portfolio", "0.9"), ("dokumenty", "0.6")]
+    adresy += [(key, "0.8") for key in CATEGORIES if of_category(projects, key)]
+    adresy += [("projekt/" + p["slug"], "0.7")
+               for p in sorted(projects, key=lambda x: x.get("order") or 999)]
+
+    riadky = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ]
+    for cesta, priorita in adresy:
+        riadky.append("  <url>")
+        riadky.append(f"    <loc>{SITE_URL}/{cesta}</loc>")
+        riadky.append(f"    <priority>{priorita}</priority>")
+        riadky.append("  </url>")
+    riadky.append("</urlset>")
+    return "\n".join(riadky) + "\n"
+
+
 def of_category(projects, key):
     return sorted([p for p in projects if in_category(p, key)],
                   key=lambda p: p.get("order") or 999)
@@ -749,7 +787,10 @@ def build_project(p, projects):
     next_p = ordered[idx + 1] if idx < len(ordered) - 1 else None
 
     desc = p.get("subtitle") or f"{p['title']}, {cat['title']}"
-    html = head(f"{p['title']} - {SITE_NAME}", desc, depth=1,
+    # seo_title mení len text v záložke prehliadača a vo výsledkoch hľadania,
+    # nadpis na stránke ostáva. Používa sa pri projektoch pomenovaných podľa
+    # klienta, aby sa portfólio nestavalo pred web samotnej značky.
+    html = head(f"{p.get('seo_title') or p['title']} - {SITE_NAME}", desc, depth=1,
                 path=f"projekt/{p['slug']}.html")
     html += header(p["category"], depth=1, projects=projects)
 
@@ -919,6 +960,12 @@ def main():
         if f.endswith(".html") and f not in live:
             os.remove(os.path.join(PROJ_DIR, f))
             print(f"odstránené: projekt/{f}")
+
+    open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(build_robots())
+    print("robots.txt")
+
+    open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(build_sitemap(projects))
+    print("sitemap.xml")
 
     n_img = sum(1 for p in projects if p.get("cover")) + sum(
         1 for p in projects for i in (p.get("images") or []) if i.get("src"))

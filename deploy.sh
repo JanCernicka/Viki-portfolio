@@ -22,7 +22,11 @@ cd "$ROOT"
 
 # stránky, štýly, skript
 cp -- *.html styles.css cv.css dokumenty.css script.js "$OUT/"
-cp -- _headers _redirects "$OUT/"
+cp -- _headers _redirects robots.txt sitemap.xml "$OUT/"
+
+# Presmerovanie z adresy pages.dev na vlastnú doménu. Bez neho Cloudflare
+# servíruje celý web na dvoch adresách a Google indexuje obe.
+cp -r functions "$OUT/"
 
 # podstránky projektov a všetky obrázky, fonty a dokumenty na stiahnutie
 cp -r projekt "$OUT/"

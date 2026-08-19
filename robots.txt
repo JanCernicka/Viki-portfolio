@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Zdroje generátora a súkromné veci na web nepatria, ale keby sa
+# tam raz omylom dostali, nech ich aspoň nikto nehľadá cez Google.
+Disallow: /career/
+Disallow: /content/
+
+Sitemap: https://viktoriamikuskova.com/sitemap.xml
