@@ -94,3 +94,34 @@ na tvár, alebo použi jednu z týchto náhrad:
 - *Zmrzlina* 13,4–15,4 — žena v červenom, sezónne čisté, ale je to popoludnie, nie večer.
 - *Varovanie* 9,3–10,6 — reakcia pri stole plnom jedla. Základ z Varovania končí okolo ôsmej
   sekundy, takže tento kus je voľný, ale je to tá istá tvár a tá istá miestnosť ako v základe.
+
+---
+
+## Názvy súborov
+
+Prvých osem znakov pred pomlčkou je jedinečných, stačí ich vyhľadať.
+
+| Ako to volám | Súbor |
+|---|---|
+| Valentín | `141d25cc-Tak_takto_vyzer__valent_n_u_n_s_v_re_taur_ci__Zuzana…` |
+| Mojito | `4d25b9ac-Pr__te_si_k_n_m_vychutna__osvie_uj_ce_mojito…` |
+| Ohnivý drink | `55c21e41-Pr___sk_si__aj_tak_to__ohniv__drink…` |
+| Vianoce, 24/25.12 zatvorené | `5dc0b330-2425.12_bude_re_taur_cia_Zuzana_zatvoren_…` |
+| Náš obľúbený zákazník | `5de522a9-N___ob__ben__z_kazn_k__Ty…` |
+| **Aj keď leto ešte len prichádza** | `5ece5841-Aj_ke__leto_e_te_len_prich_dza_my_sme_u__pripraven…` |
+| **Sme pripravení!** | `70e429b1-Sme_pripraven___Te__me_sa_na_v_s____.mp4` |
+| **ZABÍJAČKOVÉ HODY** | `720e2370-ZAB_JA_KOV__HODY_s__tu_op…` |
+| Vianočné posedenie | `7ad695f9-Pr__te_si_k_n_m_vychutna__aj_tak_to_viano_n__posedenie___.mov` |
+| **Dnešné prestieranie** | `a35a9bcf-Dne_n__prestieranie_.mp4` |
+| Vianočný banket, bez popisu | `b5c95e26-AQNAnGsRkwQqgakIFZaaUW0m7dbINxs4yST8…` |
+| **Hladní po celodennej lyžovačke** | `b62b5b3a-Hladn__po_celodennej_ly_ova_ke…` |
+| **Domáce limonády** | `bc769990-Dom_ce_limon_dy_V_na_ej_kuchyni_ich_mie_ame…` |
+| Zmrzlina | `c9b0540e-Zastavte_sa_na_chv__ku_sladk_ho_oddychu_Zmrzlina…` |
+| Novinka! Luxusné ovocné limonády | `d8a5b5d7-Novinka__Pr__te_si_k_n_m_vychutna__tieto_luxusn__ovocn__limon_dy…` |
+| Na dnešný podvečer | `e64d448b-Na_dne_n__pove_er_m_me_uz_v_etko_pripraven___Pr_de__aj_ty____.mp4` |
+| Aj večery u nás majú chuť domova | `f4b9d078-Aj_ve_ery_u_n_s_maj__chu__domova…` |
+| **Varovanie** | `fbd55d29-__Varovanie__nasleduj_ce_z_bery_m__u_sp_sobi__n_hle_rozhodnutie…` |
+| **KAČACIE HODY** | `ff1d1611-KA_ACIE_HODY_PRIPRAVEN__Te__me_sa_na_spolo_n__ve_er_.mp4` |
+| Základ reklamy | `43b083d9-zuzana_reklama_zaklad.mp4` |
+
+Tučným sú tie, z ktorých sú poskladané štyri hooky vyššie.
