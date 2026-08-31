@@ -1,217 +1,163 @@
-# Reštaurácia Zuzana — prompty na štyri reely
+# Reštaurácia Zuzana — hooky a subhooky do 5 sekúnd
+
+Každý hook aj subhook má **maximálne 5 sekúnd**. Nižšie je ku každému presná skladba
+tých piatich sekúnd: ktoré video, odkiaľ dokiaľ orezať a na ktorej sekunde má naskočiť text.
 
 Ako to použiť v CapCute:
-1. Naimportuj zdrojové videá a orež ich podľa časov v tabuľke „Timeline".
-2. Prompt vlož do CapCut AI (Script / AI asistent) — vygeneruje titulky, tempo a hudbu.
-3. CapCut AI nevie sám nájsť konkrétnu sekundu v tvojom súbore. Orezanie urob ručne, prompt rieši zvyšok.
+1. Naimportuj zdrojové videá a orež ich podľa stĺpca „Orezať".
+2. Prompt vlož do CapCut AI — vygeneruje titulky, tempo a hudbu.
+3. CapCut AI nevie sám nájsť konkrétnu sekundu v tvojom súbore. Orezanie urob ručne.
 
-Spoločné nastavenia pre všetky štyri: 9:16, 1080 × 1920, 30 fps, titulky Montserrat Bold
-biele s tenkým čiernym obrysom, dole nad bezpečnou zónou. Bez prechodov, len tvrdé strihy
-na dobu. Hudba bez spevu, aby text ostal čitateľný.
+Spoločné nastavenia: 9:16, 1080 × 1920, 30 fps, titulky Montserrat Bold biele s tenkým
+čiernym obrysom. Len tvrdé strihy, žiadne prechody — na päť sekúnd nie je čas na efekty.
 
 ---
 
-## 1. Hook H1 — „stôl, od ktorého sa nechcelo odísť"
+## H1 — „Kedy ste naposledy sedeli pri stole, od ktorého sa vám nechcelo odísť?"
 
-**Dĺžka 25 s.** Pomalé, nostalgické, teplé. Toto nie je reel o jedle, ale o tom, s kým sedíš.
-
-### Timeline
+Dve časti vety, dva zábery. Prvý ukáže stôl, druhý ten pocit.
 
 | Na páse | Zdrojové video | Orezať | Trvanie |
 |---|---|---|---|
-| 0,0–3,5 | Aj večery u nás majú chuť domova | 0,0–3,5 | 3,5 s |
-| 3,5–6,0 | Dnešné prestieranie | 0,0–2,5 | 2,5 s |
-| 6,0–11,0 | Dnešné prestieranie | 5,5–10,5 | 5,0 s |
-| 11,0–15,0 | Na dnešný podvečer máme už všetko pripravené | 0,0–4,0 | 4,0 s |
-| 15,0–18,0 | Varovanie | 10,6–13,6 | 3,0 s |
-| 18,0–22,0 | Vianočné posedenie (.mov) | 0,0–4,0 | 4,0 s |
-| 22,0–25,0 | Vianočný banket (AQNAnGs…) | 19,0–22,0 | 3,0 s |
-
-### Prompt
+| 0,0–3,0 | Aj večery u nás majú chuť domova | 0,0–3,0 | 3,0 s |
+| 3,0–5,0 | Dnešné prestieranie | 5,5–7,5 | 2,0 s |
 
 ```
-Vytvor 25-sekundový vertikálny reel 9:16 pre Reštauráciu Zuzana v Liptovskej Teplej.
+Vytvor 5-sekundový vertikálny hook 9:16 pre Reštauráciu Zuzana v Liptovskej Teplej.
 
-Tón: pomalý, teplý, nostalgický. Nie je to reel o jedle, ale o pocite pri stole.
-Tempo strihu pomalé, zábery nechaj dýchať 3 až 5 sekúnd. Žiadne rýchle prechody,
-len tvrdé strihy. Farby dolaď do teplej, mierne zlatej.
+Tón: teplý, pomalý, nostalgický. Iba dva zábery, tvrdý strih medzi nimi, žiadne prechody.
+Farby dolaď do teplej, mierne zlatej.
 
-Poradie záberov:
-1. Prázdny stôl sa v zrýchlení zaplní jedlom a nápojmi (3,5 s)
-2. Nápis na stene: Dobrí priatelia sú ako hviezdy (2,5 s)
-3. Pomalý prejazd pozdĺž dlhého prestretého stola v slnku (5 s)
-4. Otáčajúca sa drevená doska s klobásami a tlačenkou (4 s)
-5. Pohľad zhora na stôl plný jedla (3 s)
-6. Dlhý stôl s vínom a kvetmi (4 s)
-7. Lampáš so sviečkou, tesný detail (3 s)
+Záber 1 (0,0–3,0): prázdny drevený stôl sa v zrýchlení zaplní jedlom a nápojmi.
+Záber 2 (3,0–5,0): pomalý prejazd pozdĺž dlhého prestretého stola v slnečnej sále.
 
-Titulky, vždy len jedna veta na obrazovke:
-0,0–3,5   Kedy ste naposledy sedeli pri stole, od ktorého sa vám nechcelo odísť?
-6,0–11,0  Nie kvôli jedlu. Kvôli tomu, kto pri ňom sedel.
-15,0–18,0 U nás sa nikam neponáhľate.
-22,0–25,0 Reštaurácia Zuzana, Liptovská Teplá — 0908 218 794
+Titulok, jedna veta cez celých päť sekúnd, zalomená na dva riadky:
+0,0–3,0  Kedy ste naposledy sedeli pri stole,
+3,0–5,0  od ktorého sa vám nechcelo odísť?
 
 Hudba: tichý akustický podklad bez spevu, klavír alebo gitara, bez výrazného beatu.
-Hlasitosť pod titulkami stiahni.
 ```
+
+**Náhradný otvárací záber:** *Na dnešný podvečer máme už všetko pripravené* 0,0–3,0 —
+otáčajúca sa mäsová doska. Chutnejšie, ale menej to hovorí o stole.
 
 ---
 
-## 2. Hook H2 — „kam v septembri vytiahnuť celú rodinu"
+## H2 — „Neviete, kam v septembri vytiahnuť celú rodinu? Máme to za vás vyriešené."
 
-**Dĺžka 27 s.** Vecné a pozývacie. Hook sa pýta *kam*, takže miesto musí padnúť hneď v prvej sekunde.
-
-### Timeline
+Hook sa pýta **kam**, takže miesto musí padnúť do troch sekúnd. Tri zábery: pekné počasie,
+adresa, stôl.
 
 | Na páse | Zdrojové video | Orezať | Trvanie |
 |---|---|---|---|
-| 0,0–3,3 | Sme pripravení! Tešíme sa na vás | 11,2–14,5 | 3,3 s |
-| 3,3–7,3 | Dnešné prestieranie | 5,5–9,5 | 4,0 s |
-| 7,3–11,3 | Novinka! Luxusné ovocné limonády | 0,0–4,0 | 4,0 s |
-| 11,3–14,3 | Aj keď leto ešte len prichádza | 11,0–14,0 | 3,0 s |
-| 14,3–18,3 | Na dnešný podvečer máme už všetko pripravené | 0,0–4,0 | 4,0 s |
-| 18,3–21,0 | KAČACIE HODY | 20,5–23,2 | 2,7 s |
-| 21,0–24,0 | Sme pripravení! Tešíme sa na vás | 14,5–17,5 | 3,0 s |
-| 24,0–27,0 | Vianočné posedenie (.mov) | 0,0–3,0 | 3,0 s |
-
-### Prompt
+| 0,0–2,0 | Novinka! Luxusné ovocné limonády | 0,0–2,0 | 2,0 s |
+| 2,0–3,5 | Sme pripravení! Tešíme sa na vás | 11,2–12,7 | 1,5 s |
+| 3,5–5,0 | Dnešné prestieranie | 5,5–7,0 | 1,5 s |
 
 ```
-Vytvor 27-sekundový vertikálny reel 9:16 pre Reštauráciu Zuzana v Liptovskej Teplej.
+Vytvor 5-sekundový vertikálny hook 9:16 pre Reštauráciu Zuzana v Liptovskej Teplej.
 
-Cieľ: rodina hľadá, kam ísť v septembri na spoločný obed alebo večeru.
-Tón: vecný, pozývací, slnečný. Stredné tempo, zábery 3 až 4 sekundy.
-Farby svetlé a čisté, nechaj modrú oblohu modrou.
+Cieľ: rodina hľadá, kam ísť v septembri na spoločný obed. Tón vecný a pozývací,
+tempo svižné. Tri zábery, tvrdé strihy. Farby svetlé a čisté, obloha nech ostane modrá.
 
-Poradie záberov:
-1. Exteriér budovy s nápisom Reštaurácia Zuzana, v popredí džbán limonády (3,3 s)
-2. Pomalý prejazd pozdĺž dlhého prestretého stola (4 s)
-3. Ovocné limonády na slnečnej terase, modré nebo (4 s)
-4. Obsluha v červenom nesie tácňu limonád a usmieva sa (3 s)
-5. Otáčajúca sa drevená doska s mäsom na zdieľanie (4 s)
-6. Pečená kačica so zemiakmi (2,7 s)
-7. Tácka s dvoma pivami na terase (3 s)
-8. Dlhý stôl prestretý pre veľkú spoločnosť (3 s)
+Záber 1 (0,0–2,0): ovocné limonády na slnečnej terase, modré nebo, štíty chát v pozadí.
+Záber 2 (2,0–3,5): exteriér budovy s nápisom Reštaurácia Zuzana.
+Záber 3 (3,5–5,0): dlhý prestretý stôl pre veľkú spoločnosť.
 
 Titulky:
-0,0–3,3   Neviete, kam v septembri vytiahnuť celú rodinu?
-3,3–7,3   Máme to za vás vyriešené.
-7,3–11,3  Terasa, kým je teplo.
-14,3–18,3 Jedlo na zdieľanie pre celý stôl.
-18,3–21,0 A hody, keď prídete vo väčšom.
-24,0–27,0 Reštaurácia Zuzana, Liptovská Teplá — rezervácia 0908 218 794
+0,0–2,5  Neviete, kam v septembri vytiahnuť celú rodinu?
+2,5–5,0  Máme to za vás vyriešené.
 
-Hudba: veselý, ale nie hlučný akustický podklad, mierne letný, bez spevu.
+Hudba: veselý, nie hlučný akustický podklad, mierne letný, bez spevu.
 ```
+
+**Náhrada, ak chceš miesto hneď v prvej sekunde:** začni exteriérom
+(*Sme pripravení* 11,2–13,2), potom terasa a stôl. Je to jasnejšie, ale slabšie to zastaví
+scrollovanie.
 
 ---
 
-## 3. Subhook S1 — „naberáte si sami, koľko chcete"
+## S1 — „Predstavte si večer, kde si naberáte sami, koľko chcete, a nikam sa neponáhľate."
 
-**Dĺžka 24 s.** Celé stojí na jednej mechanike: **dvíhanie pokrievok**, jeden reveal za druhým, každý na dobu.
-
-### Timeline
+Tri odkrytia pokrievky za päť sekúnd. Ten rytmus **je** ten subhook — každý strih je jedno
+ďalšie jedlo, ktoré si môžeš vziať.
 
 | Na páse | Zdrojové video | Orezať | Trvanie |
 |---|---|---|---|
-| 0,0–2,8 | KAČACIE HODY | 1,9–4,7 | 2,8 s |
-| 2,8–5,8 | ZABÍJAČKOVÉ HODY | 16,5–19,5 | 3,0 s |
-| 5,8–7,5 | ZABÍJAČKOVÉ HODY | 21,0–22,7 | 1,7 s |
-| 7,5–10,8 | KAČACIE HODY | 9,8–13,1 | 3,3 s |
-| 10,8–13,5 | KAČACIE HODY | 13,1–15,8 | 2,7 s |
-| 13,5–16,2 | KAČACIE HODY | 20,5–23,2 | 2,7 s |
-| 16,2–19,2 | ZABÍJAČKOVÉ HODY | 31,6–34,6 | 3,0 s |
-| 19,2–22,0 | KAČACIE HODY | 4,7–7,5 | 2,8 s |
-| 22,0–24,0 | ZABÍJAČKOVÉ HODY | 39,0–41,0 | 2,0 s |
-
-### Prompt
+| 0,0–2,0 | KAČACIE HODY | 1,9–3,9 | 2,0 s |
+| 2,0–3,6 | ZABÍJAČKOVÉ HODY | 16,8–18,4 | 1,6 s |
+| 3,6–5,0 | KAČACIE HODY | 20,5–21,9 | 1,4 s |
 
 ```
-Vytvor 24-sekundový vertikálny reel 9:16 pre Reštauráciu Zuzana v Liptovskej Teplej.
+Vytvor 5-sekundový vertikálny subhook 9:16 pre Reštauráciu Zuzana v Liptovskej Teplej.
 
 Téma: bufetové hody, kde si hosť naberá sám a koľko chce.
-Nosná mechanika celého reelu je dvíhanie pokrievok. Každé odkrytie jedla nastrihni
-presne na dobu hudby, aby to malo rytmus. Tempo svižné, zábery 2 až 3 sekundy.
-Farby sýte a teplé, jedlo musí vyzerať horúco.
+Celé stojí na jednej mechanike — dvíhaní pokrievok. Tri odkrytia za päť sekúnd,
+každý strih presne na dobu hudby. Farby sýte a teplé, jedlo musí vyzerať horúco.
 
-Poradie záberov, každý je jedno odkrytie:
-1. Otvorenie kotlíka, vnútri kačacia polievka (2,8 s)
-2. Zdvihnutie pokrievky, pod ňou klobásy (3 s)
-3. Zdvihnutie pokrievky, pod ňou jaternice (1,7 s)
-4. Otvorenie, pod ním pečené kačacie mäso (3,3 s)
-5. Lokše a knedľa (2,7 s)
-6. Pečená kačica so zemiakmi, hlavný záber (2,7 s)
-7. Otvorenie, pod ním dusená kapusta (3 s)
-8. Dezertný stôl: makarónky, tartaletky, panna cotty (2,8 s)
-9. Celý rad tácok s naberačkami (2 s)
+Záber 1 (0,0–2,0): ruka otvára veľký kotlík, vnútri kačacia polievka.
+Záber 2 (2,0–3,6): ruka dvíha pokrievku chafingu, pod ňou klobásy.
+Záber 3 (3,6–5,0): pečená kačica so zemiakmi v tácke, hlavný záber.
 
 Titulky:
-0,0–2,8   Predstavte si večer, kde si naberáte sami,
-2,8–5,8   koľko chcete,
-5,8–7,5   a nikam sa neponáhľate.
-13,5–16,2 Kačacie aj zabíjačkové hody.
-22,0–24,0 Reštaurácia Zuzana, Liptovská Teplá — 0908 218 794
+0,0–2,0  Predstavte si večer, kde si naberáte sami,
+2,0–3,6  koľko chcete,
+3,6–5,0  a nikam sa neponáhľate.
 
-Hudba: rytmický podklad s jasnou dobou, aby sa dali strihy naviazať na beat.
-Bez spevu.
+Hudba: rytmický podklad s jasnou dobou, aby sa strihy dali naviazať na beat. Bez spevu.
 ```
+
+**Ak chceš viac jedla a menej rytmu:** nahraď záber 2 lokšami a knedľou
+(*KAČACIE HODY* 13,1–14,7). Vyzerá to bohatšie, ale stratí sa pohyb pokrievky.
 
 ---
 
-## 4. Subhook S2 — „dozviete sa o tom až deň potom"
+## S2 — „Viete, čo je na takýchto večeroch najhoršie? Že sa o nich dozviete až deň potom."
 
-**Dĺžka 22 s.** Toto je FOMO. Najprv tváre ľudí, ktorí si to užili, potom prázdno.
-
-### Timeline
+Otázka a pointa. Prvé tri a pol sekundy sú plné ľudí, posledné poldruhej je prázdno.
+Ten zlom je celý vtip.
 
 | Na páse | Zdrojové video | Orezať | Trvanie |
 |---|---|---|---|
-| 0,0–2,7 | Varovanie | 7,9–10,6 | 2,7 s |
-| 2,7–6,2 | Hladní po celodennej lyžovačke | 14,3–17,8 | 3,5 s |
-| 6,2–9,2 | Hladní po celodennej lyžovačke | 22,3–25,3 | 3,0 s |
-| 9,2–13,6 | Domáce limonády | 39,7–44,1 | 4,4 s |
-| 13,6–18,0 | Zmrzlina (Zastavte sa na chvíľku…) | 13,4–17,8 | 4,4 s |
-| 18,0–19,4 | Aj večery u nás majú chuť domova — **pustiť POZPIATKY** | 0,0–1,4 | 1,4 s |
-| 19,4–22,0 | Dnešné prestieranie | 2,5–5,0 | 2,6 s |
-
-### Prompt
+| 0,0–2,0 | Varovanie | 8,4–10,4 | 2,0 s |
+| 2,0–3,6 | Domáce limonády | 40,5–42,1 | 1,6 s |
+| 3,6–5,0 | Dnešné prestieranie | 2,5–3,9 | 1,4 s |
 
 ```
-Vytvor 22-sekundový vertikálny reel 9:16 pre Reštauráciu Zuzana v Liptovskej Teplej.
+Vytvor 5-sekundový vertikálny subhook 9:16 pre Reštauráciu Zuzana v Liptovskej Teplej.
 
-Téma: ľutovať, že si o akcii nevedel včas. Prvá polovica je radostná, plná tvárí,
-posledné štyri sekundy sú prázdne a tiché. Ten zlom musí byť počuť aj vidieť.
-Tempo v prvej časti svižné, v závere spomaľ.
+Téma: ľutovať, že si o akcii nevedel včas. Prvé tri a pol sekundy sú radostné a plné
+tvárí, posledné poldruhej sekundy je prázdno a ticho. Ten zlom musí byť počuť aj vidieť.
 
-Poradie záberov:
-1. Dievča pri stole reaguje na jedlo, prekvapenie a smiech (2,7 s)
-2. Blažená reakcia pri jedle, zavreté oči (3,5 s)
-3. Reakcia a gesto chef's kiss (3 s)
-4. Dve kamarátky pri stole na terase sa smejú nad limonádami (4,4 s)
-5. Žena v červenom je zmrzlinu a usmieva sa (4,4 s)
-6. Prestretý stôl plný jedla sa vyprázdni — tento záber pusti pozpiatky (1,4 s)
-7. Prázdne stoličky v slnku, ticho (2,6 s)
+Záber 1 (0,0–2,0): dievča pri stole plnom jedla reaguje, prekvapenie a smiech.
+Záber 2 (2,0–3,6): dve kamarátky pri stole na terase sa smejú nad limonádami.
+Záber 3 (3,6–5,0): prázdne stoličky v slnku, nikto pri nich.
 
 Titulky:
-0,0–2,7   Viete, čo je na takýchto večeroch najhoršie?
-6,2–9,2   Že sa o nich dozviete
-9,2–13,6  až deň potom.
-18,0–19,4 Nabudúce buďte pri tom.
-19,4–22,0 Sledujte nás, termíny hlásime tu — Reštaurácia Zuzana, 0908 218 794
+0,0–2,5  Viete, čo je na takýchto večeroch najhoršie?
+2,5–3,6  Že sa o nich dozviete
+3,6–5,0  až deň potom.
 
-Hudba: veselý podklad, ktorý na sekunde 18,0 naraz stíchne a nechá záver v tichu.
-V poslednom zábere len tichý ruch miestnosti.
+Hudba: veselý podklad, ktorý na sekunde 3,6 naraz stíchne. Posledný záber nechaj
+v tichu, prípadne len s tichým ruchom miestnosti.
 ```
 
 ---
+
+## Čo môže ísť za tými piatimi sekundami
+
+Ak sa hook osvedčí a budeš k nemu dorábať telo reelu, poradie záberov je v
+`zuzana/katalog-zaberov.md` v časti „Výber na jednotlivé hooky". Tam je ku každému
+hooku sedem až deväť záberov s časmi, z ktorých sa dá poskladať 20 až 27 sekúnd.
 
 ## Poznámky ku všetkým štyrom
 
-- **Vodoznaky.** *Na dnešný podvečer* má vpravo dole InShot, *Domáce limonády* má v prvých dvoch
-  sekundách CapCut. Orež spodný okraj alebo prekry titulkom.
-- **Rozlíšenie.** Všetky zdroje sú 720 × 1280. Pri exporte do 1080 × 1920 sa obraz roztiahne,
-  takže nerež tesne a nepridávaj zoom, kde to netreba.
-- **Lyžovačka v S2.** Reakcie sú najlepšie v sade, ale čiapka a okuliare prezradia zimu.
-  Orež tesne na tvár, alebo ich nahraď reakciami z *Varovania*.
-- **Vianočné posedenie a Vianočný banket.** V odporúčaných výrezoch stromček nevidno,
-  ale skontroluj si to pred exportom.
+- **Vodoznaky.** *Na dnešný podvečer* má vpravo dole InShot, *Domáce limonády* má
+  v prvých dvoch sekundách CapCut. Výrez 40,5–42,1 je už za ním, takže je čistý.
+- **Rozlíšenie.** Všetky zdroje sú 720 × 1280. Pri exporte do 1080 × 1920 sa obraz
+  roztiahne, takže nerež tesne a nepridávaj zbytočný zoom.
+- **Sezóna.** *Dnešné prestieranie*, *Varovanie*, *KAČACIE* aj *ZABÍJAČKOVÉ HODY* sú
+  sezónne neutrálne. *Domáce limonády* a *Novinka* sú letné, čo v septembri ešte sedí.
+- **Chýbajúci záber.** Ani v jednom videu nesedí pri stole rodina alebo partia, ktorá
+  spolu je. Pre H1 aj H2 je to jediná naozaj chýbajúca vec a dotočí sa za pár minút
+  počas bežnej služby.
