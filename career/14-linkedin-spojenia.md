@@ -134,6 +134,89 @@ dostanú na Profesiu.
 
 ---
 
+## Ako to všetko vyhľadať
+
+*Odkazy overené, všetky fungujú.*
+
+### Zoznamy ocenených prác
+
+| Kde | Odkaz | Na čo |
+|---|---|---|
+| Národná cena za dizajn, rozcestník | `scd.sk/ncd` | všetky ročníky |
+| Aktuálny ročník | `scd.sk/ncd/narodna-cena-za-dizajn-2026` | najnovšie mená |
+| Databáza diel SCD | `scd.sk/diela` | filtruj tag grafický dizajn |
+| Najkrajšie knihy Slovenska | `najkrajsieknihy.sk` | knižný dizajn |
+| BIBIANA | `bibiana.sk` | ilustrácia a detská kniha |
+
+Pri každom projekte je uvedený autor alebo štúdio. Tie mená potom hľadáš
+na LinkedIne.
+
+### LinkedIn, spôsob 1: cez firmu
+
+Napíš názov firmy do vyhľadávania, otvor jej stránku a klikni na záložku
+**People** (Ľudia). V políčku **What they do** napíš `designer`, `grafik`,
+`art director` alebo `sadzba`. Vyhodí ti z tej firmy presne tých ľudí, ktorí
+robia tvoju prácu, a obchod s manažmentom preskočíš.
+
+### LinkedIn, spôsob 2: cez pozíciu a miesto
+
+Napíš výraz, daj Enter, hore prepni na **People** a vpravo nastav
+**Locations** na Slovensko alebo Bratislavu.
+
+```
+grafický dizajnér          graphic designer
+výtvarný redaktor          art director
+DTP operátor               brand designer
+knižný dizajn              book design
+sadzba                     typesetting
+```
+
+Skús vždy slovenskú aj anglickú verziu. Ľudia si titulok píšu raz tak, raz
+tak, a každá verzia vyhodí iných ľudí.
+
+Vyhľadávanie znesie aj zložené dopyty:
+
+```
+"art director" AND (Bratislava OR Slovensko)
+("graphic designer" OR "grafický dizajnér") NOT recruiter
+"výtvarná redakcia" OR "knižný dizajn"
+```
+
+### LinkedIn, spôsob 3: cez školu, najlepší a najmenej známy
+
+Otvor stránku **PEVŠ** na LinkedIne a klikni na **Alumni**. Uvidíš všetkých
+absolventov a dá sa filtrovať podľa toho, kde pracujú a čo robia.
+
+Nájdeš tam spolužiakov, na ktorých si zabudla, aj ľudí z agentúr, ktorí
+chodili na tú istú školu. Spoločná škola je hotový dôvod na oslovenie
+a výrazne dvíha prijatie pozvánky.
+
+To isté sprav pre **SOŠ polygrafickú**.
+
+### Dva filtre, ktoré zdvojnásobia úspešnosť
+
+Vo výsledkoch nastav **Connections na 2nd**. Sú to ľudia, s ktorými máš
+spoločného známeho, a LinkedIn to pri pozvánke ukáže.
+
+Všímaj si riadok **shared connections**. Ak je tam niekto, koho poznáš dobre,
+popros radšej o predstavenie než posielať pozvánku naslepo. Odporúčanie od
+známeho má neporovnateľne vyššiu úspešnosť.
+
+### Drobnosti, ktoré zdržia
+
+**Chýba tlačidlo Connect.** Pri profiloch s veľa sledovateľmi ukazuje LinkedIn
+len **Follow**. Connect je schované pod **More** vedľa neho.
+
+**Nenašla si človeka z tiráže.** Skús Google v tvare
+`meno priezvisko linkedin`, funguje to spoľahlivejšie než vyhľadávanie priamo
+v LinkedIne.
+
+**Behance.** Na `behance.net` nastav vo vyhľadávaní lokalitu Slovakia. Ľudia
+tam mávajú v profile odkaz na LinkedIn aj Instagram, takže si zoznam
+vyskladáš sama.
+
+---
+
 ## Ako pozvánku poslať
 
 Vždy s poznámkou, nikdy holú. Limit je tristo znakov a rozhoduje o tom, či ju
