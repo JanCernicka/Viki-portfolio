@@ -311,3 +311,151 @@ profesionálne.
 - [ ] Prepísať odkaz na portfólio na viktoriamikuskova.com
 - [ ] Vypýtať si písomné odporúčanie zo ShapelesAi
 - [ ] Nahrať tri až päť prác priamo na profil, nech nemusia klikať preč
+
+---
+
+## Texty správ, keď pozvánku prijmú
+
+*Postavené na pravidlách z `02-networking-book-notes.md`, kapitoly 4, 7 a 9.*
+
+### Pozor na otázku, ktorá sa pýta sama
+
+Kniha má **„ako ste sa dostali tam, kde ste"** priamo v tabuľke zlých prosieb:
+*nikto nechce cudziemu človeku písať svoj životopis a aj tak to má na
+LinkedIne.* Je tam vedľa „môžem si trochu obzrieť váš mozog" a „aké máte
+voľné miesta".
+
+Pravidlo znie: **konkrétna otázka, ktorá sa nedá vygoogliť a odpovie sa na ňu
+jedným odsekom.** A dať k nej číslo, aby pôsobila ohraničene, teda „jedna vec",
+„jeden tip".
+
+Takže namiesto *ako ste sa sem dostali* sa pýtaj *čo by ste na mojej úrovni
+spravili inak*. Je to tá istá informácia, len sa dá odpovedať.
+
+### Štruktúra
+
+Pozdrav a jedna veta o sebe → **kompliment**, ktorý pomenuje konkrétnu vec
+a spojí ju s tvojou vlastnou prácou → **jedna otázka** → poďakovanie.
+
+Test z knihy: ak by si to nevedela prečítať nahlas ako odkaz do odkazovky,
+je to dlhé.
+
+Ešte pred správou daj lajk alebo komentár pod niečo, čo zverejnili. Nech ťa
+meno neprekvapí.
+
+### Dizajnérovi, ktorého prácu si videla
+
+> Dobrý deň [meno], som grafická dizajnérka, robím tlačoviny, sadzbu
+> a sociálne siete. Videla som [názov projektu] a zostalo mi v hlave
+> [jedna konkrétna vec]. Sama som niečo podobné skúšala pri [tvoj projekt]
+> a až vtedy mi došlo, prečo to funguje.
+>
+> Mám jednu otázku, ak vám to nevadí: **čo by ste na mojej úrovni skúseností
+> spravili inak, keby ste začínali dnes?** Stačí jedna vec.
+>
+> Ďakujem, Viktória
+
+### Autorovi knihy z tiráže
+
+> Dobrý deň [meno], mám doma [názov knihy] a je to jedna z mála kníh, pri
+> ktorých som si všimla sadzbu skôr než obsah, konkrétne [vec]. Sama sa
+> venujem knižnému dizajnu, robila som päť žánrových obálok k jednému titulu
+> a práve na tom som pochopila, koľko obálka unesie.
+>
+> Chcela by som sa opýtať: **je nejaká kniha o typografii alebo sadzbe,
+> ktorú by ste si priali prečítať skôr?**
+>
+> Ďakujem, Viktória
+
+### Vo výtvarnej redakcii vydavateľstva
+
+> Dobrý deň [meno], som grafická dizajnérka a venujem sa knižnému dizajnu
+> a sadzbe. Sledujem, čo vo [vydavateľstvo] vychádza, a [titul] ma zaujal
+> [čím].
+>
+> Mám jednu otázku: **na čo sa najviac pozeráte, keď vám príde portfólio od
+> niekoho zvonku?** Chcem vedieť, čo má vôbec zmysel ukazovať.
+>
+> Ďakujem, Viktória
+
+### Cez spoločnú školu
+
+> Ahoj [meno], vidím, že sme obaja z PEVŠ, ja som skončila [rok]. Teraz robím
+> grafiku a sociálne siete na voľnej nohe a hľadám stále miesto.
+>
+> Zaujímalo by ma jedno: **čo by si spravil inak, keby si dnes začínal
+> odznova?** Stačí jedna vec.
+>
+> Vďaka, Viki
+
+### V tlačiarni, na predtlačovej príprave
+
+> Dobrý deň [meno], som grafická dizajnérka, mám za sebou SOŠ polygrafickú
+> a k tlači mám blízko. Robím sadzbu a prípravu do tlače.
+>
+> Mám jednu otázku z praxe: **aká chyba vám od grafikov chodí najčastejšie
+> a najviac vás zdrží?** Chcem sa jej vedieť vyhnúť.
+>
+> Ďakujem, Viktória
+
+Táto otázka funguje veľmi dobre, lebo sa pýta na ich každodennú bolesť
+a odpovedá sa na ňu jednou vetou.
+
+### Zásobník otázok
+
+Striedaj ich, nech nepíšeš všetkým to isté.
+
+- Čo by ste na mojej úrovni skúseností spravili inak?
+- Ktoré podujatie alebo konferencia sa naozaj oplatí za tie peniaze?
+- Na aký trend by som si mala dávať pozor?
+- Existuje kniha, ktorú by ste si priali prečítať skôr?
+- Bola nejaká otázka, ktorú ste si priali položiť na pohovore do súčasnej
+  práce?
+- Aká chyba vám od grafikov chodí najčastejšie? *(tlačiarne a predtlač)*
+- Na čo sa pozeráte, keď vám príde portfólio zvonku? *(vydavateľstvá, štúdiá)*
+
+### Keď odpíšu
+
+Odpovedz **do 24 hodín** a poďakuj. Kniha cituje výskum, podľa ktorého osem
+slov navyše v štýle *veľmi pekne ďakujem, naozaj si to vážim* zdvihlo ochotu
+pomôcť znova z 32 na 66 percent.
+
+> Veľmi pekne ďakujem, naozaj si to vážim. [Jedna veta o tom, čo si s tou
+> odpoveďou spravíš.] Ozvem sa, keď to skúsim.
+
+Tá druhá veta je dôležitá. Dáva dôvod ozvať sa znova bez toho, aby si si ho
+musela vymýšľať.
+
+### Keď neodpíšu
+
+Po dvoch týždňoch už odpoveď nepríde. Po **štyroch týždňoch** pošli jednu
+jedinú pripomienku, v tej istej konverzácii a s niečím **novým**.
+
+> Dobrý deň [meno], posielam len krátko. Medzitým mi vyšla [nová práca alebo
+> článok] a spomenula som si na vás kvôli [dôvod]. Keby ste niekedy mali
+> chvíľu na tú otázku, budem rada. Ďakujem, Viktória
+
+Ak ani potom nič, choď ďalej. Druhú pripomienku už neposielaj.
+
+### Po pol roku
+
+Kniha odporúča ozvať sa zhruba **každých šesť mesiacov**, vždy v tej istej
+konverzácii. Dôvod je mere exposure effect, čiže opakovaný kontakt zvyšuje
+sympatie. *Toľko ľudí sa jednoducho vytratí, že sa odlíšiš už len tým, že sa
+ozveš.*
+
+> Dobrý deň [meno], ozývam sa po čase. Vaša rada o [vec] mi vtedy pomohla,
+> odvtedy som [čo sa zmenilo]. Držím palce s [ich aktuálny projekt].
+> Pekný deň, Viktória
+
+Toto ani pripomienka sa nerátajú ako oslovenie za daný deň, sú navyše.
+
+### Čo do správy nikdy nedávaj
+
+- **Životopis**, ak si ho nevypýtali. Pôsobí to presumptívne.
+- **Prosbu o prácu v prvej správe.**
+- **Otázku, aké majú voľné miesta.** Je na ich stránke a podľa knihy je to
+  rýchly spôsob, ako vyzerať ako amatér.
+- **Ponuku, že ich pozveš na kávu.** Kniha to volá záväzok, nie dar. Stretnutie
+  navrhuj až po niekoľkých priateľských výmenách, a vtedy sa prispôsobíš ty im.
+- **Slová „len", „prepáčte", „myslím si", „mám pocit".** Podkopávajú ťa.
