@@ -70,35 +70,48 @@ Spolu 86 slov, čo pri 145 slovách na minútu vychádza na 35,6 s. Sedí.
 
 ## Prompt do CapCutu
 
+Časovú os vyplň číslami svojich klipov (K1, K2, …) skôr, než prompt vložíš.
+
 ```
 Zostrihaj 35-sekundový vertikálny reel 9:16, 1080x1920, 30 fps, pre Reštauráciu
 Zuzana v Liptovskej Teplej. Je to reklama na večerný zábavný kvíz.
 
+PRACUJ VÝHRADNE S KLIPMI, KTORÉ SÚ V TOMTO PROJEKTE NAIMPORTOVANÉ.
+Toto je najdôležitejšie pravidlo celého zadania:
+- Nepridávaj stock zábery, stock fotky ani nič z knižnice médií.
+- Negeneruj žiadny obraz ani video umelou inteligenciou.
+- Nepoužívaj generatívne dopĺňanie okrajov, rozšírenie obrazu ani rozmazané
+  pozadie na doplnenie formátu. Ak klip nie je 9:16, orež ho.
+- Nevymýšľaj text. Titulky prepíš doslova z dodaného komentára, slovo za slovom.
+- Nepridávaj nálepky, emoji, odpočty, koncové panely ani logo cez celú obrazovku.
+- Ak na niektorý úsek nemám vhodný záber, radšej predĺž ten predchádzajúci
+  alebo mi to napíš. Nedopĺňaj to ničím vlastným.
+Jediné, čo smie prísť zvonku, je hudobný podklad z knižnice. Obraz nie.
+
 Tón: veselý, spoločenský, večerný. Nie luxusný, ale plný ľudí a smiechu.
 Rez každé 2,5 az 5 sekúnd, nikdy nie dlhšie. Žiadne prechody, len tvrdé strihy.
 Teplé farby, večerné svetlo nechaj teplé, nevyvažuj ho do bielej.
+Neaplikuj žiadne filtre ani prednastavené farebné štýly.
 
 Komentár je nahovorený mimo obraz, hovoriaca tvár sa v zábere neobjaví.
 Titulky napevno v spodnej tretine, Montserrat Bold, biele s tenkým čiernym
 obrysom, vždy len jedna veta na obrazovke, synchrónne s hlasom.
 
-Časová os a čo v ktorom úseku ukázať:
-0,0-8,0   plná sála, ľudia pri dlhých stoloch, moderátor s mikrofónom,
-          odpoveďové hárky na stole
-8,0-13,0  detail dvoch az troch ľudí, ktorí sa radia nad hárkom a smejú sa
-13,0-17,0 moderátor vyhlasuje, ruka zapisuje body na tabuľu
-17,0-21,0 ceny na stole, víťazný tím dvíha ruky
-21,0-25,0 celkový záber sály, zvonku vidno rozsvietenú prevádzku
-25,0-28,5 detail prestretého stola s jedlom a nápojmi
-28,5-32,0 pomalý prejazd pozdĺž obsadených stolov
-32,0-35,0 exteriér s nápisom Reštaurácia Zuzana
+Časová os, v každom úseku použi uvedený klip:
+0,0-8,0    [KLIP ?]
+8,0-13,0   [KLIP ?]
+13,0-17,0  [KLIP ?]
+17,0-21,0  [KLIP ?]
+21,0-25,0  [KLIP ?]
+25,0-28,5  [KLIP ?]
+28,5-32,0  [KLIP ?]
+32,0-35,0  [KLIP ?]
 
 Hudba: veselý podklad bez spevu, aby komentár ostal zrozumiteľný. Pod hlasom
 stiahni hlasitosť. Na sekunde 21,0 a 32,0 daj hudbe krátky dôraz, tam padajú
 obe výzvy.
 
-Na konci nedávaj žiadny statický koncový panel dlhší než sekundu. Posledný
-záber musí byť živý obraz, nie logo na plnú obrazovku.
+Posledný záber musí byť živý obraz z môjho materiálu, nie logo ani panel.
 ```
 
 ## Čo treba natočiť
