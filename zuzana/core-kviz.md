@@ -1,11 +1,12 @@
 # Core na večerný zábavný kvíz — Reštaurácia Zuzana
 
-Cieľová dĺžka **35 s** (rozsah 30–40). Podľa štruktúry z `kampan/skript.md` v repe DKP:
-osem pomenovaných blokov, tempo 145 slov na 60 s, rezy každé 2,5–5 s.
-Na 35 s to je **zhruba 85 slov a 10 rezov**.
+**Čistý obrazový zostrih.** Bez komentára, bez titulkov, bez loga. Len zábery
+z dodaného materiálu a hudba pod tým.
 
-Core sa nahráva **raz**. Hooky a subhooky sú samostatné klipy, ktoré sa naň lepia
-spredu — core nesmie prezradiť to, čo hovorí hook.
+Cieľová dĺžka **35 s**, rozsah 30–40.
+
+> Predchádzajúca verzia tohto súboru mala core s nahovoreným komentárom
+> a ôsmimi blokmi podľa playbooku. Je v histórii gitu, keby sa niekedy zišla.
 
 ## Zadanie
 
@@ -14,131 +15,93 @@ spredu — core nesmie prezradiť to, čo hovorí hook.
 | Orientácia | 9:16 na výšku, 1080 × 1920 |
 | Snímkovanie | 30 fps |
 | Dĺžka | 30–40 s, cieľ 35 |
-| Tempo reči | 145 slov na 60 s |
-| Titulky | napevno, spodná tretina |
-| Strih | rez každé 2,5–5 s |
-| Komentár | mimo obraz, nie hovoriaca tvár |
-| CTA tlačidlo | Zistiť viac |
+| Strih | rez každé 2,0–3,5 s, teda 11 az 14 záberov |
+| Najkratší záber | 1,5 s, nič kratšie |
+| Zvuk | hudba, pôvodný zvuk klipov stlmený |
+| Text v obraze | žiadny |
 
-## Časová os
+Bez hovoreného slova treba strihať rýchlejšie než s komentárom. Komentár drží
+pozornosť sám, tu ju musí držať obraz, takže záber nad štyri sekundy je dlhý.
 
-| Blok | Čas | Sekúnd | Čo tam je |
+## Poradie záberov
+
+Jediná dramaturgia, ktorá v nemom zostrihu ostáva, je poradie. Toto je tvar,
+ktorý funguje: príprava → sála sa plní → hra → napätie → výsledok → miesto.
+
+| # | Čas | Čo v ňom má byť | Tvoj klip |
 |---|---|---|---|
-| OFFER | 0,0–8,0 | 8,0 | Čo to je, kedy to je |
-| ELIMINATION | 8,0–13,0 | 5,0 | Zhodenie námietky „na to nemám" |
-| GUARANTEE | 13,0–17,0 | 4,0 | Čo má hosť isté aj tak |
-| BONUS | 17,0–21,0 | 4,0 | Výhry a čo je navyše |
-| CTA | 21,0–25,0 | 4,0 | Prvá výzva |
-| TIME LIMIT | 25,0–28,5 | 3,5 | Dátum |
-| SCARCITY | 28,5–32,0 | 3,5 | Obmedzený počet stolov |
-| CTA | 32,0–35,0 | 3,0 | Druhá výzva |
+| 1 | 0,0–2,5 | Najsilnejší záber, aký máš. Plná sála alebo moderátor s mikrofónom | |
+| 2 | 2,5–5,0 | Prestierané stoly, hárky a perá, príprava | |
+| 3 | 5,0–7,5 | Hostia prichádzajú, sadajú si | |
+| 4 | 7,5–10,0 | Detail stola: jedlo, nápoje, hárok vedľa | |
+| 5 | 10,0–13,0 | Moderátor číta otázku | |
+| 6 | 13,0–15,5 | Tímy sa radia, hlavy pri sebe | |
+| 7 | 15,5–18,0 | Detail ruky, ktorá píše odpoveď | |
+| 8 | 18,0–20,5 | Smiech pri stole | |
+| 9 | 20,5–23,0 | Napätie, niekto sa chytá za hlavu alebo čaká na výsledok | |
+| 10 | 23,0–26,0 | Zapisovanie bodov, tabuľa alebo hárok | |
+| 11 | 26,0–29,0 | Ceny na stole | |
+| 12 | 29,0–32,0 | Víťazi, dvihnuté ruky, potlesk | |
+| 13 | 32,0–35,0 | Exteriér prevádzky večer, rozsvietené okná | |
 
-## Komentár na nahovorenie
-
-Hranaté zátvorky treba nahradiť skutočnými údajmi. **Nevymýšľaj ich.**
-
-```
-[OFFER]
-Každý [DEŇ] večer o [ČAS] je u nás v Zuzane kvízový večer. Šesť kôl,
-otázky na všetko od filmov po Liptov, a stôl plný jedla popri tom.
-
-[ELIMINATION]
-Nemusíte byť vševed ani chodiť s partiou. Tímy staviame na mieste,
-prídete aj sami a hrať budete s niekým.
-
-[GUARANTEE]
-Moderátora, bodovanie aj ceny riešime my. Vy si len sadnete
-a objednáte.
-
-[BONUS]
-Víťazný tím berie [VÝHRA]. A druhý aj tretí odchádzajú tiež s niečím.
-
-[CTA]
-Kliknite na tlačidlo pod videom a rezervujte si stôl.
-
-[TIME LIMIT]
-Najbližší kvíz je [DÁTUM].
-
-[SCARCITY]
-Stolov máme [POČET], viac sa ich do sály nezmestí.
-
-[CTA]
-Tak neváhajte, kliknite a ozveme sa vám s potvrdením.
-```
-
-Spolu 86 slov, čo pri 145 slovách na minútu vychádza na 35,6 s. Sedí.
+Trinásť slotov na 35 sekúnd. Ak nemáš na niektorý záber materiál, slot vyhoď
+a susedné predĺž — **nedopĺňaj ho ničím cudzím.**
 
 ## Prompt do CapCutu
 
-Časovú os vyplň číslami svojich klipov (K1, K2, …) skôr, než prompt vložíš.
+Časovú os vyplň číslami svojich klipov, kým prompt vložíš.
 
 ```
 Zostrihaj 35-sekundový vertikálny reel 9:16, 1080x1920, 30 fps, pre Reštauráciu
-Zuzana v Liptovskej Teplej. Je to reklama na večerný zábavný kvíz.
+Zuzana. Je to čistý obrazový zostrih z kvízového večera.
 
-PRACUJ VÝHRADNE S KLIPMI, KTORÉ SÚ V TOMTO PROJEKTE NAIMPORTOVANÉ.
-Toto je najdôležitejšie pravidlo celého zadania:
+PRACUJ VÝHRADNE S KLIPMI NAIMPORTOVANÝMI V TOMTO PROJEKTE.
 - Nepridávaj stock zábery, stock fotky ani nič z knižnice médií.
 - Negeneruj žiadny obraz ani video umelou inteligenciou.
-- Nepoužívaj generatívne dopĺňanie okrajov, rozšírenie obrazu ani rozmazané
-  pozadie na doplnenie formátu. Ak klip nie je 9:16, orež ho.
-- Nevymýšľaj text. Titulky prepíš doslova z dodaného komentára, slovo za slovom.
-- Nepridávaj nálepky, emoji, odpočty, koncové panely ani logo cez celú obrazovku.
-- Ak na niektorý úsek nemám vhodný záber, radšej predĺž ten predchádzajúci
-  alebo mi to napíš. Nedopĺňaj to ničím vlastným.
-Jediné, čo smie prísť zvonku, je hudobný podklad z knižnice. Obraz nie.
+- Nepoužívaj generatívne dopĺňanie okrajov ani rozmazané pozadie na doplnenie
+  formátu. Ak klip nie je 9:16, orež ho.
+- Ak na niektorý úsek nemám vhodný záber, vynechaj ho a predĺž susedný.
+  Nedopĺňaj to ničím vlastným.
 
-Tón: veselý, spoločenský, večerný. Nie luxusný, ale plný ľudí a smiechu.
-Rez každé 2,5 az 5 sekúnd, nikdy nie dlhšie. Žiadne prechody, len tvrdé strihy.
-Teplé farby, večerné svetlo nechaj teplé, nevyvažuj ho do bielej.
-Neaplikuj žiadne filtre ani prednastavené farebné štýly.
+V TOMTO VIDEU NIE JE ŽIADNY TEXT ANI HLAS.
+- Žiadne titulky, žiadne popisky, žiadny nadpis, žiadny koncový panel.
+- Žiadne automatické prepisy reči do titulkov.
+- Žiadny komentár, žiadny generovaný hlas, žiadne čítanie textu.
+- Žiadne logo, žiadne nálepky, emoji, odpočty ani grafické prvky.
+- Nepridávaj úvodnú ani záverečnú snímku. Video začína prvým záberom
+  a končí posledným.
 
-Komentár je nahovorený mimo obraz, hovoriaca tvár sa v zábere neobjaví.
-Titulky napevno v spodnej tretine, Montserrat Bold, biele s tenkým čiernym
-obrysom, vždy len jedna veta na obrazovke, synchrónne s hlasom.
+Strih: tvrdé rezy, žiadne prechody, žiadne priblíženia ani pohyby navyše.
+Rez každé 2,0 az 3,5 sekundy. Žiadny záber kratší než 1,5 sekundy.
+Zachovaj pôvodné farby, neaplikuj filtre ani prednastavené farebné štýly.
+Večerné svetlo nechaj teplé, nevyvažuj ho do bielej.
+
+Zvuk: pôvodný zvuk klipov stlm na nulu. Pod video daj jeden hudobný podklad
+bez spevu, veselý, spoločenský. Rezy nasaď na dobu hudby. Na konci hudbu
+plynulo stiahni, neukončuj ju rezom.
 
 Časová os, v každom úseku použi uvedený klip:
-0,0-8,0    [KLIP ?]
-8,0-13,0   [KLIP ?]
-13,0-17,0  [KLIP ?]
-17,0-21,0  [KLIP ?]
-21,0-25,0  [KLIP ?]
-25,0-28,5  [KLIP ?]
-28,5-32,0  [KLIP ?]
+0,0-2,5    [KLIP ?]
+2,5-5,0    [KLIP ?]
+5,0-7,5    [KLIP ?]
+7,5-10,0   [KLIP ?]
+10,0-13,0  [KLIP ?]
+13,0-15,5  [KLIP ?]
+15,5-18,0  [KLIP ?]
+18,0-20,5  [KLIP ?]
+20,5-23,0  [KLIP ?]
+23,0-26,0  [KLIP ?]
+26,0-29,0  [KLIP ?]
+29,0-32,0  [KLIP ?]
 32,0-35,0  [KLIP ?]
-
-Hudba: veselý podklad bez spevu, aby komentár ostal zrozumiteľný. Pod hlasom
-stiahni hlasitosť. Na sekunde 21,0 a 32,0 daj hudbe krátky dôraz, tam padajú
-obe výzvy.
-
-Posledný záber musí byť živý obraz z môjho materiálu, nie logo ani panel.
 ```
 
-## Čo treba natočiť
+## Poznámky
 
-Ak sa kvíz ešte nekonal, toto sú zábery, bez ktorých sa core nezostrihá.
-Stačí mobil, ale **klopový mikrofón na komentár je nutný.**
-
-| Záber | Kam patrí |
-|---|---|
-| Plná sála pri dlhých stoloch, večerné svetlo | OFFER, CTA |
-| Moderátor s mikrofónom, zozadu alebo z boku | OFFER, GUARANTEE |
-| Odpoveďové hárky a perá na stole, detail | OFFER |
-| Dvaja až traja ľudia sa radia nad hárkom a smejú | ELIMINATION |
-| Ruka zapisuje body na tabuľu alebo do hárku | GUARANTEE |
-| Ceny položené na stole | BONUS |
-| Víťazný tím, dvihnuté ruky alebo potlesk | BONUS |
-| Prestretý stôl s jedlom a nápojmi | TIME LIMIT |
-| Pomalý prejazd pozdĺž obsadených stolov | SCARCITY |
-| Exteriér s nápisom Reštaurácia Zuzana, večer | posledný záber |
-
-🔴 **Súhlas hostí.** Ak sú v zábere rozpoznateľné tváre hostí, treba ich súhlas.
-Najbezpečnejšie je točiť ruky, stoly, hárky a chrbty, tvár moderátora s jeho
-súhlasom a celkové zábery zozadu.
-
-## Čo sa nesmie povedať, kým to klient nepotvrdí
-
-- Žiadna výhra ani suma, ktorú klient nepotvrdil.
-- Žiadny konkrétny dátum, ktorý klient negarantuje.
-- Žiadne „vstup zdarma", ak sa platí štartovné.
-- Žiadny počet stolov, ktorý nezodpovedá kapacite sály.
+- **Rezy na dobu.** CapCut to vie sám cez funkciu zosúladenia s hudbou. Ak sa
+  kvôli tomu časy o dve, tri desatiny posunú, nevadí, rytmus je dôležitejší
+  než presné čísla v tabuľke.
+- **Pôvodný zvuk stlmiť.** Zvuk z mobilu v hlučnej sále znie zle a pod hudbou
+  by z neho ostal len šum.
+- **Súhlas hostí.** Ak sú v zábere rozpoznateľné tváre, treba ich súhlas.
+  Bezpečnejšie sú ruky, stoly, hárky, chrbty a celkové zábery zozadu.
